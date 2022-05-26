@@ -29,6 +29,8 @@ Agile 개발 방법론의 Scrum방식으로 짧은 주기를 가진 sprint를 �
 
 **커뮤니케이션 도구** : slack
 
+**프레임워크** : React
+
 ## 자료
 
 - ## 디자인 자료
@@ -54,3 +56,8 @@ Agile 개발 방법론의 Scrum방식으로 짧은 주기를 가진 sprint를 �
     - [슬랙이 뭐지? 초심자를 위한 유용한 사용법](https://gonna-be.tistory.com/29)
     - [Slack 사용하기](https://slack.com/intl/ko-kr/help/categories/200111606)
     - [슬랙(Slack) 사용법](https://blog.dnd.ac/slack-tag/)
+- ## 개발 자료
+  - ### React
+    - [리액트-페이지 나누기(라우팅)](https://velog.io/@dnjswn123/%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%82%98%EB%88%84%EA%B8%B0%EB%9D%BC%EC%9A%B0%ED%8C%85)
+    - [[React] React Router 1 :: 세팅과 기본 라우팅](https://dori-coding.tistory.com/entry/React-React-Router-1-%EC%84%B8%ED%8C%85%EA%B3%BC-%EA%B8%B0%EB%B3%B8-%EB%9D%BC%EC%9A%B0%ED%8C%85)
+    - [React Components와 Props](https://ko.reactjs.org/docs/components-and-props.html)
