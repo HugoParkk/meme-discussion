@@ -45,7 +45,7 @@ Agile 개발 방법론의 Scrum방식으로 짧은 주기를 가진 sprint를 �
   - ### Git
     - [Github 같은 저장소 함께 쓰기 feat. 협업하기](https://fomaios.tistory.com/entry/Git-Github-%EA%B0%99%EC%9D%80-%EC%A0%80%EC%9E%A5%EC%86%8C-%ED%95%A8%EA%BB%98-%EC%93%B0%EA%B8%B0feat%ED%98%91%EC%97%85%ED%95%98%EA%B8%B0)
     - [Git 협업 할 때 branch 생성 후 pull request까지의 과정](https://developer-eun-diary.tistory.com/42)
-  - ###Slack
+  - ### Slack
     - [슬랙이 뭐지? 초심자를 위한 유용한 사용법](https://gonna-be.tistory.com/29)
     - [Slack 사용하기](https://slack.com/intl/ko-kr/help/categories/200111606)
     - [슬랙(Slack) 사용법](https://blog.dnd.ac/slack-tag/)
