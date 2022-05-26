@@ -43,6 +43,10 @@ Agile 개발 방법론의 Scrum방식으로 짧은 주기를 가진 sprint를 �
     - [Jira 지라 사용법](https://11001.tistory.com/120)
     - [지라 클라우드와 깃허브 연동하기](https://www.lesstif.com/jira/jira-cloud-github-125305615.html)
     - [Jira와 Github 연동하기](https://sujinnaljin.medium.com/jira-jira%EC%99%80-github-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0-6e649180dfae)
+    - [[JIRA 사용법]초보자를 위한 프로젝트 관리(Agile Project)](https://blog.naver.com/PostView.naver?blogId=ironheel2&logNo=222391871969&parentCategoryNo=&categoryNo=7&viewDate=&isShowPopularPosts=true&from=search)
+    - [JIRA를 활용한 협업](https://medium.com/hgmin/devops-jira%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%ED%98%91%EC%97%85-4f4049a36a56)
+    - [지라(JIRA)와 슬랙(Slack) 연동하기 - JIRA Cloud 사용](https://hanminwoo.com/71)
+    - [[JIRA] 애자일 협업툴 JIRA 사용해보기 (GitHub 연동 및 에픽, 이슈 생성)](https://velog.io/@ynjch97/JIRA-%EC%95%A0%EC%9E%90%EC%9D%BC-%ED%98%91%EC%97%85%ED%88%B4-JIRA-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0-%EB%AC%B4%EB%A3%8C-%EB%B2%84%EC%A0%84)
   - ### Git
     - [Github 같은 저장소 함께 쓰기 feat. 협업하기](https://fomaios.tistory.com/entry/Git-Github-%EA%B0%99%EC%9D%80-%EC%A0%80%EC%9E%A5%EC%86%8C-%ED%95%A8%EA%BB%98-%EC%93%B0%EA%B8%B0feat%ED%98%91%EC%97%85%ED%95%98%EA%B8%B0)
     - [Git 협업 할 때 branch 생성 후 pull request까지의 과정](https://developer-eun-diary.tistory.com/42)
