@@ -1,8 +1,13 @@
 import React from 'react'
+import styled from 'styled-components'
 
 function Login() {
   return (
-    <div>Login</div>
+    <div>
+      <LoginForm />
+      <Other />
+      <LoginFooter />
+    </div>
   )
 }
 
