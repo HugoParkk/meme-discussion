@@ -46,7 +46,7 @@ const HeaderMenuTop = styled.div`
   margin: auto;
   justify-content: space-between;
   display: flex;
-  color: gray;
+  color: #DBDBDB;
   
   ul{
     display: flex;
