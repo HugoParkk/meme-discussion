@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 
-export default function FormTitle() {
+function FormTitle() {
   return (
     <>
       <GlobalStyle />
@@ -16,3 +16,5 @@ const StyledDiv = styled.div`
   font-size: 22pt;
   text-shadow: #ff50e2 1px 0 5px; ;
 `;
+
+export default FormTitle
