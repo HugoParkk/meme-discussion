@@ -1,16 +1,16 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 function LoginForm() {
   return (
     <div>
-      <InputId />
-      <InputPassword />
+      <InputId placeholder="아이디" />
+      <InputPassword placeholder="비밀번호" />
     </div>
-  )
+  );
 }
 
-const InputId = styled.div``
-const InputPassword = styled.div``
+const InputId = styled.form``;
+const InputPassword = styled.form``;
 
-export default LoginForm
+export default LoginForm;
