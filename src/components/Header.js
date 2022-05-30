@@ -2,16 +2,17 @@ import React from "react";
 import styled from 'styled-components';
 
 function Header() {
+
   return (
     <div>
       <HeaderMenuTop>
-      <div  id="logo">
-          <img src="#" alt="채널A로고"></img> | 
+        <div id="logo">
+          <img src="#" alt="채널A로고"></img> |
           <img src="#" alt="그라운드x로고"></img> |
           <img src="#" alt="동아일보로고"></img>
         </div>
 
-        <div  id="header-top">
+        <div id="header-top">
           <ul>
             <li>홈</li> |
             <li>이웃</li>|
@@ -22,7 +23,7 @@ function Header() {
             <li>쥔짱님 ▼</li>
           </ul>
         </div>
-        
+
       </HeaderMenuTop>
       <HeaderStyleTest><h1></h1></HeaderStyleTest>
       <HeaderBar>
