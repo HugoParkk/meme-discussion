@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 
-export default function CopyRight() {
+function CopyRight() {
   return (
     <>
       <GlobalStyle />
@@ -23,3 +23,5 @@ const StyledText = styled.div`
 const StyledDiv = styled.div`
   font-size: 12pt;
 `;
+
+export default CopyRight

@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "../Atoms/Text";
 
-export default function TextGroup(props) {
+function TextGroup(props) {
   return (
     <>
       {props.data.map((arr, i) => {
@@ -10,3 +10,5 @@ export default function TextGroup(props) {
     </>
   );
 }
+
+export default TextGroup

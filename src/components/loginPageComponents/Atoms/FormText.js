@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 
-export default function FormText() {
+function FormText() {
   return (
     <>
       <GlobalStyle />
@@ -17,3 +17,5 @@ const StyledDiv = styled.div`
   font-size: 12pt;
   color: #cfcfcf;
 `;
+
+export default FormText

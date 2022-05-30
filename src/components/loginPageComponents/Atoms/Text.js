@@ -25,4 +25,4 @@ const StyledASmall = styled.a`
   text-decoration: none;
   color: black;
 `;
-export default Text;
+export default Text

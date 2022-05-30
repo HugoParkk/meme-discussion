@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 
-export default function FormButton() {
+function FormButton() {
   return (
     <>
       <GlobalStyle />
@@ -21,3 +21,5 @@ const StyledDiv = styled.div`
   margin: 0 auto;
   line-height: 100px;
 `;
+
+export default FormButton
