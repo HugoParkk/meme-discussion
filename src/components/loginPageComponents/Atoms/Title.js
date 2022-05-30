@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 
-function Title() {
+export default function Title() {
   return (
     <>
       <GlobalStyle />
@@ -12,9 +12,6 @@ function Title() {
 }
 
 const StyledDiv = styled.div`
+  font-weight: bold;
   font-size: 22pt;
-  letter-spacing: -2;
-  word-spacing: 28;
 `;
-
-export default Title;
