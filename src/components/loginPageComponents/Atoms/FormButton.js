@@ -13,13 +13,14 @@ function FormButton() {
 
 const StyledDiv = styled.div`
   font-weight: bold;
-  font-size: 22pt;
+  font-size: 18pt;
   background-color: #ff50e2;
   border-radius: 10px;
-  width: 80%;
-  height: 100px;
+  width: 90%;
+  height: 40px;
   margin: 0 auto;
-  line-height: 100px;
+  line-height: 40px;
+  margin-bottom: 15px;
 `;
 
-export default FormButton
+export default FormButton;

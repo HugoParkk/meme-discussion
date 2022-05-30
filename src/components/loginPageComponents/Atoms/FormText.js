@@ -15,6 +15,11 @@ const StyledDiv = styled.div`
   font-weight: bold;
   font-size: 12pt;
   color: #cfcfcf;
+  margin: 0 auto;
+  width: 90%;
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 12px;
 `;
 
 export default FormText;
