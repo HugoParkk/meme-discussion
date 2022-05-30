@@ -1,14 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 function Login() {
-  return (
-    <div>
-      <LoginForm />
-      <Other />
-      <LoginFooter />
-    </div>
-  )
+  return <></>;
 }
 
-export default Login
+export default Login;
