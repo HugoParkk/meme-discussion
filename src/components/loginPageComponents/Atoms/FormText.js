@@ -6,7 +6,6 @@ function FormText() {
   return (
     <>
       <GlobalStyle />
-      {/* <img src></img> */}
       <StyledDiv>로그인 상태 유지</StyledDiv>
     </>
   );
@@ -18,4 +17,4 @@ const StyledDiv = styled.div`
   color: #cfcfcf;
 `;
 
-export default FormText
+export default FormText;
