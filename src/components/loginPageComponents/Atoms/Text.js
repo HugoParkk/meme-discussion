@@ -18,11 +18,11 @@ function Text(props) {
 const StyledABig = styled.a`
   font-size: 13pt;
   text-decoration: none;
-  color: black;
+  color: white;
 `;
 const StyledASmall = styled.a`
   font-size: 12pt;
   text-decoration: none;
-  color: black;
+  color: white;
 `;
-export default Text
+export default Text;

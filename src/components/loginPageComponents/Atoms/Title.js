@@ -14,6 +14,8 @@ function Title() {
 const StyledDiv = styled.div`
   font-weight: bold;
   font-size: 22pt;
+  text-align: center;
+  color: white;
 `;
 
-export default Title
+export default Title;

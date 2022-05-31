@@ -22,6 +22,8 @@ const StyledText = styled.div`
 
 const StyledDiv = styled.div`
   font-size: 12pt;
+  text-align: center;
+  color: white;
 `;
 
-export default CopyRight
+export default CopyRight;
