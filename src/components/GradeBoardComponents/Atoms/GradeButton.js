@@ -1,7 +1,7 @@
 import React from "react";
 
-function gradeButton() {
-  return <div>gradeButton</div>;
+function GradeButton() {
+  return <div>GradeButton</div>;
 }
 
-export default gradeButton;
+export default GradeButton;

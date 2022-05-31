@@ -1,7 +1,41 @@
 import React from "react";
+import styled from "styled-components";
+import GlobalStyle from "../GlobalStyle";
 
-function gradeDescribe() {
-  return <div>gradeDescribe</div>;
+function GradeDescribe() {
+  return (
+    <>
+      <GlobalStyle />
+      <StyledText>
+        <PinkSpan>깃기회원</PinkSpan> 등급이 되시면 읽기가 가능한 게시판 입니다.
+        <br />
+        현재 닉네임 님은 방문자회원 등급이시며, 등업에 관련된 궁금하신 사항은
+        카페 매니저나 회원관리 스탭에게 문의해 주세요
+      </StyledText>
+    </>
+  );
 }
+const PinkSpan = styled.span`
+  font-size: 13pt;
+  font-weight: bold;
+  display: inline-block;
+  color: #ff50e2;
+`;
+const StyledText = styled.div`
+  & {
+    font-size: 13pt;
+    font-weight: bold;
+    display: inline-block;
+    text-align: start;
+  }
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 90%;
+    border-bottom: 2px solid #ff50e2;
+    margin: 10px auto;
+  }
+`;
 
-export default gradeDescribe;
+export default GradeDescribe;

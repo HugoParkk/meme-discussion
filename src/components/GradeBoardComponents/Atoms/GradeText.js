@@ -1,7 +1,7 @@
 import React from "react";
 
-function gradeText() {
+function GradeText() {
   return <div>gradeText</div>;
 }
 
-export default gradeText;
+export default GradeText;
