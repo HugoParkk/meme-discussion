@@ -6,7 +6,7 @@ function LoginBanner(props) {
 }
 
 const StyledImage = styled.img`
-  width: 415px;
+  width: 28rem;
   height: 125px;
   margin: 0 auto;
   display: block;
