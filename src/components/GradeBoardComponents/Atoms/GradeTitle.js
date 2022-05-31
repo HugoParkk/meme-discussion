@@ -5,14 +5,16 @@ function GradeTitle() {
   return (
     <>
       <GlobalStyle />
-      <PinkSpan>카페의 회원 등급</PinkSpan>
+      <PinkDiv>카페의 회원 등급</PinkDiv>
     </>
   );
 }
-const PinkSpan = styled.span`
+const PinkDiv = styled.div`
   font-size: 13pt;
   font-weight: bold;
-  display: inline-block;
   color: #ff50e2;
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
 `;
 export default GradeTitle;

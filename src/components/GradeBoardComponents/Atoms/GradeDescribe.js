@@ -23,19 +23,12 @@ const PinkSpan = styled.span`
   color: #ff50e2;
 `;
 const StyledText = styled.div`
-  & {
-    font-size: 13pt;
-    font-weight: bold;
-    display: inline-block;
-    text-align: start;
-  }
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    border-bottom: 2px solid #ff50e2;
-    margin: 10px auto;
-  }
+  font-size: 13pt;
+  font-weight: bold;
+  display: inline-block;
+  text-align: start;
+  width: 70%;
+  line-height: 35px;
 `;
 
 export default GradeDescribe;
