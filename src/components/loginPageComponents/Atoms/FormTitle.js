@@ -14,7 +14,11 @@ function FormTitle() {
 const StyledDiv = styled.div`
   font-weight: bold;
   font-size: 22pt;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 7px;
+  margin-bottom: 20px;
   text-shadow: #ff50e2 1px 0 5px; ;
 `;
 
-export default FormTitle
+export default FormTitle;
