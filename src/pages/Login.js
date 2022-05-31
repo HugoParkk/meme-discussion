@@ -23,15 +23,24 @@ function Login() {
   return (
     <div>
       <StyledImg src={back} />
-      <Title />
-      <FormBox />
-      <TextGroup data={bigArr} />
-      <LoginBanner src={Group} />
-      <TextGroup data={smallArr} />
-      <CopyRight />
+      <StyledDiv>
+        <Title />
+        <FormBox />
+        <TextGroup data={bigArr} />
+        <LoginBanner src={Group} />
+        <TextGroup data={smallArr} />
+        <CopyRight />
+      </StyledDiv>
     </div>
   );
 }
+
+const StyledDiv = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`
 
 const StyledImg = styled.img`
   width: 100%;
