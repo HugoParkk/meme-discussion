@@ -7,7 +7,8 @@ function GradeDescribe() {
     <>
       <GlobalStyle />
       <StyledText>
-        <PinkSpan>깃기회원</PinkSpan> 등급이 되시면 읽기가 가능한 게시판 입니다.
+        <PinkSpan>갓기 회원</PinkSpan> 등급이 되시면 읽기가 가능한 게시판
+        입니다.
         <br />
         현재 닉네임 님은 방문자회원 등급이시며, 등업에 관련된 궁금하신 사항은
         카페 매니저나 회원관리 스탭에게 문의해 주세요
@@ -28,11 +29,10 @@ const StyledText = styled.div`
     display: inline-block;
     text-align: start;
   }
-  &::before,
   &::after {
     content: "";
     display: block;
-    width: 90%;
+    width: 100%;
     border-bottom: 2px solid #ff50e2;
     margin: 10px auto;
   }

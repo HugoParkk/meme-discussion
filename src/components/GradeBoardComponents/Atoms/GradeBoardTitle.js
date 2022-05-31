@@ -15,6 +15,9 @@ const StyledText = styled.div`
   font-weight: bold;
   display: inline-block;
   font-size: 22pt;
+  text-align: left;
+  width: 56%;
+  margin: 0 auto;
 `;
 
 export default GradeBoardTitle;
