@@ -18,8 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Main /> */}
-      <Login />
+      <Main />
+      {/* <Login /> */}
     </div>
   );
 }
