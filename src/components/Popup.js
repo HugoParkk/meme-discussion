@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function Popup() {
   return (
     <div>
-
+      
     </div>
   )
 }
