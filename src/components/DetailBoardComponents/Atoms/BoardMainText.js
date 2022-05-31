@@ -12,9 +12,8 @@ function BoardMainText() {
 }
 
 const Sell = styled.div`
-  font-size: 13pt;
+  font-size: 18pt;
   color: #ff50e2;
-  font-weight: bold;
   margin-right: 10px;
   display: inline-block;
 `;
