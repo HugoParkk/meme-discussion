@@ -1,6 +1,6 @@
-import React from 'react'
-import Header from '../components/Header'
-import Popup from '../components/Popup';
+import React from "react";
+import Header from "../components/Header";
+import Popup from "../components/Popup";
 
 function Main() {
   return (
@@ -8,7 +8,7 @@ function Main() {
       <Header />
       <Popup />
     </div>
-  )
+  );
 }
 
-export default Main
+export default Main;
