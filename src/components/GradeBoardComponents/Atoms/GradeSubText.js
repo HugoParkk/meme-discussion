@@ -18,7 +18,7 @@ const StyledDiv = styled.div`
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 13px;
+  font-size: 13pt;
 `;
 
 export default GradeSubText;
