@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function gradechart() {
-  return (
-    <div>gradechart</div>
-  )
+function GradeChart() {
+  return <div>GradeChart</div>;
 }
 
-export default gradechart
+export default GradeChart;

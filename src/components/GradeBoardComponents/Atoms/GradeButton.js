@@ -1,7 +1,11 @@
 import React from "react";
 
 function GradeButton() {
-  return <div>GradeButton</div>;
+  return (
+    <>
+      <div>gradeButton</div>
+    </>
+  );
 }
 
 export default GradeButton;
