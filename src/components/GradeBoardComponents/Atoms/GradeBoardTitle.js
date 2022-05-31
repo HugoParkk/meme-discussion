@@ -13,7 +13,7 @@ function GradeBoardTitle() {
 }
 const StyledText = styled.div`
   font-weight: bold;
-  display: inline-block;
+  display: block;
   font-size: 22pt;
   text-align: left;
   width: 70%;
