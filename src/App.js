@@ -1,6 +1,7 @@
 import './App.css';
 import Main from './pages/Main';
-import Login from './pages/Login'
+import Login from './pages/Login';
+import { Link, Route, Switch } from 'react-router-dom';
 
 // react-responsive(반응형 웹을 만들기 위한 모듈 테스트)
 import { useMediaQuery } from 'react-responsive'
@@ -18,8 +19,12 @@ function App() {
 
   return (
     <div className="App">
-      <Main />
-      {/* <Login /> */}
+      <Route exact path="/">
+        <Login />
+      </Route>
+      <Route path="/main">
+        <Main />
+      </Route>
     </div>
   );
 }
