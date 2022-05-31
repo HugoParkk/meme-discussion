@@ -1,7 +1,7 @@
 import React from "react";
 
-function gradeTitle() {
+function GradeTitle() {
   return <div>gradeTitle</div>;
 }
 
-export default gradeTitle;
+export default GradeTitle;

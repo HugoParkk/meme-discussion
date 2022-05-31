@@ -1,7 +1,7 @@
 import React from "react";
 
-function gradeDescribe() {
+function GradeDescribe() {
   return <div>gradeDescribe</div>;
 }
 
-export default gradeDescribe;
+export default GradeDescribe;

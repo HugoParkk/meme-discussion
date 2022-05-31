@@ -1,7 +1,7 @@
 import React from "react";
 
-function gradeBoardHeader() {
+function GradeBoardHeader() {
   return <div>gradeBoardHeader</div>;
 }
 
-export default gradeBoardHeader;
+export default GradeBoardHeader;
