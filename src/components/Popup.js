@@ -3,8 +3,13 @@ import styled from 'styled-components'
 
 function Popup() {
   return (
-    <div>Popup</div>
+    <div>
+
+    </div>
   )
 }
+const PopupMain = styled.div`
+  
 
+`
 export default Popup
