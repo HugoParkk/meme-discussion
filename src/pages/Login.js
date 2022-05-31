@@ -1,42 +1,45 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "../components/loginPageComponents/Atoms/Title";
+import FormBox from "../components/loginPageComponents/Molecules/FormBox";
 import TextGroup from "../components/loginPageComponents/Molecules/TextGroup";
+import LoginBanner from "../components/loginPageComponents/Atoms/LoginBanner";
 import CopyRight from "../components/loginPageComponents/Atoms/CopyRight";
+import Group from "../images/Group 30.png";
+import back from "../images/image 12.png";
 
-const BigData = [
-  { text: "비밀번호 찾기 | ", type: "big" },
-  { text: "아이디 찾기 | ", type: "big" },
-  { text: "회원가입 ", type: "big" },
+const bigArr = [
+  { text: "test1 | ", type: "big" },
+  { text: "test2 | ", type: "big" },
+  { text: "test", type: "big" },
 ];
-
-const SmallData = [
-  { text: "이용약관 | ", type: "small" },
-  { text: "개인정보처리방침 | ", type: "small" },
-  { text: "책임의 한계와 법적고지 | ", type: "small" },
-  { text: "회원정보 고객센터 ", type: "small" },
+const smallArr = [
+  { text: "test1 | ", type: "small" },
+  { text: "test2 | ", type: "small" },
+  { text: "test", type: "small" },
 ];
 
 function Login() {
   return (
-    <>
-      <StyledDiv>
-        <Title></Title>
-        <TextGroup data={BigData}></TextGroup>
-        <br />
-        <TextGroup data={SmallData}></TextGroup>
-        <br />
-        <CopyRight></CopyRight>
-      </StyledDiv>
-    </>
+    <div>
+      <StyledImg src={back} />
+      <Title />
+      <FormBox />
+      <TextGroup data={bigArr} />
+      <LoginBanner src={Group} />
+      <TextGroup data={smallArr} />
+      <CopyRight />
+    </div>
   );
 }
 
-const StyledDiv = styled.div`
+const StyledImg = styled.img`
+  width: 100%;
+  height: 100%;
+  z-index: -4;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
 `;
 
 export default Login;
