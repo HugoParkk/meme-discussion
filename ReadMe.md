@@ -36,7 +36,7 @@ Agile 개발 방법론의 Scrum방식으로 짧은 주기를 가진 sprint를 �
 - ## 디자인 자료
   - 최종 디자인 [figma](https://www.figma.com/file/FuYFgSEgQ96TIi7MSSpjQY/%EB%B0%88%ED%92%88%EB%AA%85%ED%92%88-%ED%8E%98%EC%9D%B4%ED%81%AC-%ED%8E%98%EC%9D%B4%EC%A7%80?node-id=0%3A1)
   - 리뉴얼 전 디자인 [Adobe XD](https://xd.adobe.com/view/c2b4b5d4-5ff9-4170-a0df-7724c0ff33a6-97e7/)
-  - [이미지 파일]()
+  - [이미지 파일](https://drive.google.com/drive/folders/1WpKk-PSvl6yqe4uof2KXFOU7G_620yQg?usp=sharing)
 - ## 개발 방법론 자료
   - [애자일 방법론 Scrum(스크럼)](https://hrbulletin.net/organizational-culture/%EC%95%A0%EC%9E%90%EC%9D%BC-%EB%B0%A9%EB%B2%95%EB%A1%A0%E2%91%A0-%EC%8A%A4%ED%81%AC%EB%9F%BCscrum/)
   - [애자일(Agile) 방법론](https://atoz-develop.tistory.com/entry/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%B0%9C-%EB%B0%A9%EB%B2%95%EB%A1%A0-%EC%95%A0%EC%9E%90%EC%9D%BCAgile-%EB%B0%A9%EB%B2%95%EB%A1%A0)
