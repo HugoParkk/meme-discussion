@@ -15,5 +15,7 @@ const Text = styled.div`
   margin-bottom: 10px;
   margin-right: 13px;
   display: inline-block;
+  position: relative;
+  bottom: 35px;
 `;
 export default BoardTextClone;

@@ -14,7 +14,8 @@ function BoardTextGroupClone() {
   );
 }
 const StyledDiv = styled.div`
-  width: 70%;
-  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  left: 50%;
 `;
 export default BoardTextGroupClone;
