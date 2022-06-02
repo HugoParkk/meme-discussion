@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import bookmarkStar from './images/public_compoment/star_sideMenu.svg';
 import profile from './images/public_compoment/profile.svg';
 import crown from './images/public_compoment/crown.png';
+import NewIcon from './images/public_compoment/icon_New.png';
+import L_shape from './images/public_compoment/L_shape.png';
+import bottomImg from './images/public_compoment/Group 13.png';
 
 
 function Sidebar() {
@@ -49,7 +52,7 @@ function Sidebar() {
                 </ul>
               </li>
             </ul>
-            <div id="Topic">주제  재테크 &gt; <bb>NFT</bb> </div>
+            <div id="Topic">주제  재테크 &gt; <b>NFT</b> </div>
             <div id="Btns">
               <ul>
                 <li><button id="BtnHotpink">짤 게시하기</button></li>
@@ -65,70 +68,75 @@ function Sidebar() {
         <div id="DownSideMenuBar">
           <div id="DownSideMenu">
               <div id="Sideba-search"><input></input><button>검색</button></div>
-              <div id="TotalWrite">전체글보기<sapn>175,34,546</sapn></div>
+              <div id="TotalWrite"><li>전체글보기</li><li>175,342,546</li></div>
               <div id="MenuTitle">★ 공지사항</div>
               <div id="MenuContent">
                 <ul>
-                  <li>공지사항  <img src="" alt="NewTag"></img></li>
-                  <li>이용정책</li>
+                  <li><img src={L_shape} alt="L"></img> 공지사항  <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt="L"></img> 이용정책</li>
                 </ul>
               </div>
               <div id="MenuTitle">★ 신고하기/문의하기</div>
               <div id="MenuContent">
                 <ul>
-                  <li>카페 1:1 고객센터</li>
-                  <li>밈품명품 광고 문의하기</li>
+                  <li><img src={L_shape} alt="L"></img> 카페 1:1 고객센터</li>
+                  <li><img src={L_shape} alt="L"></img> 밈품명품 광고 문의하기</li>
                 </ul>
               </div>
-              <div id="MenuTitle">밈품명품 이용팁</div>
+              <div id="MenuTitle">★ 밈품명품 이용팁</div>
               <div id="MenuContent">
                 <ul>
-                  <li>슬기로운 밈품명품정보</li>
-                  <li>밈품명품 공식 아카이브</li>
+                  <li><img src={L_shape} alt="L"></img> 슬기로운 밈품명품정보</li>
+                  <li><img src={L_shape} alt="L"></img> 밈품명품 공식 아카이브</li>
                 </ul>
               </div>
-              <div id="MenuTitle">중나 행복나눔</div>
+              <div id="MenuTitle">★ 중나 행복나눔</div>
               <div id="MenuContent">
                 <ul>
-                  <li>포카 무료나눔 <img src="" alt="NewTag"></img></li>
-                  <li>사골짤 무료나눔 <img src="" alt="NewTag"></img></li>
-                  <li>손글씨/이미지나눔 <img src="" alt="NewTag"></img></li>
-                  <li>어려운 이웃 사연  <img src="" alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt="L"></img> 포카 무료나눔 <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt="L"></img> 사골짤 무료나눔 <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt="L"></img> 손글씨/이미지나눔 <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt="L"></img> 어려운 이웃 사연  <img src={NewIcon} alt="NewTag"></img></li>
                 </ul>
               </div>
-              <div id="MenuTitle">밈뮤니티</div>
+              <div id="MenuTitle">★ 밈뮤니티</div>
               <div id="MenuContent">
                 <ul>
-                  <li>긍정거래 후기 <img src="" alt="NewTag"></img></li>
-                  <li>불량거래 후기 <img src="" alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt="L"></img> 긍정거래 후기 <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt="L"></img> 불량거래 후기 <img src={NewIcon} alt="NewTag"></img></li>
                 </ul>
               </div>
-              <div id="MenuTitle">밈품명품 회원 이벤트</div>
+              <div id="MenuTitle">★ 밈품명품 회원 이벤트</div>
               <div id="MenuContent">
                 <ul><p>이벤트</p>
-                  <li>당첨자발표/종료</li>
-                  <li>이벤트 신청하기</li>
+                  <li><img src={L_shape} alt="L"></img> 당첨자발표/종료</li>
+                  <li><img src={L_shape} alt="L"></img> 이벤트 신청하기</li>
                 </ul>
               </div>
-              <div id="MenuTitle">밈당포 할인특구</div>
+              <div id="MenuTitle">★ 밈당포 할인특구</div>
               <div id="MenuContent">
                 <ul>
-                  <li>꿀딜특구</li>
-                  <li>할인특가  <img src="" alt="NewTag"></img></li>
-                  <li>짤짤이 처분</li>
+                  <li><img src={L_shape} alt="L"></img> 꿀딜특구</li>
+                  <li><img src={L_shape} alt="L"></img> 할인특가  <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt="L"></img> 짤짤이 처분</li>
                 </ul>
               </div>
           </div>
         </div>
 
-        <div id="BottomSideImage">
-          <img src="" alt=""></img>
-        </div>
+        
       </DownSideMenu>
+      <DownSideImg>
+
+          <img src={bottomImg} alt=""></img>
+      
+      </DownSideImg>
     </div>
   )
   }
 const UpSideMenuBar = styled.div`
+  position: relative;
+  left: 307px;
   width: 200px;
   /* height: 965px; */
   height: 468px;
@@ -281,9 +289,10 @@ const UpSideMenuBar = styled.div`
 `
 
 const DownSideMenu = styled.div`
-
+  position: relative;
+  left: 307px;
   width: 200px;
-  height: 965px;
+  height: 1105px;
   margin-top: 25px;
   border: 4px solid #cfcfcf;
   background: #fff;
@@ -292,7 +301,19 @@ const DownSideMenu = styled.div`
     list-style: none;
   }
   #MenuTitle{
-    
+    padding: 10px;
+    border-top: 2px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+  }
+  #MenuContent{
+    /* float: left; */
+    ul{
+      text-align: left;
+      margin-left:-20px;
+    }
+    li{
+      margin-top: 4px;
+    }
   }
 
   input{
@@ -301,7 +322,7 @@ const DownSideMenu = styled.div`
     border:0;
     width: 151px;
     margin-right: 1.5px;
-    box-shadow: 0.2px 0.2px 4px 0px #ff50E2 inset;
+    box-shadow: 0.2px 0.3px 5px 0px #ff50E2 inset;
   }
   button{
     border-radius: 0%;
@@ -314,5 +335,21 @@ const DownSideMenu = styled.div`
     color: #fff;
     font-size: 10.5px;
   }
+  #TotalWrite{
+    justify-content: space-between;
+    display: flex;
+    li{
+      width: 100px;
+      height: 35px;
+      font-size: 14px;
+      margin-top: 15px;
+      font-weight:500;
+    }
+    /* border-bottom: 2px solid #cfcfcf; */
+  }
+`
+
+const DownSideImg = styled.div`
+  
 `
 export default Sidebar
