@@ -15,5 +15,6 @@ const Text = styled.div`
   margin-bottom: 10px;
   margin-right: 13px;
   display: inline-block;
+  width: 50px;
 `;
 export default BoardText;

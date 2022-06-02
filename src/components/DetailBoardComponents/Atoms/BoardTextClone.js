@@ -17,5 +17,6 @@ const Text = styled.div`
   display: inline-block;
   position: relative;
   bottom: 35px;
+  width: 50px;
 `;
 export default BoardTextClone;

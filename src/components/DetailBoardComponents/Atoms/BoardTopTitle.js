@@ -1,16 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
-function BoardTopTitle() {
+
+function BoardTopTitle(props) {
   return (
     <>
       <GlobalStyle />
-      <TextPink>{"방송캡쳐 >"}</TextPink>
+      {props.type === "pink" ? (
+        <Text>{props.text}</Text>
+      ) : (
+        <TextBlack>{props.text}</TextBlack>
+      )}
     </>
   );
 }
 
-const TextPink = styled.div`
+const Text = styled.div`
   font-size: 13pt;
   font-weight: bold;
   display: block;
@@ -18,4 +23,14 @@ const TextPink = styled.div`
   width: 75%;
   margin: 0 auto;
 `;
+
+const TextBlack = styled.div`
+  font-size: 13pt;
+  font-weight: bold;
+  display: block;
+  color: black;
+  width: 75%;
+  margin: 0 auto;
+`;
+
 export default BoardTopTitle;

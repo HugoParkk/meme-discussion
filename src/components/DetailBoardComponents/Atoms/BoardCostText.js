@@ -34,7 +34,8 @@ const QuestBtn = styled.button`
   text-align: center;
   background-color: #dbdbdb;
   border-radius: 8px;
-  margin-top: 10px;
   margin-left: 20px;
+  position: relative;
+  bottom: 5px;
 `;
 export default BoardCostText;

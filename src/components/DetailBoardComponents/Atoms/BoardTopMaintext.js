@@ -2,11 +2,11 @@ import React from "react";
 import GlobalStyle from "../GlobalStyle";
 import styled from "styled-components";
 
-function BoardTopMaintext() {
+function BoardTopMaintext(props) {
   return (
     <>
       <GlobalStyle />
-      <Text>짤 판매 제목</Text>
+      <Text>{props.text}</Text>
     </>
   );
 }
