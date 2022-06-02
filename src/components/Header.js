@@ -38,11 +38,11 @@ function Header() {
 
         <div id="header-bar-menu">
           <ul>
-            <li>홈 화면</li>
-            <li>내가 제일 '짤' 나가</li>
-            <li>짤장터</li>
-            <li>짤 찾아 삼만리</li>
-            <li>공지사항</li>
+            <li><a href="#">홈 화면</a></li>
+            <li><a href="#">내가 제일 '짤' 나가</a></li>
+            <li><a href="#">짤장터</a></li>
+            <li><a href="#">짤 찾아 삼만리</a></li>
+            <li><a href="#">공지사항</a></li>
           </ul>
         </div>
       </HeaderBar>
@@ -87,7 +87,9 @@ const HeaderMenuTop = styled.div`
     
     width: 330px;
   }
-`
+
+
+  `
 const HeaderStyleTest = styled.header`
   width: 1080px;
   background: url(${headerSrc}) no-repeat;
@@ -106,7 +108,11 @@ const HeaderBar = styled.div`
   background: #000;
   position: relative;
   margin: -18px auto;
-
+  
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
   #header-search{
     height: 30px;
     padding: 10px;
