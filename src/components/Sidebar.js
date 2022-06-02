@@ -12,7 +12,6 @@ import bottomImg from './images/public_compoment/Group 13.png';
 function Sidebar() {
   return (
     <div>
-      <SideBar>
       <UpSideMenuBar>
         <div id="head">
           <div id="BookMarkIcon">
@@ -68,58 +67,58 @@ function Sidebar() {
       <DownSideMenu>
         <div id="DownSideMenuBar">
           <div id="DownSideMenu">
-              <div id="Sideba-search"><input></input><button>검색</button></div>
+              <div id="Sidebar-search"><input></input><button>검색</button></div>
               <div id="TotalWrite"><li>전체글보기</li><li>175,342,546</li></div>
               <div id="MenuTitle">★ 공지사항</div>
-              <div id="MenuContent">
+              <div id="MenuContent" class="noitce">
                 <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 공지사항</a>  <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 이용정책</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;공지사항</a>  <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;이용정책</a></li>
                 </ul>
               </div>
               <div id="MenuTitle">★ 신고하기/문의하기</div>
               <div id="MenuContent">
                 <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 카페 1:1 고객센터</a></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 밈품명품 광고 문의하기</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;카페 1:1 고객센터</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;밈품명품 광고 문의하기</a></li>
                 </ul>
               </div>
-              <div id="MenuTitle">★ 밈품명품 이용팁</div>
+              <div id="MenuTitle">밈품명품 이용팁</div>
               <div id="MenuContent">
                 <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 슬기로운 밈품명품정보</a></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 밈품명품 공식 아카이브</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;슬기로운 밈품명품정보</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;밈품명품 공식 아카이브</a></li>
                 </ul>
               </div>
-              <div id="MenuTitle">★ 중나 행복나눔</div>
+              <div id="MenuTitle">중나 행복나눔</div>
               <div id="MenuContent">
                 <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 포카 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 사골짤 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 손글씨/이미지나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 어려운 이웃 사연</a>  <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;포카 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;사골짤 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;손글씨/이미지나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;어려운 이웃 사연</a>  <img src={NewIcon} alt="NewTag"></img></li>
                 </ul>
               </div>
-              <div id="MenuTitle">★ 밈뮤니티</div>
+              <div id="MenuTitle">밈뮤니티</div>
               <div id="MenuContent">
                 <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 긍정거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 불량거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;긍정거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;불량거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
                 </ul>
               </div>
-              <div id="MenuTitle">★ 밈품명품 회원 이벤트</div>
+              <div id="MenuTitle">밈품명품 회원 이벤트</div>
               <div id="MenuContent">
                 <ul><p>이벤트</p>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 당첨자발표/종료</a></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 이벤트 신청하기</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;당첨자발표/종료</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;이벤트 신청하기</a></li>
                 </ul>
               </div>
-              <div id="MenuTitle">★ 밈당포 할인특구</div>
+              <div id="MenuTitle">밈당포 할인특구</div>
               <div id="MenuContent">
                 <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 꿀딜특구</a></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 할인특가</a>  <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'> 짤짤이 처분</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;꿀딜특구</a></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;할인특가</a>  <img src={NewIcon} alt="NewTag"></img></li>
+                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;짤짤이 처분</a></li>
                 </ul>
               </div>
           </div>
@@ -132,7 +131,6 @@ function Sidebar() {
           <img src={bottomImg} alt=""></img>
       
       </DownSideImg>
-      </SideBar>
       
     </div>
   )
@@ -143,10 +141,10 @@ const UpSideMenuBar = styled.div`
   width: 200px;
   /* height: 965px; */
   height: 468px;
-    margin-top: 50px;
     border: 4px solid #cfcfcf;
     background: #fff;
     outline: 2px solid #000;
+  margin: 40px 0 0 0;
 
   ul {
     padding:0;
@@ -199,7 +197,6 @@ const UpSideMenuBar = styled.div`
       margin-left: -20px;
       padding: 0;
     }  
-    
 
     #gradeBox{
       font-size: 10px;
@@ -209,19 +206,19 @@ const UpSideMenuBar = styled.div`
     }
 
     #Nick{   
-      margin: 0;
+      text-align: left;
     }
     
     #profile-info {
       
       text-align:left;
       margin: 5px 2px;
-      li {
-        padding: 2px 0;
-        color: #666666;
-      }
       ul{
-        /* display: flex; */
+        
+      }
+      li {
+        padding: 1px 0;
+        color: #666666;
       }
     }
   }
@@ -295,61 +292,83 @@ const DownSideMenu = styled.div`
   position: relative;
   left: 307px;
   width: 200px;
-  height: 1105px;
+  height: 965px;
   margin-top: 25px;
-  border: 4px solid #cfcfcf;
+  border: 4px solid #cfcfcf; 
   background: #fff;
   outline: 2px solid #000;
+
+  ul{
+    padding: 0;
+  }
+
   li{
     list-style: none;
   }
-  #MenuTitle{
-    padding: 10px;
-    border-top: 2px solid #cfcfcf;
-    border-bottom: 1px solid #cfcfcf;
-  }
-  #MenuContent{
-    /* float: left; */
-    ul{
-      text-align: left;
-      margin-left:-20px;
+
+  #Sidebar-search{
+    text-align: center;
+    background: #FF50E2;
+    input{
+      height: 25px;
+      border-radius: 0%;
+      border:0;
+      width: 154px;
+      margin-right: 1.5px;
+      box-shadow: 0.2px 0.3px 5px 0px #ff50E2 inset;
     }
-    li{
-      margin-top: 4px;
+    button{
+      border-radius: 0%;
+      height: 26px;
+      border: 0;
+      top:0px;
+      position: relative;
+      width: 40px;
+      background-color: #ff50E2;
+      color: #fff;
+      font-size: 10.5px;
     }
   }
 
-  input{
-    height: 22px;
-    border-radius: 0%;
-    border:0;
-    width: 151px;
-    margin-right: 1.5px;
-    box-shadow: 0.2px 0.3px 5px 0px #ff50E2 inset;
-  }
-  button{
-    border-radius: 0%;
-    height: 24px;
-    border: 0;
-    top:0px;
-    position: relative;
-    width: 40px;
-    background-color: #ff50E2;
-    color: #fff;
-    font-size: 10.5px;
-  }
   #TotalWrite{
     justify-content: space-between;
     display: flex;
+    text-align: center;
     li{
       width: 100px;
-      height: 35px;
-      font-size: 14px;
-      margin-top: 15px;
-      font-weight:500;
+      height: 30px;
+      font-size: 12px;
+      margin-top: 13px;
     }
     /* border-bottom: 2px solid #cfcfcf; */
   }
+
+  #MenuTitle{
+    font-size:12px;
+    height: 37px;
+    display:flex;
+    align-items:center;
+    border-top: 2px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    padding: 0 15px;
+  }
+ 
+  #MenuContent{
+    font-size:12px;
+    ul{
+      padding:  0 15px;
+    }
+    li{
+      margin: 0 0 5px 0;
+    }
+  }
+  .noitce {
+    height: 80px;
+    li {
+      padding: 7px 0;
+    }
+  }
+
 `
 
 const DownSideImg = styled.div`
@@ -357,17 +376,10 @@ const DownSideImg = styled.div`
   position: relative;
   left: 305px;
   
-  margin: 50px 0;
+  margin: 30px 0;
   img{
     width: 212px;
     height: 110px;
-  }
-`
-
-const SideBar = styled.div`
-  a{
-    text-decoration: none;
-    color: #000;
   }
 `
 export default Sidebar

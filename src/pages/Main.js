@@ -1,7 +1,8 @@
-import React from 'react'
-import Header from '../components/Header'
+import React from 'react';
+import Header from '../components/Header';
 import Popup from '../components/Popup';
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
       <Header />
       <Popup />
       <Sidebar />
+      <Footer />
     </div>
   )
 }

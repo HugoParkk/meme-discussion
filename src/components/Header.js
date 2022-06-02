@@ -6,9 +6,6 @@ import GroundX from './images/public_compoment/GroundX.jpg';
 import dongA from './images/public_compoment/dongA_daily.png';
 
 
-
-
-
 function Header() {
   return (
     <div>
