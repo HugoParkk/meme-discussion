@@ -1,21 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
-function BoardTopTitle(props) {
+function BoardNFT() {
   return (
     <>
       <GlobalStyle />
-      <TextPink>{props.text}</TextPink>
+      <PinkText>NFT 원본 인증 완료</PinkText>
     </>
   );
 }
 
-const TextPink = styled.div`
-  font-size: 13pt;
+const PinkText = styled.div`
+  font-size: 12pt;
   font-weight: bold;
-  display: block;
   color: #ff50e2;
-  width: 75%;
-  margin: 0 auto;
+  display: inline-block;
 `;
-export default BoardTopTitle;
+export default BoardNFT;
