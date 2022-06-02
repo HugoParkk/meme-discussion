@@ -1,0 +1,19 @@
+import React from "react";
+import styled from "styled-components";
+import GlobalStyle from "../GlobalStyle";
+function BoardTextPlus(props) {
+  return (
+    <>
+      <GlobalStyle />
+      <Text>{props.text2}</Text>
+    </>
+  );
+}
+const Text = styled.div`
+  font-size: 12pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline-block;
+`;
+export default BoardTextPlus;

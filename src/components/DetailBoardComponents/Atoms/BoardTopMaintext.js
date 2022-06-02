@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyle from "../GlobalStyle";
 import styled from "styled-components";
+
 function BoardTopMaintext() {
   return (
     <>
@@ -9,10 +10,13 @@ function BoardTopMaintext() {
     </>
   );
 }
+
 const Text = styled.div`
   font-size: 22pt;
   font-weight: bold;
-  display: inline-block;
+  display: block;
+  width: 75%;
+  margin: 0 auto;
 `;
 
 export default BoardTopMaintext;

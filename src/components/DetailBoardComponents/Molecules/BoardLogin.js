@@ -2,27 +2,43 @@ import React from "react";
 import GlobalStyle from "../GlobalStyle";
 import styled from "styled-components";
 import svg from "../../../images/Ellipse 3.png";
+
 function BoardLogin() {
   return (
     <>
       <GlobalStyle />
-      <Wrapper>
-        <DogImg src={svg}></DogImg>
-        <div>
-          <MyName>판매자</MyName>
-          <YouRating>열심회원</YouRating>
-          <BuyQuestion>구매문의</BuyQuestion>
-          <UpLoaddate>2022.05.04 00:27 조회 5</UpLoaddate>
-        </div>
-      </Wrapper>
-      <URLCopy>URL 복사</URLCopy>
-      <Comment>
-        댓글 <CommentCnt>0 </CommentCnt>
-      </Comment>
+      <Contents>
+        <Wrapper>
+          <DogImg src={svg}></DogImg>
+          <div>
+            <MyName>판매자</MyName>
+            <YouRating>열심회원</YouRating>
+            <BuyQuestion>구매문의</BuyQuestion>
+            <UpLoaddate>2022.05.04 00:27 조회 5</UpLoaddate>
+          </div>
+        </Wrapper>
+        <OtherDiv>
+          <URLCopy>URL 복사</URLCopy>
+          <Comment>
+            댓글 <CommentCnt>0 </CommentCnt>
+          </Comment>
+        </OtherDiv>
+      </Contents>
     </>
   );
 }
 
+const OtherDiv = styled.div`
+  height: 25px;
+  position: relative;
+  top: 30px;
+`;
+const Contents = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+`;
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -37,7 +53,7 @@ const MyName = styled.div`
   font-size: 14pt;
   font-weight: bold;
   display: inline-block;
-  margin-right: 10px;
+  margin-left: 10px;
 `;
 const YouRating = styled.div`
   font-size: 13pt;
@@ -68,8 +84,7 @@ const BuyQuestion = styled.button`
 
 const Comment = styled.div`
   font-size: 13pt;
-  display: block;
-  float: right;
+  display: inline-block;
   margin-right: 10px;
 `;
 const CommentCnt = styled.div`

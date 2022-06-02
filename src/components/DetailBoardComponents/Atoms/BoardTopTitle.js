@@ -13,7 +13,9 @@ function BoardTopTitle() {
 const TextPink = styled.div`
   font-size: 13pt;
   font-weight: bold;
-  display: inline-block;
+  display: block;
   color: #ff50e2;
+  width: 75%;
+  margin: 0 auto;
 `;
 export default BoardTopTitle;
