@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import bookmarkStar from './images/public_compoment/star_sideMenu.svg';
-import profile from './images/public_compoment/profile.svg';
-import crown from './images/public_compoment/crown.png';
-import NewIcon from './images/public_compoment/icon_New.png';
-import L_shape from './images/public_compoment/L_shape.png';
-import bottomImg from './images/public_compoment/Group 13.png';
+import bookmarkStar from '../images/public_compoment/star_sideMenu.svg';
+import profile from '../images/public_compoment/profile.svg';
+import crown from '../images/public_compoment/crown.png';
+import NewIcon from '../images/public_compoment/icon_New.png';
+import L_shape from '../images/public_compoment/L_shape.png';
+import bottomImg from '../images/public_compoment/Group 13.png';
 
 
 function Sidebar() {
