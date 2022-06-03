@@ -13,9 +13,7 @@ function BoardCostText() {
 }
 
 const StyledDiv = styled.div`
-  width: 50%;
-  position: relative;
-  left: 50%;
+  display: block;
 `;
 
 const Cost = styled.div`

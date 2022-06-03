@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function BoardImg(props) {
+function BoardIconImg(props) {
   return <StyledImg src={props.src} />;
 }
 
@@ -12,4 +12,4 @@ const StyledImg = styled.img`
   border-radius: 50%;
 `;
 
-export default BoardImg;
+export default BoardIconImg;

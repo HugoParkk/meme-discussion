@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BoardImg from "../Atoms/BoardIconImg";
+import BoardIconImg from "../Atoms/BoardIconImg";
 import BoardName from "../Atoms/BoardName";
 import BoardRating from "../Atoms/BoardRating";
 import BoardQuestion from "../Atoms/BoardQuestion";
@@ -11,7 +11,7 @@ function BoardWrap(props) {
 
   return (
     <Wrapper>
-      <BoardImg src={arr.src} />
+      <BoardIconImg src={arr.src} />
       <div>
         <BoardName text={arr.name} />
         <BoardRating text={arr.rating} />

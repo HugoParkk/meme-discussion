@@ -5,12 +5,13 @@ import BoardWrap from "./BoardWrap";
 import BoardHeaderOther from "../Molecules/BoardHeaderOther";
 
 function BoardLogin(props) {
+  const arr = props.data;
   return (
     <>
       <GlobalStyle />
       <Contents>
-        <BoardWrap data={props.data} />
-        <BoardHeaderOther cnt={props.data.cnt} />
+        <BoardWrap data={arr.data} />
+        <BoardHeaderOther cnt={arr.cnt} />
       </Contents>
     </>
   );
