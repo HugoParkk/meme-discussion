@@ -24,9 +24,6 @@ function BoardTextGroup(props) {
 }
 
 const Contents = styled.div`
-  width: 50%;
-  position: relative;
-  left: 50%;
   margin: 0;
 `;
 

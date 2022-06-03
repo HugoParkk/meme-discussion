@@ -3,10 +3,10 @@ import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 function BoardTextPlus(props) {
   return (
-    <>
+    <Text>
       <GlobalStyle />
       <Text>{props.text2}</Text>
-    </>
+    </Text>
   );
 }
 const Text = styled.div`

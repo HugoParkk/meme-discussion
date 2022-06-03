@@ -2,6 +2,7 @@ import React from "react";
 import BoardTopTitle from "../Atoms/BoardTopTitle";
 import BoardTopMainText from "../Atoms/BoardTopMaintext";
 import BoardLogin from "./BoardLogin";
+import styled from "styled-components";
 
 function BoardHeader(props) {
   const arr = props.data;

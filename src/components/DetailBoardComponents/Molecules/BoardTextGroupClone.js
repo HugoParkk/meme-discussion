@@ -6,16 +6,10 @@ import BoardTextClone from "../Atoms/BoardTextClone";
 function BoardTextGroupClone() {
   return (
     <>
-      <StyledDiv>
-        <BoardTextClone />
-        <BoardTextBtn />
-      </StyledDiv>
+      <BoardTextClone />
+      <BoardTextBtn />
     </>
   );
 }
-const StyledDiv = styled.div`
-  width: 50%;
-  position: relative;
-  left: 50%;
-`;
+
 export default BoardTextGroupClone;
