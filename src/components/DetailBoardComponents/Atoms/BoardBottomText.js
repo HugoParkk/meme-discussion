@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
-function BoardButtomText() {
+function BoardBottomText() {
   return (
     <>
       <GlobalStyle />
@@ -13,5 +13,7 @@ const Text = styled.div`
   font-size: 12pt;
   font-weight: bold;
   color: #999999;
+  position: relative;
+  left: 50%;
 `;
-export default BoardButtomText;
+export default BoardBottomText;
