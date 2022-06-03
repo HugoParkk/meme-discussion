@@ -13,7 +13,7 @@ function Footer() {
   );
 }
 
-const PageFooter = styled.div`
+const PageFooter = styled.footer`
 font-size: 12px;
 div {
   height: 190px;

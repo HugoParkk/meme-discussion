@@ -1,9 +1,9 @@
 import React from "react";
 import styled from 'styled-components';
-import headerSrc from './images/public_compoment/HeaderMain.png';
-import ChennelA from './images/public_compoment/Channel_A_Logo.png';
-import GroundX from './images/public_compoment/GroundX.jpg';
-import dongA from './images/public_compoment/dongA_daily.png';
+import headerSrc from '../images/public_compoment/HeaderMain.png';
+import ChennelA from '../images/public_compoment/Channel_A_Logo.png';
+import GroundX from '../images/public_compoment/GroundX.jpg';
+import dongA from '../images/public_compoment/dongA_daily.png';
 
 
 function Header() {

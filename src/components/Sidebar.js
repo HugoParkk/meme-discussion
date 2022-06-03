@@ -137,7 +137,7 @@ function Sidebar() {
   }
 const UpSideMenuBar = styled.div`
   position: relative;
-  left: 307px;
+  /* left: 307px; */
   width: 200px;
   /* height: 965px; */
   height: 468px;
@@ -290,7 +290,7 @@ const UpSideMenuBar = styled.div`
 
 const DownSideMenu = styled.div`
   position: relative;
-  left: 307px;
+  /* left: 307px; */
   width: 200px;
   height: 965px;
   margin-top: 25px;
@@ -374,7 +374,7 @@ const DownSideMenu = styled.div`
 const DownSideImg = styled.div`
   width: 208px;
   position: relative;
-  left: 305px;
+  // left: 305px;
   
   margin: 30px 0;
   img{
