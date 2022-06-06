@@ -8,7 +8,7 @@ function ShopBoardFoooterBtnGroup(props) {
       <GlobalStyle />
       <StyledDiv>
         {props.data.map((arr, i) => {
-          return <ShopBoardFooterBtn text={arr.text} key={i} />;
+          return <ShopBoardFooterBtn text={arr.text} key={i} num={i} />;
         })}
       </StyledDiv>
     </>
