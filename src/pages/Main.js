@@ -11,8 +11,8 @@ function Main() {
     <div>
       <Warp>
         <Header />
-        <div id="main-popup"><Popup /></div>
-        <div id="main-sidebar"><Sidebar /></div>
+        {/* <div id="main-popup"><Popup /></div> */}
+        {/* <div id="main-sidebar"><Sidebar /></div> */}
         <Footer />
       </Warp>
     </div>
