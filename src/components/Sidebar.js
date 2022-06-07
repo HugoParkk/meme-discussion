@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import bookmarkStar from './images/public_compoment/star_sideMenu.svg';
-import profile from './images/public_compoment/profile.svg';
+import bookmarkStar from '../images/public_compoment/star_sideMenu.svg';
+import profile from '../images/public_compoment/profile.svg';
 
 
 
