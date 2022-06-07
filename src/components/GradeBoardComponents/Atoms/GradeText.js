@@ -25,8 +25,10 @@ const PinkDiv = styled.div`
   padding-right: 6px;
   border-radius: 7px;
   font-size: 13pt;
-  width: 100px;
+  width: 87px;
   text-align: center;
+  margin-left: 6.5px;
+  margin-right: 6.5px;
 `;
 
 const DefaultDiv = styled.div`

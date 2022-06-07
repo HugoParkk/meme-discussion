@@ -15,8 +15,8 @@ function GradeButton(props) {
 
 const WhiteDiv = styled.div`
   width: 120px;
-  height: 40px;
-  line-height: 40px;
+  height: 38px;
+  line-height: 38px;
   text-align: center;
   background-color: white;
   border: 1px solid #cfcfcf;
@@ -27,8 +27,8 @@ const WhiteDiv = styled.div`
 
 const PinkDiv = styled.div`
   width: 120px;
-  height: 40px;
-  line-height: 40px;
+  height: 38px;
+  line-height: 38px;
   text-align: center;
   background-color: #ff50e2;
   display: inline-block;

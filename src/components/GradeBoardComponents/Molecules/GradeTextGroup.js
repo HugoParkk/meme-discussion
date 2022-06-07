@@ -24,6 +24,8 @@ function GradeTextGroup(props) {
 const StyledDiv = styled.div`
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
 `;
 
 export default GradeTextGroup;

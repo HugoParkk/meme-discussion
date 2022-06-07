@@ -20,6 +20,7 @@ const StyledBlack = styled.div`
   padding-right: 10px;
   padding-left: 10px;
   font-size: 13pt;
+  padding-top: 1.5rem;
 `;
 
 const StyledDiv = styled.div`

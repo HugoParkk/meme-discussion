@@ -16,6 +16,7 @@ const StyledDiv = styled.div`
   font-size: 13pt;
   width: 100px;
   text-align: left;
+  font-weight: bold;
 `;
 
 export default PinkAreaTitle;

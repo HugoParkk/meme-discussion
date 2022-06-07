@@ -10,6 +10,7 @@ const StyledDiv = styled.div`
   width: 75%;
   background-color: #ff50e2;
   margin: 0 auto;
+  margin-top: 3rem;
 `;
 
 export default GradeLine;

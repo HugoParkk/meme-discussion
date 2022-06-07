@@ -18,6 +18,8 @@ function GradeBoardMainTitle(props) {
 const StyledDiv = styled.div`
   margin: 0 auto;
   width: 70%;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 `;
 
 export default GradeBoardMainTitle;
