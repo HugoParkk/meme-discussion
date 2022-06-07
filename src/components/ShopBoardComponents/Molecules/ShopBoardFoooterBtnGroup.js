@@ -31,8 +31,8 @@ const Btn = styled.button`
   height: 2rem;
   color: black;
   border: #dbdbdb;
-  ${({ active }) =>
-    active &&
+  ${(props) =>
+    props.active &&
     `
     color: #ff50e2;
     background-color: white;
