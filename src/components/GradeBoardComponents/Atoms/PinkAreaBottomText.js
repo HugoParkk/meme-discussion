@@ -1,6 +1,6 @@
 import React from "react";
-import PinkAreaTitle from "../Atoms/PinkAreaTitle";
-import PinkAreaSubTitle from "../Atoms/PinkeAreaSubTitle";
+import PinkAreaTitle from "./PinkAreaTitle";
+import PinkAreaSubTitle from "./PinkeAreaSubTitle";
 
 function PinkAreaBottomText(props) {
   return (
