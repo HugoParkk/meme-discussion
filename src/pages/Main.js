@@ -12,7 +12,7 @@ function Main() {
       <Warp>
         <Header />
         {/* <div id="main-popup"><Popup /></div> */}
-        {/* <div id="main-sidebar"><Sidebar /></div> */}
+        <div id="main-sidebar"><Sidebar /></div>
         <Footer />
       </Warp>
     </div>
