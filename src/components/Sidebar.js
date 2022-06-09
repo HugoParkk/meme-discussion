@@ -1,6 +1,4 @@
 import React from 'react'
-<<<<<<< Updated upstream
-=======
 import styled from 'styled-components';
 
 import bookmarkStar from './images/public_compoment/star_sideMenu.svg';
@@ -8,14 +6,10 @@ import profile from './images/public_compoment/profile.svg';
 import crown from './images/public_compoment/crown.png';
 
 
->>>>>>> Stashed changes
 
 function Sidebar() {
   return (
     <div>
-<<<<<<< Updated upstream
-      
-=======
       <SideMenuBar>
         <div id="UpSideMenu">
           <div id="head">
@@ -45,7 +39,6 @@ function Sidebar() {
           </div>
         </div>
       </SideMenuBar>
->>>>>>> Stashed changes
     </div>
   )
 }
