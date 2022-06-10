@@ -14,7 +14,12 @@ import Card from '../images/main_page/Card.png';
 function Main() {
   return (
     <div>
+      
+
+      
+      <Warp>
       <Header />
+      <div id="main-sidebar"><Sidebar /></div>
       <MainMiddle>
         <div id="best_JJal">
           <div className="card_set">
@@ -37,11 +42,8 @@ function Main() {
 
         </div>
       </MainMiddle>
-      <Popup />
-      <Warp>
-        <Header />
         {/* <div id="main-popup"><Popup /></div> */}
-        <div id="main-sidebar"><Sidebar /></div>
+        
         <Footer />
       </Warp>
     </div>
@@ -50,7 +52,7 @@ function Main() {
 
 const MainMiddle = styled.div`
   display: flex;
-  margin: 0;
+  margin: 50px auto;
   padding: 0;
   position: relative;
   #best_JJal{
@@ -58,8 +60,9 @@ const MainMiddle = styled.div`
     height: 424px;
     background: url(${twinkle});
     
-    margin: auto;
-    border: 3px solid #ccc;
+    margin: auto 15px;
+    border: 4px solid #ccc;
+    outline: 2px solid #000;
     .card{
     margin: auto 0;
     img{
