@@ -16,12 +16,12 @@ function Text(props) {
 }
 
 const StyledABig = styled.a`
-  font-size: 13pt;
+  font-size: 12pt;
   text-decoration: none;
   color: white;
 `;
 const StyledASmall = styled.a`
-  font-size: 12pt;
+  font-size: 8pt;
   text-decoration: none;
   color: white;
 `;

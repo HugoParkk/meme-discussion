@@ -19,7 +19,7 @@ function FormBox() {
 }
 
 const StyledDiv = styled.div`
-  width: 415px;
+  width: 28rem;
   margin: 0 auto;
   padding: 5px;
   background-color: #f9f9f9;

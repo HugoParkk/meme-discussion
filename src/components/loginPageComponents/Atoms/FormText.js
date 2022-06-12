@@ -12,6 +12,7 @@ function FormText() {
 }
 
 const StyledDiv = styled.div`
+  cursor: pointer;
   font-weight: bold;
   font-size: 12pt;
   color: #cfcfcf;

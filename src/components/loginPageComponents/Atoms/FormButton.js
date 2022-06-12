@@ -12,6 +12,7 @@ function FormButton() {
 }
 
 const StyledDiv = styled.div`
+  cursor: pointer;
   font-weight: bold;
   font-size: 18pt;
   background-color: #ff50e2;

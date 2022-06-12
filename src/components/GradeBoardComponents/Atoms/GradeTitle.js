@@ -16,5 +16,7 @@ const PinkDiv = styled.div`
   width: 70%;
   margin: 0 auto;
   text-align: left;
+  margin-top: 3rem;
+  margin-bottom: 1.3rem;
 `;
 export default GradeTitle;
