@@ -6,10 +6,11 @@ function BoardName(props) {
 }
 
 const DivName = styled.div`
-  font-size: 14pt;
-  font-weight: bold;
+  font-size: 17pt;
   display: inline-block;
-  margin-left: 10px;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: -10rem;
 `;
 
 export default BoardName;

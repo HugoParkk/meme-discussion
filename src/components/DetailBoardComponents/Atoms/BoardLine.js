@@ -11,6 +11,8 @@ const StyledDiv = styled.div`
   position: relative;
   left: 50%;
   background-color: #ff50e2;
+  margin-top: -14rem;
+  margin-bottom: 12rem;
 `;
 
 export default BoardLine;

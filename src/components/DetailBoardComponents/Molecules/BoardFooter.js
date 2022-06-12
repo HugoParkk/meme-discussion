@@ -2,17 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 function BoardFooter(props) {
+  const arr = props.data;
   return (
     <>
-      {props.data.map((arr, i) => {
-        return (
-          <StyledDiv key={i}>
-            <Text type={arr.type}>{arr.text}</Text>
-            <Sub>{arr.name}</Sub>
-            <Sub>{arr.date}</Sub>
-          </StyledDiv>
-        );
-      })}
+      <StyledDiv>
+        <Text type={arr.type}>{arr.text}</Text>
+        <Sub>{arr.name}</Sub>
+        <Sub>{arr.date}</Sub>
+      </StyledDiv>
     </>
   );
 }

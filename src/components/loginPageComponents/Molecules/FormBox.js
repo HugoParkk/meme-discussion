@@ -23,7 +23,7 @@ const StyledDiv = styled.div`
   margin: 0 auto;
   padding: 5px;
   background-color: #f9f9f9;
-  border: 3px solid #cfcfcf;
+  border: 7px groove #b4b4b4;
 `;
 
 export default FormBox;

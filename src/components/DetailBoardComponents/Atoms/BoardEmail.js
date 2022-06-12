@@ -10,11 +10,12 @@ function BoardEmail() {
   );
 }
 const Email = styled.div`
+  position: absolute;
   display: inline-block;
   margin-left: 10px;
-  color: #999999;
-  font-size: 12pt;
-  font-weight: bold;
+  font-size: 17pt;
+  margin-left: 55%;
+  margin-top: -10rem;
 `;
 
 export default BoardEmail;

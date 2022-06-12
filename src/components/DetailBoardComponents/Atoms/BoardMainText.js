@@ -13,7 +13,7 @@ function BoardMainText() {
 }
 
 const Sell = styled.div`
-  font-size: 18pt;
+  font-size: 23pt;
   color: #ff50e2;
   margin-right: 10px;
   display: inline-block;
