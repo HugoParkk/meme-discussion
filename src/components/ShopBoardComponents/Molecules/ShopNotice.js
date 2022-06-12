@@ -8,17 +8,20 @@ function ShopNotice(props) {
         return (
           <>
             {arr.type === "title" ? (
-              <StyledPink>
-                <TextTitle type={arr.type}>{arr.text}</TextTitle>
+              <StyledPink key={i}>
+                <NoticeTitle>아</NoticeTitle>
+                <TextTitle>{arr.text}</TextTitle>
                 <Sub>{arr.name}</Sub>
                 <Sub>{arr.date}</Sub>
+                <Sub>{arr.cnt}</Sub>
               </StyledPink>
             ) : (
-              <StyledDiv>
+              <StyledDiv key={i}>
                 <Notice>공지</Notice>
                 <Text type={arr.type}>{arr.text}</Text>
                 <Sub>{arr.name}</Sub>
                 <Sub>{arr.date}</Sub>
+                <Sub>{arr.cnt}</Sub>
               </StyledDiv>
             )}
           </>
@@ -37,7 +40,7 @@ const StyledPink = styled.div`
 `;
 
 const TextTitle = styled.div`
-  width: 60%;
+  width: 75%;
   color: white;
   text-align: center;
 `;
@@ -51,7 +54,7 @@ const StyledDiv = styled.div`
 `;
 
 const Text = styled.div`
-  width: 60%;
+  width: 75%;
   color: white;
 `;
 
@@ -63,6 +66,13 @@ const Notice = styled.div`
   background-color: yellowgreen;
   padding: 1px 2px;
   border: 1px solid black;
+`;
+
+const NoticeTitle = styled.div`
+  background-color: yellowgreen;
+  padding: 1px 2px;
+  border: 1px solid black;
+  visibility: hidden;
 `;
 
 export default ShopNotice;
