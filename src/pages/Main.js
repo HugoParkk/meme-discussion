@@ -8,8 +8,8 @@ import Footer from '../components/Footer';
 
 //----images----
 
-import twinkle from '../images/main_page/twinkle_bg.png';
-import Card from '../images/main_page/Card.png';
+import twinkle from '../images/main_page/twinkle_bg_c.png';
+import Card from '../images/main_page/Card_a.png';
 
 function Main() {
   return (
@@ -19,9 +19,11 @@ function Main() {
       
       <Warp>
       <Header />
-      <div id="main-sidebar"><Sidebar /></div>
-      <MainMiddle>
+      <ul style={{display :'flex', listStyle:'none'}}>
+        <li><div id="main-sidebar"><Sidebar /></div></li>
+        <li><MainMiddle>
         <div id="best_JJal">
+          <div id='text' >BEST ZZAL:내가 제일 '짤'나가</div>
           <div className="card_set">
             <div className="card">
               <img src={Card} />
@@ -41,7 +43,11 @@ function Main() {
         <div id="Rank">
 
         </div>
-      </MainMiddle>
+      </MainMiddle></li>
+
+      </ul>
+      
+      
         {/* <div id="main-popup"><Popup /></div> */}
         
         <Footer />
@@ -60,27 +66,38 @@ const MainMiddle = styled.div`
     height: 424px;
     background: url(${twinkle});
     
-    margin: auto 15px;
+    margin: auto 14px;
     border: 4px solid #ccc;
     outline: 2px solid #000;
+    #text{
+      font-size: 18px;
+      font-weight: bold;
+      /* border-bottom: 2px solid #cfcfcf; */
+      padding: 10px;
+      margin-left: 10px;
+    }
     .card{
-    margin: auto 0;
+    margin: auto -12px;
     img{
-      width: 208px;
-      height: 312px;
-      
+      width: 238px;
+      height: 342px;
     }
-    .center{
-      top: 50px;
-    }
+    
+    
+    
   }
   .card_set{
     display: flex;
-    left: 50%;
-    right: 50%;
-
+    justify-content: center;
+    /* top: 50px; */
+    /* position: relative; */
+    
+    .center{
+      margin-bottom: 60px;
+        }
     
   } 
+  
   }
   
   
@@ -99,9 +116,12 @@ margin: 0 auto;
   margin: 0 100px;
 }
 #main-sidebar{
-  position: absolute;
+  position: static;
   left: 0;
 }
+`
+const ul_style = `
+  display:flex;
 `
 
 export default Main;
