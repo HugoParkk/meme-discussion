@@ -18,21 +18,23 @@ function Sidebar() {
             <img src={bookmarkStar} alt="북마크아이콘"></img>
           </div>
           <div id="tab-title">
-            <ul> 
+            <ul>
               <li>카페정보</li>
               <li id="my-activity">나의활동</li>
             </ul>
           </div>
         </div>
-        
+
         <div id="Userinfo">
           <div id="Userprofile">
             <img src={profile} alt="프로필이미지"></img>
-            <div id="Nick"><span id="gradeBox">매니저</span>&nbsp;<b>주인짱</b></div>
-            <ul id="profile-info">
-              <li>since 2002.02.02.</li>
-              <li>카페소개</li>
-            </ul>
+            <div id="UserText">
+              <div id="Nick"><span id="gradeBox">매니저</span>&nbsp;<b>주인짱</b></div>
+              <ul id="profile-info">
+                <li>since 2002.02.02.</li>
+                <li>카페소개</li>
+              </ul>
+            </div>
           </div>
 
           <div id="CafeInfo">
@@ -43,12 +45,12 @@ function Sidebar() {
                   <li><b>&nbsp;퀸</b></li>
                 </ul>
               </li>
-              <li><ul id='Invite'><li>18,936,555</li><li id='text'>초대하기</li> </ul></li>
+              <li><ul id='Invite'><li>18,936,555</li><sapn id="text">초대하기</sapn></ul></li>
               <li>
                 <ul id="CafeInformation">
-                  <li>즐겨찾는 멤버<span>3,543,257 명</span></li>
-                  <li>게시판 구독수<span>2,463,669 회</span></li>
-                  <li>우리카페앱 수<span>152,262 회</span></li>
+                  <li><a>즐겨찾는 멤버<span>3,543,257 명</span></a></li>
+                  <li><a>게시판 구독수<span>2,463,669 회</span></a></li>
+                  <li><a>우리카페앱 수<span>152,262 회</span></a></li>
                 </ul>
               </li>
             </ul>
@@ -61,86 +63,86 @@ function Sidebar() {
               </ul>
             </div>
           </div>
-        </div>        
+        </div>
       </UpSideMenuBar>
 
       <DownSideMenu>
         <div id="DownSideMenuBar">
           <div id="DownSideMenu">
-              <div id="Sidebar-search"><input></input><button>검색</button></div>
-              <div id="TotalWrite"><li>전체글보기</li><li>175,342,546</li></div>
-              <div id="MenuTitle">★ 공지사항</div>
-              <div id="MenuContent" class="noitce">
-                <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;공지사항</a>  <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;이용정책</a></li>
-                </ul>
-              </div>
-              <div id="MenuTitle">★ 신고하기/문의하기</div>
-              <div id="MenuContent">
-                <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;카페 1:1 고객센터</a></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;밈품명품 광고 문의하기</a></li>
-                </ul>
-              </div>
-              <div id="MenuTitle">밈품명품 이용팁</div>
-              <div id="MenuContent">
-                <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;슬기로운 밈품명품정보</a></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;밈품명품 공식 아카이브</a></li>
-                </ul>
-              </div>
-              <div id="MenuTitle">중나 행복나눔</div>
-              <div id="MenuContent">
-                <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;포카 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;사골짤 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;손글씨/이미지나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;어려운 이웃 사연</a>  <img src={NewIcon} alt="NewTag"></img></li>
-                </ul>
-              </div>
-              <div id="MenuTitle">밈뮤니티</div>
-              <div id="MenuContent">
-                <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;긍정거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;불량거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
-                </ul>
-              </div>
-              <div id="MenuTitle">밈품명품 회원 이벤트</div>
-              <div id="MenuContent">
-                <ul><p>이벤트</p>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;당첨자발표/종료</a></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;이벤트 신청하기</a></li>
-                </ul>
-              </div>
-              <div id="MenuTitle">밈당포 할인특구</div>
-              <div id="MenuContent">
-                <ul>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;꿀딜특구</a></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;할인특가</a>  <img src={NewIcon} alt="NewTag"></img></li>
-                  <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;짤짤이 처분</a></li>
-                </ul>
-              </div>
+            <div id="Sidebar-search"><input></input><button>검색</button></div>
+            <div id="TotalWrite"><li>전체글보기</li><li>175,342,546</li></div>
+            <div id="MenuTitle">★ 공지사항</div>
+            <div id="MenuContent" class="noitce">
+              <ul>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;공지사항</a>  <img src={NewIcon} alt="NewTag"></img></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;이용정책</a></li>
+              </ul>
+            </div>
+            <div id="MenuTitle">★ 신고하기/문의하기</div>
+            <div id="MenuContent">
+              <ul>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;카페 1:1 고객센터</a></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;밈품명품 광고 문의하기</a></li>
+              </ul>
+            </div>
+            <div id="MenuTitle">밈품명품 이용팁</div>
+            <div id="MenuContent">
+              <ul>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;슬기로운 밈품명품정보</a></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;밈품명품 공식 아카이브</a></li>
+              </ul>
+            </div>
+            <div id="MenuTitle">중나 행복나눔</div>
+            <div id="MenuContent">
+              <ul>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;포카 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;사골짤 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;손글씨/이미지나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;어려운 이웃 사연</a>  <img src={NewIcon} alt="NewTag"></img></li>
+              </ul>
+            </div>
+            <div id="MenuTitle">밈뮤니티</div>
+            <div id="MenuContent">
+              <ul>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;긍정거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;불량거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
+              </ul>
+            </div>
+            <div id="MenuTitle">밈품명품 회원 이벤트</div>
+            <div id="MenuContent">
+              <ul><p>이벤트</p>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;당첨자발표/종료</a></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;이벤트 신청하기</a></li>
+              </ul>
+            </div>
+            <div id="MenuTitle">밈당포 할인특구</div>
+            <div id="MenuContent">
+              <ul>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;꿀딜특구</a></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;할인특가</a>  <img src={NewIcon} alt="NewTag"></img></li>
+                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;짤짤이 처분</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        
+
       </DownSideMenu>
       <DownSideImg>
 
-          <img src={bottomImg} alt=""></img>
-      
+        <img src={bottomImg} alt=""></img>
+
       </DownSideImg>
-      
+
     </div>
   )
-  }
+}
 const UpSideMenuBar = styled.div`
   position: relative;
   /* left: 307px; */
   width: 200px;
   /* height: 965px; */
-  height: 468px;
+  height: 460px;
     border: 4px solid #cfcfcf;
     background: #fff;
     outline: 2px solid #000;
@@ -191,20 +193,21 @@ const UpSideMenuBar = styled.div`
   #Userprofile{
     
     font-size: 12px;
-    margin: 15px 30px;
+    margin: 15px 0 0 30px;
     img{
       float: left;
       margin-left: -20px;
       padding: 0;
     }  
-
-    #gradeBox{
+    #UserText{
+      #gradeBox{
       font-size: 10px;
       border: 1px solid #DBDBDB;
       padding: 1px 5px;
       color: darkgray;
+      }
     }
-
+    
     #Nick{   
       text-align: left;
     }
@@ -226,21 +229,20 @@ const UpSideMenuBar = styled.div`
   #CafeInfo {
     border-bottom: 1px solid #cfcfcf;
     height: 0px;
-    text-align:left;
-    
     padding: 0 7px;
-    font-size: 13px;
+    
     #Topic{
       border-bottom: 1px solid #cfcfcf;
       border-top: 1px solid #cfcfcf;
-      padding: 10px 0 10px 0;
+      padding: 15px 0;
       font-size:12px
     }
 
     #Queen {
       display: flex;
       align-items: center;
-      padding: 10px 0;
+      padding: 10px 0 5px 0;
+      font-size: 13px;
       img {
         margin-top: 5px;
       }
@@ -250,22 +252,24 @@ const UpSideMenuBar = styled.div`
       display: flex;
       justify-content:space-between;
       height: 30px;
-      font-size:14px;
-
+      font-size:15px;
+      text-align: center;
       #text{
         width: 55px;
         font-size:11px;
         color: #000AFF;
         font-weight : 600;
-      }
+        }
     }
     #CafeInformation {
+      font-size: 12px;
       span {
         float: right;
         color: #666666;
+        font-size: 13px;
       }
       li {
-        margin-bottom: 7px;
+        margin-bottom: 5px;
       }
     }
     #Btns{
