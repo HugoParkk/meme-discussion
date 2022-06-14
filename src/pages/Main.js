@@ -19,9 +19,14 @@ function Main() {
     <div>
       <Warp>
       <Header />
-      <ul style={{display :'flex', listStyle:'none'}}>
-        <li><div id="main-sidebar"><Sidebar /></div></li>
-        <li><MainMiddle>
+        <div id="public-sidebar"><Sidebar /></div>
+        <div id = "main-contents">
+        <MainTop>
+          <div id="sell_JJal"></div>
+          <div id="notice_update"></div>
+        </MainTop>
+
+        <MainMiddle>
         <div id="best_JJal">
           <div id='text' >BEST ZZAL : 내가 제일 '짤'나가 <span>더보기 <img src={plus_box}></img></span></div>
           <div className="card_set">
@@ -37,19 +42,15 @@ function Main() {
               <img src={Card} />
             </div>
           </div>
-          
-          
+
         </div>
         <div id="Rank">
        
         </div>
           </MainMiddle>
+
+          </div>
           {/* <div id="main-popup"><Popup /></div> */}
-        
-      </li>
-
-      </ul >
-
 
     {/* <div id="main-popup"><Popup /></div> */ }
     < Footer />
@@ -60,7 +61,7 @@ function Main() {
 
 const MainMiddle = styled.div`
   display: flex;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 0;
   position: relative;
   #best_JJal{
@@ -68,7 +69,7 @@ const MainMiddle = styled.div`
     height: 424px;
     background: url(${twinkle});
     
-    margin: auto 14px;
+    margin: 0 0 14px 0;
     border: 4px solid #ccc;
     outline: 2px solid #000;
     #text{
@@ -113,24 +114,37 @@ const MainMiddle = styled.div`
 `
 
 const MainTop = styled.div`
+width: 100%;
+height: 428px;
+
+#sell_JJal{
+width: 492px;
+height: 428px;
+background: #CFCFCF;
+}
+
+#notice_update{}
 `
 
 const Warp = styled.div`
 position: relative;
 width: 1080px;
 margin: 0 auto;
+
+#public-sidebar{
+  position: absolute;
+  left: 0;
+}
+
 #main-popup{
   position: absolute;
   margin: 0 100px;
 }
-#main-sidebar{
-  position: static;
-  left: 1px;
-}
+
 #main-contents{
   position: relative;
   width: 850px;
-  top: 40px;
+  top: 37.5px;
   left: 230px;
 }
 `
