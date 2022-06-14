@@ -20,7 +20,7 @@ function Main() {
       <Warp>
       <Header/>
         <div id="public-sidebar"><Sidebar /></div>
-        <div id = "public-contents">
+        <div id = "main-contents">
         <MainTop>
           <div id="sell_JJal"><img src={JJalSell}></img> </div>
           <div id="notice_update">
@@ -181,7 +181,7 @@ margin: 0 auto;
   margin: 0 100px;
 }
 
-#public-contents{
+#main-contents{
   position: relative;
   width: 850px;
   top: 37.5px;
