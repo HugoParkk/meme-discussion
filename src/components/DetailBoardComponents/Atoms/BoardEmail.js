@@ -13,7 +13,7 @@ const Email = styled.div`
   position: absolute;
   display: inline-block;
   margin-left: 10px;
-  font-size: 17pt;
+  font-size: 15pt;
   margin-left: 55%;
   margin-top: -10rem;
 `;

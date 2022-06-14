@@ -29,10 +29,10 @@ const TextBlack = styled.div`
   font-weight: bold;
   display: block;
   color: black;
-  width: 100%;
+  width: 10%;
   margin: 0 auto;
   position: absolute;
-  margin-left: 80%;
+  margin-left: 78%;
   margin-top: -10rem;
 `;
 
