@@ -8,8 +8,8 @@ import Footer from '../components/Footer';
 
 //----images----
 
-import twinkle from '../images/main_page/twinkle_bg.png';
-import Card from '../images/main_page/Card.png';
+import twinkle from '../images/main_page/twinkle_bg_c.png';
+import Card from '../images/main_page/Card_a.png';
 
 import JJalSell from '../images/main_page/JJal_sellMain.png'
 
@@ -18,14 +18,11 @@ function Main() {
     <div>
       <Warp>
         <Header />
-        <div id="main-sidebar"><Sidebar /></div>
-        <div id="main-contents">
-          <MainTop>
-            <div id="plsSell"><img src={JJalSell} alt="그짤파실래"></img></div>
-            <div id="Notice-Update"></div>
-          </MainTop>
-          <MainMiddle>
+        <ul style={{ display: 'flex', listStyle: 'none' }}>
+          <li><div id="main-sidebar"><Sidebar /></div></li>
+          <li><MainMiddle>
             <div id="best_JJal">
+              <div id='text' >BEST ZZAL:내가 제일 '짤'나가</div>
               <div className="card_set">
                 <div className="card">
                   <img src={Card} />
@@ -44,13 +41,29 @@ function Main() {
             </div>
             <div id="Rank">
 
+              <div className="card center">
+                <img src={Card} />
+              </div>
+
+              <div className="card">
+                <img src={Card} />
+              </div>
+            </div>
+            <div id="Rank">
+
             </div>
           </MainMiddle>
           {/* <div id="main-popup"><Popup /></div> */}
         </div>
-        <Footer />
-      </Warp>
-    </div>
+      </MainMiddle></li>
+
+      </ul >
+
+
+    {/* <div id="main-popup"><Popup /></div> */ }
+    < Footer />
+      </Warp >
+    </div >
   );
 }
 
@@ -64,27 +77,36 @@ const MainMiddle = styled.div`
     height: 424px;
     background: url(${twinkle});
     
-    margin: auto 15px;
+    margin: auto 14px;
     border: 4px solid #ccc;
     outline: 2px solid #000;
+    #text{
+      font-size: 18px;
+      font-weight: bold;
+      /* border-bottom: 2px solid #cfcfcf; */
+      padding: 10px;
+      margin-left: 10px;
+    }
     .card{
-    margin: auto 0;
+    margin: auto -12px;
     img{
-      width: 208px;
-      height: 312px;
-      
+      width: 238px;
+      height: 342px;
     }
-    .center{
-      top: 50px;
-    }
+
   }
   .card_set{
     display: flex;
-    left: 50%;
-    right: 50%;
-
+    justify-content: center;
+    /* top: 50px; */
+    /* position: relative; */
+    
+    .center{
+      margin-bottom: 60px;
+        }
     
   } 
+  
   }
   
   #Rank{
@@ -116,6 +138,9 @@ margin: 0 auto;
   top: 40px;
   left: 230px;
 }
+`
+const ul_style = `
+  display:flex;
 `
 
 export default Main;

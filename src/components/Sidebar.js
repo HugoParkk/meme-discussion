@@ -302,6 +302,10 @@ const DownSideMenu = styled.div`
   background: #fff;
   outline: 2px solid #000;
 
+  a{
+    text-decoration: none;
+    color: #000;
+  }
   ul{
     padding: 0;
   }
