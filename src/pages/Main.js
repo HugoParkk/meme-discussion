@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Header from '../components/Header';
-import Popup from '../components/Popup';
+// import Popup from '../components/Popup';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 
@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 
 import twinkle from '../images/main_page/twinkle_bg_c.png';
 import Card from '../images/main_page/Card_a.png';
+import plus_box from '../images/main_page/plus_box.png';
 
 function Main() {
   return (
@@ -23,7 +24,7 @@ function Main() {
         <li><div id="main-sidebar"><Sidebar /></div></li>
         <li><MainMiddle>
         <div id="best_JJal">
-          <div id='text' >BEST ZZAL:내가 제일 '짤'나가</div>
+          <div id='text' >BEST ZZAL : 내가 제일 '짤'나가 <span>더보기 <img src={plus_box}></img></span></div>
           <div className="card_set">
             <div className="card">
               <img src={Card} />
@@ -71,13 +72,18 @@ const MainMiddle = styled.div`
     outline: 2px solid #000;
     #text{
       font-size: 18px;
-      font-weight: bold;
+
       /* border-bottom: 2px solid #cfcfcf; */
       padding: 10px;
       margin-left: 10px;
+      span{
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 325px;
+      }
     }
     .card{
-    margin: auto -12px;
+    margin: auto -8px;
     img{
       width: 238px;
       height: 342px;
@@ -117,11 +123,9 @@ margin: 0 auto;
 }
 #main-sidebar{
   position: static;
-  left: 0;
+  left: 1px;
 }
 `
-const ul_style = `
-  display:flex;
-`
+
 
 export default Main;
