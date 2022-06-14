@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 //----images----
 
 import twinkle from '../images/main_page/twinkle_bg_c.png';
-import Card from '../images/main_page/Card_a.png';
+import Card from '../images/main_page/Card_d.png';
 import plus_box from '../images/main_page/plus_box.png';
 
 import JJalSell from '../images/main_page/JJal_sellMain.png'
@@ -41,11 +41,13 @@ function Main() {
           
         </div>
         <div id="Rank">
-       
+              
+
+
         </div>
+            
           </MainMiddle>
           {/* <div id="main-popup"><Popup /></div> */}
-        
       </li>
 
       </ul >
@@ -54,7 +56,7 @@ function Main() {
     {/* <div id="main-popup"><Popup /></div> */ }
     < Footer />
       </Warp >
-    </div >
+    </div>
   );
 }
 
@@ -84,7 +86,7 @@ const MainMiddle = styled.div`
       }
     }
     .card{
-    margin: auto -8px;
+    margin: auto -16px;
     img{
       width: 238px;
       height: 342px;
@@ -124,8 +126,9 @@ margin: 0 auto;
   margin: 0 100px;
 }
 #main-sidebar{
-  position: static;
-  left: 1px;
+  position: absolute;
+  display: block;
+  left: 0;
 }
 #main-contents{
   position: relative;
