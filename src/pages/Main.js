@@ -18,12 +18,26 @@ function Main() {
   return (
     <div>
       <Warp>
-      <Header />
+      <Header/>
         <div id="public-sidebar"><Sidebar /></div>
-        <div id = "main-contents">
+        <div id = "public-contents">
         <MainTop>
-          <div id="sell_JJal"></div>
-          <div id="notice_update"></div>
+          <div id="sell_JJal"><img src={JJalSell}></img> </div>
+          <div id="notice_update">
+            <div class="title"></div>
+            <div id="listEmptySpace">
+              <ul>
+                <li><button>공지</button><span>209</span></li>
+                <li><button>공지</button><span>209</span></li>
+                <li><button>공지</button><span>209</span></li>
+              </ul>
+            </div>
+            <ul>
+              <li><span>209</span></li>
+              <li><span>209</span></li>
+              <li><span>209</span></li>
+            </ul>
+          </div>
         </MainTop>
 
         <MainMiddle>
@@ -53,7 +67,7 @@ function Main() {
           {/* <div id="main-popup"><Popup /></div> */}
 
     {/* <div id="main-popup"><Popup /></div> */ }
-    < Footer />
+    <Footer id="public-footer"/>
       </Warp >
     </div >
   );
@@ -116,38 +130,67 @@ const MainMiddle = styled.div`
 const MainTop = styled.div`
 width: 100%;
 height: 428px;
+position: relative;
 
 #sell_JJal{
 width: 492px;
-height: 428px;
+height: 100%;
+position: absolute;
+left: 0;
 background: #CFCFCF;
+
+  img{
+    padding: 5px 0 0 5px;
+  }
 }
 
-#notice_update{}
+#notice_update{
+  width: 338px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: #FF05E2;
+  #listEmptySpace{
+    height: 100px;
+
+    ul{
+      position: absolute;
+      list-style: none; left:-10px;
+      li{
+        padding: 5px 0;
+      }
+    }
+  }
+}
 `
 
 const Warp = styled.div`
+/*여기에 public의 코드는 공통 컴포넌트로 넘길 생각 중 */
 position: relative;
 width: 1080px;
 margin: 0 auto;
+/* min-height: 100vh; */
 
 #public-sidebar{
   position: absolute;
   left: 0;
 }
 
-#main-popup{
+#public-popup{
   position: absolute;
   margin: 0 100px;
 }
 
-#main-contents{
+#public-contents{
   position: relative;
   width: 850px;
   top: 37.5px;
   left: 230px;
 }
-`
 
+#public-footer{
+  position: absolute;
+}
+`
 
 export default Main;
