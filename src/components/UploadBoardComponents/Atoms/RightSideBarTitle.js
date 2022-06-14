@@ -5,13 +5,26 @@ function RightSideBarTitle(props) {
   return (
     <>
       <GlobalStyle />
-      <Text>{props.Text}</Text>
+      {props.type === "pink" ? (
+        <>
+          <PinkText>{props.text}</PinkText>
+        </>
+      ) : (
+        <>
+          <Text>{props.text}</Text>
+        </>
+      )}
     </>
   );
 }
 const Text = styled.div`
   font-size: 13pt;
   font-weight: bold;
-  display: inline;
+`;
+
+const PinkText = styled.div`
+  font-size: 13pt;
+  font-weight: bold;
+  color: #ff50e2;
 `;
 export default RightSideBarTitle;
