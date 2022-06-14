@@ -12,12 +12,11 @@ import twinkle from '../images/main_page/twinkle_bg_c.png';
 import Card from '../images/main_page/Card_a.png';
 import plus_box from '../images/main_page/plus_box.png';
 
+import JJalSell from '../images/main_page/JJal_sellMain.png'
+
 function Main() {
   return (
     <div>
-      
-
-      
       <Warp>
       <Header />
       <ul style={{display :'flex', listStyle:'none'}}>
@@ -42,18 +41,20 @@ function Main() {
           
         </div>
         <div id="Rank">
-
+       
         </div>
-      </MainMiddle></li>
-
-      </ul>
-      
-      
-        {/* <div id="main-popup"><Popup /></div> */}
+          </MainMiddle>
+          {/* <div id="main-popup"><Popup /></div> */}
         
-        <Footer />
-      </Warp>
-    </div>
+      </li>
+
+      </ul >
+
+
+    {/* <div id="main-popup"><Popup /></div> */ }
+    < Footer />
+      </Warp >
+    </div >
   );
 }
 
@@ -88,9 +89,7 @@ const MainMiddle = styled.div`
       width: 238px;
       height: 342px;
     }
-    
-    
-    
+
   }
   .card_set{
     display: flex;
@@ -106,13 +105,16 @@ const MainMiddle = styled.div`
   
   }
   
-  
   #Rank{
     width: 172px;
     height: 432px;
     background: magenta;
   }
 `
+
+const MainTop = styled.div`
+`
+
 const Warp = styled.div`
 position: relative;
 width: 1080px;
@@ -124,6 +126,12 @@ margin: 0 auto;
 #main-sidebar{
   position: static;
   left: 1px;
+}
+#main-contents{
+  position: relative;
+  width: 850px;
+  top: 40px;
+  left: 230px;
 }
 `
 
