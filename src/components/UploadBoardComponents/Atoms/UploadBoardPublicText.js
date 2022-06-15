@@ -5,12 +5,14 @@ function UploadBoardPublicText() {
   return (
     <>
       <GlobalStyle />
-      <Text>{"공개설정 "}</Text>
+      <Text>{`공개설정 `}</Text>
     </>
   );
 }
 const Text = styled.div`
   font-size: 13pt;
   font-weight: bold;
+  margin-bottom: 5px;
 `;
+
 export default UploadBoardPublicText;
