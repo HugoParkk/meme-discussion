@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Header from "../components/Header";
-// import Popup from '../components/Popup';
+// import Popup from "../components/Popup";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 
@@ -19,59 +19,82 @@ import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBar
 function Main() {
   return (
     <div>
-      {/* <Warp>
-      <Header/>
-        <div id="public-sidebar"><Sidebar /></div>
-        <div id = "main-contents">
-        <MainTop>
-          <div id="sell_JJal"><img src={JJalSell}></img> </div>
-          <div id="notice_update">
-            <div class="title"></div>
-            <div id="listEmptySpace">
+      <Warp>
+        <Header />
+        <div id="public-sidebar">
+          <Sidebar />
+        </div>
+        <div id="main-contents">
+          <MainTop>
+            <div id="sell_JJal">
+              <img src={JJalSell}></img>{" "}
+            </div>
+            <div id="notice_update">
+              <div class="title"></div>
+              <div id="listEmptySpace">
+                <ul>
+                  <li>
+                    <button>공지</button>
+                    <span>209</span>
+                  </li>
+                  <li>
+                    <button>공지</button>
+                    <span>209</span>
+                  </li>
+                  <li>
+                    <button>공지</button>
+                    <span>209</span>
+                  </li>
+                </ul>
+              </div>
               <ul>
-                <li><button>공지</button><span>209</span></li>
-                <li><button>공지</button><span>209</span></li>
-                <li><button>공지</button><span>209</span></li>
+                <li>
+                  <span>209</span>
+                </li>
+                <li>
+                  <span>209</span>
+                </li>
+                <li>
+                  <span>209</span>
+                </li>
               </ul>
             </div>
-            <ul>
-              <li><span>209</span></li>
-              <li><span>209</span></li>
-              <li><span>209</span></li>
-            </ul>
-          </div>
-        </MainTop>
+          </MainTop>
 
-        <MainMiddle>
-        <div id="best_JJal">
-          <div id='text' >BEST ZZAL : 내가 제일 '짤'나가 <span>더보기 <img src={plus_box}></img></span></div>
-          <div className="card_set">
-            <div className="card">
-              <img src={Card} />
-            </div>
-          
-            <div className="card center">
-              <img src={Card} />
-            </div>
-          
-            <div className="card">
-              <img src={Card} />
-            </div>
-          </div>
+          <MainMiddle>
+            <div id="best_JJal">
+              <div id="text">
+                BEST ZZAL : 내가 제일 '짤'나가{" "}
+                <span>
+                  더보기 <img src={plus_box}></img>
+                </span>
+              </div>
+              <div className="card_set">
+                <div className="card">
+                  <img src={Card} />
+                </div>
 
-        </div>
-        <div id="Rank">
-       
-        </div>
+                <div className="card center">
+                  <img src={Card} />
+                </div>
+
+                <div className="card">
+                  <img src={Card} />
+                </div>
+              </div>
+            </div>
+            <div id="Rank"></div>
           </MainMiddle>
+        </div>
+        {/* <div id="main-popup">
+          <Popup />
+        </div> */}
 
-          </div> */}
-      {/* <div id="main-popup"><Popup /></div> */}
-
-      {/* <div id="main-popup"><Popup /></div> */}
-      {/* <Footer id="public-footer"/>
-      </Warp > */}
-      <SideBarUpload />
+        {/* <div id="main-popup">
+          <Popup />
+        </div> */}
+        <Footer id="public-footer" />
+      </Warp>
     </div>
   );
 }
