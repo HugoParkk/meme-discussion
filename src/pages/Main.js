@@ -2,14 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Header from '../components/Header';
-// import Popup from '../components/Popup';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 
 //----images----
 
 import twinkle from '../images/main_page/twinkle_bg_c.png';
-import Card from '../images/main_page/Card_d.png';
+import Card from '../images/main_page/Card_e.png';
 import plus_box from '../images/main_page/plus_box.png';
 
 import JJalSell from '../images/main_page/JJal_sellMain.png'
@@ -67,12 +66,8 @@ function Main() {
           </MainMiddle>
 
           </div>
-          {/* <div id="main-popup"><Popup /></div> */}
 
-
-
-    {/* <div id="main-popup"><Popup /></div> */ }
-    <Footer id="public-footer"/>
+      <Footer id="public-footer"/>
       </Warp >
     </div>
   );
@@ -94,7 +89,7 @@ const MainMiddle = styled.div`
     #text{
       font-size: 18px;
 
-      /* border-bottom: 2px solid #cfcfcf; */
+
       padding: 10px;
       margin-left: 10px;
       span{
@@ -106,8 +101,8 @@ const MainMiddle = styled.div`
     .card{
     margin: auto -16px;
     img{
-      width: 238px;
-      height: 342px;
+      width: 248px;
+      height: 352px;
     }
 
   }
@@ -190,6 +185,7 @@ margin: 0 auto;
   width: 850px;
   top: 37.5px;
   left: 230px;
+  
 } 
 
 #public-footer{
