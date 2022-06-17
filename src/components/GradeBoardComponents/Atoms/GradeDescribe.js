@@ -21,6 +21,8 @@ const PinkSpan = styled.span`
   font-weight: bold;
   display: inline-block;
   color: #ff50e2;
+  
+  
 `;
 const StyledText = styled.div`
   font-size: 13pt;

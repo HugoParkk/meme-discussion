@@ -6,7 +6,7 @@ function BoardFooterList(props) {
   return (
     <StyledDiv>
       {props.data.map((arr, i) => {
-        return <BoardFooter data={arr} />;
+        return <BoardFooter data={arr} key={i} />;
       })}
     </StyledDiv>
   );

@@ -12,10 +12,11 @@ function Title() {
 }
 
 const StyledDiv = styled.div`
+  margin-bottom: 2em;
   font-weight: bold;
   font-size: 22pt;
   text-align: center;
-  color: white;
+  color: black;
 `;
 
 export default Title;

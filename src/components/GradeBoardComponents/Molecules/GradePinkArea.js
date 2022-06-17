@@ -23,7 +23,8 @@ const StyledDiv = styled.div`
   width: 75%;
   margin: 0 auto;
   padding: 20px 2%;
-  background: pink;
+  background: #FFF4FD;
+  margin-top: 3rem;
 `;
 
 export default GradePinkArea;
