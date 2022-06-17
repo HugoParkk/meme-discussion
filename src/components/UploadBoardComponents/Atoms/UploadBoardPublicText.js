@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
-function UploadBoardPublicText() {
+function UploadBoardPublicText(props) {
   return (
     <>
       <GlobalStyle />
-      <Text>{`공개설정 `}</Text>
+      <Text>{props.text}</Text>
     </>
   );
 }
