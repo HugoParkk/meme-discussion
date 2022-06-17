@@ -12,8 +12,13 @@ import Card from '../images/main_page/Card_e.png';
 import plus_box from '../images/main_page/plus_box.png';
 
 import JJalSell from "../images/main_page/JJal_sellMain.png";
-// import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
-// import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
+import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
+import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
+
+import phone from '../images/main_page/card_phone.jpg';
+import dosa from '../images/main_page/card_dosa.jpg';
+import heart from '../images/main_page/jinyoung_heart.png';
+
 
 function Main() {
   return (
@@ -70,19 +75,29 @@ function Main() {
               </div>
               <div className="card_set">
                 <div className="card">
+                  <div id="name">짤 이름</div>
+                  <div id="car_img"><img src={phone}/></div>
                   <img src={Card} />
                 </div>
 
                 <div className="card center">
+                <div id="name">짤 이름</div>
+                <div id="car_img"><img src={heart}/></div>
                   <img src={Card} />
                 </div>
 
                 <div className="card">
+                <div id="name">짤 이름</div>
+                  <div id="car_img"><img src={dosa}/></div>
                   <img src={Card} />
                 </div>
               </div>
             </div>
-            <div id="Rank"></div>
+            <div id="Rank">
+              <div  id="title">
+                
+              </div>
+            </div>
           </MainMiddle>
         </div>
         {/* <div id="main-popup">
@@ -122,27 +137,54 @@ const MainMiddle = styled.div`
     }
     .card{
     margin: auto -16px;
-    img{
-      width: 248px;
-      height: 352px;
+    #name{
+      position: absolute;
+      box-sizing: border-box;
+      margin-left: 100px;
+      margin-top: 53px;
+      color: #fff;
     }
+    img{
+      
+      width: 248px;
+      height: 362px;
+    }
+    #car_img{
+      margin: 89px 44px;
+      width: 155px;
+      height: 155px;
+      position: absolute;
+      background-color: #d9d9d9;
+      border: 3px solid #838383;
+      outline: 2px solid #000000;
+      img{
+        width: 141px;
+        height: 141px;
+        margin: 4px 4px;
+        border: 3px solid #838383;
+        outline: 2px solid #515151;
+      }
+    }
+  }
     .card_set {
       display: flex;
       justify-content: center;
+      margin-top:-12px;
       /* top: 50px; */
       /* position: relative; */
 
       .center {
-        margin-bottom: 60px;
+        margin-bottom: 80px;
       }
     }
   }
-}
+
 
   #Rank {
-    width: 172px;
+    width: 152px;
     height: 432px;
     background: magenta;
+    margin-left: 20px;
   }
 `
 
@@ -185,28 +227,11 @@ const MainTop = styled.div`
 `;
 
 const Warp = styled.div`
-/*여기에 public의 코드는 공통 컴포넌트로 넘길 생각 중 */
-position: relative;
-width: 1080px;
-margin: 0 auto;
-/* min-height: 100vh; */
-
-#public-sidebar{
-  position: absolute;
-  left: 0;
-}
-
-#public-popup{
-  position: absolute;
-  margin: 0 100px;
-}
-#main-contents{
+  /*여기에 public의 코드는 공통 컴포넌트로 넘길 생각 중 */
   position: relative;
-  width: 850px;
-  top: 37.5px;
-  left: 230px;
-  
-} 
+  width: 1080px;
+  margin: 0 auto;
+  /* min-height: 100vh; */
 
   #public-sidebar {
     position: absolute;
