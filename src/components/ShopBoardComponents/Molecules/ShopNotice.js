@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 function ShopNotice(props) {
   return (
-    <>
+    <Wrap>
       {props.data.map((arr, i) => {
         return (
-          <>
+          <div key={i}>
             {arr.type === "title" ? (
-              <StyledPink key={i}>
+              <StyledPink>
                 <NoticeTitle>아</NoticeTitle>
                 <TextTitle>{arr.text}</TextTitle>
                 <Sub>{arr.name}</Sub>
@@ -16,7 +16,7 @@ function ShopNotice(props) {
                 <Sub>{arr.cnt}</Sub>
               </StyledPink>
             ) : (
-              <StyledDiv key={i}>
+              <StyledDiv>
                 <Notice>공지</Notice>
                 <Text type={arr.type}>{arr.text}</Text>
                 <Sub>{arr.name}</Sub>
@@ -24,12 +24,18 @@ function ShopNotice(props) {
                 <Sub>{arr.cnt}</Sub>
               </StyledDiv>
             )}
-          </>
+          </div>
         );
       })}
-    </>
+    </Wrap>
   );
 }
+
+const Wrap = styled.div`
+  margin: 0 auto;
+  width: 70%;
+  border: 5px solid hotpink;
+`;
 
 const StyledPink = styled.div`
   display: flex;

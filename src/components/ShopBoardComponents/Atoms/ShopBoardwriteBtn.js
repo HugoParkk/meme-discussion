@@ -5,7 +5,7 @@ function ShopBoardwriteBtn() {
   return (
     <>
       <Btn>
-        <Image src={svg} />
+        <Image src={svg} /> 글쓰기
       </Btn>
     </>
   );
@@ -16,6 +16,8 @@ const Btn = styled.button`
   border: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  top: 60px;
 `;
 const Image = styled.img`
   width: 100px;

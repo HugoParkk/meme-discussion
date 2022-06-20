@@ -10,7 +10,7 @@ function ShopBoardFoooterBtnGroup(props) {
         {props.data.map((arr, i) => {
           return (
             <Btn key={i} active={active === i} onClick={() => setActive(i)}>
-              {arr.text}
+              {arr}
             </Btn>
           );
         })}
@@ -21,6 +21,8 @@ function ShopBoardFoooterBtnGroup(props) {
 const StyledDiv = styled.div`
   text-align: center;
   display: inline-block;
+  position: relative;
+  top: 30px;
 `;
 
 const Btn = styled.button`

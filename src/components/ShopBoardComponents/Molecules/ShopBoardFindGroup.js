@@ -16,6 +16,8 @@ function ShopBoardFindGroup() {
 const Wrapper = styled.div`
   display: inline-flex;
   align-items: center;
+  position: relative;
+  top: 50px;
 `;
 
 export default ShopBoardFindGroup;

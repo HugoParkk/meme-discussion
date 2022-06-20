@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ShopBoardMain from "../Molcules/ShopBoardMain";
+import ShopBoardMain from "../Molecules/ShopBoardMain";
 
 function ShopBoardMainList(props) {
   return (
@@ -13,9 +13,11 @@ function ShopBoardMainList(props) {
 }
 
 const Wrap = styled.div`
-  width: 50rem;
-  margin: 10px;
+  width: 70%;
   display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 export default ShopBoardMainList;
