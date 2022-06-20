@@ -1,11 +1,11 @@
 import React from "react";
 import GlobalStyle from "../GlobalStyle";
 import styled from "styled-components";
-function FooterPostText() {
+function FooterPostText(props) {
   return (
     <>
       <GlobalStyle />
-      <Text>짤 설명 사진</Text>
+      <Text>{props.text}</Text>
     </>
   );
 }
@@ -14,5 +14,10 @@ const Text = styled.div`
   display: inline-block;
   font-size: 13pt;
   font-weight: bold;
+  width: 95%;
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
 `;
+
 export default FooterPostText;

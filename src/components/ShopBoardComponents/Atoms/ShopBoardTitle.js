@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function SoptBoardTitle(props) {
+function ShopBoardTitle(props) {
   return (
     <>
       {props.type === "black" ? (
@@ -27,4 +27,4 @@ const PinkDiv = styled.div`
   font-weight: bold;
 `;
 
-export default SoptBoardTitle;
+export default ShopBoardTitle;
