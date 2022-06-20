@@ -20,42 +20,25 @@ function Main() {
     <div>
       <Warp>
         <Header />
-        <div id="public-sidebar">
-          <Sidebar />
-        </div>
+        <Sidebar />
         <div id="main-contents">
           <MainTop>
             <div id="sell_JJal">
-              <img src={JJalSell}></img>{" "}
+              <img src={JJalSell}></img>
             </div>
             <div id="notice_update">
-              <div class="title"></div>
+              <div class="title">공지 및 업데이트<sapn>더보기 <img src={plus_box}></img></sapn></div>
               <div id="listEmptySpace">
                 <ul>
-                  <li>
-                    <button>공지</button>
-                    <span>209</span>
-                  </li>
-                  <li>
-                    <button>공지</button>
-                    <span>209</span>
-                  </li>
-                  <li>
-                    <button>공지</button>
-                    <span>209</span>
-                  </li>
+                  <li><button>공지</button> 출석미션 보상받기 오류 해결 완료되...&#91;6&#93;<span class="ViewNum">209</span></li>
+                  <li><button>공지</button> 출석미션 보상받기 오류 해결 완료되...&#91;6&#93;<span class="ViewNum">209</span></li>
+                  <li><button>공지</button> 출석미션 보상받기 오류 해결 완료되...&#91;6&#93;<span class="ViewNum">209</span></li>
                 </ul>
               </div>
               <ul>
-                <li>
-                  <span>209</span>
-                </li>
-                <li>
-                  <span>209</span>
-                </li>
-                <li>
-                  <span>209</span>
-                </li>
+                <li>출석미션 보상받기 오류 해결 완료되...<span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
+                <li>출석미션 보상받기 오류 해결 완료되...<span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
+                <li>출석미션 보상받기 오류 해결 완료되...<span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
               </ul>
             </div>
           </MainTop>
@@ -152,7 +135,7 @@ const MainTop = styled.div`
   position: relative;
 
   #sell_JJal {
-    width: 492px;
+    width: 490px;
     height: 100%;
     position: absolute;
     left: 0;
@@ -164,25 +147,46 @@ const MainTop = styled.div`
   }
 
   #notice_update {
-    width: 338px;
+    width: 360px;
     height: 100%;
     position: absolute;
     right: 0;
     background: #ff05e2;
+    color: #FFFFFF;
+
+    #title{
+      font-size: 18px;
+      font-weight: 600;
+      span{
+        font-size: 12px;
+      }
+    }
+
     #listEmptySpace {
       height: 100px;
 
       ul {
         position: absolute;
         list-style: none;
-        left: -10px;
+        left: -18px;
         li {
-          padding: 5px 0;
+          button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    ul{
+      left: -7px;
+      li{
+        font-size: 13px;
+        padding: 5px 0;
         }
       }
     }
   }
-`;
+`
 
 const Warp = styled.div`
 /*여기에 public의 코드는 공통 컴포넌트로 넘길 생각 중 */
@@ -191,39 +195,22 @@ width: 1080px;
 margin: 0 auto;
 /* min-height: 100vh; */
 
-#public-sidebar{
-  position: absolute;
-  left: 0;
-}
-
 #public-popup{
   position: absolute;
   margin: 0 100px;
 }
-#main-contents{
-  position: relative;
-  width: 850px;
-  top: 37.5px;
-  left: 230px;
-  
-} 
 
   #public-sidebar {
-    position: absolute;
+    display: inline;
     left: 0;
   }
 
-  #public-popup {
-    position: absolute;
-    margin: 0 100px;
-  }
-
   #main-contents {
-    position: relative;
-    width: 850px;
-    top: 37.5px;
-    left: 230px;
-  }
+    /* position: absolute; */
+    width: 865px;
+    /* top: 238px; */
+  } 
+  
 
   #public-footer {
     position: absolute;
