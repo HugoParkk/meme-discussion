@@ -16,12 +16,12 @@ function BoardTextBtn() {
 }
 
 const StyledDiv = styled.div`
-  width: 400px;
+  width: 500px;
   display: inline-block;
 `;
 
 const PinkBox = styled.button`
-  font-size: 12pt;
+  font-size: 15pt;
   display: inline-block;
   font-weight: bold;
   padding: 3px 6px;

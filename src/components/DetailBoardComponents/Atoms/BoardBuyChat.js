@@ -15,8 +15,10 @@ function BoardBuyChat() {
 const ChatBtn = styled.button`
   border-radius: 7px;
   position: relative;
-  left: 50%;
-  width: 37.5%;
+  margin-left: 49.5%;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  width: 38%;
   border: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
