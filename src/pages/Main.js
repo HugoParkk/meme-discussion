@@ -41,260 +41,263 @@ function Main() {
     <div>
       <Warp>
         <Header />
-        <Sidebar id="public-sidebar"/>
-        <div id="main-contents">
-          <MainTop>
-            <div id="sell_JJal">
-              <img src={JJalSell}></img>
-            </div>
-            <div id="noticeUpdate">
-              <div class="noticeUpdate">
-                <div id="noticeTitle">
-                  <ul>
-                    <li><a class="noticeText">공지 및 업데이트</a></li>
-                    <li><a class="noticePlus">더보기&nbsp;&nbsp;&nbsp;<img src={Plus}></img></a></li>
-                  </ul>
-                </div>
-                <div id="noticeContent">
-                  <div id="listEmptySpace">
+        <Assembler>
+          <Sidebar id="public-sidebar" />
+
+          <div id="main-contents">
+            <MainTop>
+              <div id="sell_JJal"><img src={JJalSell}></img></div>
+              <div id="noticeUpdate">
+                <div class="noticeUpdate">
+                  <div id="noticeTitle">
                     <ul>
-                      <li><button>공지</button>&nbsp;&nbsp;&nbsp;<a>출석미션 보상받기 오류 해결 완료되...&#91;6&#93;</a><span>209</span></li>
-                      <li><button>공지</button>&nbsp;&nbsp;&nbsp;<a>출석미션 보상받기 오류 해결 완료되...&#91;6&#93;</a><span>209</span></li>
-                      <li><button>공지</button>&nbsp;&nbsp;&nbsp;<a>출석미션 보상받기 오류 해결 완료되...&#91;6&#93;</a><span>209</span></li>
+                      <li><a class="noticeText">공지 및 업데이트</a></li>
+                      <li><a class="noticePlus">더보기&nbsp;&nbsp;&nbsp;<img src={Plus}></img></a></li>
                     </ul>
                   </div>
-                  <div id="listBasic">
+                  <div id="noticeContent">
+                    <div id="listEmptySpace">
+                      <ul>
+                        <li><button>공지</button>&nbsp;&nbsp;<a>출석미션 보상받기 오류 해결 완료되...&#91;6&#93;</a><span>209</span></li>
+                        <li><button>공지</button>&nbsp;&nbsp;<a>출석미션 보상받기 오류 해결 완료되...&#91;6&#93;</a><span>209</span></li>
+                        <li><button>공지</button>&nbsp;&nbsp;<a>출석미션 보상받기 오류 해결 완료되...&#91;6&#93;</a><span>209</span></li>
+                      </ul>
+                    </div>
+                    <div id="listBasic">
+                      <ul>
+                        <li><a>출석미션 보상받기 오류 해결 완료되...</a><span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
+                        <li><a>출석미션 보상받기 오류 해결 완료되...</a><span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
+                        <li><a>출석미션 보상받기 오류 해결 완료되...</a><span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </MainTop>
+
+            <MainMiddle>
+              <div id="best_JJal">
+                <div id="text">
+                  BEST ZZAL : 내가 제일 '짤'나가{" "}
+                  <span>
+                    더보기 <img src={plus_box}></img>
+                  </span>
+                </div>
+                <div className="card_set">
+                  <div className="card">
+                    <div id="name">짤 이름</div>
+                    <div id="car_img"><img src={phone} /></div>
+
+                    <div id="lorem">짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 </div>
+                    <img src={Card} />
+                  </div>
+
+                  <div className="card center">
+                    <div id="name">짤 이름</div>
+                    <div id="car_img"><img src={heart} /></div>
+                    <div id="lorem">짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 </div>
+                    <img src={Card} />
+                  </div>
+
+                  <div className="card">
+                    <div id="name">짤 이름</div>
+                    <div id="car_img"><img src={dosa} /></div>
+                    <div id="lorem">짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 </div>
+                    <img src={Card} />
+                  </div>
+                </div>
+              </div>
+              <div id="Rank">
+                <div id="title">
+                  <img src={mimgi}></img>
+                </div>
+                <ul id="ran">
+                  <li class="lv1">
                     <ul>
-                      <li><a>출석미션 보상받기 오류 해결 완료되...</a><span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
-                      <li><a>출석미션 보상받기 오류 해결 완료되...</a><span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
-                      <li><a>출석미션 보상받기 오류 해결 완료되...</a><span class="YellowText">&#91;6&#93;</span><span class="ViewNum">209</span></li>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
                     </ul>
-                  </div>
-                </div>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                  <li class="lv1">
+                    <ul>
+                      <li id="number">1.</li>
+                      <li>떡고짤</li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </MainTop>
+            </MainMiddle>
 
-          <MainMiddle>
-            <div id="best_JJal">
-              <div id="text">
-                BEST ZZAL : 내가 제일 '짤'나가{" "}
-                <span>
-                  더보기 <img src={plus_box}></img>
-                </span>
-              </div>
-              <div className="card_set">
-                <div className="card">
-                  <div id="name">짤 이름</div>
-                  <div id="car_img"><img src={phone} /></div>
-
-                  <div id="lorem">짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 </div>
-                  <img src={Card} />
+            <MainBottom>
+              <div class="leftContent">
+                <div class="mainTitle">
+                  <p class="title">짤랑이 거래 ~~ 여기는 짤장터</p>
+                  <p class="view-more"><b>더보기</b><img src={Plus} /></p>
                 </div>
-
-                <div className="card center">
-                  <div id="name">짤 이름</div>
-                  <div id="car_img"><img src={heart} /></div>
-                  <div id="lorem">짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 </div>
-                  <img src={Card} />
-                </div>
-
-                <div className="card">
-                  <div id="name">짤 이름</div>
-                  <div id="car_img"><img src={dosa} /></div>
-                  <div id="lorem">짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 짤 설명 </div>
-                  <img src={Card} />
-                </div>
-              </div>
-            </div>
-            <div id="Rank">
-              <div id="title">
-                <img src={mimgi}></img>
-              </div>
-              <ul id="ran">
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-                <li class="lv1">
-                  <ul>
-                    <li id="number">1.</li>
-                    <li>떡고짤</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </MainMiddle>
-          <MainBottom>
-            <div class="leftContent">
-              <div class="mainTitle">
-                <p class="title">짤랑이 거래 ~~ 여기는 짤장터</p>
-                <p class="view-more"><b>더보기</b><img src={Plus} /></p>
-              </div>
-              <hr></hr>
-              <div class="post_content">
-                <div class="top_content">
-                  <div class="post">
-                    <img src={Gost}></img>
-                    <div>
-                      <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
-                      <p>쿠크다스</p>
-                      <p>22.05.22 조회 145</p>
+                <hr></hr>
+                <div class="post_content">
+                  <div class="top_content">
+                    <div class="post">
+                      <img src={Gost}></img>
+                      <div>
+                        <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
+                        <p>쿠크다스</p>
+                        <p>22.05.22 조회 145</p>
+                      </div>
+                    </div>
+                    <div class="post">
+                      <img src={Peace}></img>
+                      <div>
+                        <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
+                        <p>쿠크다스</p>
+                        <p>22.05.22 조회 145</p>
+                      </div>
+                    </div>
+                    <div class="post">
+                      <img src={Cat}></img>
+                      <div>
+                        <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
+                        <p>쿠크다스</p>
+                        <p>22.05.22 조회 145</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="post">
-                    <img src={Peace}></img>
-                    <div>
-                      <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
-                      <p>쿠크다스</p>
-                      <p>22.05.22 조회 145</p>
+                  <div class="bottom_content">
+                    <div class="post">
+                      <img src={Eyes}></img>
+                      <div>
+                        <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
+                        <p>쿠크다스</p>
+                        <p>22.05.22 조회 145</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="post">
-                    <img src={Cat}></img>
-                    <div>
-                      <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
-                      <p>쿠크다스</p>
-                      <p>22.05.22 조회 145</p>
+                    <div class="post">
+                      <img src={Gun}></img>
+                      <div>
+                        <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
+                        <p>쿠크다스</p>
+                        <p>22.05.22 조회 145</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="bottom_content">
-                  <div class="post">
-                    <img src={Eyes}></img>
-                    <div>
-                      <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
-                      <p>쿠크다스</p>
-                      <p>22.05.22 조회 145</p>
-                    </div>
-                  </div>
-                  <div class="post">
-                    <img src={Gun}></img>
-                    <div>
-                      <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
-                      <p>쿠크다스</p>
-                      <p>22.05.22 조회 145</p>
-                    </div>
-                  </div>
-                  <div class="post">
-                    <img src={Book}></img>
-                    <div>
-                      <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
-                      <p>쿠크다스</p>
-                      <p>22.05.22 조회 145</p>
+                    <div class="post">
+                      <img src={Book}></img>
+                      <div>
+                        <p><b>진짜 내가??? <span class="num">[2]</span></b></p>
+                        <p>쿠크다스</p>
+                        <p>22.05.22 조회 145</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="rightContent">
-              <div class="mainTitle">
-                <p class="title">꿈에서 본  그 짤... 짤 찾아 삼만리</p>
-                <p class="view-more"><b>더보기</b><img src={Plus} /></p>
+              <div class="rightContent">
+                <div class="mainTitle">
+                  <p class="title">꿈에서 본  그 짤... 짤 찾아 삼만리</p>
+                  <p class="view-more"><b>더보기</b><img src={Plus} /></p>
+                </div>
+                <div class="post">
+                  <div class="textContent">
+                    <p class="postTitle"><b>진짜 웃겼는데 못찾는 짤이거든?? ㅜㅜㅜ...</b></p>
+                    <br></br>
+                    <div class="postText">쿠크다스</div>
+                    <br></br><br></br>
+                    <div class="postText date">22.05.22 조회 145</div>
+                  </div>
+                  <div class="imgContent">
+                    <img src={first}></img>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="textContent">
+                    <p class="postTitle"><b>진짜 웃겼는데 못찾는 짤이거든?? ㅜㅜㅜ...</b></p>
+                    <br></br>
+                    <div class="postText">쿠크다스</div>
+                    <br></br><br></br>
+                    <div class="postText date">22.05.22 조회 145</div>
+                  </div>
+                  <div class="imgContent">
+                    <img src={second}></img>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="textContent">
+                    <p class="postTitle"><b>진짜 웃겼는데 못찾는 짤이거든?? ㅜㅜㅜ...</b></p>
+                    <br></br>
+                    <div class="postText">쿠크다스</div>
+                    <br></br><br></br>
+                    <div class="postText date">22.05.22 조회 145</div>
+                  </div>
+                  <div class="imgContent">
+                    <img src={third}></img>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="textContent">
+                    <p class="postTitle"><b>진짜 웃겼는데 못찾는 짤이거든?? ㅜㅜㅜ...</b></p>
+                    <br></br>
+                    <div class="postText">쿠크다스</div>
+                    <br></br><br></br>
+                    <div class="postText date">22.05.22 조회 145</div>
+                  </div>
+                  <div class="imgContent">
+                    <img src={fourth}></img>
+                  </div>
+                </div>
               </div>
-              <div class="post">
-                <div class="textContent">
-                  <p class="postTitle"><b>진짜 웃겼는데 못찾는 짤이거든?? ㅜㅜㅜ...</b></p>
-                  <br></br>
-                  <div class="postText">쿠크다스</div>
-                  <br></br><br></br>
-                  <div class="postText date">22.05.22 조회 145</div>
-                </div>
-                <div class="imgContent">
-                  <img src={first}></img>
-                </div>
-              </div>
-              <div class="post">
-                <div class="textContent">
-                  <p class="postTitle"><b>진짜 웃겼는데 못찾는 짤이거든?? ㅜㅜㅜ...</b></p>
-                  <br></br>
-                  <div class="postText">쿠크다스</div>
-                  <br></br><br></br>
-                  <div class="postText date">22.05.22 조회 145</div>
-                </div>
-                <div class="imgContent">
-                  <img src={second}></img>
-                </div>
-              </div>
-              <div class="post">
-                <div class="textContent">
-                  <p class="postTitle"><b>진짜 웃겼는데 못찾는 짤이거든?? ㅜㅜㅜ...</b></p>
-                  <br></br>
-                  <div class="postText">쿠크다스</div>
-                  <br></br><br></br>
-                  <div class="postText date">22.05.22 조회 145</div>
-                </div>
-                <div class="imgContent">
-                  <img src={third}></img>
-                </div>
-              </div>
-              <div class="post">
-                <div class="textContent">
-                  <p class="postTitle"><b>진짜 웃겼는데 못찾는 짤이거든?? ㅜㅜㅜ...</b></p>
-                  <br></br>
-                  <div class="postText">쿠크다스</div>
-                  <br></br><br></br>
-                  <div class="postText date">22.05.22 조회 145</div>
-                </div>
-                <div class="imgContent">
-                  <img src={fourth}></img>
-                </div>
-              </div>
-            </div>
 
-          </MainBottom>
-        </div>
+            </MainBottom>
+          </div>
+        </Assembler>
+
         {/* <div id="main-popup">
           <Popup />
         </div> */}
@@ -305,9 +308,142 @@ function Main() {
   );
 }
 
+const Assembler = styled.div`
+width: 1080px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 40px;
+`
+
+const Warp = styled.div`
+position: relative;
+width: 1080px;
+margin: 0 auto;
+
+  #public-popup{
+    position: absolute;
+    margin: 0 100px;
+  }
+
+  #main-contents {
+    width: 860px;
+    display: inline-block;
+
+    #public-footer{
+    }
+  } 
+`
+
+const MainTop = styled.div`
+  width: 100%;
+  height: 435px;
+  position: relative;
+
+  #sell_JJal {
+    img{
+      height: 430px;
+    position: absolute;
+    left: 0;
+    border: 6px solid #cfcfcf;
+    outline: 2px solid #000;
+    }
+    
+  }
+
+  #noticeUpdate {
+    width: 330px;
+    height: 435px;
+    position: absolute;
+    right: 0;
+
+    background: #fA00D0;
+    color: #FFFFFF;
+
+    border: 4px solid #FF50E2;
+    outline: 2px solid #000;
+
+    ul{margin: 0; padding:0;}
+    
+      .noticeUpdate{
+          #noticeTitle{
+            width: 330px;
+            height: 40px;
+            border-top: 2px solid #FF50E2;
+            border-bottom: 2px solid #FF50E2;
+            
+            ul{
+              list-style: none;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin: 0;
+              padding: 8px 15px;
+            }
+            .noticeText{
+              font-size: 18px;
+              font-weight: 600;
+            }
+            .noticePlus{
+              font-size: 12px;
+            }
+        }
+
+        #noticeContent{
+          li{
+            font-size: 13px;
+            padding: 15px 0;
+            border-bottom: 1px solid #FF50E2;
+            .YellowText{
+              color: #FAFF00;
+            }
+          }
+
+          #listEmptySpace {
+          width: 100%;
+          height: 160px;
+        
+            ul {
+               position: absolute;
+                list-style: none;
+              li {
+                width: 325px;
+                padding-left: 5px;
+                span{margin-left: 10px;}
+                button {
+                  font-size: 12px;
+                  background-color: #F7F9BD;
+                  border: 1px solid #000;
+                  border-radius: 3px;
+                  padding: 2px 10px;
+                }
+              }
+            }
+          }
+
+          #listBasic{
+            width: 100%;
+            height: 160px;  
+            ul{
+              list-style-position: inside;
+
+              li{
+              padding-left: 10px;
+
+                .YellowText{color: #FAFF00;}
+                .ViewNum{margin-left: 40px; }
+              }
+            }
+          }
+
+        }
+      }
+    }
+`
+
 const MainMiddle = styled.div`
   display: flex;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 0;
   position: relative;
   #lorem{
@@ -440,138 +576,6 @@ const MainMiddle = styled.div`
     }
   }
 `
-
-const MainTop = styled.div`
-  width: 100%;
-  height: 428px;
-  position: relative;
-
-  #sell_JJal {
-    width: 490px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background: #cfcfcf;
-    outline: 2px solid #000;
-
-    img {
-      padding: 5px 0 0 5px;
-    }
-  }
-
-  #noticeUpdate {
-    width: 350px;
-    height: 420px;
-    position: absolute;
-    right: 0;
-
-    background: #fA00D0;
-    color: #FFFFFF;
-
-    border: 4px solid #FF50E2;
-    outline: 2px solid #000;
-
-    ul{margin: 0; padding:0;}
-    
-      .noticeUpdate{
-          #noticeTitle{
-            width: 350px;
-            height: 40px;
-            border-top: 2px solid #FF50E2;
-            border-bottom: 2px solid #FF50E2;
-            
-            ul{
-              list-style: none;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              margin: 0;
-              padding: 8px 15px;
-            }
-            .noticeText{
-              font-size: 18px;
-              font-weight: 600;
-            }
-            .noticePlus{
-              font-size: 12px;
-            }
-        }
-
-        #noticeContent{
-          li{
-            font-size: 13px;
-            padding: 15px 0;
-            border-bottom: 1px solid #FF50E2;
-            .YellowText{
-              color: #FAFF00;
-            }
-          }
-
-          #listEmptySpace {
-          width: 100%;
-          height: 160px;
-        
-            ul {
-               position: absolute;
-                list-style: none;
-              li {
-                width: 345px;
-                padding-left: 9px;
-                span{margin-left: 20px;}
-                button {
-                  font-size: 12px;
-                  background-color: #F7F9BD;
-                  border: 1px solid #000;
-                  border-radius: 3px;
-                  padding: 2px 11px;
-                }
-              }
-            }
-          }
-
-          #listBasic{
-            width: 100%;
-            height: 160px;  
-            ul{
-              list-style-position: inside;
-
-              li{
-              padding-left: 10px;
-
-                .YellowText{color: #FAFF00;}
-                .ViewNum{margin-left: 60px; }
-              }
-            }
-          }
-
-        }
-      }
-    }
-  }
-`;
-
-const Warp = styled.div`
-/*여기에 public의 코드는 공통 컴포넌트로 넘길 생각 중 */
-position: relative;
-width: 1080px;
-margin: 0 auto;
-/* min-height: 100vh; */
-
-  #public-popup{
-    position: absolute;
-    margin: 0 100px;
-  }
-
-  #main-contents {
-    /* position: absolute; */
-    position: relative;
-    width: 865px;
-    /* top: 238px; */
-
-    #public-footer{
-    }
-  } 
-`;
 
 const MainBottom = styled.div`
 margin: 0;

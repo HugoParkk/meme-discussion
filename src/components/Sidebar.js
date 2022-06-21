@@ -30,20 +30,19 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div id="Userinfo">
           <div id="Userprofile">
             <img src={profile} alt="프로필이미지"></img>
-            <div id="UserText">
-              <div id="Nick"><span id="gradeBox">매니저</span>&nbsp;<b>주인짱</b></div>
-              <ul id="profile-info">
-                <li>since 2002.02.02.</li>
-                <li>카페소개</li>
-              </ul>
+              <div id="UserText">
+                <div id="Nick"><span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b></div>
+                <ul id="profile-info">
+                  <li>since 2002.02.02.</li>
+                  <li>카페소개</li>
+                </ul>
             </div>
           </div>
 
           <div id="CafeInfo">
-            <ul>
+            <ul class="">
               <li>
                 <ul id="Queen">
                   <li><img src={crown} alt="Queen아이콘"></img></li>
@@ -59,7 +58,7 @@ const Sidebar = () => {
                 </ul>
               </li>
             </ul>
-            <div id="Topic">주제  재테크 &gt; <b>NFT</b> </div>
+            <div id="Topic"><a>주제  재테크 &gt; <b>NFT</b></a> </div>
             <div id="Btns">
               <ul>
                 <li><button id="BtnHotpink">짤 게시하기</button></li>
@@ -68,7 +67,6 @@ const Sidebar = () => {
               </ul>
             </div>
           </div>
-        </div>
       </UpSideMenuBar>
 
       <DownSideMenu>
@@ -148,11 +146,11 @@ const UpSideMenuBar = styled.div`
   /* left: 307px; */
   width: 200px;
   /* height: 965px; */
-  height: 465px;  
+  height: 435px;  
     border: 4px solid #cfcfcf;
     background: #fff;
     outline: 2px solid #000;
-  margin: 40px 0 0 0;
+  /* margin: 40px 0 0 0; */
 
   ul {
     padding:0;
@@ -197,58 +195,51 @@ const UpSideMenuBar = styled.div`
   }
 
   #Userprofile{
-    
     font-size: 12px;
-    margin: 15px 0 0 30px;
+    padding: 13px 0 5px 10px;
+    border-bottom: 1px solid #cfcfcf;
     
     img{
       float: left;
-      margin-left: -20px;
       padding: 0;
     }  
-    #UserText{
-      #gradeBox{
-      font-size: 10px;
-      border: 1px solid #DBDBDB;
-      padding: 1px 5px;
-      color: darkgray;
+
+      #UserText{
+        #gradeBox{
+        font-size: 10px;
+        border: 1px solid #DBDBDB;
+        padding: 1px 5px;
+        color: darkgray;
       }
     }
     
     #Nick{   
       text-align: left;
+      padding: 0 10px;
+      width: 100px;
+      display: inline-block;
     }
     
-    #profile-info {
-      
+    #profile-info { 
       text-align:left;
       margin: 5px 2px;
-      ul{
-        
-      }
+
       li {
-        padding: 1px 0;
+        width: 100px;
+        display: inline-block;
+        padding: 2px 10px;
         color: #666666;
       }
     }
   }
 
   #CafeInfo {
-    border-bottom: 1px solid #cfcfcf;
-    height: 0px;
-    padding: 0 7px;
-    
-    #Topic{
-      border-bottom: 1px solid #cfcfcf;
-      border-top: 1px solid #cfcfcf;
-      padding: 15px 0;
-      font-size:12px
-    }
+    ul{margin: 0;}
 
     #Queen {
       display: flex;
       align-items: center;
-      padding: 10px 0 5px 0;
+      padding: 10px 7px 5px 7px;
       font-size: 13px;
       img {
         margin-top: 5px;
@@ -261,15 +252,20 @@ const UpSideMenuBar = styled.div`
       height: 30px;
       font-size:15px;
       text-align: center;
+      padding: 0 7px;
+
       #text{
         width: 55px;
         font-size:11px;
         color: #000AFF;
         font-weight : 600;
-        }
+      }
     }
+
     #CafeInformation {
       font-size: 12px;
+      padding: 0 7px 5px 7px;
+
       span {
         float: right;
         color: #666666;
@@ -279,17 +275,29 @@ const UpSideMenuBar = styled.div`
         margin-bottom: 5px;
       }
     }
+
+    #Topic{
+      border-bottom: 1px solid #cfcfcf;
+      border-top: 1px solid #cfcfcf;
+      padding: 12px 5px;
+      a{
+        
+        font-size:12px
+      }
+    }
+
     #Btns{
+      margin: 8px 0 0 2.5px;
+
       button{
         width: 195px;
-        margin-left: -5px;
         height: 35px;
-        margin-bottom:13px ;
         border: none;
         box-shadow: 1px 1px 1px 1px #bbbbbb inset;
         background: #DBDBDB;
-        
+        margin-bottom: 7px;
       }
+
       #BtnHotpink{
         background: #FF50E2;
         color: #fff;
@@ -304,7 +312,7 @@ const DownSideMenu = styled.div`
   /* left: 307px; */
   width: 200px;
   height: 965px;
-  margin: 25px 0 0 0;
+  margin: 20px 0 0 0;
   border: 4px solid #cfcfcf; 
   background: #fff;
   outline: 2px solid #000;
