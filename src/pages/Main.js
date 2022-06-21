@@ -587,7 +587,7 @@ color: white;
 .leftContent {
   background: #FA00D0;
   width: 415px;
-  height: 511.21px;
+  height: 508px;
   border: 4px solid #FF50E2;
   outline: 2px solid #000;
  
@@ -652,7 +652,7 @@ color: white;
  .rightContent {
    background: url(${rcBK});
    width: 415px;
-   height: 511.21px;
+   height: 508px;
    border: 4px solid #D1D1D1;
    outline: 2px solid #000;
    margin-left: 20px;
