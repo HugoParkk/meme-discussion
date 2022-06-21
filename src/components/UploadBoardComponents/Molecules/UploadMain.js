@@ -7,7 +7,7 @@ function UploadMain(props) {
   return (
     <Main>
       <FooterPostText text="짤 업로드" />
-      <UploadImgArea frame={props.frame} back={props.back} />
+      <UploadImgArea frame={props.frame} back={props.back} src={props.src} />
     </Main>
   );
 }

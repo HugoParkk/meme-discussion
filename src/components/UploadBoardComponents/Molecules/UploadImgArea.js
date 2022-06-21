@@ -6,7 +6,7 @@ import ImgAreaRight from "./ImgAreaRight";
 function UploadImgArea(props) {
   return (
     <Wrap>
-      <ImgAreaRight />
+      <ImgAreaRight src={props.src} />
       <ImgAreaLeft frame={props.frame} back={props.back} />
     </Wrap>
   );

@@ -1,13 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 
-function ImgAreaRight() {
+function ImgAreaRight(props) {
   return (
     <Wrap>
-      <></>
+      <Img src={props.src} />
+      <StyledDiv />
     </Wrap>
   );
 }
+
+const StyledDiv = styled.div`
+  top: -306px;
+  width: 348px;
+  height: 348px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  z-index: -1;
+`;
+
+const Img = styled.img`
+  height: 325px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid yellow;
+  outline: 8px solid #ff50e2;
+`;
 
 const Wrap = styled.div`
   width: 75%;
