@@ -3,15 +3,17 @@ import styled from "styled-components";
 
 function ShopNotice(props) {
   return (
-    <>
+    <Wrap>
       {props.data.map((arr, i) => {
         return (
-          <>
+          <div key={i}>
             {arr.type === "title" ? (
               <StyledPink>
-                <TextTitle type={arr.type}>{arr.text}</TextTitle>
+                <NoticeTitle>아</NoticeTitle>
+                <TextTitle>{arr.text}</TextTitle>
                 <Sub>{arr.name}</Sub>
                 <Sub>{arr.date}</Sub>
+                <Sub>{arr.cnt}</Sub>
               </StyledPink>
             ) : (
               <StyledDiv>
@@ -19,14 +21,21 @@ function ShopNotice(props) {
                 <Text type={arr.type}>{arr.text}</Text>
                 <Sub>{arr.name}</Sub>
                 <Sub>{arr.date}</Sub>
+                <Sub>{arr.cnt}</Sub>
               </StyledDiv>
             )}
-          </>
+          </div>
         );
       })}
-    </>
+    </Wrap>
   );
 }
+
+const Wrap = styled.div`
+  margin: 0 auto;
+  width: 70%;
+  border: 5px solid hotpink;
+`;
 
 const StyledPink = styled.div`
   display: flex;
@@ -37,7 +46,7 @@ const StyledPink = styled.div`
 `;
 
 const TextTitle = styled.div`
-  width: 60%;
+  width: 75%;
   color: white;
   text-align: center;
 `;
@@ -51,7 +60,7 @@ const StyledDiv = styled.div`
 `;
 
 const Text = styled.div`
-  width: 60%;
+  width: 75%;
   color: white;
 `;
 
@@ -63,6 +72,13 @@ const Notice = styled.div`
   background-color: yellowgreen;
   padding: 1px 2px;
   border: 1px solid black;
+`;
+
+const NoticeTitle = styled.div`
+  background-color: yellowgreen;
+  padding: 1px 2px;
+  border: 1px solid black;
+  visibility: hidden;
 `;
 
 export default ShopNotice;

@@ -6,8 +6,8 @@ function ShopBoardImg() {
 }
 
 const StyledImg = styled.div`
-  width: 10rem;
-  height: 10rem;
+  width: 15.2rem;
+  height: 15.2rem;
   background-color: black;
 `;
 

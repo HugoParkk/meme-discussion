@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 function BoardFooter(props) {
   const arr = props.data;
+
   return (
     <>
       <StyledDiv>
