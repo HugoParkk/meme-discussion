@@ -443,7 +443,7 @@ const MainTop = styled.div`
 
 const MainMiddle = styled.div`
   display: flex;
-  margin: 30px auto;
+  margin: 28px 0 10px 0;
   padding: 0;
   position: relative;
   #lorem{

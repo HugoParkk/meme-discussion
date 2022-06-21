@@ -146,7 +146,7 @@ const UpSideMenuBar = styled.div`
   /* left: 307px; */
   width: 200px;
   /* height: 965px; */
-  height: 435px;  
+  height: 434px;  
     border: 4px solid #cfcfcf;
     background: #fff;
     outline: 2px solid #000;
