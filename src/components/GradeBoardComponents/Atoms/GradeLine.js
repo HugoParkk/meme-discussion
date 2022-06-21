@@ -11,6 +11,7 @@ const StyledDiv = styled.div`
   background-color: #ff50e2;
   margin: 0 auto;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 `;
 
 export default GradeLine;

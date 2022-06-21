@@ -14,6 +14,7 @@ function BoardCostText() {
 
 const StyledDiv = styled.div`
   display: block;
+  margin-bottom: 2rem;
 `;
 
 const Cost = styled.div`

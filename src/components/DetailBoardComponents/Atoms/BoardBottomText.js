@@ -14,6 +14,6 @@ const Text = styled.div`
   font-weight: bold;
   color: #999999;
   position: relative;
-  left: 50%;
+  margin-left: 50%;
 `;
 export default BoardBottomText;
