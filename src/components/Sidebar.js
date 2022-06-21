@@ -9,9 +9,14 @@ import L_shape from '../images/public_compoment/L_shape.png';
 import bottomImg from '../images/public_compoment/Group 13.png';
 
 
-function Sidebar() {
+const Sidebar = () => {
+  const sidebarWarp = {
+    width: "210px",
+    display: "inline-block"
+  }
+
   return (
-    <div>
+    <div style={sidebarWarp}>
       <UpSideMenuBar>
         <div id="head">
           <div id="BookMarkIcon">
@@ -135,14 +140,15 @@ function Sidebar() {
       </DownSideImg>
 
     </div>
-  )
+  );
 }
+
 const UpSideMenuBar = styled.div`
   position: relative;
   /* left: 307px; */
   width: 200px;
   /* height: 965px; */
-  height: 460px;
+  height: 465px;  
     border: 4px solid #cfcfcf;
     background: #fff;
     outline: 2px solid #000;
@@ -194,6 +200,7 @@ const UpSideMenuBar = styled.div`
     
     font-size: 12px;
     margin: 15px 0 0 30px;
+    
     img{
       float: left;
       margin-left: -20px;
@@ -297,7 +304,7 @@ const DownSideMenu = styled.div`
   /* left: 307px; */
   width: 200px;
   height: 965px;
-  margin-top: 25px;
+  margin: 25px 0 0 0;
   border: 4px solid #cfcfcf; 
   background: #fff;
   outline: 2px solid #000;

@@ -41,7 +41,7 @@ function Main() {
     <div>
       <Warp>
         <Header />
-        <Sidebar />
+        <Sidebar id="public-sidebar"/>
         <div id="main-contents">
           <MainTop>
             <div id="sell_JJal">
@@ -385,8 +385,7 @@ const MainMiddle = styled.div`
 
   #Rank {
     outline: 2px solid #000;
-    width: 152px;
-    box-sizing: border-box;
+    width: 170px;
     height: 432px;
     background: magenta;
     margin-left: 20px;
@@ -399,7 +398,7 @@ const MainMiddle = styled.div`
       height: 30px;
     }
     #title{
-     width : 148px;
+     width : 168px;
      height: 40px;
      background: #FA00D0;
      line-height: 2.5;
@@ -408,10 +407,11 @@ const MainMiddle = styled.div`
      }
     }
     ul>li>ul{
-      display: flex;  
-      
+      display: flex;
+      margin-left: 4px;
     }
     ul{
+      margin: 0;
       padding: 0;
     }
     li{
@@ -419,7 +419,7 @@ const MainMiddle = styled.div`
       color: yellow;
     }
     .lv1>ul>li{
-      width: 108px;
+      width: 115px;
       height: 30px;
       background: #000;
       margin: 4px;
@@ -431,7 +431,7 @@ const MainMiddle = styled.div`
     
     
     .lv1>ul{
-      width: 152px;
+      width: 160px;
     }
     .lv1{
       margin: 0;
@@ -452,7 +452,7 @@ const MainTop = styled.div`
     position: absolute;
     left: 0;
     background: #cfcfcf;
-    border: 2px solid #000;
+    outline: 2px solid #000;
 
     img {
       padding: 5px 0 0 5px;
@@ -460,19 +460,22 @@ const MainTop = styled.div`
   }
 
   #noticeUpdate {
-    width: 354px;
+    width: 350px;
     height: 420px;
     position: absolute;
     right: 0;
+
     background: #fA00D0;
     color: #FFFFFF;
+
     border: 4px solid #FF50E2;
+    outline: 2px solid #000;
 
     ul{margin: 0; padding:0;}
     
       .noticeUpdate{
           #noticeTitle{
-            width: 355px;
+            width: 350px;
             height: 40px;
             border-top: 2px solid #FF50E2;
             border-bottom: 2px solid #FF50E2;
@@ -502,9 +505,6 @@ const MainTop = styled.div`
             .YellowText{
               color: #FAFF00;
             }
-            .ViewNum{
-              margin-left: 60px;
-            }
           }
 
           #listEmptySpace {
@@ -514,11 +514,9 @@ const MainTop = styled.div`
             ul {
                position: absolute;
                 list-style: none;
-                left: -18px;
-                padding-left: 18px;
               li {
                 width: 345px;
-                padding-left: 10px;
+                padding-left: 9px;
                 span{margin-left: 20px;}
                 button {
                   font-size: 12px;
@@ -550,7 +548,7 @@ const MainTop = styled.div`
       }
     }
   }
-`
+`;
 
 const Warp = styled.div`
 /*여기에 public의 코드는 공통 컴포넌트로 넘길 생각 중 */
@@ -559,27 +557,22 @@ width: 1080px;
 margin: 0 auto;
 /* min-height: 100vh; */
 
-#public-popup{
-  position: absolute;
-  margin: 0 100px;
-}
-
-  #public-sidebar {
-    display: inline;
-    left: 0;
+  #public-popup{
+    position: absolute;
+    margin: 0 100px;
   }
 
   #main-contents {
     /* position: absolute; */
+    position: relative;
     width: 865px;
     /* top: 238px; */
-  } 
-  
 
-  #public-footer {
-    position: absolute;
-  }
+    #public-footer{
+    }
+  } 
 `;
+
 const MainBottom = styled.div`
 margin: 0;
 padding: 0;
@@ -589,7 +582,7 @@ display: flex;
 color: white;
 .leftContent {
   background: #FA00D0;
-  width: 412.8px;
+  width: 415px;
   height: 511.21px;
   border: 4px solid #FF50E2;
   outline: 2px solid #000;
@@ -654,11 +647,11 @@ color: white;
  
  .rightContent {
    background: url(${rcBK});
-   width: 412.8px;
+   width: 415px;
    height: 511.21px;
    border: 4px solid #D1D1D1;
    outline: 2px solid #000;
-   margin-left: 10px;
+   margin-left: 20px;
   
  
    .mainTitle {
