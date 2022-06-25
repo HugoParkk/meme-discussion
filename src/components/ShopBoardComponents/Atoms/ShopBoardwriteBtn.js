@@ -5,22 +5,25 @@ function ShopBoardwriteBtn() {
   return (
     <>
       <Btn>
-        <Image src={svg} /> 글쓰기
+        <Image src={svg} />
       </Btn>
     </>
   );
 }
 const Btn = styled.button`
+  position: absolute;
   cursor: pointer;
   display: inline-block;
   border: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
   position: relative;
-  top: 60px;
 `;
 const Image = styled.img`
   width: 100px;
   height: 100px;
+  position: relative;
+  margin-left: 85rem;
+  margin-top: -1.3rem;
 `;
 export default ShopBoardwriteBtn;

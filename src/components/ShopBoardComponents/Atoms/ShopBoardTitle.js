@@ -14,6 +14,8 @@ function ShopBoardTitle(props) {
 }
 
 const BlackDiv = styled.div`
+  margin-top: 5pt;
+  margin-bottom: 5pt;
   font-size: 12pt;
   color: black;
   display: inline-block;

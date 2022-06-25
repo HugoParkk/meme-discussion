@@ -23,22 +23,25 @@ const StyledDiv = styled.div`
   display: inline-block;
   position: relative;
   top: 30px;
+  left: -45rem;
 `;
 
 const Btn = styled.button`
   cursor: pointer;
   z-index: 2;
-  background-color: #dbdbdb;
+  background-color: #f9f9f8;
   width: 2rem;
   height: 2rem;
   color: black;
   border: #dbdbdb;
+  font-weight: bold;
   ${(props) =>
     props.active &&
     `
-    color: #ff50e2;
-    background-color: white;
+    color: magenta;
+    background-color:white ;
     border : 2px solid #999999
+  
   `}
 `;
 

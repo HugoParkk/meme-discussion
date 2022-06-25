@@ -33,45 +33,59 @@ function ShopNotice(props) {
 
 const Wrap = styled.div`
   margin: 0 auto;
-  width: 70%;
-  border: 5px solid hotpink;
+  width: 64.5rem;
+  border: 5px solid magenta;
+  outline: 3px solid black;
+  margin-left: 22%;
+  margin-bottom: 1rem;
+  overflow: hidden;
 `;
 
 const StyledPink = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: hotpink;
-  border-bottom: 2px solid hotpink;
+  background-color: magenta;
+  border-bottom: 2px solid magenta;
+  overflow: hidden;
 `;
 
 const TextTitle = styled.div`
-  width: 75%;
+  width: 74%;
   color: white;
   text-align: center;
+  font-size: 15pt;
+  overflow: hidden;
 `;
 
 const StyledDiv = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: pink;
-  border-bottom: 2px solid hotpink;
+  background-color: #feb6f2;
+  border-bottom: 2px solid #feb6f2;
+  overflow: hidden;
 `;
 
 const Text = styled.div`
   width: 75%;
   color: white;
+  font-size: 12pt;
 `;
 
 const Sub = styled.div`
-  color: gray;
+  color: white;
+  display: flex;
+  font-size: 12pt;
 `;
 
 const Notice = styled.div`
-  background-color: yellowgreen;
+  background-color: #f7f9bd;
   padding: 1px 2px;
+  text-align: center;
   border: 1px solid black;
+  width: 4rem;
+  border-radius: 3pt;
 `;
 
 const NoticeTitle = styled.div`

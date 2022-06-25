@@ -6,8 +6,10 @@ function ShopBoardFooterNext() {
   return (
     <>
       <GlobalStyle />
-      <Line>{" | "}</Line>
-      <Text>{"다음 >"}</Text>
+      <NextDiv>
+        <Line>{" | "}</Line>
+        <Text>{"다음 >"}</Text>
+      </NextDiv>
     </>
   );
 }
@@ -22,5 +24,10 @@ const Line = styled.div`
   font-weight: bold;
   margin-left: 20px;
   display: inline-block;
+  color: gray;
+`;
+const NextDiv = styled.div`
+  position: absolute;
+  left: 67rem;
 `;
 export default ShopBoardFooterNext;

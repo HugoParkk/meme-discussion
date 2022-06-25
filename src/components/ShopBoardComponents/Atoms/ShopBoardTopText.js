@@ -15,20 +15,28 @@ function ShopBoardTopText() {
 }
 const Text = styled.div`
   color: #ff50e2;
-  font-size: 18pt;
+  font-size: 23pt;
   font-weight: bold;
   display: inline-block;
 `;
 const StarImg = styled.img`
-  width: 1rem;
-  height: 2rem;
+  width: 2rem;
+  height: 3rem;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 10pt;
+  margin-top: 0.4rem;
 `;
 
 const Wrapper = styled.div`
+  margin-left: 22%;
+  margin-right: 0;
+  width: 40rem;
+  margin-top: 1%;
+  margin-bottom: 2%;
   display: flex;
+  position: relative;
   align-items: center;
+  overflow: hidden;
 `;
 
 export default ShopBoardTopText;
