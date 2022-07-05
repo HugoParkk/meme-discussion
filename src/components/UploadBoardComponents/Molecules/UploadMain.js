@@ -1,13 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import FooterPostText from "../Atoms/FooterPostText";
+import FooterPostText from "./FooterPostText";
+import Line from "../Atoms/Line";
 import UploadImgArea from "./UploadImgArea";
+import ImgAndList from "./ImgAndList";
+import GlobalStyle from "../GlobalStyle";
 
 function UploadMain(props) {
   return (
     <Main>
+      <GlobalStyle />
       <FooterPostText text="짤 업로드" />
       <UploadImgArea frame={props.frame} back={props.back} />
+      <Line />
+      <FooterPostText
+        text="짤 설명 사진"
+        subText="게시하려는 짤과 비슷하거나 짤의 비하인드를 이해할 수 있는 짤을 첨부해 주세요."
+      />
+      <ImgAndList data={props.data} text={props.text} />
     </Main>
   );
 }
