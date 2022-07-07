@@ -10,7 +10,7 @@ const StyledInput = styled.input`
   width: 60.8%;
   position: relative;
   left: 10%;
-  border: 5px solid pink;
+  border: 5px solid #FFD4ED;
   outline: 3px solid black;
   top: 30px;
   padding: 10px;
