@@ -33,6 +33,7 @@ const Text = styled.div`
   top: 50%;
   transform: translateY(-50%);
   position: relative;
+  color: #676767;
 `;
 
 const Wrap = styled.div`
@@ -47,7 +48,7 @@ const Wrap = styled.div`
 `;
 
 const Icon = styled.div`
-  background-color: black;
+  background-color: #676767;
   width: 15px;
   height: 15px;
   position: relative;

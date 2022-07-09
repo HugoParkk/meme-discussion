@@ -18,7 +18,7 @@ const Wrap = styled.div`
   width: 80%;
   position: relative;
   height: 205px;
-  background-color: pink;
+  background-color: #f4f4f4;
   margin-top: 15px;
   border: 2px solid #bbb;
   overflow-x: scroll;
