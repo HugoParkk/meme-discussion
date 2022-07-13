@@ -28,7 +28,7 @@ const StarImg = styled.img`
 `;
 
 const Wrapper = styled.div`
-  margin-left: 22%;
+  margin-left: 22pt;
   margin-right: 0;
   width: 40rem;
   margin-top: 1%;

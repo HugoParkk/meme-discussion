@@ -36,7 +36,7 @@ const Wrap = styled.div`
   width: 64.5rem;
   border: 5px solid magenta;
   outline: 3px solid black;
-  margin-left: 22%;
+  margin-left: 14pt;
   margin-bottom: 1rem;
   overflow: hidden;
 `;

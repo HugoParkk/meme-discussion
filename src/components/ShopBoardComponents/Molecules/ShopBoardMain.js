@@ -22,9 +22,11 @@ function ShopBoardMain(props) {
 }
 
 const Contents = styled.div`
-  width: 15.2rem;
+  width: 100pt;
   display: inline-block;
   margin: 10px;
+  margin-left: 50pt;
+  margin-right: 50pt;
 `;
 
 const StyledDiv = styled.div`

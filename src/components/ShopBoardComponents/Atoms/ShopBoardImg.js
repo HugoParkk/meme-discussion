@@ -6,9 +6,10 @@ function ShopBoardImg() {
 }
 
 const StyledImg = styled.div`
-  width: 15.2rem;
-  height: 15.2rem;
-  background-color: black;
+  width: 180pt;
+  height: 180pt;
+  background-color: blue;
+  position: relative;
 `;
 
 export default ShopBoardImg;

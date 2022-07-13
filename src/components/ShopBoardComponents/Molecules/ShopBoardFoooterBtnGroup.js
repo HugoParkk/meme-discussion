@@ -22,8 +22,8 @@ const StyledDiv = styled.div`
   text-align: center;
   display: inline-block;
   position: relative;
-  top: 30px;
-  left: -45rem;
+
+  left: 180pt;
 `;
 
 const Btn = styled.button`

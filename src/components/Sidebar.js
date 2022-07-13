@@ -1,19 +1,18 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import bookmarkStar from '../images/public_compoment/star_sideMenu.svg';
-import profile from '../images/public_compoment/profile.svg';
-import crown from '../images/public_compoment/crown.png';
-import NewIcon from '../images/public_compoment/icon_New.png';
-import L_shape from '../images/public_compoment/L_shape.png';
-import bottomImg from '../images/public_compoment/Group 13.png';
-
+import bookmarkStar from "../images/public_compoment/star_sideMenu.svg";
+import profile from "../images/public_compoment/profile.svg";
+import crown from "../images/public_compoment/crown.png";
+import NewIcon from "../images/public_compoment/icon_New.png";
+import L_shape from "../images/public_compoment/L_shape.png";
+import bottomImg from "../images/public_compoment/Group 13.png";
 
 const Sidebar = () => {
   const sidebarWarp = {
     width: "210px",
-    display: "inline-block"
-  }
+    display: "inline-block",
+  };
 
   return (
     <div style={sidebarWarp}>
@@ -30,151 +29,244 @@ const Sidebar = () => {
           </div>
         </div>
 
-          <div id="Userprofile">
-            <img src={profile} alt="프로필이미지"></img>
-              <div id="UserText">
-                <div id="Nick"><span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b></div>
-                <ul id="profile-info">
-                  <li>since 2002.02.02.</li>
-                  <li>카페소개</li>
-                </ul>
+        <div id="Userprofile">
+          <img src={profile} alt="프로필이미지"></img>
+          <div id="UserText">
+            <div id="Nick">
+              <span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b>
             </div>
+            <ul id="profile-info">
+              <li>since 2002.02.02.</li>
+              <li>카페소개</li>
+            </ul>
           </div>
+        </div>
 
-          <div id="CafeInfo">
-            <ul class="">
+        <div id="CafeInfo">
+          <ul class="">
+            <li>
+              <ul id="Queen">
+                <li>
+                  <img src={crown} alt="Queen아이콘"></img>
+                </li>
+                <li>
+                  <b>&nbsp;퀸</b>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul id="Invite">
+                <li>18,936,555</li>
+                <sapn id="text">초대하기</sapn>
+              </ul>
+            </li>
+            <li>
+              <ul id="CafeInformation">
+                <li>
+                  <a>
+                    즐겨찾는 멤버<span>3,543,257 명</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    게시판 구독수<span>2,463,669 회</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    우리카페앱 수<span>152,262 회</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div id="Topic">
+            <a>
+              주제 재테크 &gt; <b>NFT</b>
+            </a>{" "}
+          </div>
+          <div id="Btns">
+            <ul>
               <li>
-                <ul id="Queen">
-                  <li><img src={crown} alt="Queen아이콘"></img></li>
-                  <li><b>&nbsp;퀸</b></li>
-                </ul>
+                <button id="BtnHotpink">짤 게시하기</button>
               </li>
-              <li><ul id='Invite'><li>18,936,555</li><sapn id="text">초대하기</sapn></ul></li>
               <li>
-                <ul id="CafeInformation">
-                  <li><a>즐겨찾는 멤버<span>3,543,257 명</span></a></li>
-                  <li><a>게시판 구독수<span>2,463,669 회</span></a></li>
-                  <li><a>우리카페앱 수<span>152,262 회</span></a></li>
-                </ul>
+                <button>주인장 전화하기</button>
+              </li>
+              <li>
+                <button>주인장 채팅하기</button>
               </li>
             </ul>
-            <div id="Topic"><a>주제  재테크 &gt; <b>NFT</b></a> </div>
-            <div id="Btns">
-              <ul>
-                <li><button id="BtnHotpink">짤 게시하기</button></li>
-                <li><button>주인장 전화하기</button></li>
-                <li><button>주인장 채팅하기</button></li>
-              </ul>
-            </div>
           </div>
+        </div>
       </UpSideMenuBar>
 
       <DownSideMenu>
         <div id="DownSideMenuBar">
           <div id="DownSideMenu">
-            <div id="Sidebar-search"><input></input><button>검색</button></div>
-            <div id="TotalWrite"><li>전체글보기</li><li>175,342,546</li></div>
+            <div id="Sidebar-search">
+              <input></input>
+              <button>검색</button>
+            </div>
+            <div id="TotalWrite">
+              <li>전체글보기</li>
+              <li>175,342,546</li>
+            </div>
             <div id="MenuTitle">★ 공지사항</div>
             <div id="MenuContent" class="noitce">
               <ul>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;공지사항</a>  <img src={NewIcon} alt="NewTag"></img></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;이용정책</a></li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;공지사항</a>{" "}
+                  <img src={NewIcon} alt="NewTag"></img>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;이용정책</a>
+                </li>
               </ul>
             </div>
             <div id="MenuTitle">★ 신고하기/문의하기</div>
             <div id="MenuContent">
               <ul>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;카페 1:1 고객센터</a></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;밈품명품 광고 문의하기</a></li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;카페 1:1 고객센터</a>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;밈품명품 광고 문의하기</a>
+                </li>
               </ul>
             </div>
             <div id="MenuTitle">밈품명품 이용팁</div>
             <div id="MenuContent">
               <ul>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;슬기로운 밈품명품정보</a></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;밈품명품 공식 아카이브</a></li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;슬기로운 밈품명품정보</a>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;밈품명품 공식 아카이브</a>
+                </li>
               </ul>
             </div>
             <div id="MenuTitle">중나 행복나눔</div>
             <div id="MenuContent">
               <ul>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;포카 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;사골짤 무료나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;손글씨/이미지나눔</a> <img src={NewIcon} alt="NewTag"></img></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;어려운 이웃 사연</a>  <img src={NewIcon} alt="NewTag"></img></li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;포카 무료나눔</a>{" "}
+                  <img src={NewIcon} alt="NewTag"></img>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;사골짤 무료나눔</a>{" "}
+                  <img src={NewIcon} alt="NewTag"></img>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;손글씨/이미지나눔</a>{" "}
+                  <img src={NewIcon} alt="NewTag"></img>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;어려운 이웃 사연</a>{" "}
+                  <img src={NewIcon} alt="NewTag"></img>
+                </li>
               </ul>
             </div>
             <div id="MenuTitle">밈뮤니티</div>
             <div id="MenuContent">
               <ul>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;긍정거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;불량거래 후기</a> <img src={NewIcon} alt="NewTag"></img></li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;긍정거래 후기</a>{" "}
+                  <img src={NewIcon} alt="NewTag"></img>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;불량거래 후기</a>{" "}
+                  <img src={NewIcon} alt="NewTag"></img>
+                </li>
               </ul>
             </div>
             <div id="MenuTitle">밈품명품 회원 이벤트</div>
             <div id="MenuContent">
-              <ul><p>이벤트</p>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;당첨자발표/종료</a></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;이벤트 신청하기</a></li>
+              <ul>
+                <p>이벤트</p>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;당첨자발표/종료</a>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;이벤트 신청하기</a>
+                </li>
               </ul>
             </div>
             <div id="MenuTitle">밈당포 할인특구</div>
             <div id="MenuContent">
               <ul>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;꿀딜특구</a></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;할인특가</a>  <img src={NewIcon} alt="NewTag"></img></li>
-                <li><img src={L_shape} alt='L'></img><a href='#'>&nbsp;&nbsp;&nbsp;짤짤이 처분</a></li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;꿀딜특구</a>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;할인특가</a>{" "}
+                  <img src={NewIcon} alt="NewTag"></img>
+                </li>
+                <li>
+                  <img src={L_shape} alt="L"></img>
+                  <a href="#">&nbsp;&nbsp;&nbsp;짤짤이 처분</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-
-
       </DownSideMenu>
       <DownSideImg>
-
         <img src={bottomImg} alt=""></img>
-
       </DownSideImg>
-
     </div>
   );
-}
+};
 
 const UpSideMenuBar = styled.div`
   position: relative;
   /* left: 307px; */
   width: 200px;
   /* height: 965px; */
-  height: 434px;  
-    border: 4px solid #cfcfcf;
-    background: #fff;
-    outline: 2px solid #000;
+  height: 480px;
+  border: 4px solid #cfcfcf;
+  background: #fff;
+  outline: 2px solid #000;
   /* margin: 40px 0 0 0; */
 
   ul {
-    padding:0;
+    padding: 0;
   }
-  
-  li{
+
+  li {
     list-style: none;
   }
-  #head{
+  #head {
     #my-activity {
       color: #959595;
     }
   }
-  #tab-title{
-    ul{
+  #tab-title {
+    ul {
       display: flex;
       padding-left: 5px;
-      
+
       margin-top: 3px;
       margin-bottom: 0px;
-      
     }
 
-    li{
+    li {
       font-size: 12px;
       padding: 7px;
       width: 70px;
@@ -182,46 +274,45 @@ const UpSideMenuBar = styled.div`
     }
   }
 
-  #BookMarkIcon{
+  #BookMarkIcon {
     float: left;
     margin-left: 5px;
     margin-top: 3px;
   }
 
-  #head{
+  #head {
     border-bottom: 1px solid #cfcfcf;
     height: 35px;
-    
   }
 
-  #Userprofile{
+  #Userprofile {
     font-size: 12px;
     padding: 13px 0 5px 10px;
     border-bottom: 1px solid #cfcfcf;
-    
-    img{
+
+    img {
       float: left;
       padding: 0;
-    }  
+    }
 
-      #UserText{
-        #gradeBox{
+    #UserText {
+      #gradeBox {
         font-size: 10px;
-        border: 1px solid #DBDBDB;
+        border: 1px solid #dbdbdb;
         padding: 1px 5px;
         color: darkgray;
       }
     }
-    
-    #Nick{   
+
+    #Nick {
       text-align: left;
       padding: 0 10px;
       width: 100px;
       display: inline-block;
     }
-    
-    #profile-info { 
-      text-align:left;
+
+    #profile-info {
+      text-align: left;
       margin: 5px 2px;
 
       li {
@@ -234,7 +325,9 @@ const UpSideMenuBar = styled.div`
   }
 
   #CafeInfo {
-    ul{margin: 0;}
+    ul {
+      margin: 0;
+    }
 
     #Queen {
       display: flex;
@@ -246,19 +339,19 @@ const UpSideMenuBar = styled.div`
       }
     }
 
-    #Invite{
+    #Invite {
       display: flex;
-      justify-content:space-between;
+      justify-content: space-between;
       height: 30px;
-      font-size:15px;
+      font-size: 15px;
       text-align: center;
       padding: 0 7px;
 
-      #text{
+      #text {
         width: 55px;
-        font-size:11px;
-        color: #000AFF;
-        font-weight : 600;
+        font-size: 11px;
+        color: #000aff;
+        font-weight: 600;
       }
     }
 
@@ -276,36 +369,35 @@ const UpSideMenuBar = styled.div`
       }
     }
 
-    #Topic{
+    #Topic {
       border-bottom: 1px solid #cfcfcf;
       border-top: 1px solid #cfcfcf;
       padding: 12px 5px;
-      a{
-        
-        font-size:12px
+      a {
+        font-size: 12px;
       }
     }
 
-    #Btns{
+    #Btns {
       margin: 8px 0 0 2.5px;
 
-      button{
+      button {
         width: 195px;
         height: 35px;
         border: none;
         box-shadow: 1px 1px 1px 1px #bbbbbb inset;
-        background: #DBDBDB;
+        background: #dbdbdb;
         margin-bottom: 7px;
       }
 
-      #BtnHotpink{
-        background: #FF50E2;
+      #BtnHotpink {
+        background: #ff50e2;
         color: #fff;
-        box-shadow:none;
+        box-shadow: none;
       }
     }
   }
-`
+`;
 
 const DownSideMenu = styled.div`
   position: relative;
@@ -313,51 +405,51 @@ const DownSideMenu = styled.div`
   width: 200px;
   height: 965px;
   margin: 20px 0 0 0;
-  border: 4px solid #cfcfcf; 
+  border: 4px solid #cfcfcf;
   background: #fff;
   outline: 2px solid #000;
 
-  a{
+  a {
     text-decoration: none;
     color: #000;
   }
-  ul{
+  ul {
     padding: 0;
   }
 
-  li{
+  li {
     list-style: none;
   }
 
-  #Sidebar-search{
+  #Sidebar-search {
     text-align: center;
-    background: #FF50E2;
-    input{
+    background: #ff50e2;
+    input {
       height: 25px;
       border-radius: 0%;
-      border:0;
+      border: 0;
       width: 154px;
       margin-right: 1.5px;
-      box-shadow: 0.2px 0.3px 5px 0px #ff50E2 inset;
+      box-shadow: 0.2px 0.3px 5px 0px #ff50e2 inset;
     }
-    button{
+    button {
       border-radius: 0%;
       height: 26px;
       border: 0;
-      top:0px;
+      top: 0px;
       position: relative;
       width: 40px;
-      background-color: #ff50E2;
+      background-color: #ff50e2;
       color: #fff;
       font-size: 10.5px;
     }
   }
 
-  #TotalWrite{
+  #TotalWrite {
     justify-content: space-between;
     display: flex;
     text-align: center;
-    li{
+    li {
       width: 100px;
       height: 30px;
       font-size: 12px;
@@ -366,22 +458,22 @@ const DownSideMenu = styled.div`
     /* border-bottom: 2px solid #cfcfcf; */
   }
 
-  #MenuTitle{
-    font-size:12px;
+  #MenuTitle {
+    font-size: 12px;
     height: 37px;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     border-top: 2px solid #cfcfcf;
     border-bottom: 1px solid #cfcfcf;
     padding: 0 15px;
   }
- 
-  #MenuContent{
-    font-size:12px;
-    ul{
-      padding:  0 15px;
+
+  #MenuContent {
+    font-size: 12px;
+    ul {
+      padding: 0 15px;
     }
-    li{
+    li {
       margin: 0 0 5px 0;
     }
   }
@@ -391,18 +483,17 @@ const DownSideMenu = styled.div`
       padding: 7px 0;
     }
   }
-
-`
+`;
 
 const DownSideImg = styled.div`
   width: 208px;
   position: relative;
   // left: 305px;
-  
+
   margin: 30px 0;
-  img{
+  img {
     width: 212px;
     height: 110px;
   }
-`
-export default Sidebar
+`;
+export default Sidebar;

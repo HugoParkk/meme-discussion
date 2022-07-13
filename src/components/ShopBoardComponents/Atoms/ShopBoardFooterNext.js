@@ -16,18 +16,20 @@ function ShopBoardFooterNext() {
 const Text = styled.div`
   font-size: 12pt;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 20pt;
   display: inline-block;
+  cursor: pointer;
 `;
 const Line = styled.div`
   font-size: 12pt;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 20pt;
   display: inline-block;
   color: gray;
 `;
 const NextDiv = styled.div`
   position: absolute;
-  left: 67rem;
+  left: 500pt;
+  bottom: 65pt;
 `;
 export default ShopBoardFooterNext;
