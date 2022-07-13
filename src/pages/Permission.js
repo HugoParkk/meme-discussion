@@ -65,7 +65,7 @@ const btnArr = [
   { text: "짤 게시하기", type: "pink" },
 ];
 
-function Main() {
+function Permission() {
   return (
     <>
       <GradeBoardMainTitle src={svg6} />
