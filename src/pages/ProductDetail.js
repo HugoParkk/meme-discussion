@@ -43,7 +43,7 @@ const data3 = [
   { text: "제목", name: "스태프", date: "2022.05.04" },
 ];
 
-function Main() {
+function ProductDetail() {
   return (
     <>
       <BoardHeader data={data} />
@@ -65,3 +65,5 @@ function Main() {
     </>
   );
 }
+
+export default ProductDetail;

@@ -37,7 +37,7 @@ const back = ["black", "black", "black", "black", "black"];
 const img = [img2, img3, img4, img5, img6];
 const text = ["123.jpg", "123.jpg", "123.jpg"];
 
-function Main() {
+function Upload() {
   return (
     <>
       <form>
@@ -51,4 +51,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Upload;

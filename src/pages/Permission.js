@@ -79,4 +79,4 @@ function Permission() {
   );
 }
 
-export default Main;
+export default Permission;
