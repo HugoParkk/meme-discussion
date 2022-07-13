@@ -218,4 +218,4 @@ const CONTENTS = styled.div`
   margin-bottom: 40pt;
 `;
 
-export default ProductList();
+export default ProductList;

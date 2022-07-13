@@ -228,7 +228,8 @@ function Main() {
             </MainMiddle>
 
             <MainBottom>
-              <div class="leftContent">
+              <a href="http://localhost:3000/productlist">
+                <div class="leftContent">
                 <div class="mainTitle">
                   <p class="title">짤랑이 거래 ~~ 여기는 짤장터</p>
                   <p class="view-more">
@@ -315,8 +316,8 @@ function Main() {
                     </div>
                   </div>
                 </div>
-              </div>
-
+                </div>
+              </a>
               <div class="rightContent">
                 <div class="mainTitle">
                   <p class="title">꿈에서 본 그 짤... 짤 찾아 삼만리</p>
@@ -412,6 +413,10 @@ const Warp = styled.div`
   position: relative;
   width: 1080px;
   margin: 0 auto;
+  
+  a{
+    text-decoration: none;
+  }
 
   #public-popup {
     position: absolute;
