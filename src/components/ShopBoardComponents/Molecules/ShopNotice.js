@@ -57,7 +57,7 @@ const TextTitle = styled.div`
   text-align: center;
   font-size: 15pt;
   overflow: hidden;
-  line-height: 12pt;
+  line-height: 15pt;
 `;
 
 const StyledDiv = styled.div`
@@ -96,6 +96,7 @@ const Notice = styled.div`
   width: 4rem;
   border-radius: 3pt;
   line-height: 20pt;
+  cursor: pointer;
 `;
 
 const NoticeTitle = styled.div`

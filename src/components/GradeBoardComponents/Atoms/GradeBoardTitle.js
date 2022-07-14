@@ -19,7 +19,7 @@ const StyledText = styled.div`
   width: 500px;
   margin: 0 auto;
   position: absolute;
-  left: 15%;
+  left: 9%;
 `;
 
 export default GradeBoardTitle;

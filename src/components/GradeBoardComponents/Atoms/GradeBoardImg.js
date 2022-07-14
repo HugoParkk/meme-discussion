@@ -7,10 +7,10 @@ function GradeBoardImg(props) {
 
 const StyledImg = styled.img`
   display: inline-block;
-  width: 2%;
+  width: 5%;
   height: 2%;
   position: relative;
-  left: -4%;
+  left: -20%;
   top: 6px;
   transform: translate(50%);
 `;

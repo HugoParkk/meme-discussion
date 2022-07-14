@@ -21,8 +21,6 @@ const PinkSpan = styled.span`
   font-weight: bold;
   display: inline-block;
   color: #ff50e2;
-  
-  
 `;
 const StyledText = styled.div`
   font-size: 13pt;
@@ -32,6 +30,8 @@ const StyledText = styled.div`
   width: 70%;
   line-height: 35px;
   margin: 0 auto;
+  position: relative;
+  left: -6%;
 `;
 
 export default GradeDescribe;
