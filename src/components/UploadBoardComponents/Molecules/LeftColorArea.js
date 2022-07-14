@@ -22,7 +22,6 @@ const Wrap = styled.div`
 
 const Color = styled.div`
   width: 100%;
-  height: 110px;
   display: block;
   position: relative;
 `;
