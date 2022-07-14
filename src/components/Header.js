@@ -122,6 +122,7 @@ const HeaderBar = styled.div`
     padding: 10px;
     width: 35 0px;
     float: right;
+    display: flex;
     /* margin-right:px; */
   }
   button {
