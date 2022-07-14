@@ -416,6 +416,7 @@ const Warp = styled.div`
 
   a {
     text-decoration: none;
+    color: #000;
   }
 
   #public-popup {

@@ -88,7 +88,7 @@ const Sidebar = () => {
           <div id="Btns">
             <ul>
               <li>
-                <button id="BtnHotpink">게시하기</button>
+                <a href="http://localhost:3000/upload"><button id="BtnHotpink">게시하기</button></a>
               </li>
               <li>
                 <button>주인장 전화하기</button>
@@ -239,7 +239,7 @@ const UpSideMenuBar = styled.div`
   /* left: 307px; */
   width: 200px;
   /* height: 965px; */
-  height: 480px;
+  height: 435px;
   border: 4px solid #cfcfcf;
   background: #fff;
   outline: 2px solid #000;
@@ -252,7 +252,10 @@ const UpSideMenuBar = styled.div`
   li {
     list-style: none;
   }
-  #head {
+  a {
+    text-decoration: none;
+    color: #000;
+  }
     #my-activity {
       color: #959595;
     }
