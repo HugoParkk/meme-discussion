@@ -13,11 +13,12 @@ function ShopBoardMainList(props) {
 }
 
 const Wrap = styled.div`
-  width: 70%;
+  width: 120%;
   display: inline-block;
   position: relative;
-  left: 50%;
+  margin-left: 445pt;
   transform: translateX(-50%);
+  overflow: hidden;
 `;
 
 export default ShopBoardMainList;

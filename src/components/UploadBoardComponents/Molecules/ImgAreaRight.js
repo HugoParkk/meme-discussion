@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import MainImg from "../Atoms/MainImg";
 
 function ImgAreaRight(props) {
   return (
     <Wrap>
-      <Img src={props.src} />
       <StyledDiv />
+      <MainImg src={props.src} color={props.color} />
     </Wrap>
   );
 }

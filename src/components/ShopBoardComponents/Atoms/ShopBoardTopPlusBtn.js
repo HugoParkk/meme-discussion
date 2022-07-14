@@ -17,13 +17,13 @@ const Btn = styled.button`
   border: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
-  position: relative;
-  left: 78.5%;
-  width: 37.5%;
+  position: absolute;
+  left: 715pt;
+  top: 12pt;
 `;
 
 const PlusImg = styled.img`
-  width: 3rem;
+  width: 5rem;
   height: 3rem;
   display: inline-block;
   margin-left: 10px;

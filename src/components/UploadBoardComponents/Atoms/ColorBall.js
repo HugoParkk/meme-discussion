@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ColorBall(props) {
-  const style = {
-    width: `25px`,
-    height: `25px`,
+  const [color] = useState(props.back);
+
+  const border = {
+    width: `23px`,
+    height: `23px`,
     borderRadius: `50%`,
-    backgroundColor: `${props.color}`,
+    backgroundColor: `${color}`,
     display: `inline-block`,
     margin: `0`,
     marginTop: `5px`,
     marginRight: `5px`,
     marginLeft: `5px`,
+    cursor: `pointer`,
   };
 
-  return <div style={style} />;
+  const sendColor = (e) => {
+    props.getColor(color);
+  };
+
+  return (
+    <>
+      <div style={border} onClick={sendColor} />
+    </>
+  );
 }
 
 export default ColorBall;

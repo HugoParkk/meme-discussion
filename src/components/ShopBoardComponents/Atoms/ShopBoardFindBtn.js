@@ -12,7 +12,7 @@ function ShopBoardFindBtn() {
 }
 
 const Btn = styled.button`
-  background: #ff50e2;
+  background: magenta;
   border: none;
   color: white;
   font-size: 13pt;
