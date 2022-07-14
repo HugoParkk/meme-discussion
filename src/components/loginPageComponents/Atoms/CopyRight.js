@@ -17,11 +17,11 @@ function CopyRight() {
 const StyledText = styled.div`
   font-weight: bold;
   display: inline-block;
-  font-size: 14pt;
+  font-size: 13.5px;
 `;
 
 const StyledDiv = styled.div`
-  font-size: 12pt;
+  font-size: 12px;
   text-align: center;
   color: white;
 `;
