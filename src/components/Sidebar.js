@@ -88,7 +88,7 @@ const Sidebar = () => {
           <div id="Btns">
             <ul>
               <li>
-                <button id="BtnHotpink">짤 게시하기</button>
+                <button id="BtnHotpink">게시하기</button>
               </li>
               <li>
                 <button>주인장 전화하기</button>
