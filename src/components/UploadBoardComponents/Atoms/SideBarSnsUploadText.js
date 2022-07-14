@@ -13,12 +13,15 @@ function SideBarSnsUploadText(props) {
   );
 }
 const Divs = styled.div`
-  font-size: 13pt;
+  font-size: 10pt;
   margin-top: 7px;
+
   display: inline-block;
 `;
 const Imga = styled.img`
-  margin-right: 7px;
+  margin-left: 20px;
+  margin-right: 10px;
   width: 15px;
 `;
+
 export default SideBarSnsUploadText;
