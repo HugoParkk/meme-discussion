@@ -6,9 +6,9 @@ function BoardBuyChat() {
   return (
     <>
       <GlobalStyle />
-      <ChatBtn>
+      <a href="http://localhost:3000/Permission"><ChatBtn>
         <ImgChat src={SvgImage} alt={"구매 문의 채팅 이미지"} />
-      </ChatBtn>
+      </ChatBtn></a>
     </>
   );
 }

@@ -17,6 +17,7 @@ import img1 from "../images/화면 캡처 2022-05-03 144858.png";
 
 const data = [
   {
+    order: 0,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -27,6 +28,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 1,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -37,6 +39,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 2,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -47,6 +50,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 3,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -57,6 +61,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 4,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -67,6 +72,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 5,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -77,6 +83,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 6,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -87,6 +94,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 7,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -97,6 +105,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 8,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -107,6 +116,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 9,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -117,6 +127,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 10,
     src: img1,
     type1: "black",
     text1: "짤이름",
@@ -127,6 +138,7 @@ const data = [
     sub3: "조회 14,500",
   },
   {
+    order: 11,
     src: img1,
     type1: "black",
     text1: "짤이름",
