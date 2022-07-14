@@ -230,92 +230,92 @@ function Main() {
             <MainBottom>
               <a href="http://localhost:3000/productlist">
                 <div class="leftContent">
-                <div class="mainTitle">
-                  <p class="title">짤랑이 거래 ~~ 여기는 짤장터</p>
-                  <p class="view-more">
-                    <b>더보기</b>
-                    <img src={Plus} />
-                  </p>
-                </div>
-                <hr></hr>
-                <div class="post_content">
-                  <div class="top_content">
-                    <div class="post">
-                      <img src={Gost}></img>
-                      <div>
-                        <p>
-                          <b>
-                            진짜 내가??? <span class="num">[2]</span>
-                          </b>
-                        </p>
-                        <p>쿠크다스</p>
-                        <p>22.05.22 조회 145</p>
+                  <div class="mainTitle">
+                    <p class="title">짤랑이 거래 ~~ 여기는 짤장터</p>
+                    <p class="view-more">
+                      <b>더보기</b>
+                      <img src={Plus} />
+                    </p>
+                  </div>
+                  <hr></hr>
+                  <div class="post_content">
+                    <div class="top_content">
+                      <div class="post">
+                        <img src={Gost}></img>
+                        <div>
+                          <p>
+                            <b>
+                              진짜 내가??? <span class="num">[2]</span>
+                            </b>
+                          </p>
+                          <p>쿠크다스</p>
+                          <p>22.05.22 조회 145</p>
+                        </div>
+                      </div>
+                      <div class="post">
+                        <img src={Peace}></img>
+                        <div>
+                          <p>
+                            <b>
+                              진짜 내가??? <span class="num">[2]</span>
+                            </b>
+                          </p>
+                          <p>쿠크다스</p>
+                          <p>22.05.22 조회 145</p>
+                        </div>
+                      </div>
+                      <div class="post">
+                        <img src={Cat}></img>
+                        <div>
+                          <p>
+                            <b>
+                              진짜 내가??? <span class="num">[2]</span>
+                            </b>
+                          </p>
+                          <p>쿠크다스</p>
+                          <p>22.05.22 조회 145</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="post">
-                      <img src={Peace}></img>
-                      <div>
-                        <p>
-                          <b>
-                            진짜 내가??? <span class="num">[2]</span>
-                          </b>
-                        </p>
-                        <p>쿠크다스</p>
-                        <p>22.05.22 조회 145</p>
+                    <div class="bottom_content">
+                      <div class="post">
+                        <img src={Eyes}></img>
+                        <div>
+                          <p>
+                            <b>
+                              진짜 내가??? <span class="num">[2]</span>
+                            </b>
+                          </p>
+                          <p>쿠크다스</p>
+                          <p>22.05.22 조회 145</p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="post">
-                      <img src={Cat}></img>
-                      <div>
-                        <p>
-                          <b>
-                            진짜 내가??? <span class="num">[2]</span>
-                          </b>
-                        </p>
-                        <p>쿠크다스</p>
-                        <p>22.05.22 조회 145</p>
+                      <div class="post">
+                        <img src={Gun}></img>
+                        <div>
+                          <p>
+                            <b>
+                              진짜 내가??? <span class="num">[2]</span>
+                            </b>
+                          </p>
+                          <p>쿠크다스</p>
+                          <p>22.05.22 조회 145</p>
+                        </div>
+                      </div>
+                      <div class="post">
+                        <img src={Book}></img>
+                        <div>
+                          <p>
+                            <b>
+                              진짜 내가??? <span class="num">[2]</span>
+                            </b>
+                          </p>
+                          <p>쿠크다스</p>
+                          <p>22.05.22 조회 145</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="bottom_content">
-                    <div class="post">
-                      <img src={Eyes}></img>
-                      <div>
-                        <p>
-                          <b>
-                            진짜 내가??? <span class="num">[2]</span>
-                          </b>
-                        </p>
-                        <p>쿠크다스</p>
-                        <p>22.05.22 조회 145</p>
-                      </div>
-                    </div>
-                    <div class="post">
-                      <img src={Gun}></img>
-                      <div>
-                        <p>
-                          <b>
-                            진짜 내가??? <span class="num">[2]</span>
-                          </b>
-                        </p>
-                        <p>쿠크다스</p>
-                        <p>22.05.22 조회 145</p>
-                      </div>
-                    </div>
-                    <div class="post">
-                      <img src={Book}></img>
-                      <div>
-                        <p>
-                          <b>
-                            진짜 내가??? <span class="num">[2]</span>
-                          </b>
-                        </p>
-                        <p>쿠크다스</p>
-                        <p>22.05.22 조회 145</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 </div>
               </a>
               <div class="rightContent">
@@ -413,8 +413,8 @@ const Warp = styled.div`
   position: relative;
   width: 1080px;
   margin: 0 auto;
-  
-  a{
+
+  a {
     text-decoration: none;
   }
 
