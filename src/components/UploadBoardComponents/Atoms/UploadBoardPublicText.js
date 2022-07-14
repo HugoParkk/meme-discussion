@@ -13,6 +13,8 @@ const Text = styled.div`
   font-size: 13pt;
   font-weight: bold;
   margin-bottom: 5px;
+  width: 60%;
+  grid-column: 1 / 2;
 `;
 
 export default UploadBoardPublicText;

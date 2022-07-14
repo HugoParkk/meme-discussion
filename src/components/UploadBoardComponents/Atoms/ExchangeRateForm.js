@@ -21,6 +21,7 @@ const YourForm = styled.input`
   font-size: 13pt;
   text-align: right;
   padding: 10px;
+  grid-column: 2 / 3;
   ::placeholder {
     color: #ff50e2;
     font-size: 13pt;
