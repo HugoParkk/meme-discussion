@@ -36,7 +36,7 @@ function Header() {
         <div id="header-bar-menu">
           <ul>
             <li>
-              <a href="#">홈 화면</a>
+              <a href="http://localhost:3000/main">홈 화면</a>
             </li>
             <li>
               <a href="#">내가 제일 '짤' 나가</a>
@@ -45,7 +45,7 @@ function Header() {
               <a href="#">짤장터</a>
             </li>
             <li>
-              <a href="#">짤 찾아 삼만리</a>
+              <a href="http://localhost:3000/productlist">짤 찾아 삼만리</a>
             </li>
             <li>
               <a href="#">공지사항</a>
