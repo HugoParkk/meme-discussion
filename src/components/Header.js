@@ -4,6 +4,7 @@ import headerSrc from '../images/public_compoment/HeaderMain.png';
 import ChennelA from '../images/public_compoment/Channel_A_Logo.png';
 import GroundX from '../images/public_compoment/GroundX.jpg';
 import dongA from '../images/public_compoment/dongA_daily.png';
+import Digitech from '../images/public_compoment/Seoul_Digitech_High_School.png'
 
 
 function Header() {
@@ -11,9 +12,10 @@ function Header() {
     <div>
       <HeaderMenuTop>
       <div  id="logo">
-          <img src={ChennelA} alt="채널A로고"></img> | 
-          <img src={GroundX} alt="그라운드x로고"></img> |
-          <img src={dongA} alt="동아일보로고"></img>
+          <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;| 
+          <img src={GroundX} alt="그라운드x로고"></img>&nbsp;|
+          <img src={dongA} alt="동아일보로고"></img>&nbsp;|&nbsp;
+          <img src={Digitech} alt="서울디지텍고등학교로고" class="Digitech"></img>
         </div>
 
         <div  id="header-top">
@@ -58,7 +60,6 @@ const HeaderMenuTop = styled.div`
     display: flex;
     margin: auto;
     list-style: none;
-    position: relative;
     width: 500px;
     padding: 10px;
     
@@ -69,16 +70,21 @@ const HeaderMenuTop = styled.div`
     color: black;
   }
   img{
-    position: relative;
     height: 20px;
 
   }
-  div{
-    /* width: 050px; */
-    
-  }
+
   #logo{
-    margin: auto 0;
+    margin: 5px 0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    .chanelA{
+      padding: 5px 0 0 0;
+    }
+    .Digitech{
+      padding: 7px 0 0 0;
+    }
   }
   #header-top{
     
@@ -93,7 +99,7 @@ const HeaderStyleTest = styled.header`
   height: 130px;
   color: white;
   float: center;
-  top: -25px;
+  top: -20px;
   margin: 0 auto;
   /* margin-bottom: px; */
   position: relative;

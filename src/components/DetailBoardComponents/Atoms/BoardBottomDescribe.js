@@ -36,6 +36,6 @@ const Text = styled.div`
   line-height: 20px;
   color: #dbdbdb;
   position: relative;
-  left: 50%;
+  margin-left: 50%;
 `;
 export default BoardBottomDescribe;

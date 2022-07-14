@@ -29,8 +29,8 @@ function TextGroup(props) {
 }
 
 const StyledBIG = styled.div`
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1.3em;
+  margin-bottom: 2em;
   text-align: center;
 `;
 const StyledSMALL = styled.div`

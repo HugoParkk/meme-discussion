@@ -10,11 +10,11 @@ function BoardText(props) {
   );
 }
 const Text = styled.div`
-  font-size: 12pt;
+  font-size: 17pt;
   font-weight: bold;
   margin-bottom: 10px;
   margin-right: 13px;
   display: inline-block;
-  width: 50px;
+  width: 100px;
 `;
 export default BoardText;

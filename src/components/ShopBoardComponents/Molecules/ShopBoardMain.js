@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ShopBoarddSubTitle from "../Atoms/ShopBoarddSubTitle";
 import ShopBoardImg from "../Atoms/ShopBoardImg";
-import ShopBoardTitle from "../Atoms/SoptBoardTitle";
+import ShopBoardTitle from "../Atoms/ShopBoardTitle";
 
 function ShopBoardMain(props) {
   const arr = props.data;
@@ -22,7 +22,7 @@ function ShopBoardMain(props) {
 }
 
 const Contents = styled.div`
-  width: 10rem;
+  width: 15.2rem;
   display: inline-block;
   margin: 10px;
 `;

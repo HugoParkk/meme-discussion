@@ -15,7 +15,7 @@ const StyledDiv = styled.div`
   cursor: pointer;
   font-weight: bold;
   font-size: 12pt;
-  color: #cfcfcf;
+  color: #828282;
   margin: 0 auto;
   width: 90%;
   text-align: left;

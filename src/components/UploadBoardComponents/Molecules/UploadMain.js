@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import UploadBoardPublicText from "../Atoms/UploadBoardPublicText";
+import FooterPostText from "../Atoms/FooterPostText";
+import UploadImgArea from "./UploadImgArea";
 
-function UploadMain() {
+function UploadMain(props) {
   return (
     <Main>
-      <UploadBoardPublicText text="짤 업로드" />
+      <FooterPostText text="짤 업로드" />
+      <UploadImgArea frame={props.frame} back={props.back} src={props.src} />
     </Main>
   );
 }

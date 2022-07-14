@@ -6,8 +6,8 @@ import BoardUrl from "../Atoms/BoardUrl";
 function BoardHeaderOther(props) {
   return (
     <OtherDiv>
-      <BoardUrl />
       <BoardComment cnt={props.cnt} />
+      <BoardUrl />
     </OtherDiv>
   );
 }
@@ -17,6 +17,7 @@ const OtherDiv = styled.div`
   position: relative;
   top: 30px;
   float: right;
+  border: 1px solid black;
 `;
 
 export default BoardHeaderOther;
