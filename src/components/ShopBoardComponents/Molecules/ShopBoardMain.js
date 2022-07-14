@@ -9,6 +9,19 @@ function ShopBoardMain(props) {
 
   return (
     <Contents>
+      {
+        arr === 0 &&
+        <a href="http://localhost:3000/productdetail">
+          <ShopBoardImg src={arr.src} />
+          <ShopBoardTitle type={arr.type1} text={arr.text1} />
+          <ShopBoardTitle type={arr.type2} text={arr.text2} />
+          <ShopBoarddSubTitle text={arr.sub1} />
+          <StyledDiv>
+            <ShopBoarddSubTitle text={arr.sub2} />
+            <ShopBoarddSubTitle text={arr.sub3} />
+          </StyledDiv>
+        </a>
+      }
       <ShopBoardImg src={arr.src} />
       <ShopBoardTitle type={arr.type1} text={arr.text1} />
       <ShopBoardTitle type={arr.type2} text={arr.text2} />
