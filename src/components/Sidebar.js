@@ -382,7 +382,7 @@ const UpSideMenuBar = styled.div`
       margin: 8px 0 0 2.5px;
 
       button {
-        width: 195px;
+        width: 186px;
         height: 35px;
         border: none;
         box-shadow: 1px 1px 1px 1px #bbbbbb inset;
@@ -394,6 +394,7 @@ const UpSideMenuBar = styled.div`
         background: #ff50e2;
         color: #fff;
         box-shadow: none;
+        width: 140pt;
       }
     }
   }
@@ -428,7 +429,7 @@ const DownSideMenu = styled.div`
       height: 25px;
       border-radius: 0%;
       border: 0;
-      width: 154px;
+      width: 150px;
       margin-right: 1.5px;
       box-shadow: 0.2px 0.3px 5px 0px #ff50e2 inset;
     }

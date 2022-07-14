@@ -9,7 +9,7 @@ function ShopBoardMain(props) {
 
   return (
     <Contents>
-      <ShopBoardImg />
+      <ShopBoardImg src={arr.src} />
       <ShopBoardTitle type={arr.type1} text={arr.text1} />
       <ShopBoardTitle type={arr.type2} text={arr.text2} />
       <ShopBoarddSubTitle text={arr.sub1} />
@@ -22,11 +22,11 @@ function ShopBoardMain(props) {
 }
 
 const Contents = styled.div`
-  width: 100pt;
+  width: 120pt;
   display: inline-block;
   margin: 10px;
-  margin-left: 50pt;
-  margin-right: 50pt;
+  margin-left: 20pt;
+  margin-right: 20pt;
 `;
 
 const StyledDiv = styled.div`

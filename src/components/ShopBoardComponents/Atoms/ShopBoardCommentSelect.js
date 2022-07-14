@@ -17,10 +17,10 @@ const SelectTime = styled.select`
   font-size: 13pt;
   display: inline-block;
   padding-left: 10px;
-  width: 200px;
+  width: 150px;
   border: 2px solid #dbdbdb;
   height: 50px;
-  margin-left: 39rem;
+  left: 360pt;
   margin-right: -9.6rem;
   position: absolute;
   margin-top: 2rem;

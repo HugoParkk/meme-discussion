@@ -6,7 +6,7 @@ function ShopBoarddSubTitle(props) {
 }
 
 const StyledDiv = styled.div`
-  font-size: 11pt;
+  font-size: 10pt;
   color: gray;
 `;
 

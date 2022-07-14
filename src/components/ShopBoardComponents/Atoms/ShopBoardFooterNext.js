@@ -26,10 +26,15 @@ const Line = styled.div`
   margin-left: 20pt;
   display: inline-block;
   color: gray;
+  right: 0;
 `;
 const NextDiv = styled.div`
-  position: absolute;
-  left: 500pt;
-  bottom: 65pt;
+  position: relative;
+  left: 450pt;
+  right: 0;
+  top: 60pt;
+  margin: 0;
+  padding: 0;
+  width: 100pt;
 `;
 export default ShopBoardFooterNext;
