@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import ImgAreaLeft from "./ImgAreaLeft";
 import ImgAreaRight from "./ImgAreaRight";
 
 function UploadImgArea(props) {
+  const [color, setColor] = useState("#FF50E2");
+
+  const good = (color) => {
+    setColor(color); //hooks에 값넣음
+  };
+
+  const UploadImgArea = () => {
+    <ImgAreaLeft frame={props.frame} back={props.back} color={good} />;
+  };
+
   return (
     <Wrap>
-      <ImgAreaRight />
-      <ImgAreaLeft frame={props.frame} back={props.back} />
+      <ImgAreaRight src={props.src} color={color} />
+      <ImgAreaLeft frame={props.frame} back={props.back} color={good} />
       <ImgButton>파일찾기</ImgButton>
     </Wrap>
   );

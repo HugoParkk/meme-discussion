@@ -1,4 +1,7 @@
 import React from "react";
+import styled from "styled-components";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 import UploadHeader from "../components/UploadBoardComponents/Molecules/UploadHeader";
 import UploadInput from "../components/UploadBoardComponents/Molecules/UploadInput";
@@ -37,18 +40,32 @@ const back = ["black", "black", "black", "black", "black"];
 const img = [img2, img3, img4, img5, img6];
 const text = ["123.jpg", "123.jpg", "123.jpg"];
 
-function Upload() {
+function Main() {
   return (
     <>
+      <Header />
       <form>
         <UploadHeader />
-        <UploadSelect data={data1} />
-        <UploadSelect data={data2} type="pink" />
+        <Wrap>
+          <UploadSelect data={data1} />
+          <UploadSelect data={data2} type="pink" />
+        </Wrap>
         <UploadInput />
       </form>
       <UploadMain frame={frame} back={back} src={img1} data={img} text={text} />
+      <Footer type="upload" />
     </>
   );
 }
 
-export default Upload;
+const Wrap = styled.div`
+  width: 1074px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export default Main;

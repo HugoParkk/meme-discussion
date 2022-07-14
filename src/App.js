@@ -3,7 +3,7 @@ import Main from "./pages/Main";
 import Login from "./pages/Login";
 import Permission from "./pages/Permission";
 import ProductList from "./pages/ProductList";
-import Upload from './pages/Upload';
+import Upload from "./pages/Upload";
 import { Link, Route, Switch } from "react-router-dom";
 
 // react-responsive(반응형 웹을 만들기 위한 모듈 테스트)
@@ -31,7 +31,10 @@ function App() {
         <Permission />
       </Route>
       <Route path="/productlist">
-        <ProductList/>
+        <ProductList />
+      </Route>
+      <Route path="/upload">
+        <Upload />
       </Route>
     </div>
   );
