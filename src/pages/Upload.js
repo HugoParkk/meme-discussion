@@ -44,7 +44,7 @@ const text = [
   "짤 설명 사진.jpg",
 ];
 
-function Main() {
+function Upload() {
   return (
     <>
       <Header />
@@ -72,4 +72,4 @@ const Wrap = styled.div`
   justify-content: space-between;
 `;
 
-export default Main;
+export default Upload;
