@@ -36,6 +36,9 @@ function App() {
       <Route path="/upload">
         <Upload />
       </Route>
+      <Route>
+        
+      </Route>
     </div>
   );
 }
