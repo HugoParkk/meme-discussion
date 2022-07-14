@@ -17,7 +17,7 @@ const StyledDiv = styled.div`
   position: absolute;
   z-index: 9;
   margin-top: -309.5px;
-  margin-left: 43px;
+  margin-left: 42px;
   border: 2px solid black;
 `;
 

@@ -428,7 +428,7 @@ const DownSideMenu = styled.div`
       height: 25px;
       border-radius: 0%;
       border: 0;
-      width: 154px;
+      width: 150px;
       margin-right: 1.5px;
       box-shadow: 0.2px 0.3px 5px 0px #ff50e2 inset;
     }

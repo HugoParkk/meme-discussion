@@ -27,15 +27,15 @@ const Text = styled.div`
 `;
 
 const TextBlack = styled.div`
-  font-size: 17pt;
+  font-size: 10pt;
   font-weight: bold;
   display: block;
   color: black;
   width: 10%;
   margin: 0 auto;
-  position: absolute;
-  margin-left: 78%;
-  margin-top: -10rem;
+  position: relative;
+  left: 230pt;
+  top: -105pt;
 `;
 
 export default BoardTopTitle;

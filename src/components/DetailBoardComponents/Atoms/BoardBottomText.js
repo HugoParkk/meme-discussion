@@ -10,10 +10,11 @@ function BoardBottomText() {
   );
 }
 const Text = styled.div`
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: bold;
   color: #999999;
   position: relative;
-  margin-left: 50%;
+  left: 290pt;
+  top: -80pt;
 `;
 export default BoardBottomText;
