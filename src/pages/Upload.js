@@ -8,11 +8,10 @@ import UploadInput from "../components/UploadBoardComponents/Molecules/UploadInp
 import UploadMain from "../components/UploadBoardComponents/Molecules/UploadMain";
 import UploadSelect from "../components/UploadBoardComponents/Molecules/UploadSelect";
 import img1 from "../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg";
-import img2 from "../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg";
-import img3 from "../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg";
-import img4 from "../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg";
-import img5 from "../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg";
-import img6 from "../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg";
+import img2 from "../images/화면 캡처 2022-05-03 144858.png";
+import img3 from "../images/3b286c0d74f710d5a290d7ccb4028ca9.jpg";
+import img4 from "../images/7b6411f877dd15ce9d97b91b258ac106.jpg";
+import img5 from "../images/3cfb2a7a354ceffff7a71f4c7c625023.jpg";
 
 const data1 = ["게시판을 선택하세요", "게시판1", "게시판2", "게시판2"];
 const data2 = ["말머리 선택", "말머리1", "말머리2", "말머리3"];
@@ -37,8 +36,13 @@ const frame = [
   "#50FFD5",
 ];
 const back = ["black", "black", "black", "black", "black"];
-const img = [img2, img3, img4, img5, img6];
-const text = ["123.jpg", "123.jpg", "123.jpg"];
+const img = [img2, img3, img4, img5];
+const text = [
+  "짤 설명 사진.jpg",
+  "짤 설명 사진.jpg",
+  "짤 설명 사진.jpg",
+  "짤 설명 사진.jpg",
+];
 
 function Main() {
   return (

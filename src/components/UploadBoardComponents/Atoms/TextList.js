@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
 const Text = styled.div`
   line-height: 30px;
   height: 30px;
-  font-size: 13pt;
+  font-size: 10pt;
   margin-left: 5px;
   top: 50%;
   transform: translateY(-50%);
@@ -49,8 +49,8 @@ const Wrap = styled.div`
 
 const Icon = styled.div`
   background-color: #676767;
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
