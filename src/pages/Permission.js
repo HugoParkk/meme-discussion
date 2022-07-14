@@ -69,7 +69,7 @@ const btnArr = [
   { text: "짤 게시하기", type: "pink" },
 ];
 
-function Main() {
+function Permission() {
   return (
     <>
       <Header />
@@ -119,4 +119,4 @@ const FOOTER = styled.div`
   position: relative;
   top: 120pt;
 `;
-export default Main;
+export default Permission;

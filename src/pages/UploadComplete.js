@@ -9,9 +9,14 @@ function UploadComplete() {
         <>
             <Header />
             <Sidebar />
+            <Tag>업로드 완료 페이지 입니다</Tag>
             <Footer />
         </>
     );
 }
 
-const UploadComplete = styled.div``;
+const Tag = styled.div`
+    font-size: 100px;
+`;
+
+export default UploadComplete;

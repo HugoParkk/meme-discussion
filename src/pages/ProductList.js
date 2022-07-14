@@ -191,6 +191,7 @@ function Main() {
           </Back>
         </CONTENTS>
       </Wrap>
+      
       <FOOTER>
         <Footer />
       </FOOTER>
