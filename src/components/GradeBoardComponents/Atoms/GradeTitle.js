@@ -10,13 +10,14 @@ function GradeTitle() {
   );
 }
 const PinkDiv = styled.div`
-  font-size: 13pt;
+  font-size: 10 pt;
   font-weight: bold;
   color: #ff50e2;
-  width: 70%;
+  position: relative;
   margin: 0 auto;
   text-align: left;
-  margin-top: 3rem;
+  margin-top: -1.5rem;
   margin-bottom: 1.3rem;
+  left: 50pt;
 `;
 export default GradeTitle;

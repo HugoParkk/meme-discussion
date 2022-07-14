@@ -6,6 +6,10 @@ import GradeTitle from "../components/GradeBoardComponents/Atoms/GradeTitle";
 import GradePinkArea from "../components/GradeBoardComponents/Molecules/GradePinkArea";
 import GradeButtonGroup from "../components/GradeBoardComponents/Molecules/GradeButtonGroup";
 import GradeBoardMainTitle from "../components/GradeBoardComponents/Molecules/GradeBoardMainTitle";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Sidebar from "../components/Sidebar";
+import styled from "styled-components";
 import svg1 from "../images/Vector-3.svg";
 import svg2 from "../images/Vector-6.svg";
 import svg3 from "../images/Vector-5.svg";
@@ -65,18 +69,54 @@ const btnArr = [
   { text: "짤 게시하기", type: "pink" },
 ];
 
-function Permission() {
+function Main() {
   return (
     <>
-      <GradeBoardMainTitle src={svg6} />
-      <GradeDescribe />
-      <GradeLine />
-      <GradeTitle />
-      <GradeTextGroup data={arr} />
-      <GradePinkArea data={pinkArr} arr={strArr} />
-      <GradeButtonGroup data={btnArr} />
+      <Header />
+      <Wrap>
+        <SIDEBAR>
+          <Sidebar />
+        </SIDEBAR>
+        <CONTENTS>
+          <GradeBoardMainTitle src={svg6} />
+          <GradeDescribe />
+          <GradeLine />
+          <GradeTitle />
+          <GradeTextGroup data={arr} />
+          <GradePinkArea data={pinkArr} arr={strArr} />
+          <GradeButtonGroup data={btnArr} />
+        </CONTENTS>
+      </Wrap>
+      <FOOTER>
+        <Footer />
+      </FOOTER>
     </>
   );
 }
+const Wrap = styled.div`
+  width: 1080px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  top: 32px;
+`;
 
-export default Permission;
+const SIDEBAR = styled.div`
+  position: relative;
+`;
+
+const CONTENTS = styled.div`
+  width: 866pt;
+  height: 450pt;
+  border: 4px solid #cfcfcf;
+  position: relative;
+  outline: 3px solid black;
+`;
+
+const FOOTER = styled.div`
+  position: relative;
+  top: 120pt;
+`;
+export default Main;
