@@ -15,12 +15,14 @@ function BoardTopTitle(props) {
 }
 
 const Text = styled.div`
-  font-size: 17pt;
+  font-size: 10pt;
   display: block;
   color: #ff50e2;
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 7px;
   /* 방송캡쳐 */
 `;
 

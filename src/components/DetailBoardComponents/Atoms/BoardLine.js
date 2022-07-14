@@ -7,7 +7,7 @@ function BoardLine() {
 
 const StyledDiv = styled.div`
   height: 2px;
-  width: 37.5%;
+  width: 45%;
   position: relative;
   left: 50%;
   background-color: #ff50e2;

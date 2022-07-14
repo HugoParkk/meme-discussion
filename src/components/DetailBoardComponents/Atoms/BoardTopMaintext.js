@@ -12,11 +12,11 @@ function BoardTopMaintext(props) {
 }
 
 const Text = styled.div`
-  font-size: 22pt;
+  font-size: 14pt;
   font-weight: bold;
   display: block;
-  width: 75%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 10px auto;
 `;
 
 export default BoardTopMaintext;

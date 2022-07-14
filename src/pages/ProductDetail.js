@@ -20,14 +20,22 @@ import BoardTopTitle from "../components/DetailBoardComponents/Atoms/BoardTopTit
 import BoardBottomImage from "../components/DetailBoardComponents/Atoms/BoardBottomImage";
 import BoardBottomLastText from "../components/DetailBoardComponents/Atoms/BoardBottomLastText";
 import BoardFooterList from "../components/DetailBoardComponents/Molecules/BoardFooterList";
+import Header from "../components/Header";
+import styled from "styled-components";
+import Sidebar from "../components/Sidebar";
 
 const data = {
   type: "pink",
   text: "방송캡쳐 >",
   text2: "짤 판매 제목",
   data: {
-    cnt: "조회수 0",
-    data: { src: img1, name: "판매자", rating: "열심회원", date: "2022.05.04" },
+    cnt: "0",
+    data: {
+      src: img1,
+      name: "판매자",
+      rating: "열심회원",
+      date: "2022.05.04 00:27 조회 5",
+    },
   },
 };
 
@@ -46,24 +54,45 @@ const data3 = [
 function ProductDetail() {
   return (
     <>
-      <BoardHeader data={data} />
-      <GradeLine />
-      <BoardImg src={img2} />
-      <BoardContents data={data2} />
-      <BoardLine />
-      <BoardName text="거래자" />
-      <BoardEmail />
-      <BoardTopTitle text="코드보기 >" />
-      <BoardNFT />
-      <BoardBuyChat />
-      <BoardBottomText />
-      <BoardBottomDescribe />
-      <GradeLine />
-      <BoardBottomImage />
-      <BoardBottomLastText text="디지털 ~~" />
+      <Header type="noBlack" />
+      <Flex>
+        <Sidebar id="public-sidebar" />
+        <Wrap>
+          <BoardHeader data={data} />
+          <GradeLine />
+          <BoardImg src={img2} />
+          <BoardContents data={data2} />
+          <BoardLine />
+          <BoardName text="거래자" />
+          <BoardEmail />
+          <BoardTopTitle text="코드보기 >" />
+          <BoardNFT />
+          <BoardBuyChat />
+          <BoardBottomText />
+          <BoardBottomDescribe />
+          <GradeLine />
+          <BoardBottomImage />
+          <BoardBottomLastText text="디지털 ~~" />
+        </Wrap>
+      </Flex>
+
       <BoardFooterList data={data3} />
     </>
   );
 }
+
+const Flex = styled.div`
+  width: 1080px;
+  display: flex;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  justify-content: space-between;
+`;
+
+const Wrap = styled.div`
+  width: 860px;
+  border: 2px solid black;
+`;
 
 export default ProductDetail;

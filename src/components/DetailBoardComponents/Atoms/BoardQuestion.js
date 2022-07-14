@@ -6,7 +6,7 @@ function BoardQuestion(props) {
 }
 
 const StyledQuestion = styled.div`
-  font-size: 13pt;
+  font-size: 10pt;
   display: inline-block;
   font-weight: bold;
   padding: 2px 10px;
@@ -14,8 +14,7 @@ const StyledQuestion = styled.div`
   cursor: pointer;
   text-align: center;
   background-color: #dbdbdb;
-  border-radius: 10px;
-  margin-left: 4px;
+  border-radius: 5px;
   margin-bottom: 3px;
 `;
 
