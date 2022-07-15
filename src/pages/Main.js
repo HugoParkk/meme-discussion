@@ -61,9 +61,8 @@ function Main() {
                         <a class="noticeText">공지 및 업데이트</a>
                       </li>
                       <li>
-                        <a class="noticePlus">
-                          더보기&nbsp;&nbsp;&nbsp;<img src={Plus}></img>
-                        </a>
+                        <a class="noticePlus">더보기<img src={Plus}></img></a>
+                        
                       </li>
                     </ul>
                   </div>
@@ -487,6 +486,10 @@ const MainTop = styled.div`
         }
         .noticePlus {
           font-size: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 55px;
         }
       }
 
@@ -571,7 +574,6 @@ const MainMiddle = styled.div`
     outline: 2px solid #000;
     #text {
       font-size: 18px;
-
       padding: 10px;
       margin-left: 10px;
       span {
@@ -688,7 +690,7 @@ const MainBottom = styled.div`
   color: white;
   a {
       text-decoration: none;
-      color: #000;
+      color: #fff;
   }
   .leftContent {
     background: #fa00d0;
