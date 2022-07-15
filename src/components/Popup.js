@@ -25,7 +25,7 @@ function Popup() {
                 </ul>
               </li>
               <li>
-              <ul>
+                <ul>
                   <li id='first'>다음 회원 등급</li>
                   <li id='second'>갓기회원</li>
                   <li>밈풍명품 카페 가입 및 짤 1개 이상 올린 회원</li>

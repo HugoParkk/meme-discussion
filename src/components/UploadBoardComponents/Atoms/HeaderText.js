@@ -21,6 +21,7 @@ const StyledTitle = styled.div`
 `;
 
 const StyledText = styled.div`
+width: 50rem;
   display: inline-block;
   font-size: 1rem;
   line-height: 44px;
