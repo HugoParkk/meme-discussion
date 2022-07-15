@@ -180,12 +180,6 @@ function ProductList() {
   );
 }
 
-const HR = styled.hr`
-  width: 65rem;
-  margin-left: 12pt;
-  position: absolute;
-  margin-top: -960pt;
-`;
 const HR2 = styled.hr`
   width: 95%;
   margin-left: 20pt;

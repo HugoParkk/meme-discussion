@@ -23,6 +23,7 @@ import BoardFooterList from "../components/DetailBoardComponents/Molecules/Board
 import Header from "../components/Header";
 import styled from "styled-components";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 
 const data = {
   type: "pink",
@@ -93,6 +94,9 @@ function ProductDetail() {
       </Flex>
 
       <BoardFooterList data={data3} />
+      <FOOTER>
+        <Footer />
+      </FOOTER>
     </>
   );
 }
@@ -120,6 +124,11 @@ const GradeLine2 = styled.div`
   margin: 0 auto;
   margin-top: -80px;
   margin-bottom: 2rem;
+`;
+
+const FOOTER = styled.div`
+  position: relative;
+  top: 100pt;
 `;
 
 export default ProductDetail;
