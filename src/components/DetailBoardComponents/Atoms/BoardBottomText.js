@@ -16,5 +16,6 @@ const Text = styled.div`
   position: relative;
   left: 290pt;
   top: -80pt;
+  width: 200pt;
 `;
 export default BoardBottomText;
