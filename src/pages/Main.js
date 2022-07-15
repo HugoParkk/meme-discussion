@@ -38,8 +38,8 @@ import GlobalBackground from '../components/GlobalBackground'
 
 function Main() {
   return (
-    <GlobalBackground>
-      <Warp>
+    <div>
+      <Wrap>
         <Header />
         <Assembler>
           <Sidebar id="public-sidebar" />
@@ -57,9 +57,9 @@ function Main() {
                         <a class="noticeText">공지 및 업데이트</a>
                       </li>
                       <li>
-                        <a class="noticePlus">
-                          더보기&nbsp;&nbsp;&nbsp;<img src={Plus}></img>
-                        </a>
+                        <div class="noticePlus">
+                          더보기&nbsp;&nbsp;<img src={Plus}></img>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -117,9 +117,7 @@ function Main() {
               <div id="best_JJal">
                 <div id="text">
                   BEST ZZAL : 내가 제일 '짤'나가{" "}
-                  <span>
-                    더보기 <img src={plus_box}></img>
-                  </span>
+                  <div>더보기<img src={plus_box}></img></div>
                 </div>
                 <div className="card_set">
                   <div className="card">
@@ -398,8 +396,8 @@ function Main() {
         </div> */}
 
         <Footer id="public-footer" />
-      </Warp>
-    </GlobalBackground>
+      </Wrap>
+    </div>
   );
 }
 
@@ -484,6 +482,10 @@ const MainTop = styled.div`
         }
         .noticePlus {
           font-size: 12px;
+          display: flex;
+          width: 58px;
+          justify-content: space-between;
+          align-items: center;
         }
       }
 
@@ -568,13 +570,19 @@ const MainMiddle = styled.div`
     outline: 2px solid #000;
     #text {
       font-size: 18px;
-
+      display: flex;
       padding: 10px;
       margin-left: 10px;
-      span {
+      justify-content: space-between;
+      align-items: center;
+      div {
         font-size: 12px;
         font-weight: bold;
-        margin-left: 325px;
+        display: flex;
+        width: 50px;
+        img{
+          height: 15px;
+        }
       }
     }
     .card {
