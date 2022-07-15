@@ -14,16 +14,16 @@ function ShopBoardCommentSelect() {
   );
 }
 const SelectTime = styled.select`
-  font-size: 13pt;
+  font-size: 0.903vw;
   display: inline-block;
-  padding-left: 10px;
-  width: 150px;
+  padding-left: 0.521vw;
+  width: 7.813vw;
+  height: 2.604vw;
   border: 2px solid #dbdbdb;
-  height: 50px;
-  left: 360pt;
-  margin-right: -9.6rem;
+  left: 25vw;
+  margin-right: -8vw;
   position: absolute;
-  margin-top: 2rem;
+  margin-top: 1.667vw;
 `;
 
 export default ShopBoardCommentSelect;

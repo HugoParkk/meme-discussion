@@ -14,27 +14,27 @@ function ShopBoardFooterNext() {
   );
 }
 const Text = styled.div`
-  font-size: 12pt;
+  font-size: 0.833vw;
   font-weight: bold;
-  margin-left: 20pt;
+  margin-left: 1.389vw;
   display: inline-block;
   cursor: pointer;
 `;
 const Line = styled.div`
-  font-size: 12pt;
+  font-size: 0.833vw;
   font-weight: bold;
-  margin-left: 20pt;
+  margin-left: 1.389vw;
   display: inline-block;
   color: gray;
   right: 0;
 `;
 const NextDiv = styled.div`
   position: relative;
-  left: 450pt;
+  left: 31.25vw;
   right: 0;
-  top: 60pt;
+  top: 4.167vw;
   margin: 0;
   padding: 0;
-  width: 100pt;
+  width: 6.944vw;
 `;
 export default ShopBoardFooterNext;

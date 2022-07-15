@@ -17,12 +17,12 @@ function GradeDescribe() {
   );
 }
 const PinkSpan = styled.span`
-  font-size: 1rem;
+  font-size: 1.105vw;
   display: inline-block;
   color: #ff50e2;
 `;
 const StyledText = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.7722vw;
   font-weight: bold;
   display: block;
   text-align: start;

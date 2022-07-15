@@ -16,7 +16,7 @@ const StyledDiv = styled.div`
   width: 70%;
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1.4833vw;
 `;
 
 export default GradeButtonGroup;
