@@ -18,12 +18,15 @@ const Wrap = styled.div`
 
 const StyledInput = styled.input`
   display: block;
-  width: 869px;
+  width: 54.3rem;
   position: relative;
   border: 5px solid #ffd4ed;
   outline: 3px solid black;
   padding: 10px;
-  font-size: 14pt;
+  font-size: 1.2rem;
+  ::placeholder {
+    font-size: 1.2rem;
+  }
 `;
 
 export default UploadInput;

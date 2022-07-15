@@ -29,7 +29,7 @@ function UploadMain(props) {
 }
 
 const Wrap = styled.div`
-  width: 1074px;
+  width: 67.1rem;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -38,16 +38,16 @@ const Wrap = styled.div`
 
 const Main = styled.div`
   display: block;
-  width: 869px;
+  width: 54.3rem;
   height: 52rem;
   border: 5px solid rgba(0, 0, 0, 0);
   outline: 3px solid black;
   padding: 10px;
-  font-size: 14pt;
+  font-size: 1.2rem;
 `;
 
 const FooterPostTextTag = styled.input`
-  font-size: 17px;
+  font-size: 1.5rem;
   position: relative;
   display: block;
   left: 50%;

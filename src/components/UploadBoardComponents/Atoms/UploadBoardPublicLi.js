@@ -16,7 +16,7 @@ function UploadBoardPublicLi() {
 
 const Wrap = styled.div`
   margin-top: 60px;
-  width: 124%;
+  width: 11.8rem;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
