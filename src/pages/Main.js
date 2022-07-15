@@ -47,7 +47,6 @@ function Main() {
         <Header />
         <Assembler>
           <Sidebar id="public-sidebar" />
-
           <div id="main-contents">
             <MainTop>
               <div id="sell_JJal">
@@ -118,11 +117,11 @@ function Main() {
 
             <MainMiddle>
               <div id="best_JJal">
-                <div id="text">
-                  BEST ZZAL : 내가 제일 '짤'나가{" "}
-                  <span>
-                    더보기 <img src={plus_box}></img>
-                  </span>
+                <div id="text">BEST ZZAL : 내가 제일 '짤'나가{" "}
+                <div id="best_more">
+                  더보기 
+                  <img src={plus_box}></img>
+                </div>
                 </div>
                 <div className="card_set">
                   <div className="card">
@@ -568,20 +567,26 @@ const MainMiddle = styled.div`
     width: 670px;
     height: 424px;
     background: url(${twinkle});
-
     margin: 0 0 14px 0;
     border: 4px solid #ccc;
     outline: 2px solid #000;
+
     #text {
       font-size: 18px;
       padding: 10px;
       margin-left: 10px;
-      span {
+      display: flex;
+      justify-content: space-between;
+    }
+    #best_more {
+        width: 55px;
+        padding: 0 10px 0 0;
         font-size: 12px;
         font-weight: bold;
-        margin-left: 325px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
-    }
     .card {
       margin: auto -16px;
       #name {
