@@ -1,5 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
+import Popup from "../components/Popup";
+
+
+// images ---------------------------
 import headerSrc from "../images/public_compoment/HeaderMain.png";
 import ChennelA from "../images/public_compoment/Channel_A_Logo.png";
 import GroundX from "../images/public_compoment/GroundX.jpg";
@@ -7,8 +11,13 @@ import dongA from "../images/public_compoment/dongA_daily.png";
 import Digitech from "../images/public_compoment/Seoul_Digitech_High_School.png";
 
 function Header(props) {
+  const {} = props;
+
+  const [popup, handlerPopup] = useState(false);
+
   return (
     <>
+    {popup && <Popup onClose={handlerPopup}/>}
       <HeaderMenuTop>
         <div id="logo">
           <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;|
@@ -48,7 +57,7 @@ function Header(props) {
               <a href="http://localhost:3000/main">홈 화면</a>
             </li>
             <li>
-             <a href="#">내가 제일 '짤' 나가</a>
+             <a href="#" onClick={() => {handlerPopup(true);}}>내가 제일 '짤' 나가</a>
             </li>
             <li>
              <a href="http://localhost:3000/productlist">짤장터</a>

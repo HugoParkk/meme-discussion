@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import warning_hand from '../images/public_compoment/warning_hand.svg';
 
-function Popup() {
+function Popup(props) {
+  const { onClose } = props;
   return (
     <div>
         <PopupMain>
@@ -51,7 +52,7 @@ function Popup() {
               </ul>
             <div id='bg'></div>
           </GradeUp>
-          <button class="goBack-btn">이전으로</button>
+          <button class="goBack-btn"onClick={() => {onClose(false);}}>이전으로</button>
         </PopupMain>
         <BlackBackground></BlackBackground>
     </div>

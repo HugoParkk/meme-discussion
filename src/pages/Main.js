@@ -5,6 +5,12 @@ import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 
+import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
+import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
+
+
+import GlobalBackground from '../components/GlobalBackground'
+
 //----images----
 import Plus from "../images/main_page/plus.png";
 import Gost from "../images/main_page/back_gost.jpg";
@@ -26,15 +32,13 @@ import Card from "../images/main_page/Card_e.png";
 import plus_box from "../images/main_page/plus_box.png";
 
 import JJalSell from "../images/main_page/JJal_sellMain.png";
-import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
-import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
+
 
 import phone from "../images/main_page/card_phone.jpg";
 import dosa from "../images/main_page/card_dosa.jpg";
 import heart from "../images/main_page/jinyoung_heart.png";
 import mimgi from "../images/main_page/mimgi.png";
 
-import GlobalBackground from '../components/GlobalBackground'
 
 function Main() {
   return (
