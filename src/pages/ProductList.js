@@ -191,7 +191,10 @@ const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function Main() {
   return (
     <GlobalBackground>
-      <Header />
+      <div>
+        <Header />
+      </div>
+      
       <Wrap>
         <SIDEBAR>
           <Sidebar />
@@ -280,5 +283,7 @@ const Back = styled.div`
   background-color: #f9f9f8;
   height: 12.4rem;
 `;
+
+
 
 export default Main;

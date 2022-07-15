@@ -39,8 +39,11 @@ const Sidebar = () => {
               </div>
             </div>
             <ul id="profile-info">
-              <li>since 2002.02.02</li>
-              <li>카페소개</li>
+              <li id="ab">
+                <li>since 2002.02.02</li>
+                <li>카페소개</li>
+              </li>
+              
             </ul>
           </div>
           
@@ -317,18 +320,23 @@ const UpSideMenuBar = styled.div`
       padding: 0 10px;
       width: 100px;
       display: inline-block;
+      position: absolute;
     }
 
     #profile-info {
       text-align: left;
       margin: 5px 2px;
       font-size: 12px;
+      height: 58px;
       
-
+      #ab{
+        position: absolute;
+        margin-top: 15px;
+      }
       li {
         width: 110px;
         display: inline-block;
-        padding: 2px 10px;
+        padding: 2px 5px;
         color: #666666;
       }
     }
@@ -382,7 +390,7 @@ const UpSideMenuBar = styled.div`
     #Topic {
       border-bottom: 1px solid #cfcfcf;
       border-top: 1px solid #cfcfcf;
-      padding: 12px 5px;
+      padding: 8px 5px;
       a {
         font-size: 12px;
       }
