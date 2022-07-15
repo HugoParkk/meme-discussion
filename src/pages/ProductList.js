@@ -14,7 +14,6 @@ import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
 
-import img1 from "../images/화면 캡처 2022-05-03 144858.png";
 import lovepari from "../images/fd7b8305ab14a05f23fc53a7405cd983.jpg";
 import bookfound from "../images/5f83a752c924315a6aa03aa5f3e13927.jpg";
 import Bbang from "../images/5bfb4d1298c4c0d80a4a917eae0f1a8d.jpg";
@@ -190,31 +189,35 @@ const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function Main() {
   return (
     <>
-      <Header />
+      <div>
+        <Header />
+      </div>
+
       <Wrap>
         <SIDEBAR>
           <Sidebar />
         </SIDEBAR>
+        <div>
+          <CONTENTS>
+            <ShopBoardTopText />
+            <ShopBoardTopPlusBtn />
+            <ShopNotice data={arr} />
+            <ShopBoardMainList data={data} />
 
-        <CONTENTS>
-          <ShopBoardTopText />
-          <ShopBoardTopPlusBtn />
-          <ShopNotice data={arr} />
-          <ShopBoardMainList data={data} />
-
-          <ShopBoardwriteBtn />
-          <ShopBoardFoooterBtnGroup data={num} />
-          <ShopBoardFooterNext />
-          <HR2 />
-          <Back>
-            <HR3 />
-            <ShopBoardGroup>
-              <ShopBoardTimeSelect />
-              <ShopBoardCommentSelect />
-            </ShopBoardGroup>
-            <ShopBoardFindGroup />
-          </Back>
-        </CONTENTS>
+            <ShopBoardwriteBtn />
+            <ShopBoardFoooterBtnGroup data={num} />
+            <ShopBoardFooterNext />
+            <HR2 />
+            <Back>
+              <HR3 />
+              <ShopBoardGroup>
+                <ShopBoardTimeSelect />
+                <ShopBoardCommentSelect />
+              </ShopBoardGroup>
+              <ShopBoardFindGroup />
+            </Back>
+          </CONTENTS>
+        </div>
       </Wrap>
 
       <FOOTER>

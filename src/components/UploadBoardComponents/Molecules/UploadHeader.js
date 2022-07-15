@@ -35,6 +35,7 @@ const StyledDiv = styled.div`
   width: 67.2rem;
   margin: 10px auto;
   position: relative;
+  background-color: white;
   top: 30px;
 `;
 
