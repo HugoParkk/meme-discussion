@@ -11,7 +11,7 @@ import ShopBoardwriteBtn from "../components/ShopBoardComponents/Atoms/ShopBoard
 import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
+import Sidebar from '../components/Sidebar';
 import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
 
 
@@ -196,7 +196,7 @@ function Main() {
         <SIDEBAR>
           <Sidebar />
         </SIDEBAR>
-
+        <div>
         <CONTENTS>
           <ShopBoardTopText />
           <ShopBoardTopPlusBtn />
@@ -216,6 +216,8 @@ function Main() {
             <ShopBoardFindGroup />
           </Back>
         </CONTENTS>
+        </div>
+        
       </Wrap>
 
       <FOOTER>

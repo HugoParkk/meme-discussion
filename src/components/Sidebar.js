@@ -12,6 +12,7 @@ const Sidebar = () => {
   const sidebarWarp = {
     width: "210px",
     display: "inline-block",
+    
   };
 
   return (
@@ -36,7 +37,7 @@ const Sidebar = () => {
               <span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b>
             </div>
             <ul id="profile-info">
-              <li>since 2002.02.02.</li>
+              <li>since 2002.02.02</li>
               <li>카페소개</li>
             </ul>
           </div>
@@ -259,7 +260,7 @@ const UpSideMenuBar = styled.div`
     #my-activity {
       color: #959595;
     }
-  }
+  
   #tab-title {
     ul {
       display: flex;
@@ -292,6 +293,7 @@ const UpSideMenuBar = styled.div`
     font-size: 12px;
     padding: 13px 0 5px 10px;
     border-bottom: 1px solid #cfcfcf;
+    
 
     img {
       float: left;
@@ -317,9 +319,11 @@ const UpSideMenuBar = styled.div`
     #profile-info {
       text-align: left;
       margin: 5px 2px;
+      font-size: 12px;
+      
 
       li {
-        width: 100px;
+        width: 110px;
         display: inline-block;
         padding: 2px 10px;
         color: #666666;
@@ -346,7 +350,7 @@ const UpSideMenuBar = styled.div`
       display: flex;
       justify-content: space-between;
       height: 30px;
-      font-size: 15px;
+      font-size: 13px;
       text-align: center;
       padding: 0 7px;
 
