@@ -13,6 +13,7 @@ import img3 from "../images/3b286c0d74f710d5a290d7ccb4028ca9.jpg";
 import img4 from "../images/7b6411f877dd15ce9d97b91b258ac106.jpg";
 import img5 from "../images/3cfb2a7a354ceffff7a71f4c7c625023.jpg";
 import Molu from "../components/UploadBoardComponents/Molecules/Molu";
+import GlobalBackground from '../components/GlobalBackground';
 
 const data1 = ["게시판을 선택하세요", "게시판1", "게시판2", "게시판2"];
 const data2 = ["말머리 선택", "말머리1", "말머리2", "말머리3"];
@@ -47,7 +48,7 @@ const text = [
 
 function Upload() {
   return (
-    <>
+    <GlobalBackground>
       <Header />
       <UploadHeader />
       <Con>
@@ -68,7 +69,7 @@ function Upload() {
         <Molu />
       </Con>
       <Footer type="upload" />
-    </>
+    </GlobalBackground>
   );
 }
 const Con = styled.div`

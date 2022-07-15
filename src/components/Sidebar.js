@@ -12,7 +12,7 @@ const Sidebar = () => {
   const sidebarWarp = {
     width: "210px",
     display: "inline-block",
-    
+
   };
 
   return (
@@ -58,7 +58,7 @@ const Sidebar = () => {
             <li>
               <ul id="Invite">
                 <li>18,936,555</li>
-                <sapn id="text">초대하기</sapn>
+                <span id="text">초대하기</span>
               </ul>
             </li>
             <li>

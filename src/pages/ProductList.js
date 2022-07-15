@@ -28,6 +28,7 @@ import bill from '../images/2d1441ab4efa9bfbab3f40e68cf59ff1.jpg';
 import gagul from '../images/2c0f85cda379cc9ab1c2912c527e0d95.jpg';
 import img3 from '../images/02b796f3090ec136409f2189d7a9fcc9.jpg';
 import geguri from '../images/1ae00b0948a6376c01bcf396d617fdfb.jpg';
+import GlobalBackground from '../components/GlobalBackground'
 
 const data = [
   {
@@ -190,40 +191,40 @@ const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function Main() {
   return (
-    <>
+    <GlobalBackground>
       <Header />
       <Wrap>
         <SIDEBAR>
           <Sidebar />
         </SIDEBAR>
         <div>
-        <CONTENTS>
-          <ShopBoardTopText />
-          <ShopBoardTopPlusBtn />
-          <ShopNotice data={arr} />
-          <ShopBoardMainList data={data} />
+          <CONTENTS>
+            <ShopBoardTopText />
+            <ShopBoardTopPlusBtn />
+            <ShopNotice data={arr} />
+            <ShopBoardMainList data={data} />
 
-          <ShopBoardwriteBtn />
-          <ShopBoardFoooterBtnGroup data={num} />
-          <ShopBoardFooterNext />
-          <HR2 />
-          <Back>
-            <HR3 />
-            <ShopBoardGroup>
-              <ShopBoardTimeSelect />
-              <ShopBoardCommentSelect />
-            </ShopBoardGroup>
-            <ShopBoardFindGroup />
-          </Back>
-        </CONTENTS>
+            <ShopBoardwriteBtn />
+            <ShopBoardFoooterBtnGroup data={num} />
+            <ShopBoardFooterNext />
+            <HR2 />
+            <Back>
+              <HR3 />
+              <ShopBoardGroup>
+                <ShopBoardTimeSelect />
+                <ShopBoardCommentSelect />
+              </ShopBoardGroup>
+              <ShopBoardFindGroup />
+            </Back>
+          </CONTENTS>
         </div>
-        
+
       </Wrap>
 
       <FOOTER>
         <Footer />
       </FOOTER>
-    </>
+    </GlobalBackground>
   );
 }
 
