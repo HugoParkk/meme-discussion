@@ -30,8 +30,8 @@ const Wrapper = styled.div`
   margin-left: 0.694vw;
   margin-right: 0;
   width: 33.333vw;
-  margin-top: 0.445vw;
-  margin-bottom: 0.891vw;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
   display: flex;
   position: relative;
   align-items: center;

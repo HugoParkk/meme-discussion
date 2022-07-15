@@ -10,7 +10,8 @@ function ShopBoardFooterNext() {
         <Line>{" | "}</Line>
         <Text>{"다음 >"}</Text>
       </NextDiv>
-    </>
+
+     </>
   );
 }
 const Text = styled.div`
@@ -37,4 +38,6 @@ const NextDiv = styled.div`
   padding: 0;
   width: 6.944vw;
 `;
+
+
 export default ShopBoardFooterNext;
