@@ -26,6 +26,69 @@ import Sidebar from "../components/pages_Sidebar";
 import Footer from "../components/Footer";
 import GlobalBackground from '../components/GlobalBackground';
 
+function ProductDetail() {
+  return (
+    <GlobalBackground>
+      <Wrap>
+        <Header />
+        <Flex>
+          <Sidebar id="public-sidebar" />
+          <div id="inWarp">
+            <BoardHeader data={data} />
+            <GradeLine />
+            <BoardImg src={img2} />
+            <BoardContents data={data2} />
+            <BoardLine />
+            <BoardName text="거래자" />
+            <BoardEmail />
+            <BoardTopTitle text="코드보기 >" />
+            <BoardNFT />
+            <BoardBuyChat />
+            <BoardBottomText />
+            <BoardBottomDescribe />
+            <GradeLine2 />
+            <BoardBottomImage />
+            <BoardBottomLastText text="디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~" />
+          </div>
+        </Flex>
+
+        <BoardFooterList data={data3} />
+
+        <Footer />
+      </Wrap>
+    </GlobalBackground>
+  );
+}
+
+const Flex = styled.div`
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+
+  #inWarp{
+    width: 685px;
+    border: 4px solid #cfcfcf;
+    background: #fff;
+    outline: 2px solid #000;
+    border: 2px solid gray;
+  }
+`;
+
+const Wrap = styled.div`
+  width: 900px;
+  margin: 0 auto;
+`;
+
+const GradeLine2 = styled.div`
+  height: 2px;
+  width: 90%;
+  background-color: #ff50e2;
+  margin: 0 auto;
+  margin-top: -80px;
+  margin-bottom: 2rem;
+`;
+
+
 const data = {
   type: "pink",
   text: "방송캡쳐 >",
@@ -68,64 +131,5 @@ const data3 = [
     date: "2022.05.04",
   },
 ];
-
-function ProductDetail() {
-  return (
-    <GlobalBackground>
-      <Wrap>
-        <Header />
-        <Flex>
-          <Sidebar id="public-sidebar" />
-          <Wrap>
-            <BoardHeader data={data} />
-            <GradeLine />
-            <BoardImg src={img2} />
-            <BoardContents data={data2} />
-            <BoardLine />
-            <BoardName text="거래자" />
-            <BoardEmail />
-            <BoardTopTitle text="코드보기 >" />
-            <BoardNFT />
-            <BoardBuyChat />
-            <BoardBottomText />
-            <BoardBottomDescribe />
-            <GradeLine2 />
-            <BoardBottomImage />
-            <BoardBottomLastText text="디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~" />
-          </Wrap>
-        </Flex>
-
-        <BoardFooterList data={data3} />
-
-        <Footer />
-      </Wrap>
-    </GlobalBackground>
-  );
-}
-
-const Flex = styled.div`
-  margin-top: 28px;
-  width: 60vw;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-`;
-
-const Wrap = styled.div`
-  width: 100vw;
-  height: auto;
-`;
-
-const GradeLine2 = styled.div`
-  height: 2px;
-  width: 90%;
-  background-color: #ff50e2;
-  margin: 0 auto;
-  margin-top: -80px;
-  margin-bottom: 2rem;
-`;
-
 
 export default ProductDetail;

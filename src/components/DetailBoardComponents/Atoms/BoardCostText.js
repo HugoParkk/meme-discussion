@@ -1,46 +1,34 @@
 import React from "react";
 import styled from "styled-components";
-import GlobalStyle from "../GlobalStyle";
 
 function BoardCostText() {
   return (
     <StyledDiv>
-      <GlobalStyle />
-      <Cost>14,000짤</Cost>
-      <QuestBtn>안전결제신청</QuestBtn>
+      <span>14,000짤</span><button>안전결제신청</button>
     </StyledDiv>
   );
 }
 
 const StyledDiv = styled.div`
-  display: block;
-  margin-bottom: 2rem;
-  position: relative;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 8px;
   top: 20pt;
+  span{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  button{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 5px;
+    border: 0;
+    text-align: center;
+    background-color: #dbdbdb;
+    border-radius: 8px;
+  }
 `;
 
-const Cost = styled.div`
-  font-size: 18pt;
-  font-weight: bold;
-  display: inline-block;
-  position: relative;
-  left: 50pt;
-  top: -25pt;
-`;
-
-const QuestBtn = styled.button`
-  font-size: 12pt;
-  display: inline-block;
-  font-weight: bold;
-  padding: 3px 12px;
-  border: 0;
-  cursor: pointer;
-  text-align: center;
-  background-color: #dbdbdb;
-  border-radius: 8px;
-  margin-left: 20px;
-  position: relative;
-  left: 50pt;
-  top: -26pt;
-`;
 export default BoardCostText;

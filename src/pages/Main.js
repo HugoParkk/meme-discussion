@@ -427,20 +427,9 @@ const Warp = styled.div`
   width: 1080px;
   margin: 0 auto;
 
-  #public-popup {
-    position: absolute;
-    margin: 0 100px;
-  }
-
   #main-contents {
     width: 860px;
     display: inline-block;
-
-    #public-footer {
-    }
-  }
-  #box1{
-    width: 2px;
   }
   
 `;
