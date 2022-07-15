@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Popup from "../components/Popup";
 
 import bookmarkStar from "../images/public_compoment/star_sideMenu.svg";
 import profile from "../images/public_compoment/profile.svg";
@@ -9,14 +10,8 @@ import L_shape from "../images/public_compoment/L_shape.png";
 import bottomImg from "../images/public_compoment/Group 13.png";
 
 const Sidebar = () => {
-  const sidebarWarp = {
-    width: "210px",
-    display: "inline-block",
-
-  };
-
   return (
-    <div style={sidebarWarp}>
+    <div >
       <UpSideMenuBar>
         <div id="head">
           <div id="BookMarkIcon">

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
 
-
 // images ---------------------------
 import headerSrc from "../images/public_compoment/HeaderMain.png";
 import ChennelA from "../images/public_compoment/Channel_A_Logo.png";
@@ -14,10 +13,10 @@ function Header(props) {
   const { } = props;
 
   const [popup, handlerPopup] = useState(false);
-
+  
   return (
     <>
-      {popup && <Popup onClose={handlerPopup} />}
+    {popup && <Popup onClose={handlerPopup} />}
       <HeaderMenuTop>
         <div id="logo">
           <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;|
