@@ -40,6 +40,7 @@ function App() {
       <Route path="/upload">
         <Upload />
       </Route>
+      {/* 소통이 중요합니다. */}
     </div>
   );
 }
