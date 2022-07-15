@@ -32,8 +32,10 @@ const StyledDiv = styled.div`
   border: 5px solid #a0a0a0;
   outline: 3px solid black;
   padding: 15px;
-  width: 80%;
+  width: 1074px;
   margin: 10px auto;
+  position: relative;
+  top: 30px;
 `;
 
 export default UploadHeader;

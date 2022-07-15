@@ -13,7 +13,7 @@ function BoardWrap(props) {
     <Wrapper>
       <BoardIconImg src={arr.src} />
       <div>
-        <BoardName text={arr.name} />
+        <Good>{arr.name}</Good>
         <BoardRating text={arr.rating} />
         <BoardQuestion />
         <BoardDate text={arr.date} />
@@ -25,6 +25,11 @@ function BoardWrap(props) {
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
+`;
+
+const Good = styled.div`
+  display: inline-block;
+  font-weight: bold;
 `;
 
 export default BoardWrap;

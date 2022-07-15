@@ -6,11 +6,19 @@ function LeftColorArea(props) {
   return (
     <Color>
       {props.data.map((arr, i) => {
-        return <ColorBall color={arr} key={i} />;
+        return (
+          <Wrap key={i}>
+            <ColorBall color={props.color} back={arr} />
+          </Wrap>
+        );
       })}
     </Color>
   );
 }
+
+const Wrap = styled.div`
+  display: inline-block;
+`;
 
 const Color = styled.div`
   width: 100%;

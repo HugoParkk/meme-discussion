@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PinkAreaTextGroup from "./PinkAreaTextGroup";
-import PinkAreaBottomText from "../Atoms/PinkAreaBottomText";
+import PinkAreaBottomText from "../Molecules/PinkAreaBottomText";
 
 function GradePinkArea(props) {
   return (
@@ -23,7 +23,7 @@ const StyledDiv = styled.div`
   width: 75%;
   margin: 0 auto;
   padding: 20px 2%;
-  background: #FFF4FD;
+  background: #fff4fd;
   margin-top: 3rem;
 `;
 

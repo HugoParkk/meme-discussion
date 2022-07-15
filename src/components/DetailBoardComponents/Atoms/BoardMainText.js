@@ -13,15 +13,23 @@ function BoardMainText() {
 }
 
 const Sell = styled.div`
-  font-size: 23pt;
+  font-size: 15pt;
   color: #ff50e2;
   margin-right: 10px;
   display: inline-block;
+  position: relative;
+  left: 50pt;
+  margin: 0;
+  padding: 0;
+  top: -8pt;
 `;
 
 const SellText = styled.div`
-  font-size: 18pt;
+  font-size: 15pt;
   display: inline-block;
-  font-weight: bold;
+  width: 300pt;
+  position: relative;
+  left: 60pt;
+  top: -8pt;
 `;
 export default BoardMainText;

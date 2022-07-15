@@ -12,12 +12,13 @@ function ShopBoardFindPost() {
 }
 const Text = styled.input`
   font-size: 13pt;
-  color: "#DBDBDB";
+  color: "#C0C0C0";
   width: 300px;
   height: 50px;
   margin-left: 10px;
   display: inline-block;
   border: 2px solid #dbdbdb;
+  position: relative;
 `;
 
 export default ShopBoardFindPost;

@@ -9,7 +9,7 @@ function ImgAreaLeft(props) {
       <ImgAreaLeftTitle text="테두리 설정" />
       <LeftColorArea data={props.frame} />
       <ImgAreaLeftTitle text="배경 설정" type="bottom" />
-      <LeftColorArea data={props.back} />
+      <LeftColorArea data={props.back} color={props.color} />
     </Wrap>
   );
 }

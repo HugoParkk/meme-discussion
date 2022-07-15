@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-function BoardLine() {
+function Line() {
   return <StyledDiv />;
 }
 
 const StyledDiv = styled.div`
-  height: 2px;
-  width: 50%;
+  width: 99%;
+  height: 1px;
   position: relative;
-  left: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #ff50e2;
-  margin-top: -7rem;
-  margin-bottom: 100pt;
+  margin-top: 50px;
+  margin-bottom: 15px;
 `;
 
-export default BoardLine;
+export default Line;

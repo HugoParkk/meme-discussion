@@ -6,7 +6,7 @@ function FormButton() {
   return (
     <>
       <GlobalStyle />
-      <StyledDiv>로그인</StyledDiv>
+      <a href="http://localhost:3000/main"><StyledDiv>로그인</StyledDiv></a>
     </>
   );
 }

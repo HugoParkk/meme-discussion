@@ -18,9 +18,12 @@ const SelectTime = styled.select`
   display: inline-block;
   padding-left: 10px;
   width: 200px;
-  height: 50px;
   border: 2px solid #dbdbdb;
-  margin-left: 10px;
+  height: 50px;
+  margin-left: 39rem;
+  margin-right: -9.6rem;
+  position: absolute;
+  margin-top: 2rem;
 `;
 
 export default ShopBoardCommentSelect;

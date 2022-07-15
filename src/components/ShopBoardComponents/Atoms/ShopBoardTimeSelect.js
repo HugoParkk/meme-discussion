@@ -23,6 +23,10 @@ const SelectTime = styled.select`
   width: 200px;
   border: 2px solid #dbdbdb;
   height: 50px;
+  margin-left: 26rem;
+  margin-right: -9.6rem;
+  position: absolute;
+  margin-top: 2rem;
 `;
 
 export default ShopBoardTimeSelect;

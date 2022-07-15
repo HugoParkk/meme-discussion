@@ -7,7 +7,7 @@ function BoardUrl() {
 
 const Url = styled.div`
   display: inline-block;
-  font-size: 13pt;
+  font-size: 10pt;
   margin-right: 10px;
   margin-left: 10px;
 `;
