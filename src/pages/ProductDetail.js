@@ -72,7 +72,7 @@ const data3 = [
 function ProductDetail() {
   return (
     <GlobalBackground>
-      <Header type="noBlack" />
+      <Header />
       <Flex>
         <Sidebar id="public-sidebar" />
         <Wrap>
@@ -103,7 +103,9 @@ function ProductDetail() {
 }
 
 const Flex = styled.div`
-  width: 1080px;
+  margin-top: 2.8vh;
+  width: 70vw;
+  background-color: white;
   display: flex;
   position: relative;
   transform: translateX(-50%);

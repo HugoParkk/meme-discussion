@@ -18,7 +18,7 @@ function RightSideBarTitle(props) {
   );
 }
 const Text = styled.div`
-  font-size: 12pt;
+  font-size: 1rem;
   font-weight: bold;
   width: 100%;
   height: 40px;
@@ -28,7 +28,7 @@ const Text = styled.div`
 `;
 
 const PinkText = styled.div`
-  font-size: 12pt;
+  font-size: 1rem;
   font-weight: bold;
   color: #ff50e2;
   width: 100%;

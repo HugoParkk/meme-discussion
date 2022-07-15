@@ -16,7 +16,7 @@ const StyledText = styled.div`
   display: inline-block;
   font-size: 15pt;
   text-align: left;
-  width: 500px;
+  width: 50%;
   margin: 0 auto;
   position: absolute;
   left: 8%;

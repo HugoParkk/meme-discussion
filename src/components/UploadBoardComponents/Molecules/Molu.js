@@ -56,8 +56,8 @@ let Flex = styled.div`
 `;
 let DB = styled.div`
   border: 3px solid black;
-  width: 188px;
-  height: 755px;
+  width: 11.8rem;
+  height: 47rem;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -84,14 +84,15 @@ let DI = styled.div`
 `;
 let DA = styled.div`
   height: 120px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #dbdbdb;
 `;
 const Wrap = styled.div`
   margin-top: 10px;
-  width: 124%;
+  width: 11.8rem;
   position: relative;
   left: 50%;
-  padding: 12px 0;
+  padding: 10px 0;
   transform: translateX(-50%);
   background-color: pink;
 `;

@@ -16,14 +16,14 @@ function UploadBoardPublicLi() {
 
 const Wrap = styled.div`
   margin-top: 60px;
-  width: 124%;
+  width: 11.8rem;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   background-color: pink;
 `;
 const Text = styled.div`
-  font-size: 10pt;
+  font-size: 0.9rem;
   width: 80%;
   position: relative;
   left: 50%;
@@ -34,6 +34,6 @@ const Text = styled.div`
 const Lis = styled.li`
   list-style-type: "ㄴ ";
   margin-top: 6px;
-  font-size: 10pt;
+  font-size: 0.8rem;
 `;
 export default UploadBoardPublicLi;
