@@ -63,10 +63,10 @@ function Header(props) {
                 <a href="http://localhost:3000/productlist">짤장터</a>
               </li>
               <li>
-                <a href="#">짤 찾아 삼만리</a>
+                <a href="#" onClick={() => { handlerPopup(true); }}>짤 찾아 삼만리</a>
               </li>
               <li>
-                <a href="#">공지사항</a>
+                <a href="#" onClick={() => { handlerPopup(true); }}>공지사항</a>
               </li>
             </ul>
           </div>

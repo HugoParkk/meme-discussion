@@ -12,6 +12,7 @@ const Sidebar = () => {
   const sidebarWarp = {
     width: "210px",
     display: "inline-block",
+
   };
 
   return (
@@ -42,8 +43,10 @@ const Sidebar = () => {
                 <li>since 2002.02.02</li>
                 <li>카페소개</li>
               </li>
+              
             </ul>
           </div>
+          
         </div>
 
         <div id="CafeInfo">
@@ -92,9 +95,7 @@ const Sidebar = () => {
           <div id="Btns">
             <ul>
               <li>
-                <a href="http://localhost:3000/upload">
-                  <button id="BtnHotpink">게시하기</button>
-                </a>
+                <a href="http://localhost:3000/upload"><button id="BtnHotpink">게시하기</button></a>
               </li>
               <li>
                 <button>주인장 전화하기</button>
@@ -243,9 +244,9 @@ const Sidebar = () => {
 const UpSideMenuBar = styled.div`
   position: relative;
   /* left: 307px; */
-  width: 200px;
+  width: 208px;
   /* height: 965px; */
-  height: 435px;
+  height: 443px;
   border: 4px solid #cfcfcf;
   background: #fff;
   outline: 2px solid #000;
@@ -262,9 +263,10 @@ const UpSideMenuBar = styled.div`
     text-decoration: none;
     color: #000;
   }
-  #my-activity {
-    color: #959595;
-  }
+    #my-activity {
+      color: #959595;
+    }
+  
   #tab-title {
     ul {
       display: flex;
@@ -298,6 +300,7 @@ const UpSideMenuBar = styled.div`
     padding: 13px 0 5px 10px;
     border-bottom: 1px solid #cfcfcf;
 
+
     img {
       float: left;
       padding: 0;
@@ -325,8 +328,8 @@ const UpSideMenuBar = styled.div`
       margin: 5px 2px;
       font-size: 12px;
       height: 58px;
-
-      #ab {
+      
+      #ab{
         position: absolute;
         margin-top: 15px;
       }
@@ -417,8 +420,8 @@ const UpSideMenuBar = styled.div`
 const DownSideMenu = styled.div`
   position: relative;
   /* left: 307px; */
-  width: 200px;
-  height: 965px;
+  width: 208px;
+  height: 973px;
   margin: 20px 0 0 0;
   border: 4px solid #cfcfcf;
   background: #fff;
@@ -501,12 +504,13 @@ const DownSideMenu = styled.div`
 `;
 
 const DownSideImg = styled.div`
-  width: 200px;
-  position: absolute;
+  width: 208px;
+  position: relative;
+  // left: 305px;
 
   margin: 30px 0;
   img {
-    width: 200px;
+    width: 212px;
     height: 110px;
   }
 `;

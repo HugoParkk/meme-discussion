@@ -44,9 +44,15 @@ function Main() {
   return (
     <GlobalBackground>
       <Warp>
-        <Header />
+        
+          <Header />
+        
+        
         <Assembler>
+        <div id="box1">
           <Sidebar id="public-sidebar" />
+        </div>
+
           <div id="main-contents">
             <MainTop>
               <div id="sell_JJal">
@@ -430,6 +436,10 @@ const Warp = styled.div`
     #public-footer {
     }
   }
+  #box1{
+    width: 2px;
+  }
+  
 `;
 
 const MainTop = styled.div`
@@ -697,6 +707,23 @@ const MainBottom = styled.div`
       text-decoration: none;
       color: #fff;
   }
+  .mainTitle{
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 18px;
+      //  font-weight: 600;
+    }
+    .view-more {
+      width: 55px;
+      font-size: 12px;
+      padding: 10px  0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
   .leftContent {
     background: #fa00d0;
     width: 415px;
@@ -704,25 +731,7 @@ const MainBottom = styled.div`
     border: 4px solid #ff50e2;
     outline: 2px solid #000;
 
-    .mainTitle {
-      margin: -10px 13px -18px 13px;
-      display: flex;
-      justify-content: space-between;
-
-      .title {
-        font-size: 18px;
-        //  font-weight: 600;
-      }
-      .view-more {
-        font-size: 12px;
-        padding: 10px 19px;
-        position: relative;
-        img {
-          margin-left: 5px;
-          position: absolute;
-        }
-      }
-    }
+    .mainTitle {margin: -10px 13px -18px 13px;}
     hr {
       border: 0px;
       height: 2px;
@@ -792,25 +801,7 @@ const MainBottom = styled.div`
     outline: 2px solid #000;
     margin-left: 20px;
 
-    .mainTitle {
-      margin: -8.7px 13px -18px 13px;
-      display: flex;
-      justify-content: space-between;
-
-      .title {
-        font-size: 18px;
-        //  font-weight: 600;
-      }
-      .view-more {
-        font-size: 12px;
-        padding: 10px 19px;
-        position: relative;
-        img {
-          margin-left: 5px;
-          position: absolute;
-        }
-      }
-    }
+    .mainTitle {margin: -8.7px 13px -18px 13px;}
     .post {
       img {
         width: 90px;
