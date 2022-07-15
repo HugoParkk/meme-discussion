@@ -103,6 +103,7 @@ function ProductDetail() {
 }
 
 const Flex = styled.div`
+  background-color: white;
   width: 1080px;
   display: flex;
   position: relative;

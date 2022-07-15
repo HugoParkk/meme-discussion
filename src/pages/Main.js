@@ -412,6 +412,7 @@ const Assembler = styled.div`
 `;
 
 const Warp = styled.div`
+  background-color: white;
   position: relative;
   width: 1080px;
   margin: 0 auto;

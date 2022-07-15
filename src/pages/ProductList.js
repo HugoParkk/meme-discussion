@@ -229,6 +229,7 @@ function Main() {
 }
 
 const Wrap = styled.div`
+  background-color: white;
   width: 1080px;
   position: relative;
   transform: translateX(-50%);
