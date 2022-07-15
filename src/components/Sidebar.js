@@ -32,15 +32,18 @@ const Sidebar = () => {
 
         <div id="Userprofile">
           <img src={profile} alt="프로필이미지"></img>
-          <div id="UserText">
-            <div id="Nick">
-              <span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b>
+          <div id="abc">
+            <div id="UserText">
+              <div id="Nick">
+                <span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b>
+              </div>
             </div>
             <ul id="profile-info">
               <li>since 2002.02.02</li>
               <li>카페소개</li>
             </ul>
           </div>
+          
         </div>
 
         <div id="CafeInfo">
@@ -293,7 +296,7 @@ const UpSideMenuBar = styled.div`
     font-size: 12px;
     padding: 13px 0 5px 10px;
     border-bottom: 1px solid #cfcfcf;
-    
+
 
     img {
       float: left;
