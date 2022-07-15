@@ -14,7 +14,7 @@ function GradeBoardTitle(props) {
 const StyledText = styled.div`
   font-weight: bold;
   display: inline-block;
-  font-size: 15pt;
+  font-size: 1.7361vw;
   text-align: left;
   width: 50%;
   margin: 0 auto;

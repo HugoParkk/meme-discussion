@@ -15,10 +15,10 @@ const Btn = styled.button`
   background: magenta;
   border: none;
   color: white;
-  font-size: 13pt;
+  font-size: 0.903vw;
   display: inline-block;
-  width: 100px;
-  height: 50px;
+  width: 5.208vw;
+  height: 2.604vw;
 `;
 
 export default ShopBoardFindBtn;

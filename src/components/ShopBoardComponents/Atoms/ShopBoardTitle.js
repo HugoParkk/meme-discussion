@@ -14,18 +14,16 @@ function ShopBoardTitle(props) {
 }
 
 const BlackDiv = styled.div`
-  margin-top: 5pt;
-  margin-bottom: 5pt;
-  margin-left: 5pt;
-  margin-right: 5pt;
-  font-size: 10pt;
+  margin: 0.347vw;
+  margin-left: 0;
+  font-size: 0.694vw;
   color: black;
   display: inline-block;
   font-weight: bold;
 `;
 
 const PinkDiv = styled.div`
-  font-size: 12pt;
+  font-size: 0.833vw;
   color: hotpink;
   display: inline-block;
   font-weight: bold;

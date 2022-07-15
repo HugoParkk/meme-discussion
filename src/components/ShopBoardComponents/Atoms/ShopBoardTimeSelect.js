@@ -16,17 +16,18 @@ function ShopBoardTimeSelect() {
     </>
   );
 }
+
 const SelectTime = styled.select`
-  font-size: 13pt;
+  font-size: 0.903vw;
   display: inline-block;
-  padding-left: 10px;
-  width: 130px;
-  border: 2px solid #dbdbdb;
-  height: 50px;
-  left: 257pt;
-  margin-right: -9.6rem;
+  padding-left: 0.521vw;
+  width: 6.771vw;
+  border: 0.104vw solid #dbdbdb;
+  height: 2.604vw;
+  left: 17.847vw;
+  margin-right: -8vw;
   position: absolute;
-  margin-top: 2rem;
+  margin-top: 1.667vw;
 `;
 
 export default ShopBoardTimeSelect;

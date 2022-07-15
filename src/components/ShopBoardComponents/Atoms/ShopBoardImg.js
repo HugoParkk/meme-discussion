@@ -6,8 +6,8 @@ function ShopBoardImg(props) {
 }
 
 const StyledImg = styled.img`
-  width: 145pt;
-  height: 145pt;
+  width: 10.069vw;
+  height: 10.069vw;
   background-color: blue;
   position: relative;
 `;

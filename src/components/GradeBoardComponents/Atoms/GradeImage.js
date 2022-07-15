@@ -5,10 +5,9 @@ function GradeImage(props) {
   return <StyledImg src={props.src} />;
 }
 const StyledImg = styled.img`
-  width: 13pt;
-  height: 13pt;
+  width: 1.7361vw;
+  height: 1.7361vw;
   display: inline-block;
-  margin-right: 10px;
 `;
 
 export default GradeImage;

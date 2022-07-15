@@ -72,52 +72,50 @@ const data3 = [
 function ProductDetail() {
   return (
     <GlobalBackground>
-      <Header />
-      <Flex>
-        <Sidebar id="public-sidebar" />
-        <Wrap>
-          <BoardHeader data={data} />
-          <GradeLine />
-          <BoardImg src={img2} />
-          <BoardContents data={data2} />
-          <BoardLine />
-          <BoardName text="거래자" />
-          <BoardEmail />
-          <BoardTopTitle text="코드보기 >" />
-          <BoardNFT />
-          <BoardBuyChat />
-          <BoardBottomText />
-          <BoardBottomDescribe />
-          <GradeLine2 />
-          <BoardBottomImage />
-          <BoardBottomLastText text="디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~" />
-        </Wrap>
-      </Flex>
+      <Wrap>
+        <Header />
+        <Flex>
+          <Sidebar id="public-sidebar" />
+          <Wrap>
+            <BoardHeader data={data} />
+            <GradeLine />
+            <BoardImg src={img2} />
+            <BoardContents data={data2} />
+            <BoardLine />
+            <BoardName text="거래자" />
+            <BoardEmail />
+            <BoardTopTitle text="코드보기 >" />
+            <BoardNFT />
+            <BoardBuyChat />
+            <BoardBottomText />
+            <BoardBottomDescribe />
+            <GradeLine2 />
+            <BoardBottomImage />
+            <BoardBottomLastText text="디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~" />
+          </Wrap>
+        </Flex>
 
-      <BoardFooterList data={data3} />
-      <FOOTER>
+        <BoardFooterList data={data3} />
+
         <Footer />
-      </FOOTER>
+      </Wrap>
     </GlobalBackground>
   );
 }
 
 const Flex = styled.div`
-  margin-top: 2.8vh;
-  width: 70vw;
+  margin-top: 28px;
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
   background-color: white;
   display: flex;
-  position: relative;
-  transform: translateX(-50%);
-  left: 50%;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 const Wrap = styled.div`
-  width: 860px;
-  height: 1300pt;
-  border: 3px solid #cfcfcf;
-  outline: 2px solid black;
+  width: 100vw;
+  height: auto;
 `;
 
 const GradeLine2 = styled.div`
@@ -129,9 +127,5 @@ const GradeLine2 = styled.div`
   margin-bottom: 2rem;
 `;
 
-const FOOTER = styled.div`
-  position: relative;
-  top: 100pt;
-`;
 
 export default ProductDetail;

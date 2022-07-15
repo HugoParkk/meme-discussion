@@ -5,6 +5,12 @@ import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 
+import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
+import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
+
+
+import GlobalBackground from '../components/GlobalBackground'
+
 //----images----
 import Plus from "../images/main_page/plus.png";
 import Gost from "../images/main_page/back_gost.jpg";
@@ -26,15 +32,13 @@ import Card from "../images/main_page/Card_e.png";
 import plus_box from "../images/main_page/plus_box.png";
 
 import JJalSell from "../images/main_page/JJal_sellMain.png";
-import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
-import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
+
 
 import phone from "../images/main_page/card_phone.jpg";
 import dosa from "../images/main_page/card_dosa.jpg";
 import heart from "../images/main_page/jinyoung_heart.png";
 import mimgi from "../images/main_page/mimgi.png";
 
-import GlobalBackground from '../components/GlobalBackground'
 
 function Main() {
   return (
@@ -62,9 +66,8 @@ function Main() {
                         <a class="noticeText">공지 및 업데이트</a>
                       </li>
                       <li>
-                        <a class="noticePlus">
-                          더보기&nbsp;&nbsp;&nbsp;<img src={Plus}></img>
-                        </a>
+                        <a class="noticePlus">더보기<img src={Plus}></img></a>
+                        
                       </li>
                     </ul>
                   </div>
@@ -120,11 +123,11 @@ function Main() {
 
             <MainMiddle>
               <div id="best_JJal">
-                <div id="text">
-                  BEST ZZAL : 내가 제일 '짤'나가{" "}
-                  <span>
-                    더보기 <img src={plus_box}></img>
-                  </span>
+                <div id="text">BEST ZZAL : 내가 제일 '짤'나가{" "}
+                <div id="best_more">
+                  더보기 
+                  <img src={plus_box}></img>
+                </div>
                 </div>
                 <div className="card_set">
                   <div className="card">
@@ -492,6 +495,10 @@ const MainTop = styled.div`
         }
         .noticePlus {
           font-size: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 55px;
         }
       }
 
@@ -570,21 +577,26 @@ const MainMiddle = styled.div`
     width: 670px;
     height: 424px;
     background: url(${twinkle});
-
     margin: 0 0 14px 0;
     border: 4px solid #ccc;
     outline: 2px solid #000;
+
     #text {
       font-size: 18px;
-
       padding: 10px;
       margin-left: 10px;
-      span {
+      display: flex;
+      justify-content: space-between;
+    }
+    #best_more {
+        width: 55px;
+        padding: 0 10px 0 0;
         font-size: 12px;
         font-weight: bold;
-        margin-left: 325px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
-    }
     .card {
       margin: auto -16px;
       #name {
@@ -693,7 +705,24 @@ const MainBottom = styled.div`
   color: white;
   a {
       text-decoration: none;
-      color: #000;
+      color: #fff;
+  }
+  .mainTitle{
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 18px;
+      //  font-weight: 600;
+    }
+    .view-more {
+      width: 55px;
+      font-size: 12px;
+      padding: 10px  0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   .leftContent {
     background: #fa00d0;
@@ -702,25 +731,7 @@ const MainBottom = styled.div`
     border: 4px solid #ff50e2;
     outline: 2px solid #000;
 
-    .mainTitle {
-      margin: -10px 13px -18px 13px;
-      display: flex;
-      justify-content: space-between;
-
-      .title {
-        font-size: 18px;
-        //  font-weight: 600;
-      }
-      .view-more {
-        font-size: 12px;
-        padding: 10px 19px;
-        position: relative;
-        img {
-          margin-left: 5px;
-          position: absolute;
-        }
-      }
-    }
+    .mainTitle {margin: -10px 13px -18px 13px;}
     hr {
       border: 0px;
       height: 2px;
@@ -790,25 +801,7 @@ const MainBottom = styled.div`
     outline: 2px solid #000;
     margin-left: 20px;
 
-    .mainTitle {
-      margin: -8.7px 13px -18px 13px;
-      display: flex;
-      justify-content: space-between;
-
-      .title {
-        font-size: 18px;
-        //  font-weight: 600;
-      }
-      .view-more {
-        font-size: 12px;
-        padding: 10px 19px;
-        position: relative;
-        img {
-          margin-left: 5px;
-          position: absolute;
-        }
-      }
-    }
+    .mainTitle {margin: -8.7px 13px -18px 13px;}
     .post {
       img {
         width: 90px;

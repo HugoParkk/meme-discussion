@@ -18,14 +18,15 @@ const Btn = styled.button`
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
-  left: 550pt;
-  top: 10pt;
+  left: 38.767vw;
+  top: 0.694vw;
 `;
 
 const PlusImg = styled.img`
-  width: 5rem;
-  height: 3rem;
+  width: 4.167vw;
+  height: 2.5vw;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 0.521vw;
 `;
+
 export default ShopBoardTopPlusBtn;
