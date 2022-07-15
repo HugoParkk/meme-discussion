@@ -24,7 +24,7 @@ const Text = styled.div`
 
   color: #ff50e2;
   display: inline-block;
-  font-size: 13pt;
+  font-size: 1.2rem;
   font-weight: bold;
   line-height: 13pt;
 `;
@@ -32,7 +32,7 @@ const Text = styled.div`
 const SubText = styled.div`
   color: gray;
   display: inline-block;
-  font-size: 11pt;
+  font-size: 0.9rem;
   line-height: 13pt;
   margin-left: 10px;
 `;

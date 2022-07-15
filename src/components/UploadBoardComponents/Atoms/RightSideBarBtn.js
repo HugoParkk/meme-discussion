@@ -18,6 +18,7 @@ const Btn = styled.button`
   color: #000;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
+  font-size: 0.9rem;
   background-color: white;
   box-shadow: .5px .5px .5px .5px #e2e2e2 inset;
   height: 40px;
@@ -26,6 +27,7 @@ const Btn = styled.button`
 `;
 const PinkBtn = styled.button`
   margin-top: 8px;
+  font-size: 0.9rem;
   border: 2px solid #ff50e2;
   border-radius: 5px;
   background-color: #ff50e2;
