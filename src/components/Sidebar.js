@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Popup from "../components/Popup";
 
 import bookmarkStar from "../images/public_compoment/star_sideMenu.svg";
 import profile from "../images/public_compoment/profile.svg";
@@ -8,16 +9,16 @@ import NewIcon from "../images/public_compoment/icon_New.png";
 import L_shape from "../images/public_compoment/L_shape.png";
 import bottomImg from "../images/public_compoment/Group 13.png";
 
-const Sidebar = () => {
-  const sidebarWarp = {
-    width: "210px",
-    display: "inline-block",
-  };
+const Sidebar = (props) => {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
 
   return (
-    <div style={sidebarWarp}>
+    <div>
+      {popup && <Popup onClose={handlerPopup} />}
       <UpSideMenuBar>
-        <div id="head">
+        <div id="head"onClick={() => { handlerPopup(true); }}>
           <div id="BookMarkIcon">
             <img src={bookmarkStar} alt="북마크아이콘"></img>
           </div>
@@ -29,7 +30,7 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div id="Userprofile">
+        <div id="Userprofile" onClick={() => { handlerPopup(true); }}>
           <img src={profile} alt="프로필이미지"></img>
           <div id="abc">
             <div id="UserText">
@@ -47,7 +48,7 @@ const Sidebar = () => {
         </div>
 
         <div id="CafeInfo">
-          <ul class="">
+          <ul onClick={() => { handlerPopup(true); }}>
             <li>
               <ul id="Queen">
                 <li>
@@ -84,7 +85,7 @@ const Sidebar = () => {
               </ul>
             </li>
           </ul>
-          <div id="Topic">
+          <div id="Topic" onClick={() => { handlerPopup(true); }}>
             <a>
               주제 재테크 &gt; <b>NFT</b>
             </a>{" "}
@@ -97,17 +98,17 @@ const Sidebar = () => {
                 </a>
               </li>
               <li>
-                <button>주인장 전화하기</button>
+                <button onClick={() => { handlerPopup(true); }}>주인장 전화하기</button>
               </li>
               <li>
-                <button>주인장 채팅하기</button>
+                <button onClick={() => { handlerPopup(true); }}>주인장 채팅하기</button>
               </li>
             </ul>
           </div>
         </div>
       </UpSideMenuBar>
 
-      <DownSideMenu>
+      <DownSideMenu onClick={() => { handlerPopup(true); }}>
         <div id="DownSideMenuBar">
           <div id="DownSideMenu">
             <div id="Sidebar-search">

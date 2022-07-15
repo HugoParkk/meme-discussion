@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
+import Popup from "../components/Popup";
 
 import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
 import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
@@ -40,21 +41,23 @@ import heart from "../images/main_page/jinyoung_heart.png";
 import mimgi from "../images/main_page/mimgi.png";
 
 
-function Main() {
+function Main(props) {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
+
   return (
     <GlobalBackground>
+      {popup && <Popup onClose={handlerPopup} />}
       <Warp>
-        
-          <Header />
-        
-        
-        <Assembler>
+        <Header />
+          <Assembler>
         <div id="box1">
           <Sidebar id="public-sidebar" />
         </div>
 
           <div id="main-contents">
-            <MainTop>
+            <MainTop onClick={() => { handlerPopup(true); }}>
               <div id="sell_JJal">
                 <img src={JJalSell}></img>
               </div>
@@ -121,7 +124,7 @@ function Main() {
               </div>
             </MainTop>
 
-            <MainMiddle>
+            <MainMiddle onClick={() => { handlerPopup(true); }}>
               <div id="best_JJal">
                 <div id="text">BEST ZZAL : 내가 제일 '짤'나가{" "}
                 <div id="best_more">
@@ -328,7 +331,7 @@ function Main() {
                   </div>
                 </div>
               </a>
-              <div class="rightContent">
+              <div class="rightContent" onClick={() => { handlerPopup(true); }}>
                 <div class="mainTitle">
                   <p class="title">꿈에서 본 그 짤... 짤 찾아 삼만리</p>
                   <p class="view-more">
