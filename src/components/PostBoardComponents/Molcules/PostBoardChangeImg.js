@@ -13,7 +13,7 @@ function PostBoardChangeImg(props) {
   );
 }
 const DivImage = styled.div`
-  width: 350px;
+  width: 250px;
   position: relative;
   transform: translateX(-50%);
   left: 50%;
@@ -25,10 +25,10 @@ const Title = styled.div`
   left: 50%;
   z-index: 3;
   width: 67.3%;
-  height: 41px;
+  height: 37px;
   line-height: 39px;
   background-color: pink;
-  top: 54px;
+  top: 32px;
   text-align: center;
   font-weight: bold;
 `;
@@ -40,8 +40,8 @@ const Description = styled.div`
   z-index: 3;
   background-color: white;
   width: 70.5%;
-  top: 89px;
-  height: 77px;
+  top: 43px;
+  height: 55px;
   text-align: center;
   line-height: 77px;
 `;
@@ -49,8 +49,8 @@ const Image = styled.img`
   position: relative;
   transform: translateX(-50%);
   width: 65%;
-  top: 73px;
-  height: 228px;
+  top: 42px;
+  height: 171px;
   left: 50%;
   z-index: 3;
 `;

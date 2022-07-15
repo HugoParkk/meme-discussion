@@ -12,6 +12,7 @@ const Sidebar = () => {
   const sidebarWarp = {
     width: "210px",
     display: "inline-block",
+
   };
 
   return (
@@ -31,15 +32,21 @@ const Sidebar = () => {
 
         <div id="Userprofile">
           <img src={profile} alt="프로필이미지"></img>
-          <div id="UserText">
-            <div id="Nick">
-              <span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b>
+          <div id="abc">
+            <div id="UserText">
+              <div id="Nick">
+                <span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b>
+              </div>
             </div>
             <ul id="profile-info">
-              <li>since 2002.02.02.</li>
-              <li>카페소개</li>
+              <li id="ab">
+                <li>since 2002.02.02</li>
+                <li>카페소개</li>
+              </li>
+              
             </ul>
           </div>
+          
         </div>
 
         <div id="CafeInfo">
@@ -57,7 +64,7 @@ const Sidebar = () => {
             <li>
               <ul id="Invite">
                 <li>18,936,555</li>
-                <sapn id="text">초대하기</sapn>
+                <span id="text">초대하기</span>
               </ul>
             </li>
             <li>
@@ -259,7 +266,7 @@ const UpSideMenuBar = styled.div`
     #my-activity {
       color: #959595;
     }
-  }
+  
   #tab-title {
     ul {
       display: flex;
@@ -293,6 +300,7 @@ const UpSideMenuBar = styled.div`
     padding: 13px 0 5px 10px;
     border-bottom: 1px solid #cfcfcf;
 
+
     img {
       float: left;
       padding: 0;
@@ -312,16 +320,23 @@ const UpSideMenuBar = styled.div`
       padding: 0 10px;
       width: 100px;
       display: inline-block;
+      position: absolute;
     }
 
     #profile-info {
       text-align: left;
       margin: 5px 2px;
-
+      font-size: 12px;
+      height: 58px;
+      
+      #ab{
+        position: absolute;
+        margin-top: 15px;
+      }
       li {
-        width: 100px;
+        width: 110px;
         display: inline-block;
-        padding: 2px 10px;
+        padding: 2px 5px;
         color: #666666;
       }
     }
@@ -346,7 +361,7 @@ const UpSideMenuBar = styled.div`
       display: flex;
       justify-content: space-between;
       height: 30px;
-      font-size: 15px;
+      font-size: 13px;
       text-align: center;
       padding: 0 7px;
 
@@ -375,7 +390,7 @@ const UpSideMenuBar = styled.div`
     #Topic {
       border-bottom: 1px solid #cfcfcf;
       border-top: 1px solid #cfcfcf;
-      padding: 12px 5px;
+      padding: 8px 5px;
       a {
         font-size: 12px;
       }
@@ -441,7 +456,7 @@ const DownSideMenu = styled.div`
       border: 0;
       top: 0px;
       position: relative;
-      width: 40px;
+      width: 36px;
       background-color: #ff50e2;
       color: #fff;
       font-size: 10.5px;

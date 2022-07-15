@@ -7,14 +7,18 @@ function GradeButton(props) {
       {props.type === "white" ? (
         <WhiteDiv>{props.text}</WhiteDiv>
       ) : (
-        <PinkDiv><a href="http://localhost:3000/upload"><div>{props.text}</div></a></PinkDiv>
+        <PinkDiv>
+          <a href="http://localhost:3000/upload">
+            <div>{props.text}</div>
+          </a>
+        </PinkDiv>
       )}
     </>
   );
 }
 
 const WhiteDiv = styled.div`
-  width: 120px;
+  padding: 0 1.2rem;
   height: 38px;
   line-height: 38px;
   text-align: center;
@@ -26,17 +30,17 @@ const WhiteDiv = styled.div`
 `;
 
 const PinkDiv = styled.div`
-  div{
+  div {
     width: 120px;
     height: 38px;
     line-height: 38px;
-   text-align: center;
+    text-align: center;
     background-color: #ff50e2;
     display: inline-block;
     color: white;
     border-radius: 5px;
   }
-  a{
+  a {
     text-decoration: none;
     color: #000;
   }

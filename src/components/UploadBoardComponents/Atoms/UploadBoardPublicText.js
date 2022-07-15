@@ -18,7 +18,7 @@ function UploadBoardPublicText(props) {
   );
 }
 const Text = styled.div`
-  font-size: 13pt;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 10px;
   margin-right: 10px;
@@ -27,7 +27,7 @@ const Text = styled.div`
   justify-self: flex-end;
 `;
 const PinkText = styled.div`
-  font-size: 12pt;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #ff50e2;
   margin-top: 10px;

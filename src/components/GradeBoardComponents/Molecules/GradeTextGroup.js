@@ -25,9 +25,9 @@ const StyledDiv = styled.div`
   position: relative;
   margin: 0 auto;
   margin-bottom: 0.3rem;
-  left: 50pt;
-  height: 25pt;
-  top: -15pt;
+  left: 4rem;
+  height: 2rem;
+  top: -1.5rem;
 `;
 
 export default GradeTextGroup;

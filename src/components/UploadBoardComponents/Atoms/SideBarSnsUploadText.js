@@ -13,9 +13,8 @@ function SideBarSnsUploadText(props) {
   );
 }
 const Divs = styled.div`
-  font-size: 10pt;
+  font-size: 0.8rem;
   margin-top: 7px;
-
   display: inline-block;
 `;
 const Imga = styled.img`
