@@ -44,9 +44,15 @@ function Main() {
   return (
     <GlobalBackground>
       <Warp>
-        <Header />
+        
+          <Header />
+        
+        
         <Assembler>
+        <div id="box1">
           <Sidebar id="public-sidebar" />
+        </div>
+
           <div id="main-contents">
             <MainTop>
               <div id="sell_JJal">
@@ -430,6 +436,10 @@ const Warp = styled.div`
     #public-footer {
     }
   }
+  #box1{
+    width: 2px;
+  }
+  
 `;
 
 const MainTop = styled.div`

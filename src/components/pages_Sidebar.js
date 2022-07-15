@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import Popup from "../components/Popup";
 
 import bookmarkStar from "../images/public_compoment/star_sideMenu.svg";
 import profile from "../images/public_compoment/profile.svg";
@@ -9,16 +8,17 @@ import NewIcon from "../images/public_compoment/icon_New.png";
 import L_shape from "../images/public_compoment/L_shape.png";
 import bottomImg from "../images/public_compoment/Group 13.png";
 
-const Sidebar = (props) => {
-  const { } = props;
+const Sidebar = () => {
+  const sidebarWarp = {
+    width: "210px",
+    display: "inline-block",
 
-  const [popup, handlerPopup] = useState(false);
+  };
 
   return (
-    <div>
-      {popup && <Popup onClose={handlerPopup} />}
+    <div style={sidebarWarp}>
       <UpSideMenuBar>
-        <div id="head"onClick={() => { handlerPopup(true); }}>
+        <div id="head">
           <div id="BookMarkIcon">
             <img src={bookmarkStar} alt="북마크아이콘"></img>
           </div>
@@ -30,7 +30,7 @@ const Sidebar = (props) => {
           </div>
         </div>
 
-        <div id="Userprofile" onClick={() => { handlerPopup(true); }}>
+        <div id="Userprofile">
           <img src={profile} alt="프로필이미지"></img>
           <div id="abc">
             <div id="UserText">
@@ -43,12 +43,14 @@ const Sidebar = (props) => {
                 <li>since 2002.02.02</li>
                 <li>카페소개</li>
               </li>
+              
             </ul>
           </div>
+          
         </div>
 
         <div id="CafeInfo">
-          <ul onClick={() => { handlerPopup(true); }}>
+          <ul class="">
             <li>
               <ul id="Queen">
                 <li>
@@ -85,7 +87,7 @@ const Sidebar = (props) => {
               </ul>
             </li>
           </ul>
-          <div id="Topic" onClick={() => { handlerPopup(true); }}>
+          <div id="Topic">
             <a>
               주제 재테크 &gt; <b>NFT</b>
             </a>{" "}
@@ -93,22 +95,20 @@ const Sidebar = (props) => {
           <div id="Btns">
             <ul>
               <li>
-                <a href="http://localhost:3000/upload">
-                  <button id="BtnHotpink">게시하기</button>
-                </a>
+                <a href="http://localhost:3000/upload"><button id="BtnHotpink">게시하기</button></a>
               </li>
               <li>
-                <button onClick={() => { handlerPopup(true); }}>주인장 전화하기</button>
+                <button>주인장 전화하기</button>
               </li>
               <li>
-                <button onClick={() => { handlerPopup(true); }}>주인장 채팅하기</button>
+                <button>주인장 채팅하기</button>
               </li>
             </ul>
           </div>
         </div>
       </UpSideMenuBar>
 
-      <DownSideMenu onClick={() => { handlerPopup(true); }}>
+      <DownSideMenu>
         <div id="DownSideMenuBar">
           <div id="DownSideMenu">
             <div id="Sidebar-search">
@@ -244,9 +244,9 @@ const Sidebar = (props) => {
 const UpSideMenuBar = styled.div`
   position: relative;
   /* left: 307px; */
-  width: 200px;
+  width: 208px;
   /* height: 965px; */
-  height: 435px;
+  height: 443px;
   border: 4px solid #cfcfcf;
   background: #fff;
   outline: 2px solid #000;
@@ -263,9 +263,10 @@ const UpSideMenuBar = styled.div`
     text-decoration: none;
     color: #000;
   }
-  #my-activity {
-    color: #959595;
-  }
+    #my-activity {
+      color: #959595;
+    }
+  
   #tab-title {
     ul {
       display: flex;
@@ -299,6 +300,7 @@ const UpSideMenuBar = styled.div`
     padding: 13px 0 5px 10px;
     border-bottom: 1px solid #cfcfcf;
 
+
     img {
       float: left;
       padding: 0;
@@ -326,8 +328,8 @@ const UpSideMenuBar = styled.div`
       margin: 5px 2px;
       font-size: 12px;
       height: 58px;
-
-      #ab {
+      
+      #ab{
         position: absolute;
         margin-top: 15px;
       }
@@ -418,8 +420,8 @@ const UpSideMenuBar = styled.div`
 const DownSideMenu = styled.div`
   position: relative;
   /* left: 307px; */
-  width: 200px;
-  height: 965px;
+  width: 208px;
+  height: 973px;
   margin: 20px 0 0 0;
   border: 4px solid #cfcfcf;
   background: #fff;
@@ -502,12 +504,13 @@ const DownSideMenu = styled.div`
 `;
 
 const DownSideImg = styled.div`
-  width: 200px;
-  position: absolute;
+  width: 208px;
+  position: relative;
+  // left: 305px;
 
   margin: 30px 0;
   img {
-    width: 200px;
+    width: 212px;
     height: 110px;
   }
 `;
