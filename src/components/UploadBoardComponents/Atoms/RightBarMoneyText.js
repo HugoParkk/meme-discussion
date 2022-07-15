@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
-function RightBarMoneyText() {
+function RightBarMoneyText(props) {
   return (
     <>
       <GlobalStyle />
-      <Money>{"758,60"}</Money>
+      <Money>{props.text}</Money>
     </>
   );
 }
 const Money = styled.div`
-  font-size: 8pt;
+  font-size: 10pt;
   color: #dbdbdb;
   float: right;
 `;

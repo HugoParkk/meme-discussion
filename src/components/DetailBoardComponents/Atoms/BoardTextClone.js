@@ -10,13 +10,14 @@ function BoardTextClone() {
   );
 }
 const Text = styled.div`
-  font-size: 17pt;
-  font-weight: bold;
+  font-size: 10pt;
   margin-bottom: 10px;
   margin-right: 13px;
   display: inline-block;
   position: relative;
   bottom: 35px;
   width: 100px;
+  left: 50pt;
+  top: -20pt;
 `;
 export default BoardTextClone;

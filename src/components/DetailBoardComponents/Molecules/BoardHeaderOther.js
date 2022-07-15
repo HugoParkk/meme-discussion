@@ -17,7 +17,6 @@ const OtherDiv = styled.div`
   position: relative;
   top: 30px;
   float: right;
-  border: 1px solid black;
 `;
 
 export default BoardHeaderOther;

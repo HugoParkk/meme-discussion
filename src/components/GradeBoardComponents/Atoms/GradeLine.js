@@ -6,11 +6,11 @@ function GradeLine() {
 }
 
 const StyledDiv = styled.div`
-  height: 1.5px;
-  width: 95%;
+  height: 2px;
+  width: 90%;
   background-color: #ff50e2;
   margin: 0 auto;
-  margin-top: -1rem;
+  margin-top: 17px;
   margin-bottom: 2rem;
 `;
 

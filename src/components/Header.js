@@ -1,20 +1,24 @@
 import React from "react";
-import styled from 'styled-components';
-import headerSrc from '../images/public_compoment/HeaderMain.png';
-import ChennelA from '../images/public_compoment/Channel_A_Logo.png';
-import GroundX from '../images/public_compoment/GroundX.jpg';
-import dongA from '../images/public_compoment/dongA_daily.png';
-import Digitech from '../images/public_compoment/Seoul_Digitech_High_School.png'
+import styled from "styled-components";
+import headerSrc from "../images/public_compoment/HeaderMain.png";
+import ChennelA from "../images/public_compoment/Channel_A_Logo.png";
+import GroundX from "../images/public_compoment/GroundX.jpg";
+import dongA from "../images/public_compoment/dongA_daily.png";
+import Digitech from "../images/public_compoment/Seoul_Digitech_High_School.png";
 
-function Header() {
+function Header(props) {
   return (
     <div>
       <HeaderMenuTop>
-      <div  id="logo">
-          <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;| 
+        <div id="logo">
+          <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;|
           <img src={GroundX} alt="그라운드x로고"></img>&nbsp;|
           <img src={dongA} alt="동아일보로고"></img>&nbsp;|&nbsp;
-          <img src={Digitech} alt="서울디지텍고등학교로고" class="Digitech"></img>
+          <img
+            src={Digitech}
+            alt="서울디지텍고등학교로고"
+            class="Digitech"
+          ></img>
         </div>
 
         <div id="header-top">
@@ -27,32 +31,36 @@ function Header() {
       <HeaderStyleTest>
         <h1></h1>
       </HeaderStyleTest>
-      <HeaderBar>
-        <div id="header-search">
-          <input></input>
-          <button>검색</button>
-        </div>
+      {props.type === "noBlack" ? (
+        <></>
+      ) : (
+        <HeaderBar>
+          <div id="header-search">
+            <input></input>
+            <button>검색</button>
+          </div>
 
-        <div id="header-bar-menu">
-          <ul>
-            <li>
-              <a href="http://localhost:3000/main">홈 화면</a>
-            </li>
-            <li>
-              <a href="#">내가 제일 '짤' 나가</a>
-            </li>
-            <li>
-              <a href="#">짤장터</a>
-            </li>
-            <li>
-              <a href="http://localhost:3000/productlist">짤 찾아 삼만리</a>
-            </li>
-            <li>
-              <a href="#">공지사항</a>
-            </li>
-          </ul>
-        </div>
-      </HeaderBar>
+          <div id="header-bar-menu">
+            <ul>
+              <li>
+                <a href="http://localhost:3000/main">홈 화면</a>
+              </li>
+              <li>
+                <a href="#">내가 제일 '짤' 나가</a>
+              </li>
+              <li>
+                <a href="#">짤장터</a>
+              </li>
+              <li>
+                <a href="http://localhost:3000/productlist">짤 찾아 삼만리</a>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+              </li>
+            </ul>
+          </div>
+        </HeaderBar>
+      )}
     </div>
   );
 }
@@ -75,18 +83,18 @@ const HeaderMenuTop = styled.div`
     margin: auto 5px;
     color: black;
   }
-  img{
+  img {
     height: 20px;
   }
-  #logo{
+  #logo {
     margin: 5px 0;
     font-size: 24px;
     display: flex;
     align-items: center;
-    .chanelA{
+    .chanelA {
       padding: 5px 0 0 0;
     }
-    .Digitech{
+    .Digitech {
       padding: 7px 0 0 0;
     }
   }

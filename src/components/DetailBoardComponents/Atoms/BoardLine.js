@@ -7,12 +7,12 @@ function BoardLine() {
 
 const StyledDiv = styled.div`
   height: 2px;
-  width: 37.5%;
+  width: 50%;
   position: relative;
-  left: 50%;
+  left: 45%;
   background-color: #ff50e2;
-  margin-top: -14rem;
-  margin-bottom: 12rem;
+  margin-top: -7rem;
+  margin-bottom: 100pt;
 `;
 
 export default BoardLine;
