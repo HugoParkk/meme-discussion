@@ -8,7 +8,7 @@ import Digitech from "../images/public_compoment/Seoul_Digitech_High_School.png"
 
 function Header(props) {
   return (
-    <div>
+    <>
       <HeaderMenuTop>
         <div id="logo">
           <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;|
@@ -28,39 +28,40 @@ function Header(props) {
           </ul>
         </div>
       </HeaderMenuTop>
+
       <HeaderStyleTest>
         <h1></h1>
       </HeaderStyleTest>
+      
       {props.type === "noBlack" ? (
         <></>
       ) : (
-        <HeaderBar>
-          <div id="header-search">
-            <input></input>
-            <button>검색</button>
-          </div>
+      <HeaderBar>
+        <div id="header-search">
+          <input></input>
+          <button>검색</button>
+        </div>
 
-          <div id="header-bar-menu">
-            <ul>
-              <li>
-                <a href="http://localhost:3000/main">홈 화면</a>
-              </li>
-              <li>
-                <a href="#">내가 제일 '짤' 나가</a>
-              </li>
-              <li>
-                <a href="#">짤장터</a>
-              </li>
-              <li>
-                <a href="http://localhost:3000/productlist">짤 찾아 삼만리</a>
-              </li>
-              <li>
-                <a href="#">공지사항</a>
-              </li>
-            </ul>
-          </div>
-        </HeaderBar>
-    </div>
+        <div id="header-bar-menu">
+          <ul>
+            <li>
+              <a href="http://localhost:3000/main">홈 화면</a>              </li>
+            <li>
+             <a href="#">내가 제일 '짤' 나가</a>
+            </li>
+            <li>
+             <a href="#">짤장터</a>
+            </li>
+             <li>
+              <a href="http://localhost:3000/productlist">짤 찾아 삼만리</a>              </li>
+            <li>
+              <a href="#">공지사항</a>
+            </li>
+          </ul>
+        </div>
+      </HeaderBar>
+      )}
+    </>
   );
 }
 const HeaderMenuTop = styled.div`
