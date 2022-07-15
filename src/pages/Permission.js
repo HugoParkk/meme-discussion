@@ -109,7 +109,7 @@ const SIDEBAR = styled.div`
 
 const CONTENTS = styled.div`
   width: 866pt;
-  height: 450pt;
+  height: 470pt;
   border: 4px solid #cfcfcf;
   position: relative;
   outline: 3px solid black;
