@@ -45,10 +45,26 @@ const data2 = [
 ];
 
 const data3 = [
-  { text: "제목", name: "스태프", date: "2022.05.04" },
-  { text: "제목", name: "스태프", date: "2022.05.04" },
-  { text: "제목", name: "스태프", date: "2022.05.04" },
-  { text: "제목", name: "스태프", date: "2022.05.04" },
+  {
+    text: "제목제목제목제목제목제목제목제목제목제목제목제목",
+    name: "스태프",
+    date: "2022.05.04",
+  },
+  {
+    text: "제목제목제목제목제목제목제목제목제목제목제목제목",
+    name: "스태프",
+    date: "2022.05.04",
+  },
+  {
+    text: "제목제목제목제목제목제목제목제목제목제목제목제목",
+    name: "스태프",
+    date: "2022.05.04",
+  },
+  {
+    text: "제목제목제목제목제목제목제목제목제목제목제목제목",
+    name: "스태프",
+    date: "2022.05.04",
+  },
 ];
 
 function ProductDetail() {
@@ -70,9 +86,9 @@ function ProductDetail() {
           <BoardBuyChat />
           <BoardBottomText />
           <BoardBottomDescribe />
-          <GradeLine />
+          <GradeLine2 />
           <BoardBottomImage />
-          <BoardBottomLastText text="디지털 ~~" />
+          <BoardBottomLastText text="디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~" />
         </Wrap>
       </Flex>
 
@@ -92,7 +108,18 @@ const Flex = styled.div`
 
 const Wrap = styled.div`
   width: 860px;
-  border: 2px solid black;
+  height: 1300pt;
+  border: 3px solid #cfcfcf;
+  outline: 2px solid black;
+`;
+
+const GradeLine2 = styled.div`
+  height: 2px;
+  width: 90%;
+  background-color: #ff50e2;
+  margin: 0 auto;
+  margin-top: -80px;
+  margin-bottom: 2rem;
 `;
 
 export default ProductDetail;

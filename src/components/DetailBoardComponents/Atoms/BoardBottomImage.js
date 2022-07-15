@@ -9,10 +9,10 @@ function BoardBottomImage() {
   );
 }
 const Image = styled.img`
-  width: 75%;
+  width: 92%;
   margin: 0 auto;
   margin-top: 2rem;
-  display : block;
-  margin : auto;
+  display: block;
+  margin: auto;
 `;
 export default BoardBottomImage;

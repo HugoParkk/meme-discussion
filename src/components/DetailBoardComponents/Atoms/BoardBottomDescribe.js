@@ -31,11 +31,12 @@ function BoardBottomDescribe() {
   );
 }
 const Text = styled.div`
-  font-size: 12pt;
+  font-size: 6pt;
   font-weight: bold;
   line-height: 20px;
   color: #dbdbdb;
   position: relative;
-  margin-left: 50%;
+  margin-left: 45%;
+  top: -80pt;
 `;
 export default BoardBottomDescribe;
