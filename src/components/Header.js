@@ -67,7 +67,7 @@ function Header(props) {
   );
 }
 const HeaderMenuTop = styled.div`
-  width: 1080px;
+  width: 70vw;
   margin: auto;
   justify-content: space-between;
   display: flex;
@@ -105,7 +105,7 @@ const HeaderMenuTop = styled.div`
   }
 `;
 const HeaderStyleTest = styled.header`
-  width: 1080px;
+  width: 70vw;
   background: url(${headerSrc}) no-repeat;
   height: 130px;
   color: white;
@@ -117,7 +117,7 @@ const HeaderStyleTest = styled.header`
   /* margin-top: 40px; */
 `;
 const HeaderBar = styled.div`
-  width: 1080px;
+  width: 70vw;
   height: 45px;
   background: #000;
   position: relative;

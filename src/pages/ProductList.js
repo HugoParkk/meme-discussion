@@ -191,9 +191,10 @@ const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function Main() {
   return (
     <GlobalBackground>
-      <Header />
+      <div>
+        <Header />
+      </div>
 
-      
       <Wrap>
         <SIDEBAR>
           <Sidebar />
@@ -230,8 +231,8 @@ function Main() {
 }
 
 const Wrap = styled.div`
+  width: 70vw;
   background-color: white;
-  width: 1080px;
   position: relative;
   transform: translateX(-50%);
   left: 50%;

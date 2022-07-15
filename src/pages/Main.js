@@ -38,8 +38,8 @@ import GlobalBackground from '../components/GlobalBackground'
 
 function Main() {
   return (
-    <div>
-      <Wrap>
+    <GlobalBackground>
+      <Warp>
         <Header />
         <Assembler>
           <Sidebar id="public-sidebar" />
@@ -57,9 +57,9 @@ function Main() {
                         <a class="noticeText">공지 및 업데이트</a>
                       </li>
                       <li>
-                        <div class="noticePlus">
-                          더보기&nbsp;&nbsp;<img src={Plus}></img>
-                        </div>
+                        <a class="noticePlus">
+                          더보기&nbsp;&nbsp;&nbsp;<img src={Plus}></img>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -117,7 +117,9 @@ function Main() {
               <div id="best_JJal">
                 <div id="text">
                   BEST ZZAL : 내가 제일 '짤'나가{" "}
-                  <div>더보기<img src={plus_box}></img></div>
+                  <span>
+                    더보기 <img src={plus_box}></img>
+                  </span>
                 </div>
                 <div className="card_set">
                   <div className="card">
@@ -396,8 +398,8 @@ function Main() {
         </div> */}
 
         <Footer id="public-footer" />
-      </Wrap>
-    </div>
+      </Warp>
+    </GlobalBackground>
   );
 }
 
@@ -410,11 +412,10 @@ const Assembler = styled.div`
 `;
 
 const Warp = styled.div`
-  background-color: white;
   position: relative;
   width: 1080px;
   margin: 0 auto;
-  
+
   #public-popup {
     position: absolute;
     margin: 0 100px;
@@ -482,10 +483,6 @@ const MainTop = styled.div`
         }
         .noticePlus {
           font-size: 12px;
-          display: flex;
-          width: 58px;
-          justify-content: space-between;
-          align-items: center;
         }
       }
 
@@ -570,19 +567,13 @@ const MainMiddle = styled.div`
     outline: 2px solid #000;
     #text {
       font-size: 18px;
-      display: flex;
+
       padding: 10px;
       margin-left: 10px;
-      justify-content: space-between;
-      align-items: center;
-      div {
+      span {
         font-size: 12px;
         font-weight: bold;
-        display: flex;
-        width: 50px;
-        img{
-          height: 15px;
-        }
+        margin-left: 325px;
       }
     }
     .card {
@@ -691,12 +682,10 @@ const MainBottom = styled.div`
   text-align: center;
   display: flex;
   color: white;
-
   a {
-    text-decoration: none;
-    color: #fff;
+      text-decoration: none;
+      color: #000;
   }
-
   .leftContent {
     background: #fa00d0;
     width: 415px;
