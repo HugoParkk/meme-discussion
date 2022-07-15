@@ -88,7 +88,9 @@ const Sidebar = () => {
           <div id="Btns">
             <ul>
               <li>
-                <a href="http://localhost:3000/upload"><button id="BtnHotpink">게시하기</button></a>
+                <a href="http://localhost:3000/upload">
+                  <button id="BtnHotpink">게시하기</button>
+                </a>
               </li>
               <li>
                 <button>주인장 전화하기</button>
@@ -256,9 +258,8 @@ const UpSideMenuBar = styled.div`
     text-decoration: none;
     color: #000;
   }
-    #my-activity {
-      color: #959595;
-    }
+  #my-activity {
+    color: #959595;
   }
   #tab-title {
     ul {
@@ -489,13 +490,12 @@ const DownSideMenu = styled.div`
 `;
 
 const DownSideImg = styled.div`
-  width: 208px;
-  position: relative;
-  // left: 305px;
+  width: 200px;
+  position: absolute;
 
   margin: 30px 0;
   img {
-    width: 212px;
+    width: 200px;
     height: 110px;
   }
 `;

@@ -17,8 +17,8 @@ const Wrapper = styled.div`
   display: inline-flex;
   align-items: center;
   position: relative;
-  left: 270pt;
-  margin-top: 24pt;
+  left: 18.75vw;
+  margin-top: 1.666vw;
 `;
 
 export default ShopBoardFindGroup;

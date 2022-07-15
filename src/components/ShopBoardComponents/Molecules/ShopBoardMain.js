@@ -10,8 +10,7 @@ function ShopBoardMain(props) {
   return (
     <Contents>
       {console.log(arr)}
-      {
-        arr.order === 0 ?
+      {arr.order === 0 ? (
         <a href="http://localhost:3000/productdetail">
           <ShopBoardImg src={arr.src} />
           <ShopBoardTitle type={arr.type1} text={arr.text1} />
@@ -21,7 +20,8 @@ function ShopBoardMain(props) {
             <ShopBoarddSubTitle text={arr.sub2} />
             <ShopBoarddSubTitle text={arr.sub3} />
           </StyledDiv>
-        </a> :
+        </a>
+      ) : (
         <a href="http://localhost:3000/Permission">
           <ShopBoardImg src={arr.src} />
           <ShopBoardTitle type={arr.type1} text={arr.text1} />
@@ -32,18 +32,17 @@ function ShopBoardMain(props) {
             <ShopBoarddSubTitle text={arr.sub3} />
           </StyledDiv>
         </a>
-      }
+      )}
     </Contents>
-
   );
 }
 
 const Contents = styled.div`
-  width: 120pt;
+  width: 8.333vw;
   display: inline-block;
-  margin: 10px;
-  margin-left: 20pt;
-  margin-right: 20pt;
+  margin: 0.521vw;
+  margin-left: 1.389vw;
+  margin-right: 1.389vw;
   a {
     text-decoration: none;
   }

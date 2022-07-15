@@ -22,16 +22,16 @@ const StyledDiv = styled.div`
   text-align: center;
   display: inline-block;
   position: relative;
-  top: 90pt;
-  left: 10pt;
+  top: 6.25vw;
+  left: 0.694vw;
 `;
 
 const Btn = styled.button`
   cursor: pointer;
   z-index: 2;
   background-color: #f9f9f8;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5vw;
+  height: 2.5vw;
   color: black;
   border: #dbdbdb;
   font-weight: bold;
@@ -40,7 +40,7 @@ const Btn = styled.button`
     `
     color: magenta;
     background-color:white ;
-    border : 2px solid #999999
+    border : 0.104vw solid #999999
   
   `}
 `;

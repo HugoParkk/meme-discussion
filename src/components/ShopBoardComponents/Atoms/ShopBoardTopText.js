@@ -15,29 +15,28 @@ function ShopBoardTopText() {
 }
 const Text = styled.div`
   color: #ff50e2;
-  font-size: 18pt;
+  font-size: 1.25vw;
   font-weight: bold;
   display: inline-block;
 `;
 const StarImg = styled.img`
-  width: 2rem;
-  height: 3rem;
+  width: 1.666vw;
   display: inline-block;
-  margin-left: 10pt;
-  margin-top: 0.4rem;
+  margin-left: 0.694vw;
+  margin-top: 0.333vw;
 `;
 
 const Wrapper = styled.div`
-  margin-left: 10pt;
+  margin-left: 0.694vw;
   margin-right: 0;
-  width: 40rem;
-  margin-top: 1%;
-  margin-bottom: 2%;
+  width: 33.333vw;
+  margin-top: 0.445vw;
+  margin-bottom: 0.891vw;
   display: flex;
   position: relative;
   align-items: center;
   overflow: hidden;
-  top: -5pt;
+  top: -0.347vw;
 `;
 
 export default ShopBoardTopText;
