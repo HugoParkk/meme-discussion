@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import UploadComplete from "../pages/UploadComplete";
+import BodyArea from '../components/PostBoardComponents/Molcules/BodyArea'
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import FooterArea from "../components/PostBoardComponents/Molcules/FooterArea";
 import Footer from "../components/Footer"
 import svg1 from "../images/Vector-3.svg";
 import svg2 from "../images/Vector-6.svg";
+
+import GlobalBackground from '../components/GlobalBackground'
+
 const data = [
   { src: svg1, img: "yes", text: "갓기 회원", type: "pink", subText: "test" },
   {
@@ -29,22 +32,22 @@ const arr = [
 ];
 function Main() {
   return (
-    <>
+    <GlobalBackground>
       <Header />
       <Sidediv>
         <SideCenterdiv>
           <Sidebar />
-          <UploadComplete />
+          <BodyArea />
         </SideCenterdiv>
         <FooterArea data={data} arr={arr} />
       </Sidediv>
       <Footerdiv>
-      <Footer />
+        <Footer />
       </Footerdiv>
-    </>
+    </GlobalBackground>
   );
 }
- const Footerdiv = styled.div`
+const Footerdiv = styled.div`
 margin-top: 60rem;
 `;
 
