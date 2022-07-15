@@ -60,6 +60,7 @@ function Header(props) {
             </ul>
           </div>
         </HeaderBar>
+      )}
     </div>
   );
 }
