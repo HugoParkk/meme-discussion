@@ -11,7 +11,7 @@ import ShopBoardwriteBtn from "../components/ShopBoardComponents/Atoms/ShopBoard
 import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/pages_Sidebar';
 import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
 
 
@@ -191,10 +191,10 @@ const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function Main() {
   return (
     <GlobalBackground>
-      <div>
-        <Header />
-      </div>
-
+      
+      <Header />
+      
+      
       <Wrap>
         <SIDEBAR>
           <Sidebar />
@@ -231,8 +231,7 @@ function Main() {
 }
 
 const Wrap = styled.div`
-  width: 70vw;
-  background-color: white;
+  width: 1080px;
   position: relative;
   transform: translateX(-50%);
   left: 50%;
@@ -257,6 +256,8 @@ const ShopBoardGroup = styled.div`
 
 const SIDEBAR = styled.div`
   position: relative;
+  margin-right: 10px;
+  
 `;
 
 const CONTENTS = styled.div`
@@ -284,7 +285,5 @@ const Back = styled.div`
   background-color: #f9f9f8;
   height: 12.4rem;
 `;
-
-
 
 export default Main;
