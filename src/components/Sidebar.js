@@ -445,7 +445,7 @@ const DownSideMenu = styled.div`
       border: 0;
       top: 0px;
       position: relative;
-      width: 40px;
+      width: 36px;
       background-color: #ff50e2;
       color: #fff;
       font-size: 10.5px;

@@ -21,8 +21,10 @@ const StyledTitle = styled.div`
 `;
 
 const StyledText = styled.div`
+width: 50rem;
   display: inline-block;
-  font-size: 11pt;
+  font-size: 18pt;
+  font-weight: bold;
   line-height: 44px;
 `;
 
