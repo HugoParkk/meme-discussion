@@ -94,7 +94,7 @@ function Permission() {
   );
 }
 const Wrap = styled.div`
-  width: 1080px;
+  width: 70vw;
   position: relative;
   transform: translateX(-50%);
   left: 50%;

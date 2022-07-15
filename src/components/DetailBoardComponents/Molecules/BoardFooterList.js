@@ -14,7 +14,7 @@ function BoardFooterList(props) {
 
 const StyledDiv = styled.div`
   border: 5px solid magenta;
-  width: 650pt;
+  width: 56.8vw;
   margin: 0 auto;
   position: relative;
   top: 60pt;
