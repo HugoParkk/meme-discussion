@@ -47,7 +47,7 @@ const Main = styled.div`
 `;
 
 const FooterPostTextTag = styled.input`
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   position: relative;
   display: block;
   left: 50%;

@@ -84,6 +84,7 @@ let DI = styled.div`
 `;
 let DA = styled.div`
   height: 120px;
+  padding-bottom: 10px;
   border-bottom: 2px solid #dbdbdb;
 `;
 const Wrap = styled.div`
@@ -91,7 +92,7 @@ const Wrap = styled.div`
   width: 11.8rem;
   position: relative;
   left: 50%;
-  padding: 12px 0;
+  padding: 10px 0;
   transform: translateX(-50%);
   background-color: pink;
 `;

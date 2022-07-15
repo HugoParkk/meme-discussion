@@ -17,13 +17,14 @@ const Btn = styled.button`
   margin-top: 50px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
+  font-size: 0.9rem;
   background-color: white;
   height: 30px;
   font-weight: bold;
 `;
 const PinkBtn = styled.button`
   margin-top: 8px;
-
+  font-size: 0.9rem;
   border: 2px solid #ff50e2;
   border-radius: 5px;
   background-color: #ff50e2;
