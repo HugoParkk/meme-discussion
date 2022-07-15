@@ -13,9 +13,12 @@ function BoardFooterList(props) {
 }
 
 const StyledDiv = styled.div`
-  border: 5px solid hotpink;
-  width: 60%;
+  border: 5px solid magenta;
+  width: 650pt;
   margin: 0 auto;
+  position: relative;
+  top: 60pt;
+  left: 80pt;
 `;
 
 export default BoardFooterList;
