@@ -59,7 +59,8 @@ function Header(props) {
               </li>
             </ul>
           </div>
-        </HeaderBar>
+        </HeaderBar>)
+      }
     </div>
   );
 }
