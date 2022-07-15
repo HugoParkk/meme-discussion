@@ -26,7 +26,7 @@ const StyledDiv = styled.div`
   margin: 0 auto;
   margin-bottom: 0.3rem;
   left: 4rem;
-  height: 2rem;
+  height: 2.0833vw;
   top: -1.5rem;
 `;
 

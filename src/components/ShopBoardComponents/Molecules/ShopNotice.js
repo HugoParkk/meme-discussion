@@ -33,76 +33,77 @@ function ShopNotice(props) {
 
 const Wrap = styled.div`
   margin: 0 auto;
-  width: 625pt;
-  border: 5px solid magenta;
-  outline: 3px solid black;
-  margin-left: 10pt;
-  margin-bottom: 1rem;
+  width: 43.403vw;
+  border: 0.26vw solid magenta;
+  outline: 0.156vw solid black;
+  margin-left: 0.694vw;
+  margin-bottom: 0.833vw;
   overflow: hidden;
 `;
 
 const StyledPink = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 0.521vw 1.042vw;
   background-color: magenta;
-  border-bottom: 2px solid magenta;
+  border-bottom: 0.104vw solid magenta;
   overflow: hidden;
-  height: 35pt;
+  height: 2.43vw;
 `;
 
 const TextTitle = styled.div`
-  width: 60%;
+  width: 24.48vw;
   color: white;
   text-align: center;
-  font-size: 15pt;
+  font-size: 1.042vw;
   overflow: hidden;
-  line-height: 15pt;
+  line-height: 1.042vw;
 `;
 
 const StyledDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 0.521vw 1.042vw;
   background-color: #feb6f2;
-  border-bottom: 2px solid #feb6f2;
+  border-bottom: 0.104vw solid magenta;
   overflow: hidden;
-  height: 40pt;
+  height: 2.43vw;
 `;
 
 const Text = styled.div`
-  width: 300px;
+  width: 15.625vw;
   color: white;
-  font-size: 12pt;
-  margin-left: 10pt;
+  font-size: 0.833vw;
+  margin-left: 0.694vw;
   line-height: 20pt;
   position: relative;
-  left: -20pt;
-  margin-right: 110pt;
+  left: -1.389vw;
+  margin-right: 7.639vw;
 `;
 
 const Sub = styled.div`
   color: white;
   margin: 0;
   padding: 0;
-  font-size: 10pt;
+  font-size: 0.694vw;
 `;
 
 const Notice = styled.div`
   background-color: #f7f9bd;
-  padding: 1px 2px;
   text-align: center;
-  border: 1px solid black;
-  width: 4rem;
-  border-radius: 3pt;
-  line-height: 20pt;
+  border: 0.156vw solid black;
+  width: 3.333vw;
+  height: 2.468vh;
+  border-radius: 0.208vw;
+  line-height: 2vh;
   cursor: pointer;
+  font-size: 0.833vw;
 `;
 
 const NoticeTitle = styled.div`
   background-color: yellowgreen;
-  padding: 1px 2px;
-  border: 1px solid black;
+  padding: 0.052vw 0.104vw;
+  border: 0.052vw solid black;
   visibility: hidden;
 `;
 

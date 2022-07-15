@@ -102,7 +102,7 @@ const Wrap = styled.div`
   left: 50%;
   display: flex;
   justify-content: space-between;
-  top: 32px;
+  top: 2.2222vw;
 `;
 
 const SIDEBAR = styled.div`
@@ -110,8 +110,8 @@ const SIDEBAR = styled.div`
 `;
 
 const CONTENTS = styled.div`
-  width: 85rem;
-  height: 40rem;
+  width: 59.8611vw;
+  height: 45.6111vw;
   border: 4px solid #cfcfcf;
   position: relative;
   outline: 3px solid black;
