@@ -13,12 +13,26 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
+
+
 import img1 from "../images/화면 캡처 2022-05-03 144858.png";
+import lovepari from '../images/fd7b8305ab14a05f23fc53a7405cd983.jpg';
+import bookfound from '../images/5f83a752c924315a6aa03aa5f3e13927.jpg';
+import Bbang from '../images/5bfb4d1298c4c0d80a4a917eae0f1a8d.jpg';
+import nun from '../images/5b7b5bead5269cb5e28f2df6d62863df.jpg';
+import img2 from '../images/3dbc7b29a958677e052c307b8fc4ad53.jpg';
+import chungchun from '../images/3cfb2a7a354ceffff7a71f4c7c625023.jpg';
+import aing from '../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg';
+import yheah from '../images/3b286c0d74f710d5a290d7ccb4028ca9.jpg';
+import bill from '../images/2d1441ab4efa9bfbab3f40e68cf59ff1.jpg';
+import gagul from '../images/2c0f85cda379cc9ab1c2912c527e0d95.jpg';
+import img3 from '../images/02b796f3090ec136409f2189d7a9fcc9.jpg';
+import geguri from '../images/1ae00b0948a6376c01bcf396d617fdfb.jpg';
 
 const data = [
   {
     order: 0,
-    src: img1,
+    src: lovepari,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -29,7 +43,7 @@ const data = [
   },
   {
     order: 1,
-    src: img1,
+    src: bookfound,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -40,7 +54,7 @@ const data = [
   },
   {
     order: 2,
-    src: img1,
+    src: Bbang,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -51,7 +65,7 @@ const data = [
   },
   {
     order: 3,
-    src: img1,
+    src: nun,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -62,7 +76,7 @@ const data = [
   },
   {
     order: 4,
-    src: img1,
+    src: img2,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -73,7 +87,7 @@ const data = [
   },
   {
     order: 5,
-    src: img1,
+    src: chungchun,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -84,7 +98,7 @@ const data = [
   },
   {
     order: 6,
-    src: img1,
+    src: aing,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -95,7 +109,7 @@ const data = [
   },
   {
     order: 7,
-    src: img1,
+    src: yheah,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -106,7 +120,7 @@ const data = [
   },
   {
     order: 8,
-    src: img1,
+    src: bill,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -117,7 +131,7 @@ const data = [
   },
   {
     order: 9,
-    src: img1,
+    src: gagul,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -128,7 +142,7 @@ const data = [
   },
   {
     order: 10,
-    src: img1,
+    src: img3,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
@@ -139,7 +153,7 @@ const data = [
   },
   {
     order: 11,
-    src: img1,
+    src: geguri,
     type1: "black",
     text1: "짤이름",
     text2: "[댓글수]",
