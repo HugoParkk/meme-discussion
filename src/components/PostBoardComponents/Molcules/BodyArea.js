@@ -1,14 +1,15 @@
 import React from "react";
-import PostBoardChangeImg from "../components/PostBoardComponents/Molcules/PostBoardChangeImg";
-import GradeLine from "../components/GradeBoardComponents/Atoms/GradeLine";
-import WarningHand from "../images/public_compoment/warning_hand.svg";
-import PostBoardBellText from "../components/PostBoardComponents/Atoms/PostBoardBellText";
+import PostBoardChangeImg from "./PostBoardChangeImg";
+import GradeLine from "../../GradeBoardComponents/Atoms/GradeLine";
+import WarningHand from "../../../images/public_compoment/warning_hand.svg";
+import PostBoardBellText from "../Atoms/PostBoardBellText";
 import styled from "styled-components";
-import GradeButtonGroup from "../components/GradeBoardComponents/Molecules/GradeButtonGroup";
-import HeaderText from "../components/UploadBoardComponents/Atoms/HeaderText";
-import HeaderImg from "../components/UploadBoardComponents/Atoms/HeaderImg";
-import FooterPostText from "../components/UploadBoardComponents/Molecules/FooterPostText";
+import GradeButtonGroup from "../../GradeBoardComponents/Molecules/GradeButtonGroup";
+import HeaderText from "../../UploadBoardComponents/Atoms/HeaderText";
+import HeaderImg from "../../UploadBoardComponents/Atoms/HeaderImg";
+import FooterPostText from "../../UploadBoardComponents/Molecules/FooterPostText";
 
+import GlobalBackground from '../../GlobalBackground'
 
 const btnArr = [
   { text: "이전으로", type: "white" },
@@ -25,9 +26,9 @@ function Main() {
           <GradeButtonGroup data={btnArr} />
         </Header1>
         <Header2>
-          <FooterPostText  text="밈품명품에 첫 매물 등록 완료 ! 갓기 회원으로 자동 등업 되었어요!" />
-          <PostBoardBellText  />
-        </Header2>  
+          <FooterPostText text="밈품명품에 첫 매물 등록 완료 ! 갓기 회원으로 자동 등업 되었어요!" />
+          <PostBoardBellText />
+        </Header2>
         <GradeLine />
         <PostBoardChangeImg />
       </Maindiv>

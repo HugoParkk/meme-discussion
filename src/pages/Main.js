@@ -34,9 +34,11 @@ import dosa from "../images/main_page/card_dosa.jpg";
 import heart from "../images/main_page/jinyoung_heart.png";
 import mimgi from "../images/main_page/mimgi.png";
 
+import GlobalBackground from '../components/GlobalBackground'
+
 function Main() {
   return (
-    <div>
+    <GlobalBackground>
       <Warp>
         <Header />
         <Assembler>
@@ -397,7 +399,7 @@ function Main() {
 
         <Footer id="public-footer" />
       </Warp>
-    </div>
+    </GlobalBackground>
   );
 }
 
