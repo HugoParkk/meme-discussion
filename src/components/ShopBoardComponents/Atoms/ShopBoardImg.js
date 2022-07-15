@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-function ShopBoardImg() {
-  return <StyledImg />;
+function ShopBoardImg(props) {
+  return <StyledImg src={props.src} />;
 }
 
-const StyledImg = styled.div`
-  width: 180pt;
-  height: 180pt;
+const StyledImg = styled.img`
+  width: 145pt;
+  height: 145pt;
   background-color: blue;
   position: relative;
 `;

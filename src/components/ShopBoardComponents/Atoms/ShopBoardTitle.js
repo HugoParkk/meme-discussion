@@ -18,7 +18,7 @@ const BlackDiv = styled.div`
   margin-bottom: 5pt;
   margin-left: 5pt;
   margin-right: 5pt;
-  font-size: 12pt;
+  font-size: 10pt;
   color: black;
   display: inline-block;
   font-weight: bold;

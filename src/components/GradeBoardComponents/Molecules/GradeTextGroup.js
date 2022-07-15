@@ -22,10 +22,12 @@ function GradeTextGroup(props) {
 }
 
 const StyledDiv = styled.div`
-  width: 70%;
+  position: relative;
   margin: 0 auto;
   margin-bottom: 0.3rem;
-  font-weight: bold;
+  left: 50pt;
+  height: 25pt;
+  top: -15pt;
 `;
 
 export default GradeTextGroup;

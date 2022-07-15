@@ -19,8 +19,8 @@ const StyledDiv = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: pink;
-  border-bottom: 2px solid hotpink;
+  background-color: #feb6f2;
+  border-bottom: 2px solid magenta;
 `;
 
 const Text = styled.div`
@@ -29,7 +29,7 @@ const Text = styled.div`
 `;
 
 const Sub = styled.div`
-  color: gray;
+  color: white;
 `;
 
 export default BoardFooter;

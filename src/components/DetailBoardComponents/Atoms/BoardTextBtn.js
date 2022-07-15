@@ -21,9 +21,8 @@ const StyledDiv = styled.div`
 `;
 
 const PinkBox = styled.button`
-  font-size: 15pt;
+  font-size: 10pt;
   display: inline-block;
-  font-weight: bold;
   padding: 3px 6px;
   border: 0;
   background-color: #ff50e2;
@@ -33,5 +32,8 @@ const PinkBox = styled.button`
   border-radius: 5px;
   margin-right: 5px;
   margin-top: 5px;
+  position: relative;
+  left: 85pt;
+  top: -45pt;
 `;
 export default BoardTextBtn;

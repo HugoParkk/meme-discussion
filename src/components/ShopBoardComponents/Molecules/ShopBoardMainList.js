@@ -16,7 +16,7 @@ const Wrap = styled.div`
   width: 120%;
   display: inline-block;
   position: relative;
-  margin-left: 445pt;
+  left: 377pt;
   transform: translateX(-50%);
   overflow: hidden;
 `;

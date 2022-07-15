@@ -22,16 +22,16 @@ const StyledDiv = styled.div`
   text-align: center;
   display: inline-block;
   position: relative;
-
-  left: 180pt;
+  top: 90pt;
+  left: 10pt;
 `;
 
 const Btn = styled.button`
   cursor: pointer;
   z-index: 2;
   background-color: #f9f9f8;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   color: black;
   border: #dbdbdb;
   font-weight: bold;

@@ -21,6 +21,7 @@ const StyledDiv = styled.div`
   width: 50%;
   position: absolute;
   left: 50%;
+  z-index: 1000;
 `;
 
 export default BoardContents;

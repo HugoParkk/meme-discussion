@@ -6,10 +6,9 @@ function BoardDate(props) {
 }
 
 const BoardText = styled.div`
-  font-size: 13pt;
+  font-size: 10pt;
   display: block;
   color: #999999;
-  padding-left: 10px;
 `;
 
 export default BoardDate;

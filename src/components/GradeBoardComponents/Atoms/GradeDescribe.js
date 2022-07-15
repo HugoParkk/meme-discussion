@@ -17,21 +17,21 @@ function GradeDescribe() {
   );
 }
 const PinkSpan = styled.span`
-  font-size: 13pt;
-  font-weight: bold;
+  font-size: 10pt;
   display: inline-block;
   color: #ff50e2;
-  
-  
 `;
 const StyledText = styled.div`
-  font-size: 13pt;
+  font-size: 10pt;
   font-weight: bold;
   display: block;
   text-align: start;
-  width: 70%;
+  width: 100%;
   line-height: 35px;
   margin: 0 auto;
+  position: relative;
+  left: 8%;
+  top: -20pt;
 `;
 
 export default GradeDescribe;

@@ -13,10 +13,12 @@ function RightSideBarDutyText(props) {
 const Text = styled.div`
   font-size: 13pt;
   color: #dbdbdb;
+  margin-top: 10px;
   display: inline;
 `;
 const Text2 = styled.div`
   font-size: 13pt;
+  margin-top: 10px;
   color: #dbdbdb;
   display: inline;
   text-align: right;

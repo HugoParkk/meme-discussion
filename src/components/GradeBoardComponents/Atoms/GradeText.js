@@ -29,6 +29,7 @@ const PinkDiv = styled.div`
   text-align: center;
   margin-left: 6.5px;
   margin-right: 6.5px;
+  cursor: pointer;
 `;
 
 const DefaultDiv = styled.div`
@@ -41,6 +42,7 @@ const DefaultDiv = styled.div`
   font-size: 13pt;
   width: 100px;
   text-align: center;
+  cursor: pointer;
 `;
 
 export default GradeText;

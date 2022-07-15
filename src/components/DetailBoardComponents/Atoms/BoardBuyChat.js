@@ -6,22 +6,23 @@ function BoardBuyChat() {
   return (
     <>
       <GlobalStyle />
-      <ChatBtn>
+      <a href="http://localhost:3000/Permission"><ChatBtn>
         <ImgChat src={SvgImage} alt={"구매 문의 채팅 이미지"} />
-      </ChatBtn>
+      </ChatBtn></a>
     </>
   );
 }
 const ChatBtn = styled.button`
   border-radius: 7px;
   position: relative;
-  margin-left: 49.5%;
-  margin-top: -4rem;
+  left: 200pt;
+  margin-top: -5rem;
   margin-bottom: 2rem;
-  width: 38%;
+  width: 50%;
   border: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
+  top: -65pt;
 `;
 const ImgChat = styled.img`
   width: 100%;

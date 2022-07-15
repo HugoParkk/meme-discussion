@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
   width: 90%;
   background-color: #ff50e2;
   margin: 0 auto;
-
+  margin-top: 17px;
   margin-bottom: 2rem;
 `;
 

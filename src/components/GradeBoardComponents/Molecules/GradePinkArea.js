@@ -20,11 +20,12 @@ function GradePinkArea(props) {
 }
 
 const StyledDiv = styled.div`
-  width: 75%;
+  width: 95%;
   margin: 0 auto;
   padding: 20px 2%;
   background: #fff4fd;
-  margin-top: 3rem;
+  margin-top: -1rem;
+  height: 120pt;
 `;
 
 export default GradePinkArea;

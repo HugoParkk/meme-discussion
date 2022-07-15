@@ -11,14 +11,15 @@ function BoardBottomLastText(props) {
   );
 }
 const Text = styled.div`
-  font-size: 13pt;
+  font-size: 11pt;
   color: #000000;
-  font-weight: bold;
   width: 75%;
   height: 15rem;
   margin: 0 auto;
   margin-top: 2rem;
-  display : block;
-  margin : auto;
+  display: block;
+  margin: auto;
+  position: relative;
+  left: -50pt;
 `;
 export default BoardBottomLastText;

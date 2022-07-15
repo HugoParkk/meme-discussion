@@ -25,9 +25,12 @@ function BoardTextGroup(props) {
 
 const Contents = styled.div`
   margin: 0;
+  height: 20pt;
 `;
 
 const StyledDiv = styled.div`
   width: 100%;
+  position: relative;
+  top: -20pt;
 `;
 export default BoardTextGroup;

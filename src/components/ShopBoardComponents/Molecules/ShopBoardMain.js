@@ -9,24 +9,44 @@ function ShopBoardMain(props) {
 
   return (
     <Contents>
-      <ShopBoardImg />
-      <ShopBoardTitle type={arr.type1} text={arr.text1} />
-      <ShopBoardTitle type={arr.type2} text={arr.text2} />
-      <ShopBoarddSubTitle text={arr.sub1} />
-      <StyledDiv>
-        <ShopBoarddSubTitle text={arr.sub2} />
-        <ShopBoarddSubTitle text={arr.sub3} />
-      </StyledDiv>
+      {console.log(arr)}
+      {
+        arr.order === 0 ?
+        <a href="http://localhost:3000/productdetail">
+          <ShopBoardImg src={arr.src} />
+          <ShopBoardTitle type={arr.type1} text={arr.text1} />
+          <ShopBoardTitle type={arr.type2} text={arr.text2} />
+          <ShopBoarddSubTitle text={arr.sub1} />
+          <StyledDiv>
+            <ShopBoarddSubTitle text={arr.sub2} />
+            <ShopBoarddSubTitle text={arr.sub3} />
+          </StyledDiv>
+        </a> :
+        <a href="http://localhost:3000/Permission">
+          <ShopBoardImg src={arr.src} />
+          <ShopBoardTitle type={arr.type1} text={arr.text1} />
+          <ShopBoardTitle type={arr.type2} text={arr.text2} />
+          <ShopBoarddSubTitle text={arr.sub1} />
+          <StyledDiv>
+            <ShopBoarddSubTitle text={arr.sub2} />
+            <ShopBoarddSubTitle text={arr.sub3} />
+          </StyledDiv>
+        </a>
+      }
     </Contents>
+
   );
 }
 
 const Contents = styled.div`
-  width: 100pt;
+  width: 120pt;
   display: inline-block;
   margin: 10px;
-  margin-left: 50pt;
-  margin-right: 50pt;
+  margin-left: 20pt;
+  margin-right: 20pt;
+  a {
+    text-decoration: none;
+  }
 `;
 
 const StyledDiv = styled.div`

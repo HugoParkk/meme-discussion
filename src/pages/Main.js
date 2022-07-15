@@ -414,10 +414,6 @@ const Warp = styled.div`
   width: 1080px;
   margin: 0 auto;
 
-  a {
-    text-decoration: none;
-  }
-
   #public-popup {
     position: absolute;
     margin: 0 100px;
@@ -684,6 +680,10 @@ const MainBottom = styled.div`
   text-align: center;
   display: flex;
   color: white;
+  a {
+      text-decoration: none;
+      color: #000;
+  }
   .leftContent {
     background: #fa00d0;
     width: 415px;

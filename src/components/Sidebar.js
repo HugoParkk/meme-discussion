@@ -12,6 +12,7 @@ const Sidebar = () => {
   const sidebarWarp = {
     width: "210px",
     display: "inline-block",
+    
   };
 
   return (
@@ -36,7 +37,7 @@ const Sidebar = () => {
               <span id="gradeBox">매니저</span>&nbsp;&nbsp;<b>주인짱</b>
             </div>
             <ul id="profile-info">
-              <li>since 2002.02.02.</li>
+              <li>since 2002.02.02</li>
               <li>카페소개</li>
             </ul>
           </div>
@@ -88,7 +89,7 @@ const Sidebar = () => {
           <div id="Btns">
             <ul>
               <li>
-                <button id="BtnHotpink">게시하기</button>
+                <a href="http://localhost:3000/upload"><button id="BtnHotpink">게시하기</button></a>
               </li>
               <li>
                 <button>주인장 전화하기</button>
@@ -239,7 +240,7 @@ const UpSideMenuBar = styled.div`
   /* left: 307px; */
   width: 200px;
   /* height: 965px; */
-  height: 480px;
+  height: 435px;
   border: 4px solid #cfcfcf;
   background: #fff;
   outline: 2px solid #000;
@@ -252,11 +253,14 @@ const UpSideMenuBar = styled.div`
   li {
     list-style: none;
   }
-  #head {
+  a {
+    text-decoration: none;
+    color: #000;
+  }
     #my-activity {
       color: #959595;
     }
-  }
+  
   #tab-title {
     ul {
       display: flex;
@@ -289,6 +293,7 @@ const UpSideMenuBar = styled.div`
     font-size: 12px;
     padding: 13px 0 5px 10px;
     border-bottom: 1px solid #cfcfcf;
+    
 
     img {
       float: left;
@@ -314,9 +319,11 @@ const UpSideMenuBar = styled.div`
     #profile-info {
       text-align: left;
       margin: 5px 2px;
+      font-size: 12px;
+      
 
       li {
-        width: 100px;
+        width: 110px;
         display: inline-block;
         padding: 2px 10px;
         color: #666666;
@@ -343,7 +350,7 @@ const UpSideMenuBar = styled.div`
       display: flex;
       justify-content: space-between;
       height: 30px;
-      font-size: 15px;
+      font-size: 13px;
       text-align: center;
       padding: 0 7px;
 
@@ -379,10 +386,10 @@ const UpSideMenuBar = styled.div`
     }
 
     #Btns {
-      margin: 8px 0 0 2.5px;
+      margin: 8px 0 0 1px;
 
       button {
-        width: 185px;
+        width: 198px;
         height: 35px;
         border: none;
         box-shadow: 1px 1px 1px 1px #bbbbbb inset;
@@ -422,15 +429,15 @@ const DownSideMenu = styled.div`
   }
 
   #Sidebar-search {
-    text-align: center;
     background: #ff50e2;
     input {
-      height: 25px;
+      height: 26px;
       border-radius: 0%;
       border: 0;
-      width: 154px;
+      width: 150px;
       margin-right: 1.5px;
       box-shadow: 0.2px 0.3px 5px 0px #ff50e2 inset;
+      padding: 0;
     }
     button {
       border-radius: 0%;

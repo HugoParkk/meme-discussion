@@ -6,7 +6,7 @@ function BoardRating(props) {
 }
 
 const DivRating = styled.div`
-  font-size: 13pt;
+  font-size: 10pt;
   font-weight: bold;
   display: inline-block;
   color: #999999;

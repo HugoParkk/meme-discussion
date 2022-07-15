@@ -18,12 +18,12 @@ const Btn = styled.button`
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
   position: relative;
-  left: 700pt;
-  top: -7pt;
+  left: 550pt;
+  top: 40pt;
 `;
 const Image = styled.img`
   width: 100px;
-  height: 100px;
+  height: 30px;
   position: relative;
 `;
 export default ShopBoardwriteBtn;

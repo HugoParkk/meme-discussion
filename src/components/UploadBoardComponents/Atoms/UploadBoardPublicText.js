@@ -5,16 +5,34 @@ function UploadBoardPublicText(props) {
   return (
     <>
       <GlobalStyle />
-      <Text>{props.text}</Text>
+      {props.type === "pink" ? (
+        <>
+          <PinkText>{props.text}</PinkText>
+        </>
+      ) : (
+        <>
+          <Text>{props.text}</Text>
+        </>
+      )}
     </>
   );
 }
 const Text = styled.div`
   font-size: 13pt;
   font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
   margin-bottom: 5px;
   width: 60%;
-  grid-column: 1 / 2;
+  justify-self: flex-end;
 `;
-
+const PinkText = styled.div`
+  font-size: 12pt;
+  font-weight: bold;
+  color: #ff50e2;
+  margin-top: 10px;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  justify-self: flex-end;
+`;
 export default UploadBoardPublicText;

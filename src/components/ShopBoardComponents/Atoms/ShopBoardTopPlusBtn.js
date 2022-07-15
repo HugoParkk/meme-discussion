@@ -18,8 +18,8 @@ const Btn = styled.button`
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
-  left: 715pt;
-  top: 12pt;
+  left: 550pt;
+  top: 10pt;
 `;
 
 const PlusImg = styled.img`
