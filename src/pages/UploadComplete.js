@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import BodyArea from '../components/PostBoardComponents/Molcules/BodyArea'
 import Header from "../components/Header";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/pages_Sidebar";
 import FooterArea from "../components/PostBoardComponents/Molcules/FooterArea";
 import Footer from "../components/Footer"
 import svg1 from "../images/Vector-3.svg";
