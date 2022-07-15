@@ -115,7 +115,7 @@ const HeaderMenuTop = styled.div`
   }
 `;
 const HeaderStyleTest = styled.header`
-  width: 64vw;
+  width: 63.2vw;
   background: url(${headerSrc}) no-repeat;
   height: 126px;
   color: white;

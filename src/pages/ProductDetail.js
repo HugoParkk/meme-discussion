@@ -20,9 +20,9 @@ import BoardTopTitle from "../components/DetailBoardComponents/Atoms/BoardTopTit
 import BoardBottomImage from "../components/DetailBoardComponents/Atoms/BoardBottomImage";
 import BoardBottomLastText from "../components/DetailBoardComponents/Atoms/BoardBottomLastText";
 import BoardFooterList from "../components/DetailBoardComponents/Molecules/BoardFooterList";
-import Header from "../components/Header";
+import Header from "../components/pages_Header";
 import styled from "styled-components";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/pages_Sidebar";
 import Footer from "../components/Footer";
 import GlobalBackground from '../components/GlobalBackground';
 

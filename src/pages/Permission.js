@@ -6,7 +6,7 @@ import GradeTitle from "../components/GradeBoardComponents/Atoms/GradeTitle";
 import GradePinkArea from "../components/GradeBoardComponents/Molecules/GradePinkArea";
 import GradeButtonGroup from "../components/GradeBoardComponents/Molecules/GradeButtonGroup";
 import GradeBoardMainTitle from "../components/GradeBoardComponents/Molecules/GradeBoardMainTitle";
-import Header from "../components/Header";
+import Header from "../components/pages_Header";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import styled from "styled-components";
