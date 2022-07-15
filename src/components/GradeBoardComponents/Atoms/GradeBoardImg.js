@@ -11,7 +11,7 @@ const StyledImg = styled.img`
   height: 2%;
   position: relative;
   left: -18%;
-  top: 1px;
+  top: 0.1rem;
   transform: translate(50%);
 `;
 
