@@ -11,7 +11,6 @@ function UploadInput() {
 
 const Wrap = styled.div`
   position: relative;
-  width: 1074px;
   left: 50%;
   transform: translateX(-50%);
   top: 60px;

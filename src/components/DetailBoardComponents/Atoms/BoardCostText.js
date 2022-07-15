@@ -15,12 +15,17 @@ function BoardCostText() {
 const StyledDiv = styled.div`
   display: block;
   margin-bottom: 2rem;
+  position: relative;
+  top: 20pt;
 `;
 
 const Cost = styled.div`
-  font-size: 22pt;
+  font-size: 18pt;
   font-weight: bold;
   display: inline-block;
+  position: relative;
+  left: 50pt;
+  top: -25pt;
 `;
 
 const QuestBtn = styled.button`
@@ -35,6 +40,7 @@ const QuestBtn = styled.button`
   border-radius: 8px;
   margin-left: 20px;
   position: relative;
-  bottom: 5px;
+  left: 50pt;
+  top: -26pt;
 `;
 export default BoardCostText;

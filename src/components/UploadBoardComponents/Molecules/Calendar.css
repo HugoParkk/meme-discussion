@@ -1,18 +1,20 @@
 .react-calendar {
-  width: 280px;
-  max-width: 100%;
+  width: 250px;
+  max-width: 120%;
   background-color: #fff;
   color: #222;
-  border-radius: 8px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.125em;
+  position: relative;
+  transform: translateX(-50%);
+  border: none;
+  left: 50%;
 }
 .react-calendar__navigation button {
   color: #6f48eb;
-  min-width: 44px;
+  min-width: 10px;
   background: none;
-  font-size: 16px;
+  font-size: 10pt;
   margin-top: 8px;
 }
 .react-calendar__navigation button:enabled:hover,

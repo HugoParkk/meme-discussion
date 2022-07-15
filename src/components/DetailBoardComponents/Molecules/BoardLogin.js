@@ -20,7 +20,7 @@ function BoardLogin(props) {
 const Contents = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
 `;
 
