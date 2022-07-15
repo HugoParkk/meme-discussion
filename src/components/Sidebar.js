@@ -382,10 +382,10 @@ const UpSideMenuBar = styled.div`
     }
 
     #Btns {
-      margin: 8px 0 0 2.5px;
+      margin: 8px 0 0 1px;
 
       button {
-        width: 186px;
+        width: 198px;
         height: 35px;
         border: none;
         box-shadow: 1px 1px 1px 1px #bbbbbb inset;
@@ -397,7 +397,6 @@ const UpSideMenuBar = styled.div`
         background: #ff50e2;
         color: #fff;
         box-shadow: none;
-        width: 140pt;
       }
     }
   }
@@ -426,15 +425,15 @@ const DownSideMenu = styled.div`
   }
 
   #Sidebar-search {
-    text-align: center;
     background: #ff50e2;
     input {
-      height: 25px;
+      height: 26px;
       border-radius: 0%;
       border: 0;
       width: 150px;
       margin-right: 1.5px;
       box-shadow: 0.2px 0.3px 5px 0px #ff50e2 inset;
+      padding: 0;
     }
     button {
       border-radius: 0%;
