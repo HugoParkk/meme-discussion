@@ -41,6 +41,7 @@ function Main() {
         </SideCenterdiv>
         <FooterArea data={data} arr={arr} />
       </Sidediv>
+      
       <Footerdiv>
         <Footer />
       </Footerdiv>

@@ -38,7 +38,7 @@ const Wrap = styled.div`
   border: 0.26vw solid magenta;
   outline: 0.156vw solid black;
   margin-left: 0.694vw;
-  margin-bottom: 0.833vw;
+  margin-bottom: 1.2vw;
   overflow: hidden;
 `;
 
@@ -74,9 +74,9 @@ const StyledDiv = styled.div`
 const Text = styled.div`
   width: 15.625vw;
   color: white;
-  font-size: 0.833vw;
+  font-size: 0.77vw;
   margin-left: 0.694vw;
-  line-height: 20pt;
+  line-height: 1.2vw;
   position: relative;
   left: -1.389vw;
   margin-right: 7.639vw;
@@ -85,18 +85,19 @@ const Text = styled.div`
 const Sub = styled.div`
   color: white;
   margin: 0;
+  margin-top: 0.1vw;
   padding: 0;
-  font-size: 0.694vw;
+  font-size: 0.76vw;
 `;
 
 const Notice = styled.div`
   background-color: #f7f9bd;
   text-align: center;
-  border: 0.156vw solid black;
+  border: 0.1vw solid black;
   width: 3.333vw;
-  height: 2.468vh;
+  height: 1.4vw;
   border-radius: 0.208vw;
-  line-height: 2vh;
+  line-height: 1.1vw;
   cursor: pointer;
   font-size: 0.833vw;
 `;
