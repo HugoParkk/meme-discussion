@@ -45,7 +45,8 @@ function Header(props) {
         <div id="header-bar-menu">
           <ul>
             <li>
-              <a href="http://localhost:3000/main">홈 화면</a>              </li>
+              <a href="http://localhost:3000/main">홈 화면</a>
+            </li>
             <li>
              <a href="#">내가 제일 '짤' 나가</a>
             </li>
