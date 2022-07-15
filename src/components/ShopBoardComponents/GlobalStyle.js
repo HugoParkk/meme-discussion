@@ -1,12 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  * {
+  div{
     box-sizing : border-box;
-  }
-  body{
+
+    text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
   }
+
+  
+
+
 `;
 
 export default GlobalStyle;
