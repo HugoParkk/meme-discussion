@@ -77,6 +77,13 @@ const Con = styled.div`
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+
+  Molu{
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
 `;
 
 const Wrap = styled.div`

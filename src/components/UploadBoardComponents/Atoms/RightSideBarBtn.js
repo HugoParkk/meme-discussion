@@ -15,20 +15,23 @@ function RightSideBarBtn(props) {
 }
 const Btn = styled.button`
   margin-top: 50px;
+  color: #000;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
   background-color: white;
-  height: 30px;
+  box-shadow: .5px .5px .5px .5px #e2e2e2 inset;
+  height: 40px;
+  width: 150px;
   font-weight: bold;
 `;
 const PinkBtn = styled.button`
   margin-top: 8px;
-
   border: 2px solid #ff50e2;
   border-radius: 5px;
   background-color: #ff50e2;
   color: white;
-  height: 30px;
+  height: 40px;
+  width: 150px;
   font-weight: bold;
 `;
 export default RightSideBarBtn;

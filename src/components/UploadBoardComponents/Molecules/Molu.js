@@ -38,8 +38,8 @@ function Molu() {
             <RightSideBarDutyText text={"창작자 세금"} percent={"7.8%"} />
           </Flex>
         </DA>
-        <RightSideBarBtn text={"임시등록"} />
-        <RightSideBarBtn text={"매물 게시"} type={"pink"} />
+        <span><RightSideBarBtn text={"임시등록"} /></span>
+        <a href="http://localhost:3000/uploadcomplete"><RightSideBarBtn text={"매물 게시"} type={"pink"} /></a>
         <UploadBoardPublicLi />
         <Wrap>
           <SideBarSnsUploadText text={"인스타그램"} />
