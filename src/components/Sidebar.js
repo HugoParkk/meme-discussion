@@ -244,7 +244,7 @@ const Sidebar = () => {
 const UpSideMenuBar = styled.div`
   position: relative;
   /* left: 307px; */
-  width: 200px;
+  width: 208px;
   /* height: 965px; */
   height: 435px;
   border: 4px solid #cfcfcf;

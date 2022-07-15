@@ -191,9 +191,8 @@ const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function Main() {
   return (
     <GlobalBackground>
-      <div>
-        <Header />
-      </div>
+      <Header />
+
       
       <Wrap>
         <SIDEBAR>
