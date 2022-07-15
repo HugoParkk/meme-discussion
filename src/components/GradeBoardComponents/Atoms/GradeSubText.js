@@ -15,10 +15,10 @@ const StyledDiv = styled.div`
   color: #cfcfcf;
   display: inline-block;
   clear: both;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 13pt;
+  padding: 0.3472vw;
+  padding-left: 0.6944vw;
+  padding-right: 0.6944vw;
+  font-size: 1.0889vw;
 `;
 
 export default GradeSubText;
