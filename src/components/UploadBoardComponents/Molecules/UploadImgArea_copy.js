@@ -71,7 +71,7 @@ const Wrap = styled.div`
 `;
 
 const ImgButton = styled.div`
-  width: 190px;
+  width: 11.9rem;
   height: 50px;
   text-align: center;
   line-height: 50px;

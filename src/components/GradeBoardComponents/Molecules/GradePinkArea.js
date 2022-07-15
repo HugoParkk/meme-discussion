@@ -25,7 +25,7 @@ const StyledDiv = styled.div`
   padding: 20px 2%;
   background: #fff4fd;
   margin-top: -1rem;
-  height: 120pt;
+  height: 10rem;
 `;
 
 export default GradePinkArea;

@@ -13,9 +13,8 @@ function GradeButtonGroup(props) {
 }
 
 const StyledDiv = styled.div`
-  width: 30%;
-  margin: 0 auto;
-  display: flexbox;
+  width: 70%;
+  display: flex;
   justify-content: center;
   margin-top: 1rem;
 `;

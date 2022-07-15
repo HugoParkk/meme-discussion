@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
 const Text = styled.div`
   line-height: 30px;
   height: 30px;
-  font-size: 10pt;
+  font-size: 0.8rem;
   margin-left: 5px;
   top: 50%;
   transform: translateY(-50%);

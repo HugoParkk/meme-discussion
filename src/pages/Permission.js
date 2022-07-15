@@ -17,6 +17,8 @@ import svg4 from "../images/Vector-4.svg";
 import svg5 from "../images/Vector-7.svg";
 import svg6 from "../images/Vector-8.svg";
 
+import GlobalBackground from '../components/GlobalBackground'
+
 const pinkArr = [
   { text: "자동등업", subText: "text" },
   { text: "등업게시판", subText: "text" },
@@ -71,7 +73,7 @@ const btnArr = [
 
 function Permission() {
   return (
-    <>
+    <GlobalBackground>
       <Header />
       <Wrap>
         <SIDEBAR>
@@ -90,7 +92,7 @@ function Permission() {
       <FOOTER>
         <Footer />
       </FOOTER>
-    </>
+    </GlobalBackground>
   );
 }
 const Wrap = styled.div`
@@ -108,8 +110,8 @@ const SIDEBAR = styled.div`
 `;
 
 const CONTENTS = styled.div`
-  width: 866pt;
-  height: 450pt;
+  width: 85rem;
+  height: 40rem;
   border: 4px solid #cfcfcf;
   position: relative;
   outline: 3px solid black;

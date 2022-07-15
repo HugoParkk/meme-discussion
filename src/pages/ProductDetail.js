@@ -24,6 +24,7 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
+import GlobalBackground from '../components/GlobalBackground';
 
 const data = {
   type: "pink",
@@ -70,7 +71,7 @@ const data3 = [
 
 function ProductDetail() {
   return (
-    <>
+    <GlobalBackground>
       <Header />
       <Flex>
         <Sidebar id="public-sidebar" />
@@ -97,13 +98,14 @@ function ProductDetail() {
       <FOOTER>
         <Footer />
       </FOOTER>
-    </>
+    </GlobalBackground>
   );
 }
 
 const Flex = styled.div`
   margin-top: 2.8vh;
   width: 70vw;
+  background-color: white;
   display: flex;
   position: relative;
   transform: translateX(-50%);

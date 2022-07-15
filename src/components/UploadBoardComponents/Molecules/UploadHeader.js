@@ -32,9 +32,10 @@ const StyledDiv = styled.div`
   border: 5px solid #a0a0a0;
   outline: 3px solid black;
   padding: 15px;
-  width: 1074px;
+  width: 67.2rem;
   margin: 10px auto;
   position: relative;
+  background-color: white;
   top: 30px;
 `;
 
