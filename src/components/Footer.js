@@ -24,10 +24,10 @@ function Footer(props) {
 }
 
 const PageFooterUpload = styled.footer`
-  font-size: 12px;
+  font-size: 0.7vw;
   div {
     height: 190px;
-    width: 1074px;
+    width: 60vw;
     border-top: 2px solid #333333;
     margin: 0 auto;
     display: flex;
@@ -37,18 +37,17 @@ const PageFooterUpload = styled.footer`
   }
 
   #url {
-    margin: 0 50px;
+    margin: 0 3vw;
   }
 `;
 
 const PageFooter = styled.footer`
-  font-size: 12px;
+  font-size: 0.6vw;
   div {
-    height: 190px;
-    width: 70vw;
+    height: 108px;
+    width: 60vw;
     border-top: 2px solid #333333;
     margin: 0 auto;
-    display: flex;
     line-height: 80px;
   }
 
