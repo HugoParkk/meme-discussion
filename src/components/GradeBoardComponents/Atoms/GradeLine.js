@@ -6,7 +6,7 @@ function GradeLine() {
 }
 
 const StyledDiv = styled.div`
-  height: 0.1107vw;
+  height: 0.1px;
   width: 90%;
   background-color: #ff50e2;
   margin: 0 auto;

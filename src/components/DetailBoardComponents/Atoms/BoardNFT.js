@@ -11,11 +11,9 @@ function BoardNFT() {
 }
 
 const PinkText = styled.div`
-  font-size: 10pt;
+  font-size: 12px;
+  font-weight: 600;
   color: #ff50e2;
-  display: inline-block;
-  position: relative;
-  left: 330pt;
-  top: -110pt;
+  padding: 20px 0 20px 53px;
 `;
 export default BoardNFT;
