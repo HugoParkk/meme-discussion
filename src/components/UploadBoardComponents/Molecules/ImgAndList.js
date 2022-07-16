@@ -15,6 +15,7 @@ function ImgAndList(props) {
 const Wrap = styled.div`
   width: 95%;
   left: 50%;
+  height: 25%;
   transform: translateX(-50%);
   position: relative;
   display: flex;

@@ -18,14 +18,14 @@ const Wrap = styled.div`
 
 const StyledInput = styled.input`
   display: block;
-  width: 54.3rem;
+  width: 45.25vw;
   position: relative;
-  border: 5px solid #ffd4ed;
-  outline: 3px solid black;
-  padding: 10px;
-  font-size: 1.2rem;
+  border: 0.2604vw solid #ffd4ed;
+  outline: 0.1563vw solid black;
+  padding: 0.5208vw;
+  font-size: 1.3333vw;
   ::placeholder {
-    font-size: 1.2rem;
+    font-size: 1.3333vw;
   }
 `;
 

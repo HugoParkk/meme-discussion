@@ -24,17 +24,19 @@ const Text = styled.div`
 
   color: #ff50e2;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1vw;
   font-weight: bold;
-  line-height: 13pt;
+  margin: auto 0;
+  /* line-height: 5%; */
 `;
 
 const SubText = styled.div`
   color: gray;
+  margin: auto 0;
   display: inline-block;
-  font-size: 0.9rem;
-  line-height: 13pt;
-  margin-left: 10px;
+  font-size: 0.75vw;
+  /* line-height: 5%; */
+  margin-left: 0.5208vw;
 `;
 
 export default FooterPostText;

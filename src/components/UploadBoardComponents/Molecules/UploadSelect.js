@@ -23,22 +23,22 @@ function UploadSelect(props) {
 
 const PinkSelect = styled.select`
   background-color: #ffd4ed;
-  width: 15.5rem;
-  font-size: 1.2rem;
-  border: 5px solid #ffd4ed;
-  outline: 3px solid black;
+  width: 13vw;
+  font-size: 1.3333vw;
+  border: 0.2604vw solid #ffd4ed;
+  outline: 0.1563vw solid black;
   position: relative;
-  padding: 15px;
-  margin-right: 205px;
+  padding: 0.7813vw;
+  margin-right: 10.6771vw;
 `;
 
 const StyledSelect = styled.select`
-  width: 37.5rem;
-  font-size: 1.2rem;
-  border: 5px solid #ffd4ed;
-  outline: 3px solid black;
+  width: 31vw;
+  font-size: 1.3333vw;
+  border: 0.2604vw solid #ffd4ed;
+  outline: 0.1563vw solid black;
   position: relative;
-  padding: 15px;
+  padding: 0.7813vw;
 `;
 
 const StyledOption = styled.option`

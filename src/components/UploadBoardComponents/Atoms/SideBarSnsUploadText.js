@@ -13,14 +13,14 @@ function SideBarSnsUploadText(props) {
   );
 }
 const Divs = styled.div`
-  font-size: 0.8rem;
-  margin-top: 7px;
+  font-size: 0.6667vw;
+  margin-top: 0.3646vw;
   display: inline-block;
 `;
 const Imga = styled.img`
-  margin-left: 20px;
-  margin-right: 10px;
-  width: 15px;
+  margin-left: 1.0417vw;
+  margin-right: 0.5208vw;
+  width: 0.7813vw;
 `;
 
 export default SideBarSnsUploadText;

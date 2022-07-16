@@ -52,7 +52,7 @@ function Upload() {
       <Header />
       <UploadHeader />
       <Con>
-        <form>
+        <F>
           <Wrap>
             <UploadSelect data={data1} />
             <UploadSelect data={data2} type="pink" />
@@ -65,7 +65,7 @@ function Upload() {
             data={img}
             text={text}
           />
-        </form>
+        </F>
         <Molu />
       </Con>
       <Footer type="upload" />
@@ -74,7 +74,7 @@ function Upload() {
 }
 const Con = styled.div`
   display: flex;
-  width: 1074px;
+  width: 55.9375vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -92,9 +92,12 @@ const Wrap = styled.div`
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 40px;
+  width: 55.9vw;
+  top: 2.0833vw;
   display: flex;
   justify-content: space-between;
 `;
-
+const F = styled.form`
+  width: 56vw;
+`;
 export default Upload;

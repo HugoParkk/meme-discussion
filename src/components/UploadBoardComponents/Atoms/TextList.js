@@ -19,7 +19,7 @@ function TextList(props) {
 const StyledDiv = styled.div`
   position: relative;
   width: 100%;
-  height: 40px;
+  height: 18%;
   display: flex;
   justify-content: start;
   border-bottom: 1px solid #bbb;
@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
 const Text = styled.div`
   line-height: 30px;
   height: 30px;
-  font-size: 0.8rem;
+  font-size: 0.6667vw;
   margin-left: 5px;
   top: 50%;
   transform: translateY(-50%);
@@ -39,7 +39,7 @@ const Text = styled.div`
 const Wrap = styled.div`
   background-color: #e0e0e0;
   width: 18%;
-  height: 205px;
+  height: 90%;
   position: relative;
   top: 15px;
   border: 1px solid #bbb;

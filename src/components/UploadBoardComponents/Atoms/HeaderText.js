@@ -14,17 +14,17 @@ function HeaderText(props) {
 }
 
 const StyledTitle = styled.div`
-  font-size: 1.6rem;
+  font-size: 1.3333vw;
   font-weight: bold;
   display: inline-block;
-  line-height: 44px;
+  line-height: 2.2917vw;
 `;
 
 const StyledText = styled.div`
 width: 50rem;
   display: inline-block;
-  font-size: 1rem;
-  line-height: 44px;
+  font-size: 0.8333vw;
+  line-height: 2.2917vw;
 `;
 
 export default HeaderText;

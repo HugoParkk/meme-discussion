@@ -13,20 +13,20 @@ function ExchangeRateForm() {
 }
 const YourForm = styled.input`
   box-shadow: 1px 1px 10px #ff50e2;
-  width: 80px;
-  height: 28px;
+  width: 4.1667vw;
+  height: 1.4583vw;
   border: 1.5px solid black;
-  border-radius: 5px;
+  border-radius: 0.2604vw;
   color: #ff50e2;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  font-size: 13pt;
+  margin-top: 0.5208vw;
+  margin-bottom: 0.7813vw;
+  font-size: 0.9167vw;
   text-align: right;
-  padding: 10px;
+  padding: 0.5208vw;
   grid-column: 2 / 3;
   ::placeholder {
     color: #ff50e2;
-    font-size: 13pt;
+    font-size: 0.9167vw;
     text-align: right;
     font-weight: bold;
   }

@@ -14,26 +14,25 @@ function RightSideBarBtn(props) {
   );
 }
 const Btn = styled.button`
-  margin-top: 50px;
-  color: #000;
+  margin-top: 2.6042vw;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
-  font-size: 0.9rem;
+  font-size: 0.75vw;
   background-color: white;
-  box-shadow: .5px .5px .5px .5px #e2e2e2 inset;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px #e2e2e2 inset;
   height: 40px;
   width: 150px;
+  height: 1.5625vw;
   font-weight: bold;
 `;
 const PinkBtn = styled.button`
-  margin-top: 8px;
-  font-size: 0.9rem;
+  margin-top: 0.4167vw;
+  font-size: 0.75vw;
   border: 2px solid #ff50e2;
   border-radius: 5px;
   background-color: #ff50e2;
   color: white;
-  height: 40px;
-  width: 150px;
+  height: 1.5625vw;
   font-weight: bold;
 `;
 export default RightSideBarBtn;

@@ -47,7 +47,7 @@ const Wrap3 = styled.div`
 
 const Color = styled.div`
   width: 100%;
-  height: 110px;
+  height: 37%;
   display: block;
   position: relative;
 `;
@@ -64,14 +64,14 @@ const Wrap2 = styled.div`
 
 const Wrap = styled.div`
   width: 95%;
-  margin: 20px auto 0 auto;
-  height: 400px;
+  margin: 1.0417vw auto 0 auto;
+  height: 50%;
   display: flex;
   justify-content: space-between;
 `;
 
 const ImgButton = styled.div`
-  width: 11.9rem;
+  width: 9.9161vw;
   height: 50px;
   text-align: center;
   line-height: 50px;

@@ -12,8 +12,10 @@ const StyledDiv = styled.div`
   left: 50%;
   transform: translateX(-50%);
   background-color: #ff50e2;
-  margin-top: 50px;
-  margin-bottom: 15px;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  /* margin-top: 2.6042vw; */
+  /* margin-bottom: 0.7813vw; */
 `;
 
 export default Line;

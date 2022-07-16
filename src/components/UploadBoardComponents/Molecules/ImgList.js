@@ -17,7 +17,7 @@ const Wrap = styled.div`
   flex-direction: row;
   width: 80%;
   position: relative;
-  height: 205px;
+  height: 90%;
   background-color: #f4f4f4;
   margin-top: 15px;
   border: 2px solid #bbb;

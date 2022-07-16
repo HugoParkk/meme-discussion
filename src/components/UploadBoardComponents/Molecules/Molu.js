@@ -55,44 +55,44 @@ let Flex = styled.div`
   justify-content: space-between;
 `;
 let DB = styled.div`
-  border: 3px solid black;
-  width: 11.8rem;
-  height: 47rem;
-  padding: 15px;
+  border: 0.2604vw solid black;
+  width: 9.8333vw;
+  height: 39.1667vw;
+  padding: 0.7813vw;
   display: flex;
   flex-direction: column;
-  margin-left: -185px;
-  margin-top: 37px;
+  margin-left: -9.6354vw;
+  margin-top: 1.9271vw;
   z-index: 999;
 `;
 let Text = styled.div`
-  font-size: 13pt;
+  font-size: 0.9028vw;
   font-weight: bold;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 0.5208vw;
+  margin-right: 0.5208vw;
   width: 60%;
 `;
 let D = styled.div`
-  border-bottom: 2px solid #dbdbdb;
-  padding-bottom: 5px;
+  border-bottom: 0.1042vw solid #dbdbdb;
+  padding-bottom: 0.2604vw;
   grid-column: 1 / 3;
 `;
 let DI = styled.div`
   width: 100%;
-  height: 300px;
-  border-bottom: 2px solid #dbdbdb;
+  height: 26.7778vw;
+  border-bottom: 0.1042vw solid #dbdbdb;
 `;
 let DA = styled.div`
-  height: 120px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #dbdbdb;
+  height: 6.25vw;
+  padding-bottom: 0.5208vw;
+  border-bottom: 0.1042vw solid #dbdbdb;
 `;
 const Wrap = styled.div`
-  margin-top: 10px;
-  width: 11.8rem;
+  margin-top: 0.5208vw;
+  width: 9.8333vw;
   position: relative;
   left: 50%;
-  padding: 10px 0;
+  padding: 0.5208vw 0;
   transform: translateX(-50%);
   background-color: pink;
 `;

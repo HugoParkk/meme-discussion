@@ -4,15 +4,15 @@ function ColorBall(props) {
   const [color] = useState(props.back);
 
   const border = {
-    width: `23px`,
-    height: `23px`,
+    width: `1.1979vw`,
+    height: `1.1979`,
     borderRadius: `50%`,
     backgroundColor: `${color}`,
     display: `inline-block`,
     margin: `0`,
-    marginTop: `5px`,
-    marginRight: `5px`,
-    marginLeft: `5px`,
+    marginTop: `0.2604vw`,
+    marginRight: `0.2604vw`,
+    marginLeft: `0.2604vw`,
     cursor: `pointer`,
   };
 

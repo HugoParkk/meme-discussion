@@ -29,11 +29,11 @@ const StyledWrap = styled.div`
 const StyledDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  border: 5px solid #a0a0a0;
-  outline: 3px solid black;
-  padding: 15px;
-  width: 67.2rem;
-  margin: 10px auto;
+  border: 0.2604vw solid #a0a0a0;
+  outline: 0.1563vw solid black;
+  padding: 0.7813vw;
+  width: 56vw;
+  margin: 0.5208vw auto;
   position: relative;
   background-color: white;
   top: 30px;
