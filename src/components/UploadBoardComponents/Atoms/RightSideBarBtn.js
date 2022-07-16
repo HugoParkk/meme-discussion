@@ -6,7 +6,7 @@ function RightSideBarBtn(props) {
     <>
       <GlobalStyle />
       {props.type === "pink" ? (
-        <PinkBtn>{props.text}</PinkBtn>
+        <PinkBtn href={props.url}>{props.text}</PinkBtn>
       ) : (
         <Btn>{props.text}</Btn>
       )}
@@ -20,12 +20,14 @@ const Btn = styled.button`
   font-size: 0.75vw;
   background-color: white;
   box-shadow: 0.5px 0.5px 0.5px 0.5px #e2e2e2 inset;
-  height: 40px;
-  width: 150px;
+  width: 7.8125vw;
   height: 1.5625vw;
   font-weight: bold;
 `;
-const PinkBtn = styled.button`
+const PinkBtn = styled.a`
+  text-decoration: none;
+  width: 7.8125vw;
+  text-align: center;
   margin-top: 0.4167vw;
   font-size: 0.75vw;
   border: 2px solid #ff50e2;

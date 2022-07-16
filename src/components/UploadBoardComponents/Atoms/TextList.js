@@ -26,8 +26,8 @@ const StyledDiv = styled.div`
 `;
 
 const Text = styled.div`
-  line-height: 30px;
-  height: 30px;
+  line-height: 2%;
+  height: 18%;
   font-size: 0.6667vw;
   margin-left: 5px;
   top: 50%;

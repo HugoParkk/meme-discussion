@@ -72,7 +72,7 @@ const Wrap = styled.div`
 
 const ImgButton = styled.div`
   width: 9.9161vw;
-  height: 50px;
+  height: 2.6042vw;
   text-align: center;
   line-height: 50px;
   background-color: pink;

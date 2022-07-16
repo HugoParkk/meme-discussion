@@ -5,7 +5,7 @@ function ColorBall(props) {
 
   const border = {
     width: `1.1979vw`,
-    height: `1.1979`,
+    height: `1.1979vw`,
     borderRadius: `50%`,
     backgroundColor: `${color}`,
     display: `inline-block`,

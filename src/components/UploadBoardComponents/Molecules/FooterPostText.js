@@ -16,23 +16,22 @@ const Wrap = styled.div`
   justify-content: space-between;
   width: 75%;
   transform: translateX(-50%);
-  left: 47%;
+  left: 40%;
   position: relative;
 `;
 
 const Text = styled.div`
-
   color: #ff50e2;
   display: inline-block;
   font-size: 1vw;
   font-weight: bold;
-  margin: auto 0;
+  margin: 0;
   /* line-height: 5%; */
 `;
 
 const SubText = styled.div`
   color: gray;
-  margin: auto 0;
+  margin: 0;
   display: inline-block;
   font-size: 0.75vw;
   /* line-height: 5%; */
