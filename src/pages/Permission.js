@@ -6,7 +6,7 @@ import GradeTitle from "../components/GradeBoardComponents/Atoms/GradeTitle";
 import GradePinkArea from "../components/GradeBoardComponents/Molecules/GradePinkArea";
 import GradeButtonGroup from "../components/GradeBoardComponents/Molecules/GradeButtonGroup";
 import GradeBoardMainTitle from "../components/GradeBoardComponents/Molecules/GradeBoardMainTitle";
-import Header from "../components/Header";
+import Header from "../components/pages_Header";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
 import styled from "styled-components";
@@ -18,6 +18,56 @@ import svg5 from "../images/Vector-7.svg";
 import svg6 from "../images/Vector-8.svg";
 
 import GlobalBackground from '../components/GlobalBackground'
+
+function Permission() {
+  return (
+    <GlobalBackground>
+      <Header />
+      <Wrap>
+        <SIDEBAR>
+          <Sidebar />
+        </SIDEBAR>
+        <CONTENTS>
+          <GradeBoardMainTitle src={svg6} />
+          <GradeDescribe />
+          <GradeLine />
+          <GradeTitle />
+          <GradeTextGroup data={arr} />
+          <GradePinkArea data={pinkArr} arr={strArr} />
+          <GradeButtonGroup data={btnArr} />
+        </CONTENTS>
+      </Wrap>
+      <FOOTER>
+        <Footer />
+      </FOOTER>
+    </GlobalBackground>
+  );
+}
+const Wrap = styled.div`
+  width: 1080px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 2.2222vw;
+`;
+
+const SIDEBAR = styled.div`
+  position: relative;
+`;
+
+const CONTENTS = styled.div`
+  width: 860px;
+  height: 45.6111vw;
+  border: 4px solid #cfcfcf;
+  position: relative;
+  outline: 2px solid black;
+`;
+
+const FOOTER = styled.div`
+  position: relative;
+  top: 120pt;
+`;
 
 const pinkArr = [
   { text: "자동등업", subText: "text" },
@@ -70,55 +120,4 @@ const btnArr = [
   { text: "이전으로", type: "white" },
   { text: "짤 게시하기", type: "pink" },
 ];
-
-function Permission() {
-  return (
-    <GlobalBackground>
-      <Header />
-      <Wrap>
-        <SIDEBAR>
-          <Sidebar />
-        </SIDEBAR>
-        <CONTENTS>
-          <GradeBoardMainTitle src={svg6} />
-          <GradeDescribe />
-          <GradeLine />
-          <GradeTitle />
-          <GradeTextGroup data={arr} />
-          <GradePinkArea data={pinkArr} arr={strArr} />
-          <GradeButtonGroup data={btnArr} />
-        </CONTENTS>
-      </Wrap>
-      <FOOTER>
-        <Footer />
-      </FOOTER>
-    </GlobalBackground>
-  );
-}
-const Wrap = styled.div`
-  width: 70vw;
-  position: relative;
-  transform: translateX(-50%);
-  left: 50%;
-  display: flex;
-  justify-content: space-between;
-  top: 2.2222vw;
-`;
-
-const SIDEBAR = styled.div`
-  position: relative;
-`;
-
-const CONTENTS = styled.div`
-  width: 59.8611vw;
-  height: 45.6111vw;
-  border: 4px solid #cfcfcf;
-  position: relative;
-  outline: 3px solid black;
-`;
-
-const FOOTER = styled.div`
-  position: relative;
-  top: 120pt;
-`;
 export default Permission;

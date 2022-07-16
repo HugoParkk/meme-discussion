@@ -6,13 +6,10 @@ function BoardLine() {
 }
 
 const StyledDiv = styled.div`
-  height: 2px;
+  height: 1px;
   width: 50%;
-  position: relative;
-  left: 45%;
   background-color: #ff50e2;
-  margin-top: -7rem;
-  margin-bottom: 100pt;
+  margin-bottom: 30px;
 `;
 
 export default BoardLine;

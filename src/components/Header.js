@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
 
-
 // images ---------------------------
 import headerSrc from "../images/public_compoment/HeaderMain.png";
 import ChennelA from "../images/public_compoment/Channel_A_Logo.png";
@@ -14,10 +13,10 @@ function Header(props) {
   const { } = props;
 
   const [popup, handlerPopup] = useState(false);
-
+  
   return (
     <>
-      {popup && <Popup onClose={handlerPopup} />}
+    {popup && <Popup onClose={handlerPopup} />}
       <HeaderMenuTop>
         <div id="logo">
           <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;|
@@ -76,7 +75,7 @@ function Header(props) {
   );
 }
 const HeaderMenuTop = styled.div`
-  width: 63vw;
+  width: 1080px;
   margin: auto;
   justify-content: space-between;
   display: flex;
@@ -115,7 +114,7 @@ const HeaderMenuTop = styled.div`
   }
 `;
 const HeaderStyleTest = styled.header`
-  width: 64vw;
+  width: 1080px;
   background: url(${headerSrc}) no-repeat;
   height: 126px;
   color: white;
@@ -127,7 +126,7 @@ const HeaderStyleTest = styled.header`
   /* margin-top: 40px; */
 `;
 const HeaderBar = styled.div`
-  width: 63.2vw;
+  width: 1080px;
   height: 46px;
   background: #000;
   position: relative;
@@ -139,14 +138,13 @@ const HeaderBar = styled.div`
   }
   #header-search {
     height: 30px;
-    padding: 0.6vw;
-    width: 16.5vw;
+    padding: 10px 20px 0 0;
+    width: 250px;
     float: right;
     display: flex;
     /* margin-right:px; */
   }
   button {
-    border-radius: 0%;
     height: 24px;
     border: 0;
     top: 0px;
@@ -175,7 +173,7 @@ const HeaderBar = styled.div`
   }
   li {
     padding: 0.7vw;
-    font-size: 0.6vw;
+    font-size: 0.7vw;
   }
 `;
 export default Header;

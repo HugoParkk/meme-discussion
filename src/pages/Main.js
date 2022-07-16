@@ -49,9 +49,10 @@ function Main(props) {
   return (
     <GlobalBackground>
       {popup && <Popup onClose={handlerPopup} />}
-      <Warp>
         <Header />
+        <Wrap>
           <Assembler>
+      
         <div id="box1">
           <Sidebar id="public-sidebar" />
         </div>
@@ -407,9 +408,9 @@ function Main(props) {
         {/* <div id="main-popup">
           <Popup />
         </div> */}
-
-        <Footer id="public-footer" />
-      </Warp>
+      </Wrap>
+      <Footer/>
+      
     </GlobalBackground>
   );
 }
@@ -422,25 +423,15 @@ const Assembler = styled.div`
   margin-top: 40px;
 `;
 
-const Warp = styled.div`
+const Wrap = styled.div`
   position: relative;
   width: 1080px;
+  height: 1600px;
   margin: 0 auto;
-
-  #public-popup {
-    position: absolute;
-    margin: 0 100px;
-  }
 
   #main-contents {
     width: 860px;
     display: inline-block;
-
-    #public-footer {
-    }
-  }
-  #box1{
-    width: 2px;
   }
   
 `;

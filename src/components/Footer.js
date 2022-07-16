@@ -45,7 +45,7 @@ const PageFooter = styled.footer`
   font-size: 0.6vw;
   div {
     height: 108px;
-    width: 60vw;
+    width: 1080px;
     border-top: 2px solid #333333;
     margin: 0 auto;
     line-height: 80px;

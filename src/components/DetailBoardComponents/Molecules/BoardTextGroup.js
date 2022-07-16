@@ -1,36 +1,46 @@
 import React from "react";
 import styled from "styled-components";
-import BoardText from "../Atoms/BoardText";
-import BoardTextnote from "../Atoms/BoardTextnote";
-import BoardTextPlus from "../Atoms/BoardTextPlus";
 
-function BoardTextGroup(props) {
-  return (
-    <>
-      {props.data.map((arr, i) => {
-        return (
-          <Contents key={i}>
-            <StyledDiv>
-              <BoardText text={arr.text} />
-              <BoardTextPlus text2={arr.text2} />
-              <BoardTextnote note={arr.note} />
-              <br />
-            </StyledDiv>
-          </Contents>
-        );
-      })}
-    </>
-  );
-}
-
-const Contents = styled.div`
-  margin: 0;
-  height: 20pt;
-`;
+function BoardTextGroup() {
+    return (
+      <StyledDiv>
+        <ul>
+            <li class="lv1">
+                <ul class="lv2">
+                    <li>상품 상태</li>
+                    <li class="lv3">700*700</li>
+                    <li>px</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="lv2">
+                    <li>생성 날짜</li>
+                    <li>2022.05.04</li>
+                    <li>209</li>
+                </ul>
+            </li>
+        </ul>
+      </StyledDiv>
+    );
+  }
 
 const StyledDiv = styled.div`
-  width: 100%;
-  position: relative;
-  top: -20pt;
+    ul{list-style:none; margin: 0; padding: 0;}
+    width: 280px;
+    font-size: 13px;
+    color: #000;
+
+    .lv1 {
+        padding: 0 0 15px 0;
+    }
+    .lv2{
+            display: flex;
+            .lv3{padding: 0 35px 0 0;}
+            li{
+                padding: 0 20px 0 0;
+            }
+        }
+    
 `;
+
 export default BoardTextGroup;
