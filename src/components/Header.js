@@ -145,7 +145,6 @@ const HeaderBar = styled.div`
     /* margin-right:px; */
   }
   button {
-    border-radius: 0%;
     height: 24px;
     border: 0;
     top: 0px;
