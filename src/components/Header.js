@@ -75,7 +75,7 @@ function Header(props) {
   );
 }
 const HeaderMenuTop = styled.div`
-  width: 63vw;
+  width: 1080px;
   margin: auto;
   justify-content: space-between;
   display: flex;
@@ -114,7 +114,7 @@ const HeaderMenuTop = styled.div`
   }
 `;
 const HeaderStyleTest = styled.header`
-  width: 64vw;
+  width: 1080px;
   background: url(${headerSrc}) no-repeat;
   height: 126px;
   color: white;
@@ -126,7 +126,7 @@ const HeaderStyleTest = styled.header`
   /* margin-top: 40px; */
 `;
 const HeaderBar = styled.div`
-  width: 63.2vw;
+  width: 1080px;
   height: 46px;
   background: #000;
   position: relative;
@@ -138,8 +138,8 @@ const HeaderBar = styled.div`
   }
   #header-search {
     height: 30px;
-    padding: 0.6vw;
-    width: 16.5vw;
+    padding: 10px 20px 0 0;
+    width: 250px;
     float: right;
     display: flex;
     /* margin-right:px; */

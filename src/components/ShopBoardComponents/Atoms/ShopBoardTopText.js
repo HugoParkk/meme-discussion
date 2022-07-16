@@ -15,7 +15,7 @@ function ShopBoardTopText() {
 }
 const Text = styled.div`
   color: #ff50e2;
-  font-size: 1.25vw;
+  font-size: 22px;
   font-weight: bold;
   display: inline-block;
 `;
@@ -27,8 +27,7 @@ const StarImg = styled.img`
 `;
 
 const Wrapper = styled.div`
-  margin-left: 0.694vw;
-  margin-right: 0;
+  margin-left: 20px;
   width: 33.333vw;
   margin-top: 1vw;
   margin-bottom: 1.5vw;

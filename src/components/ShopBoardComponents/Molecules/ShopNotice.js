@@ -34,10 +34,10 @@ function ShopNotice(props) {
 
 const Wrap = styled.div`
   margin: 0 auto;
-  width: 43.403vw;
+  width: 700px;
   border: 0.26vw solid magenta;
   outline: 0.156vw solid black;
-  margin-left: 0.694vw;
+  margin-left: 12spx;
   margin-bottom: 1.2vw;
   overflow: hidden;
 `;

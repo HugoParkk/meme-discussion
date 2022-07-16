@@ -18,7 +18,7 @@ const Btn = styled.button`
   z-index: 2;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
-  right: 0.11vw;
+  right: 20px;
   top: 2vw;
 `;
 
