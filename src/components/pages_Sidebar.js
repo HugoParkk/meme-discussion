@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
 
@@ -10,11 +10,15 @@ import NewIcon from "../images/public_compoment/icon_New.png";
 import L_shape from "../images/public_compoment/L_shape.png";
 import bottomImg from "../images/public_compoment/Group 13.png";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
   return (
     <Fonts>
+      {popup && <Popup onClose={handlerPopup} />}
       <UpSideMenuBar>
-        <div id="head">
+        <div id="head" onClick={() => { handlerPopup(true); }}>
           <div id="BookMarkIcon">
             <img src={bookmarkStar} alt="북마크아이콘"></img>
           </div>
@@ -26,7 +30,7 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div id="Userprofile">
+        <div id="Userprofile" onClick={() => { handlerPopup(true); }}>
           <img src={profile} alt="프로필이미지"></img>
           <div id="abc">
             <div id="UserText">
@@ -46,7 +50,7 @@ const Sidebar = () => {
         </div>
 
         <div id="CafeInfo">
-          <ul class="">
+          <ul onClick={() => { handlerPopup(true); }}>
             <li>
               <ul id="Queen">
                 <li>
@@ -83,7 +87,7 @@ const Sidebar = () => {
               </ul>
             </li>
           </ul>
-          <div id="Topic">
+          <div id="Topic" onClick={() => { handlerPopup(true); }}>
             <a>
               주제 재테크 &gt; <b>NFT</b>
             </a>{" "}
@@ -94,10 +98,10 @@ const Sidebar = () => {
                 <a href="http://localhost:3000/upload"><button id="BtnHotpink">게시하기</button></a>
               </li>
               <li>
-                <button>주인장 전화하기</button>
+                <button onClick={() => { handlerPopup(true); }}>주인장 전화하기</button>
               </li>
               <li>
-                <button>주인장 채팅하기</button>
+                <button onClick={() => { handlerPopup(true); }}>주인장 채팅하기</button>
               </li>
             </ul>
           </div>
@@ -111,6 +115,7 @@ const Sidebar = () => {
               <input></input>
               <button>검색</button>
             </div>
+            <sapn onClick={() => { handlerPopup(true); }}>
             <div id="TotalWrite">
               <li>전체글보기</li>
               <li>175,342,546</li>
@@ -227,6 +232,7 @@ const Sidebar = () => {
                 </li>
               </ul>
             </div>
+            </sapn>
           </div>
         </div>
       </DownSideMenu>
@@ -258,12 +264,14 @@ const UpSideMenuBar = styled.div`
   a {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
   }
     #my-activity {
       color: #959595;
     }
   
   #tab-title {
+    cursor: pointer;
     ul {
       display: flex;
       padding-left: 5px;
@@ -284,6 +292,7 @@ const UpSideMenuBar = styled.div`
     float: left;
     margin-left: 5px;
     margin-top: 3px;
+    cursor: pointer;
   }
 
   #head {
@@ -300,6 +309,7 @@ const UpSideMenuBar = styled.div`
     img {
       float: left;
       padding: 0;
+      cursor: pointer;
     }
 
     #UserText {
@@ -317,6 +327,8 @@ const UpSideMenuBar = styled.div`
       width: 100px;
       display: inline-block;
       position: absolute;
+      font-size: 12px;
+      b{cursor: pointer;}
     }
 
     #profile-info {
@@ -328,6 +340,7 @@ const UpSideMenuBar = styled.div`
       #ab{
         position: absolute;
         margin-top: 15px;
+        cursor: pointer;
       }
       li {
         width: 110px;
@@ -366,6 +379,7 @@ const UpSideMenuBar = styled.div`
         font-size: 11px;
         color: #000aff;
         font-weight: 600;
+        cursor: pointer;
       }
     }
 
@@ -402,12 +416,14 @@ const UpSideMenuBar = styled.div`
         box-shadow: 1px 1px 1px 1px #bbbbbb inset;
         background: #dbdbdb;
         margin-bottom: 7px;
+        cursor: pointer;
       }
 
       #BtnHotpink {
         background: #ff50e2;
         color: #fff;
         box-shadow: none;
+        cursor: pointer;
       }
     }
   }
@@ -441,7 +457,7 @@ const DownSideMenu = styled.div`
       height: 26px;
       border-radius: 0%;
       border: 0;
-      width: 150px;
+      width: 160px;
       margin-right: 1.5px;
       box-shadow: 0.2px 0.3px 5px 0px #ff50e2 inset;
       padding: 0;
@@ -456,6 +472,7 @@ const DownSideMenu = styled.div`
       background-color: #ff50e2;
       color: #fff;
       font-size: 10.5px;
+      cursor: pointer;
     }
   }
 
@@ -468,6 +485,7 @@ const DownSideMenu = styled.div`
       height: 30px;
       font-size: 12px;
       margin-top: 13px;
+      cursor: pointer;
     }
     /* border-bottom: 2px solid #cfcfcf; */
   }
@@ -480,6 +498,7 @@ const DownSideMenu = styled.div`
     border-top: 2px solid #cfcfcf;
     border-bottom: 1px solid #cfcfcf;
     padding: 0 15px;
+    cursor: pointer;
   }
 
   #MenuContent {

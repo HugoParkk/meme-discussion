@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/pages_Sidebar';
 import Popup from "../components/Popup";
 
 import ShopTopNotice from "../components/ShopBoardComponents/Molecules/ShopTopNotice";
