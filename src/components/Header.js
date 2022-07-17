@@ -13,10 +13,10 @@ function Header(props) {
   const { } = props;
 
   const [popup, handlerPopup] = useState(false);
-  
+
   return (
     <>
-    {popup && <Popup onClose={handlerPopup} />}
+      {popup && <Popup onClose={handlerPopup} />}
       <HeaderMenuTop>
         <div id="logo">
           <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;|
@@ -75,7 +75,7 @@ const HeaderMenuTop = styled.div`
   margin: auto;
   display: flex;
   color: #dbdbdb;
-  font-size: 8px;
+  font-size: 8px !important;
   line-height: 1;
   justify-content: space-between;
   ul {

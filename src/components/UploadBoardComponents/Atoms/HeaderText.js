@@ -14,10 +14,10 @@ function HeaderText(props) {
 }
 
 const StyledTitle = styled.div`
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   display: inline-block;
-  line-height: 44px;
+  margin-top: -3.5px;
 `;
 
 const StyledText = styled.div`
