@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
 
+import Fonts from 'GlobalFonts';
 import bookmarkStar from "../images/public_compoment/star_sideMenu.svg";
 import profile from "../images/public_compoment/profile.svg";
 import crown from "../images/public_compoment/crown.png";
@@ -11,7 +12,7 @@ import bottomImg from "../images/public_compoment/Group 13.png";
 
 const Sidebar = () => {
   return (
-    <div >
+    <Fonts>
       <UpSideMenuBar>
         <div id="head">
           <div id="BookMarkIcon">
@@ -232,7 +233,7 @@ const Sidebar = () => {
       <DownSideImg>
         <img src={bottomImg} alt=""></img>
       </DownSideImg>
-    </div>
+    </Fonts>
   );
 };
 

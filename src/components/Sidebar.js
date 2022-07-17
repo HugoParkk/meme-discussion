@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
 
+import Fonts from './GlobalFonts';
 import bookmarkStar from "../images/public_compoment/star_sideMenu.svg";
 import profile from "../images/public_compoment/profile.svg";
 import crown from "../images/public_compoment/crown.png";
@@ -15,7 +16,7 @@ const Sidebar = (props) => {
   const [popup, handlerPopup] = useState(false);
 
   return (
-    <div>
+    <Fonts>
       {popup && <Popup onClose={handlerPopup} />}
       <UpSideMenuBar>
         <div id="head"onClick={() => { handlerPopup(true); }}>
@@ -237,7 +238,7 @@ const Sidebar = (props) => {
       <DownSideImg>
         <img src={bottomImg} alt=""></img>
       </DownSideImg>
-    </div>
+    </Fonts>
   );
 };
 
