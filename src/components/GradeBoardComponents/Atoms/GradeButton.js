@@ -10,7 +10,11 @@ function GradeButton(props) {
     <>
     {popup && <Popup onClose={handlerPopup} />}
       {props.type === "white" ? (
-        <WhiteDiv onClick={() => { handlerPopup(true); }}>{props.text}</WhiteDiv>
+        <WhiteDiv>
+          <a href="http://localhost:3000/productlist">
+            {props.text}
+          </a>
+        </WhiteDiv>
       ) : (
         <PinkDiv>
           <a href="http://localhost:3000/upload">
@@ -33,6 +37,10 @@ const WhiteDiv = styled.div`
   border-radius: 4px;
   font-size: 12px;
   cursor: pointer;
+  a{
+    text-decoration: none;
+    color: #000;
+  }
 `;
 
 const PinkDiv = styled.div`
