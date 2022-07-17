@@ -13,7 +13,7 @@ import UploadInput from "../components/UploadBoardComponents/Molecules/UploadInp
 import UploadMain from "../components/UploadBoardComponents/Molecules/UploadMain";
 import UploadSelect from "../components/UploadBoardComponents/Molecules/UploadSelect";
 import img1 from "../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg";
-import img2 from "../images/화면 캡처 2022-05-03 144858.png";
+import img2 from "../images/jlee.png";
 import img3 from "../images/3b286c0d74f710d5a290d7ccb4028ca9.jpg";
 import img4 from "../images/7b6411f877dd15ce9d97b91b258ac106.jpg";
 import img5 from "../images/3cfb2a7a354ceffff7a71f4c7c625023.jpg";

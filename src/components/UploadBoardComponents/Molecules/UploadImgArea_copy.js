@@ -54,13 +54,16 @@ const Color = styled.div`
 `;
 
 const Wrap2 = styled.div`
-  width: 25%;
+  /* margin-left: -50px; */
+  width: 26.1%;
   height: 100%;
   border: 1px solid gray;
   border-top: none;
   border-left: none;
   display: block;
   position: relative;
+  
+
 `;
 
 const Wrap = styled.div`

@@ -19,7 +19,7 @@ const Sidebar = (props) => {
     <Fonts>
       {popup && <Popup onClose={handlerPopup} />}
       <UpSideMenuBar>
-        <div id="head"onClick={() => { handlerPopup(true); }}>
+        <div id="head" onClick={() => { handlerPopup(true); }}>
           <div id="BookMarkIcon">
             <img src={bookmarkStar} alt="북마크아이콘"></img>
           </div>
@@ -326,7 +326,7 @@ const UpSideMenuBar = styled.div`
       width: 100px;
       display: inline-block;
       position: absolute;
-      b{cursor: pointer;}
+      /* b{cursor: pointer;} */
     }
 
     #profile-info {
