@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 import svg from "../../../images/Group 316.svg";
+
 function ShopBoardTopText() {
   return (
     <>

@@ -5,9 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from '../components/pages_Sidebar';
 
-import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
-import ShopBoardTopText from "../components/ShopBoardComponents/Atoms/ShopBoardTopText";
 import ShopNotice from "../components/ShopBoardComponents/Molecules/ShopNotice";
+import ShopTopNotice from "../components/ShopBoardComponents/Molecules/ShopTopNotice";
 import ShopBoardMainList from "../components/ShopBoardComponents/Molecules/ShopBoardMainList";
 import ShopBoardwriteBtn from "../components/ShopBoardComponents/Atoms/ShopBoardwriteBtn";
 import ShopBoardFoooterBtnGroup from "../components/ShopBoardComponents/Molecules/ShopBoardFoooterBtnGroup";
@@ -28,12 +27,14 @@ import bill from "../images/2d1441ab4efa9bfbab3f40e68cf59ff1.jpg";
 import gagul from "../images/2c0f85cda379cc9ab1c2912c527e0d95.jpg";
 import img3 from "../images/02b796f3090ec136409f2189d7a9fcc9.jpg";
 import geguri from "../images/1ae00b0948a6376c01bcf396d617fdfb.jpg";
+import circleStar from "../images/Group 316.svg";
+import plus from "../images/Group 38.svg"
 
 import GlobalBackground from '../components/GlobalBackground';
 
 function ProductList() {
-  return (
-    
+return (
+    <>
     <GlobalBackground>
       <All>
       <Header />
@@ -41,9 +42,11 @@ function ProductList() {
         <Sidebar/>
         <div>
           <CONTENTS>
-            <ShopBoardTopText />
-            <ShopBoardTopPlusBtn />
-            <ShopNotice data={arr} />
+            <div id="ShopTopTitle">
+              <span>짤랑이 거래 ~~ 여기는 짤장터&nbsp;&nbsp;<img src={circleStar}></img></span>
+              <img src={plus} class="plusImg"></img>
+            </div>
+            <ShopTopNotice />
             <ShopBoardMainList data={data} />
             
             <ShopBoardwriteBtn />
@@ -64,7 +67,7 @@ function ProductList() {
       <Footer />
       </All>
     </GlobalBackground>
-    
+    </>
   );
 }
 
@@ -92,13 +95,6 @@ const HR2 = styled.hr`
   top: -5.04vh;
 `;
 
-const ShopBoardGroup = styled.div`
-  margin-left: -13.888vw;
-  margin-top: 4.167vw;
-  position: relative;
-  
-`;
-
 const CONTENTS = styled.div`
   width: 855px;
   background-color: #FFF;
@@ -106,6 +102,26 @@ const CONTENTS = styled.div`
   position: relative;
   outline: 0.156vw solid black;
   
+  #ShopTopTitle{
+    width: 100%;
+    height: 80px;
+    color: #FA00D0;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    span{
+      margin: 10px 0 0 15px;
+      img{
+        cursor: pointer;
+      }
+    }
+    .plusImg{
+      width:50px; 
+      height: 23px;
+      margin:40px 20px 0 0;
+    }
+  }
 `;
 
 const HR3 = styled.hr`
