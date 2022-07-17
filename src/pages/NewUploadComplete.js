@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Header from '../components/pages_Header';
+import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 

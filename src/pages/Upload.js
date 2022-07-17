@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import Header from "../components/pages_Header"
+import Header from "../components/Header"
 
 import UploadHeader from "../components/UploadBoardComponents/Molecules/UploadHeader";
 import UploadInput from "../components/UploadBoardComponents/Molecules/UploadInput";

@@ -127,7 +127,7 @@ function Main(props) {
 
             <MainMiddle onClick={() => { handlerPopup(true); }}>
               <div id="best_JJal">
-                <div id="text">BEST ZZAL : 내가 제일 '짤'나가{" "}
+                <div id="text"><b>BEST ZZAL : 내가 제일 '짤'나가{" "}</b>
                 <div id="best_more">
                   더보기 
                   <img src={plus_box}></img>
@@ -245,7 +245,7 @@ function Main(props) {
               <a href="http://localhost:3000/productlist">
                 <div class="leftContent">
                   <div class="mainTitle">
-                    <p class="title">짤랑이 거래 ~~ 여기는 짤장터</p>
+                    <p class="title"><b>짤랑이 거래 ~~ 여기는 짤장터</b></p>
                     <p class="view-more">
                       <b>더보기</b>
                       <img src={Plus} />

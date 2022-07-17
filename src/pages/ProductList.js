@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 import styled from "styled-components";
-import Header from "../components/pages_Header";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from '../components/pages_Sidebar';
+import Sidebar from '../components/Sidebar';
 
 import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
 import ShopBoardTopText from "../components/ShopBoardComponents/Atoms/ShopBoardTopText";

@@ -77,40 +77,37 @@ function Header(props) {
 const HeaderMenuTop = styled.div`
   width: 1080px;
   margin: auto;
-  justify-content: space-between;
   display: flex;
   color: #dbdbdb;
-  font-size: 0.6vw;
+  font-size: 8px;
   line-height: 1;
-
+  justify-content: space-between;
   ul {
     display: flex;
     margin: auto;
+    margin-top: 15px;
     list-style: none;
-    width: 38vw;
-    padding: 1vw 0 0;
+    width: 300px;
+    float: right;
   }
   li {
-    margin: auto 0.4vw;
+    margin: auto;
     color: black;
   }
   img {
-    height: 1.2vw;
+    height: 20px;
   }
   #logo {
-    margin: 0.4vw 0;
-    font-size: 1.4vw;
+    margin: 6px 0;
+    font-size: 20px;
     display: flex;
     align-items: center;
     .chanelA {
-      padding: 0.2vw 0 0 0;
+      padding: 3px 0 0 0;
     }
     .Digitech {
-      padding: 0.2vw 0 0 0;
+      padding: 3px 0 0 0;
     }
-  }
-  #header-top {
-    width: 19vw;
   }
 `;
 const HeaderStyleTest = styled.header`
@@ -119,7 +116,7 @@ const HeaderStyleTest = styled.header`
   height: 126px;
   color: white;
   float: center;
-  top: -2vh;
+  top: -20px;
   margin: 0 auto;
   /* margin-bottom: px; */
   position: relative;
@@ -149,21 +146,21 @@ const HeaderBar = styled.div`
     border: 0;
     top: 0px;
     position: relative;
-    width: 3.5vw;
+    width: 50px;
     background-color: #ff50e2;
     color: #fff;
-    font-size: 0.6vw;
+    font-size: 7px;
   }
   input {
     height: 22px;
     border-radius: 0%;
     border: 0;
-    width: 16vw;
+    width: 200px;
     margin-right: 1.5px;
     box-shadow: 0.2px 0.2px 4px 0px #ff50e2 inset;
   }
   ul {
-    width: 45vw;
+    width: 450px;
     display: flex;
     color: white;
     list-style: none;
@@ -172,8 +169,8 @@ const HeaderBar = styled.div`
     margin-top: 4px;
   }
   li {
-    padding: 0.7vw;
-    font-size: 0.7vw;
+    padding: 10px;
+    font-size: 12px;
   }
 `;
 export default Header;
