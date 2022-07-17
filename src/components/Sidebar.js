@@ -410,6 +410,7 @@ const UpSideMenuBar = styled.div`
         background: #ff50e2;
         color: #fff;
         box-shadow: none;
+        cursor: pointer;
       }
     }
   }
