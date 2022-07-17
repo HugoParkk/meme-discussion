@@ -15,6 +15,7 @@ function ImgList(props) {
 const Wrap = styled.div`
   display: flex;
   flex-direction: row;
+  cursor: pointer;
   width: 80%;
   position: relative;
   height: 205px;
