@@ -38,7 +38,7 @@ const StyledDiv = styled.div`
   margin: 0px auto;
   margin-top: 36px;
   background-color: white;
-
+  letter-spacing: -0.7px;
 `;
 
 

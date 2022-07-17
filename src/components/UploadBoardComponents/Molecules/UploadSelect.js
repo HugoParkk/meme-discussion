@@ -28,14 +28,15 @@ const PinkSelect = styled.select`
   height: 46px;
   font-size: 13px;
   color: #828181;
-  border: 4px solid #ffd4ed;
+  border: 1px solid #ffd4ed;
   outline: 2px solid black;
   padding: 15px;
-  margin-right: 205px;
+  margin-right: 196px;
+  letter-spacing: -0.7px;
 `;
 
 const StyledSelect = styled.select`
-  width: 600px;
+  width: 627px;
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
@@ -46,7 +47,7 @@ const StyledSelect = styled.select`
 
 const StyledOption = styled.option`
   width: 80%;
-  font-size: 16px;
+  font-size: 13px;
 `;
 
 export default UploadSelect;

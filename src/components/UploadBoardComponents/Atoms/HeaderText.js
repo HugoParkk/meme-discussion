@@ -17,13 +17,12 @@ const StyledTitle = styled.div`
   font-size: 22px;
   font-weight: bold;
   display: inline-block;
-  margin-top: -3.5px;
+  margin-top: -3px;
 `;
 
 const StyledText = styled.div`
   text-align:right;
   padding-right: 16px;
-  width: 50rem;
   display: inline-block;
   font-size: 14px;
   line-height: 44px;

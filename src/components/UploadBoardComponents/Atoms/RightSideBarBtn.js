@@ -24,6 +24,7 @@ const Btn = styled.button`
   height: 40px;
   width: 150px;
   font-weight: bold;
+  cursor: pointer;
 `;
 const PinkBtn = styled.button`
   margin-top: 8px;

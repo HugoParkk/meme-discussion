@@ -11,12 +11,14 @@ function ImgAreaRight(props) {
 }
 
 const Wrap = styled.div`
-  width: 75%;
+  width: 80%;
   height: 100%;
   border-bottom: 1px solid gray;
   border-right: 1px solid gray;
   display: block;
+  margin-left: -10px;
   box-shadow: 7px 7px 7px -7px inset black;
+  
 `;
 
 export default ImgAreaRight;
