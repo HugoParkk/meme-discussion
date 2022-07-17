@@ -32,7 +32,6 @@ import geguri from "../images/1ae00b0948a6376c01bcf396d617fdfb.jpg";
 import GlobalBackground from '../components/GlobalBackground';
 
 function ProductList() {
-
   return (
     <GlobalBackground>
       

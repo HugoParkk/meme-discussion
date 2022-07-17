@@ -102,7 +102,7 @@ const Flex = styled.div`
 
       #leftBoardArea{
         position: absolute;
-        left: 350px;
+        left: 330px;
       }
     }
 
