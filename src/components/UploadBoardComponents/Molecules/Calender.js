@@ -64,7 +64,6 @@ let DB = styled.div`
   flex-direction: column;
   margin-left: -185px;
   margin-top: 37px;
-  z-index: 999;
 `;
 
 // 아 하기 싫다ㅏ 이 주석 지우는 친구는 상품이 있으니 지우고 박종연에게 전화해주세요.
