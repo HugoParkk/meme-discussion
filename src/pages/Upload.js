@@ -51,9 +51,7 @@ const Con = styled.div`
   display: flex;
   width: 1074px;
   height: 1220px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   
   Molu{
     a{
@@ -64,10 +62,7 @@ const Con = styled.div`
 `;
 
 const Wrap = styled.div`
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 40px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 `;

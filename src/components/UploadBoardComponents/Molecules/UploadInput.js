@@ -10,11 +10,7 @@ function UploadInput() {
 }
 
 const Wrap = styled.div`
-  margin-top: 60px;
-  /* position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 60px; */
+  margin-top: 20px;
 `;
 
 const StyledInput = styled.input`
