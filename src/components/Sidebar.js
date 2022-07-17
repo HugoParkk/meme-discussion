@@ -262,11 +262,13 @@ const UpSideMenuBar = styled.div`
   a {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
   }
   #my-activity {
     color: #959595;
   }
   #tab-title {
+    cursor: pointer;
     ul {
       display: flex;
       padding-left: 5px;
@@ -287,6 +289,7 @@ const UpSideMenuBar = styled.div`
     float: left;
     margin-left: 5px;
     margin-top: 3px;
+    cursor: pointer;
   }
 
   #head {
@@ -302,6 +305,7 @@ const UpSideMenuBar = styled.div`
     img {
       float: left;
       padding: 0;
+      cursor: pointer;
     }
 
     #UserText {
@@ -319,6 +323,7 @@ const UpSideMenuBar = styled.div`
       width: 100px;
       display: inline-block;
       position: absolute;
+      b{cursor: pointer;}
     }
 
     #profile-info {
@@ -330,6 +335,7 @@ const UpSideMenuBar = styled.div`
       #ab {
         position: absolute;
         margin-top: 15px;
+        cursor: pointer;
       }
       li {
         width: 110px;
@@ -368,6 +374,7 @@ const UpSideMenuBar = styled.div`
         font-size: 11px;
         color: #000aff;
         font-weight: 600;
+        cursor: pointer;
       }
     }
 
@@ -472,6 +479,7 @@ const DownSideMenu = styled.div`
       height: 30px;
       font-size: 12px;
       margin-top: 13px;
+      cursor: pointer;
     }
     /* border-bottom: 2px solid #cfcfcf; */
   }
@@ -484,6 +492,7 @@ const DownSideMenu = styled.div`
     border-top: 2px solid #cfcfcf;
     border-bottom: 1px solid #cfcfcf;
     padding: 0 15px;
+    cursor: pointer;
   }
 
   #MenuContent {
