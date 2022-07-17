@@ -17,20 +17,18 @@ const StyledBlack = styled.div`
   color: black;
   display: inline-block;
   clear: both;
-  padding-right: 0.6944vw;
-  padding-left: 0.6944vw;
-  font-size: 0.8417vw;
-  padding-top: 0.5944vw;
+  padding-right: 3px;
+  padding-left: 3px;
+  font-size: 13px;
+  padding-top: 15px;
 `;
 
 const StyledDiv = styled.div`
-  color: #cfcfcf;
+  color: #999999;
+  letter-spacing: -0.7px;
   display: inline-block;
-  clear: both;
-  padding: 5px;
-  padding-left: 0.6944vw;
-  padding-right: 0.6944vw;
-  font-size: 0.8417vw;
+  padding: 4px;
+  font-size: 13px;
 `;
 
 export default PinkAreaSubTitle;
