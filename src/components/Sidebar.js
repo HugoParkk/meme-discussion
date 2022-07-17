@@ -452,21 +452,21 @@ const DownSideMenu = styled.div`
   #Sidebar-search {
     background: #ff50e2;
     input {
-      height: 26px;
+      height: 27px;
       border-radius: 0%;
       border: 0;
-      width: 150px;
+      width: 160px;
       margin-right: 1.5px;
       box-shadow: 0.2px 0.3px 5px 0px #ff50e2 inset;
       padding: 0;
     }
     button {
       border-radius: 0%;
-      height: 26px;
+      height: 27px;
       border: 0;
       top: 0px;
       position: relative;
-      width: 36px;
+      width: 38px;
       background-color: #ff50e2;
       color: #fff;
       font-size: 10.5px;

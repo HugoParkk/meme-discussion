@@ -71,7 +71,6 @@ function ProductList() {
 const All = styled.div`
   margin: auto;
   width: 1080px;
-  
 `
 
 const Wrap = styled.div`
@@ -81,7 +80,7 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   top: 40px;
-  /* margin: auto; */
+  margin: auto;
 `;
 
 const HR2 = styled.hr`
