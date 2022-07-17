@@ -46,29 +46,28 @@ function ProductDetail(props) {
               
               <div id="inWarp">
               
-              
-              <div id= "BoardTop">
-                <BoardHeader data={data} />
-                <GradeLine />
-              </div>
-              <div id="BoardContent">
-                <div id="BoardImg"><img src={img2}></img></div>
-                <div id="leftBoardArea">
-                  <BoardContents data={data2} />
-                  <BoardLine />
-                  <BoardEmail />
-                  <BoardNFT />
-                  <BoardBuyChat />
-                  <BoardBottomText />
+                <div id= "BoardTop">
+                  <BoardHeader data={data} />
+                  <GradeLine />
                 </div>
-              </div>
-              <div id="BoardBottom">
-                <GradeLine2 />
-                <img src={Zzal}></img>
-                <p>디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~"</p>
+                <div id="BoardContent">
+                  <div id="BoardImg"><img src={img2}></img></div>
+                  <div id="leftBoardArea">
+                    <BoardContents data={data2} />
+                    <BoardLine />
+                    <BoardEmail />
+                    <BoardNFT />
+                    <BoardBuyChat />
+                    <BoardBottomText />
+                  </div>
+                </div>
+                <div id="BoardBottom">
+                  <GradeLine2 />
+                  <img src={Zzal}></img>
+                  <p>디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~"</p>
 
-                <div id="borderBox"></div>
-              </div>
+                  <div id="borderBox"></div>
+                </div>
               </div>
             </div>
           </Flex>
@@ -120,13 +119,13 @@ const Flex = styled.div`
     }
   }
   #inWarp{
-    width: 825px;
+    width: 850px;
     height: 1700px;
     border: 4px solid #cfcfcf;
     background: #fff;
     outline: 2px solid #000;
-    border: 2px solid gray;
-    margin-left: 40px;
+    border: 4px solid #cfcfcf;
+    margin-left: 20px;
 
     #BoardContent{
       position: relative;

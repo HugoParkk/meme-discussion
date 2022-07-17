@@ -16,7 +16,7 @@ const StyledDiv = styled.div`
   width: 840px;
   margin: 0 auto;
   position: relative;
-  left: 120px;
+  left: 90px;
   margin-top: 150px;
   margin-bottom: 60px;
   border: 5px solid magenta;
