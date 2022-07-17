@@ -18,6 +18,7 @@ const Wrap = styled.div`
   left: 370px;
   transform: translateX(-50%);
   overflow: hidden;
+  margin: auto;
 `;
 
 export default ShopBoardMainList;

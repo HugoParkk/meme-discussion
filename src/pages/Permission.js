@@ -22,6 +22,7 @@ import GlobalBackground from '../components/GlobalBackground'
 function Permission() {
   return (
     <GlobalBackground>
+      <All>
       <Header />
       <Wrap>
         <SIDEBAR>
@@ -40,9 +41,14 @@ function Permission() {
       <FOOTER>
         <Footer />
       </FOOTER>
+      </All>
     </GlobalBackground>
   );
 }
+const All = styled.div`
+  width: 1080px;
+  margin: auto;
+`
 const Wrap = styled.div`
   width: 1080px;
   margin: 0 auto;
