@@ -42,7 +42,7 @@ function ShopBoardMain(props) {
 }
 
 const Contents = styled.div`
-  width: 8.333vw;
+  width: 9.473vw;
   display: inline-block;
   margin: 0.521vw;
   margin-left: 1.389vw;

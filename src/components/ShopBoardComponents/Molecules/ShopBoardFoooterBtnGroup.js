@@ -43,7 +43,7 @@ const StyledDiv = styled.div`
   display: inline-block;
   position: relative;
   top: 6.25vw;
-  left: 0.694vw;
+  left: 2.694vw;
 `;
 
 const Btn = styled.button`
@@ -66,16 +66,11 @@ const Btn = styled.button`
 `;
 
 
-
-
-
-
-
 const Wrap = styled.div`
   position: absolute;
   display: flex;
   bottom: 0;
-  margin: 20px 45px;
+  margin: 20px 100px;
 `
 
 const SelectTime = styled.select`
