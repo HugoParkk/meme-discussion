@@ -16,7 +16,7 @@ const Wrap = styled.div`
   justify-content: space-between;
   width: 75%;
   transform: translateX(-50%);
-  left: 47%;
+  left: 40%;
   position: relative;
 `;
 

@@ -3,6 +3,11 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import Header from "../components/Header"
 
+
+import bg_icon1 from '../images/bg_icon1.png';
+import bg_icon2 from '../images/bg_icon2.png';
+import bg_icon3 from '../images/bg_icon3.png';
+import bg_icon4 from '../images/bg_icon4.png';
 import UploadHeader from "../components/UploadBoardComponents/Molecules/UploadHeader";
 import UploadInput from "../components/UploadBoardComponents/Molecules/UploadInput";
 import UploadMain from "../components/UploadBoardComponents/Molecules/UploadMain";
@@ -89,7 +94,7 @@ const frame = [
   "#E4CDE2",
   "#50FFD5",
 ];
-const back = ["black", "black", "black", "black", "black"];
+const back = [bg_icon1, bg_icon2, bg_icon3, bg_icon4, "black"];
 const img = [img2, img3, img4, img5];
 const text = [
   "짤 설명 사진.jpg",
