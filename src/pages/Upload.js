@@ -43,17 +43,16 @@ function Upload() {
         </form>
         <Calender />
       </Con>
-      <Footer type="upload" />
+      <Footer />
     </GlobalBackground>
   );
 }
 const Con = styled.div`
   display: flex;
   width: 1074px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-
+  height: 1220px;
+  margin: 0 auto;
+  
   Molu{
     a{
       text-decoration: none;
@@ -63,10 +62,7 @@ const Con = styled.div`
 `;
 
 const Wrap = styled.div`
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 40px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 `;
