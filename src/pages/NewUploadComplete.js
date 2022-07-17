@@ -8,14 +8,14 @@ import GlobalBackground from '../components/GlobalBackground';
 
 
 // 이미지--------------
-import bg from '../images/complet_good.png';
+import bg from '../images/bg_card.jpg';
 import hands from '../images/public_compoment/warning_hand.svg';
 import bell from '../images/Vector-2.svg';
 import on from '../images/Group 204.svg';
 import peopleTwo from '../images/Vector-6.svg';
 import peopleOne from '../images/Vector-3.svg';
 import humen from '../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg';
-import Card from '../images/Card_com.png';
+// import Card from '../images/Card_com.png';
 
 
 
@@ -42,15 +42,13 @@ function Main() {
         </div>
         
         <div id="Card">
-          <img src={Card} id="ca"></img>
+          {/* <img src={Card} id="ca">
+          </img> */}
           <div id="a">
             <div id="title_z">짤 이름</div>
             <img src={humen} id="hu"></img>
             <div id="sul">음악방송 아이브 양갈래 헤어</div>
-            
           </div>
-         
-          
         </div>
         
 
@@ -179,6 +177,8 @@ const MainS = styled.div`
 
   #Card{
     text-align: center;
+    width: 226px;
+    height: 340px;
     
     #ca{
       width: 227px;
@@ -192,7 +192,7 @@ const MainS = styled.div`
     }
     
     #hu{
-      width: 148px;
+      width: 152px;
       height: 152px;
       margin-top:-24px;
 
@@ -200,7 +200,8 @@ const MainS = styled.div`
 
     #a{
       position: absolute;
-      right: 38.7vw;
+      margin-left:348px;
+      margin-top: 5px;
       
     }
     #sul{
