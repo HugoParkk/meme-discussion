@@ -22,12 +22,8 @@ function GradeTextGroup(props) {
 }
 
 const StyledDiv = styled.div`
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 0.3rem;
-  left: 4rem;
-  height: 2.0833vw;
-  top: -1.5rem;
+  margin-left: 67px;
+  margin-bottom: 4px;
 `;
 
 export default GradeTextGroup;

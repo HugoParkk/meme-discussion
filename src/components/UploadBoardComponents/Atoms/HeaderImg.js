@@ -17,8 +17,9 @@ const StyledImg = styled.img`
   display: inline-block;
   width: 27px;
   height: 27px;
-  margin-left: 2rem;
-  margin-right: .5rem;
+  margin-left: 30px;
+  margin-right: 8px;
+  margin-top: 4px;
 `;
 
 const StyledImgB = styled.img`

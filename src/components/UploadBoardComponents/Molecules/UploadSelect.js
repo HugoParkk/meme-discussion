@@ -24,8 +24,8 @@ function UploadSelect(props) {
 const PinkSelect = styled.select`
   background-color: #ffd4ed;
   cursor: pointer;
-  width: 15.5rem;
-  font-size: 1.2rem;
+  width: 248px;
+  font-size: 16px;
   border: 5px solid #ffd4ed;
   outline: 3px solid black;
   position: relative;
@@ -34,18 +34,18 @@ const PinkSelect = styled.select`
 `;
 
 const StyledSelect = styled.select`
-  width: 37.5rem;
+  width: 600px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 16px;
   border: 5px solid #ffd4ed;
   outline: 3px solid black;
   position: relative;
-  padding: 15px;
+  padding: 10px;
 `;
 
 const StyledOption = styled.option`
   width: 80%;
-  font-size: 14pt;
+  font-size: 16px;
 `;
 
 export default UploadSelect;
