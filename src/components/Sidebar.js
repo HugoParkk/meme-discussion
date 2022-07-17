@@ -404,12 +404,14 @@ const UpSideMenuBar = styled.div`
         box-shadow: 1px 1px 1px 1px #bbbbbb inset;
         background: #dbdbdb;
         margin-bottom: 7px;
+        cursor: pointer;
       }
 
       #BtnHotpink {
         background: #ff50e2;
         color: #fff;
         box-shadow: none;
+        cursor: pointer;
       }
     }
   }
