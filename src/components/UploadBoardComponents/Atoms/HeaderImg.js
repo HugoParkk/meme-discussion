@@ -15,9 +15,9 @@ function HeaderImg(props) {
 
 const StyledImg = styled.img`
   display: inline-block;
-  width: 27px;
-  height: 27px;
-  margin-left: 30px;
+  width: 20px;
+  height: 19px;
+  margin-left: 20px;
   margin-right: 8px;
   margin-top: 4px;
 `;

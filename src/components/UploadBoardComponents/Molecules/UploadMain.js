@@ -38,12 +38,12 @@ const Wrap = styled.div`
 const Main = styled.div`
   background-color: white;
   display: block;
-  width: 54.3rem;
-
+  width: 875px;
+  font-weight: 600;
   border: 4px solid rgba(0, 0, 0, 0);
   outline: 2px solid black;
-  padding: 10px;
-  font-size: 1.2rem;
+  padding: 10px; 
+  font-size: 12px;
 `;
 
 const FooterPostTextTag = styled.input`

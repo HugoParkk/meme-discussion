@@ -32,35 +32,35 @@ function ProductList(props) {
   const { } = props;
 
   const [popup, handlerPopup] = useState(false);
-return (
+  return (
     <>
-    {popup && <Popup onClose={handlerPopup} />}
-    <GlobalBackground>
-      <All>
-      <Header />
-      <Wrap>
-        <Sidebar/>
-        <div>
-          <CONTENTS>
-            <div id="ShopTopTitle">
-              <span class="titleText">짤랑이 거래 ~~ 여기는 짤장터&nbsp;&nbsp;<img class="circleStar" src={circleStar}></img></span>
-              <img src={plus} class="plusImg"  onClick={() => { handlerPopup(true); }}></img>
+      {popup && <Popup onClose={handlerPopup} />}
+      <GlobalBackground>
+        <All>
+          <Header />
+          <Wrap>
+            <Sidebar />
+            <div>
+              <CONTENTS>
+                <div id="ShopTopTitle">
+                  <span class="titleText">짤랑이 거래 ~~ 여기는 짤장터&nbsp;&nbsp;<img class="circleStar" src={circleStar}></img></span>
+                  <img src={plus} class="plusImg"></img>
+                </div>
+                <ShopTopNotice />
+
+                <ShopBoardMainList data={data} />
+
+                <HR2 />
+
+                <div id="write" onClick={() => { handlerPopup(true); }}><img src={writeBtn}></img></div>
+
+                <ShopBoardFoooterBtnGroup data={num} />
+              </CONTENTS>
             </div>
-            <ShopTopNotice />
-
-            <ShopBoardMainList data={data} />
-            
-            <HR2 />
-
-            <div id="write" onClick={() => { handlerPopup(true); }}><img src={writeBtn}></img></div>
-            
-            <ShopBoardFoooterBtnGroup data={num} />
-          </CONTENTS>
-        </div>
-      </Wrap>
-      <Footer />
-      </All>
-    </GlobalBackground>
+          </Wrap>
+          <Footer />
+        </All>
+      </GlobalBackground>
     </>
   );
 }

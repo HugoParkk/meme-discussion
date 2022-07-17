@@ -20,9 +20,9 @@ const StyledInput = styled.input`
   border: 4px solid #ffd4ed;
   outline: 2px solid black;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 13px;
   ::placeholder {
-    font-size: 1.2rem;
+    font-size: 13px;
   }
 `;
 
