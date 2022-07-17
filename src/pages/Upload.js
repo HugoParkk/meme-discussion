@@ -43,17 +43,18 @@ function Upload() {
         </form>
         <Calender />
       </Con>
-      <Footer type="upload" />
+      <Footer />
     </GlobalBackground>
   );
 }
 const Con = styled.div`
   display: flex;
   width: 1074px;
+  height: 1220px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
+  
   Molu{
     a{
       text-decoration: none;
