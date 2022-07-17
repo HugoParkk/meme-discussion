@@ -10,12 +10,12 @@ function UploadHeader() {
   return (
     <StyledDiv>
       <StyledWrap>
-        <HeaderImg src={img1} type="bigger" />
+        <HeaderImg src={img1} type="" />
         <HeaderText text="짤 게시하기" type="title" />
       </StyledWrap>
       <StyledWrap>
         <HeaderText text="지갑에서 가져오기" />
-        <HeaderImg src={img2} />
+        <HeaderImg src={img2} type="bigger" />
       </StyledWrap>
     </StyledDiv>
   );
@@ -24,6 +24,7 @@ function UploadHeader() {
 const StyledWrap = styled.div`
   display: flex;
   justify-items: center;
+  align-items: center;
 `;
 
 const StyledDiv = styled.div`

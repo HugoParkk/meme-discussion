@@ -63,7 +63,6 @@ const Con = styled.div`
 `;
 
 const Wrap = styled.div`
-  background-color: white;
   position: relative;
   left: 50%;
   transform: translateX(-50%);

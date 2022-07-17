@@ -12,13 +12,11 @@ function GradeSubText(props) {
 }
 
 const StyledDiv = styled.div`
-  color: #cfcfcf;
+  color: #999999;
   display: inline-block;
-  clear: both;
-  padding: 0.3472vw;
-  padding-left: 0.6944vw;
-  padding-right: 0.6944vw;
-  font-size: 1.0889vw;
+  padding-left: 6px;
+  font-size: 13px;
+  letter-spacing: -0.7px;
 `;
 
 export default GradeSubText;

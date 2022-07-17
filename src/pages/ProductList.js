@@ -29,6 +29,7 @@ import img3 from "../images/02b796f3090ec136409f2189d7a9fcc9.jpg";
 import geguri from "../images/1ae00b0948a6376c01bcf396d617fdfb.jpg";
 import circleStar from "../images/Group 316.svg";
 import plus from "../images/Group 38.svg"
+import writeBtn from "../images/Group 343.svg"
 
 import GlobalBackground from '../components/GlobalBackground';
 
@@ -47,16 +48,17 @@ return (
               <img src={plus} class="plusImg"></img>
             </div>
             <ShopTopNotice />
+
             <ShopBoardMainList data={data} />
             
-            <ShopBoardwriteBtn />
+            <HR2 />
+
+            <div id="write"><img src={writeBtn}></img></div>
             <ShopBoardFoooterBtnGroup data={num} />
             <ShopBoardFooterNext />
-            <HR2 />
+            
             <Back>
-              <HR3 />
-              
-              <ShopBoardFindGroup />
+            <HR3 />
             </Back>
           </CONTENTS>
         </div>
@@ -84,18 +86,16 @@ const Wrap = styled.div`
   /* margin: auto; */
 `;
 
-const HR2 = styled.hr`
-  width: 95%;
-  margin-left: 1.042vw;
-  position: relative;
-  overflow: hidden;
-  top: -5.04vh;
+const HR2 = styled.div`
+  width: 830px;
+  margin: auto;
+  border-bottom:1px solid #EBEBEA;
 `;
 
 const CONTENTS = styled.div`
   width: 855px;
   background-color: #FFF;
-  border: 0.208vw solid #cfcfcf;
+  border: 4px solid #cfcfcf;
   position: relative;
   outline: 0.156vw solid black;
   
@@ -119,15 +119,15 @@ const CONTENTS = styled.div`
       margin:40px 20px 0 0;
     }
   }
+
+  #write{
+    margin: 10px 0 0 738px;
+  }
 `;
 
 const HR3 = styled.hr`
-  width: 95%;
-  margin-left: 1.042vw;
-  position: relative;
-  overflow: hidden;
-  top: 4.861vw;
-  
+  width: 830px;
+  margin: auto;
 `;
 
 const Back = styled.div`

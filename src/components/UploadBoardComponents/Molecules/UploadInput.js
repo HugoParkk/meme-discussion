@@ -10,16 +10,17 @@ function UploadInput() {
 }
 
 const Wrap = styled.div`
-  position: relative;
+  margin-top: 60px;
+  /* position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 60px;
+  top: 60px; */
 `;
 
 const StyledInput = styled.input`
   display: block;
-  width: 54.3rem;
-  position: relative;
+  width: 868px;
+  /* position: relative; */
   border: 5px solid #ffd4ed;
   outline: 3px solid black;
   padding: 10px;

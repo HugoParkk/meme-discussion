@@ -7,11 +7,11 @@ function GradeLine() {
 
 const StyledDiv = styled.div`
   height: 0.1px;
-  width: 90%;
+  width: 92.5%;
   background-color: #ff50e2;
   margin: 0 auto;
-  margin-top: 1.7rem;
-  margin-bottom: 2rem;
+  margin-top: 40px;
+  margin-bottom: 50px;
 `;
 
 export default GradeLine;
