@@ -18,15 +18,9 @@ function GradeButton(props) {
 }
 
 const WhiteDiv = styled.div`
-<<<<<<< HEAD
   width: 6.3333vw;
   height: 1.9389vw;
   line-height: 1.9389vw;
-=======
-  padding: 0 1.2rem;
-  height: 38px;
-  line-height: 38px;
->>>>>>> c2af21ef6e0f0f9bec4244511e5c3caf386dbd4e
   text-align: center;
   background-color: white;
   border: 1px solid #cfcfcf;

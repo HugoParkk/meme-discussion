@@ -19,9 +19,10 @@ import BoardBottomLastText from "../components/DetailBoardComponents/Atoms/Board
 import BoardFooterList from "../components/DetailBoardComponents/Molecules/BoardFooterList";
 import Header from "../components/Header";
 import styled from "styled-components";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/pages_Sidebar";
 import Footer from "../components/Footer";
 import GlobalBackground from '../components/GlobalBackground';
+import down from '../images/plu.png';
 
 function ProductDetail() {
   return (
@@ -30,7 +31,16 @@ function ProductDetail() {
         <Header />
         <Flex>
           <Sidebar id="public-sidebar" />
-          <div id="inWarp">
+          
+          <div id="con">
+            <div id="buttons">
+              <button><img src={down}/>다음글</button>
+              <a href="http://localhost:3000/productlist"><button id="me">목록</button></a>
+            </div>
+            
+            <div id="inWarp">
+            
+            
             <div id= "BoardTop">
               <BoardHeader data={data} />
               <GradeLine />
@@ -53,6 +63,7 @@ function ProductDetail() {
 
               <div id="borderBox"></div>
             </div>
+            </div>
           </div>
         </Flex>
 
@@ -68,23 +79,52 @@ const Flex = styled.div`
   margin-top: 28px;
   width: 900px;
   display: flex;
-
+  
+  #con{
+    width: 890px;
+    #buttons{
+      #me{
+        padding: 0 10px;
+      }
+      /* width: 128px;
+      height: 30px; */
+      margin: 2px 0 10px 10px;
+      text-align: right;
+      width: 860px;
+      button{
+        height: 30px;
+        border: 1px solid #000;
+        color: #fff;
+        background: #FF50E2;
+        border-radius: 3px;
+        font-size: 12px;
+        padding: 0 5px;
+        margin: 0 5px;
+        
+        img{
+          padding: 0 5px;
+          
+        }
+      }
+      
+    }
+  }
   #inWarp{
-    width: 800px;
+    width: 825px;
     height: 1700px;
     border: 4px solid #cfcfcf;
     background: #fff;
     outline: 2px solid #000;
     border: 2px solid gray;
-    margin-left: 10px;
+    margin-left: 40px;
 
     #BoardContent{
       position: relative;
       width: 750px;
       height: 550px;
       #BoardImg{
-        width: 275px;
-        height: 275px;
+        width: 350px;
+        height: 350px;
         background-color: #838383;
         border: 10px solid #838383;
         outline: 2px solid #000;
@@ -92,8 +132,8 @@ const Flex = styled.div`
         position: absolute;
         left:40px;
         img{
-          width: 250px;
-          height: 250px;
+          width: 327px;
+          height: 327px;
           border: 5px solid #838383;
           outline: 5px solid #D9D9D9;
           margin: 2.5px 0 0 2.5px;
@@ -102,7 +142,7 @@ const Flex = styled.div`
 
       #leftBoardArea{
         position: absolute;
-        left: 330px;
+        left: 430px;
       }
     }
 
@@ -128,7 +168,7 @@ const Flex = styled.div`
 `;
 
 const Wrap = styled.div`
-  width: 900px;
+  width: 1080px;
   margin: 0 auto;
 `;
 

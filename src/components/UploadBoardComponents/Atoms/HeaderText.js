@@ -14,7 +14,7 @@ function HeaderText(props) {
 }
 
 const StyledTitle = styled.div`
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   display: inline-block;
   line-height: 44px;

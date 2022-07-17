@@ -36,10 +36,9 @@ function ProductList() {
 return (
     <>
     <GlobalBackground>
-      
       <All>
       <Header />
-        <Wrap>
+      <Wrap>
         <Sidebar/>
         <div>
           <CONTENTS>
@@ -49,18 +48,23 @@ return (
             </div>
             <ShopTopNotice />
             <ShopBoardMainList data={data} />
-
+            
             <ShopBoardwriteBtn />
             <ShopBoardFoooterBtnGroup data={num} />
             <ShopBoardFooterNext />
             <HR2 />
             <Back>
-            <HR3 />
+              <HR3 />
+              <ShopBoardGroup>
+                <ShopBoardTimeSelect />
+                <ShopBoardCommentSelect />
+              </ShopBoardGroup>
+              <ShopBoardFindGroup />
             </Back>
           </CONTENTS>
         </div>
-        </Wrap>
-        <Footer />
+      </Wrap>
+      <Footer />
       </All>
     </GlobalBackground>
     </>
@@ -70,6 +74,7 @@ return (
 const All = styled.div`
   margin: auto;
   width: 1080px;
+  
 `
 
 const Wrap = styled.div`
@@ -78,7 +83,8 @@ const Wrap = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  top: 38px;
+  top: 40px;
+  /* margin: auto; */
 `;
 
 const HR2 = styled.hr`
@@ -90,7 +96,7 @@ const HR2 = styled.hr`
 `;
 
 const CONTENTS = styled.div`
-  width: 860px;
+  width: 855px;
   background-color: #FFF;
   border: 0.208vw solid #cfcfcf;
   position: relative;

@@ -13,9 +13,9 @@ function ShopBoardMainList(props) {
 }
 
 const Wrap = styled.div`
-  width: 700px;
+  width: 850px;
   position: relative;
-  left: 370px;
+  left: 425px;
   transform: translateX(-50%);
   overflow: hidden;
   margin: auto;

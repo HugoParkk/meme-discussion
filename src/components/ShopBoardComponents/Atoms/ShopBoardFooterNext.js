@@ -31,7 +31,7 @@ const Line = styled.div`
 `;
 const NextDiv = styled.div`
   position: relative;
-  left: 31.25vw;
+  left: 32.45vw;
   right: 0;
   top: 4.167vw;
   margin: 0;
