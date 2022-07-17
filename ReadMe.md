@@ -15,7 +15,7 @@
   - **Developer** [오상혁]()
   - **Developer** [유채연]()
   - **Developer** [류채연]()
-  - **Developer** [변윤진]()
+  - **Developer** [변윤진](https://github.com/presiti)
 
 ## 개발 방법
 
