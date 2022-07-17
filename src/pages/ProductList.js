@@ -121,6 +121,7 @@ const CONTENTS = styled.div`
 
   #write{
     margin: 15px 0 0 738px;
+    cursor: pointer;
   }
 `;
 

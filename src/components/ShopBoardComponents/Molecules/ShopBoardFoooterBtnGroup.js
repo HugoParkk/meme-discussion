@@ -132,6 +132,7 @@ const SearchBtn = styled.button`
   height: 35px;
   width: 55px;
   margin: 0 0 0 180px;
+  cursor: pointer;
 `;
 
 const StyledDiv = styled.span`
