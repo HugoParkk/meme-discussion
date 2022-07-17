@@ -43,7 +43,7 @@ return (
         <div>
           <CONTENTS>
             <div id="ShopTopTitle">
-              <span>짤랑이 거래 ~~ 여기는 짤장터&nbsp;&nbsp;<img src={circleStar}></img></span>
+              <span class="titleText">짤랑이 거래 ~~ 여기는 짤장터&nbsp;&nbsp;<img class="circleStar" src={circleStar}></img></span>
               <img src={plus} class="plusImg"></img>
             </div>
             <ShopTopNotice />
@@ -68,7 +68,6 @@ return (
 const All = styled.div`
   margin: auto;
   width: 1080px;
-  
 `
 
 const Wrap = styled.div`
@@ -78,7 +77,6 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   top: 40px;
-  /* margin: auto; */
 `;
 
 const HR2 = styled.div`
@@ -102,9 +100,9 @@ const CONTENTS = styled.div`
     font-weight: 600;
     display: flex;
     justify-content: space-between;
-    span{
+    .titleText{
       margin: 10px 0 0 15px;
-      img{
+      .circleStar{
         cursor: pointer;
       }
     }
