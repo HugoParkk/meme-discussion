@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BoardTopTitle from "../Atoms/BoardTopTitle";
 import BoardTopMainText from "../Atoms/BoardTopMaintext";
 import BoardLogin from "./BoardLogin";
@@ -6,6 +6,10 @@ import styled from "styled-components";
 
 function BoardHeader(props) {
   const arr = props.data;
+
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
 
   return (
     <Font>
