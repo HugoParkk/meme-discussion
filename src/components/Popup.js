@@ -5,7 +5,8 @@ import warning_hand from '../images/public_compoment/warning_hand.svg';
 function Popup(props) {
   const { onClose } = props;
   return (
-    <div>
+    <>
+      <BlackBackground>
         <PopupMain>
           <img src={warning_hand}></img>
             <div className='GuideMain'>
@@ -54,10 +55,11 @@ function Popup(props) {
           </GradeUp>
           <button class="goBack-btn"onClick={() => {onClose(false);}}>이전으로</button>
         </PopupMain>
-        <BlackBackground></BlackBackground>
-    </div>
+      </BlackBackground>
+    </>
   )
 }
+
 const PopupMain = styled.div`
   position: absolute;
   z-index: 999;
@@ -67,7 +69,8 @@ const PopupMain = styled.div`
   border: 4px solid #cfcfcf;
   width: 866px;
   height: 512px;
-  position: absolute;
+  top: 13vh;
+  left: 22vw;
   
   img{
     width: 19px;

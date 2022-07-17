@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from '../components/pages_Sidebar';
+import Popup from "../components/Popup";
 
 import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
 import ShopBoardTopText from "../components/ShopBoardComponents/Atoms/ShopBoardTopText";
@@ -31,13 +32,19 @@ import geguri from "../images/1ae00b0948a6376c01bcf396d617fdfb.jpg";
 
 import GlobalBackground from '../components/GlobalBackground';
 
-function ProductList() {
+function ProductList(props) {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
+
   return (
-    
+    <>
+    {popup && <Popup onClose={handlerPopup} />}
     <GlobalBackground>
+      
       <All>
       <Header />
-      <Wrap>
+        <Wrap>
         <Sidebar/>
         <div>
           <CONTENTS>
@@ -51,27 +58,21 @@ function ProductList() {
             <ShopBoardFooterNext />
             <HR2 />
             <Back>
-              <HR3 />
-              <ShopBoardGroup>
-                <ShopBoardTimeSelect />
-                <ShopBoardCommentSelect />
-              </ShopBoardGroup>
-              <ShopBoardFindGroup />
+            <HR3 />
             </Back>
           </CONTENTS>
         </div>
-      </Wrap>
-      <Footer />
+        </Wrap>
+        <Footer />
       </All>
     </GlobalBackground>
-    
+    </>
   );
 }
 
 const All = styled.div`
   margin: auto;
   width: 1080px;
-  
 `
 
 const Wrap = styled.div`
@@ -80,8 +81,7 @@ const Wrap = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  top: 40px;
-  /* margin: auto; */
+  top: 38px;
 `;
 
 const HR2 = styled.hr`
