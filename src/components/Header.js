@@ -29,7 +29,7 @@ function Header(props) {
           ></img>
         </div>
 
-        <div id="header-top">
+        <div id="headerTop">
           <ul>
             <li>홈</li> |<li>이웃</li>|<li>가입카페 ▼</li>|<li>새글</li>|
             <li>내소식</li>|<li>채팅</li>|<li>쥔짱님 ▼</li>
@@ -41,10 +41,7 @@ function Header(props) {
         <h1></h1>
       </HeaderStyleTest>
 
-      {props.type === "noBlack" ? (
-        <></>
-      ) : (
-        <HeaderBar>
+      <HeaderBar>
           <div id="header-search">
             <input></input>
             <button>검색</button>
@@ -70,7 +67,6 @@ function Header(props) {
             </ul>
           </div>
         </HeaderBar>
-      )}
     </>
   );
 }
@@ -108,6 +104,9 @@ const HeaderMenuTop = styled.div`
     .Digitech {
       padding: 3px 0 0 0;
     }
+  }
+  #headerTop{
+    font-size: 8px;
   }
 `;
 const HeaderStyleTest = styled.header`

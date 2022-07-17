@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
+import Popup from "../components/Popup";
 
 //----images----
 import img1 from "../images/Ellipse 3.png";
@@ -24,54 +25,60 @@ import Footer from "../components/Footer";
 import GlobalBackground from '../components/GlobalBackground';
 import down from '../images/plu.png';
 
-function ProductDetail() {
+function ProductDetail(props) {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
   return (
-    <GlobalBackground>
-      <Wrap>
-        <Header />
-        <Flex>
-          <Sidebar id="public-sidebar" />
-          
-          <div id="con">
-            <div id="buttons">
-              <button><img src={down}/>다음글</button>
-              <a href="http://localhost:3000/productlist"><button id="me">목록</button></a>
-            </div>
+    <>
+      {popup && <Popup onClose={handlerPopup} />}
+      <GlobalBackground>
+        <Wrap>
+          <Header />
+          <Flex>
+            <Sidebar id="public-sidebar" />
             
-            <div id="inWarp">
-            
-            
-            <div id= "BoardTop">
-              <BoardHeader data={data} />
-              <GradeLine />
-            </div>
-            <div id="BoardContent">
-              <div id="BoardImg"><img src={img2}></img></div>
-              <div id="leftBoardArea">
-                <BoardContents data={data2} />
-                <BoardLine />
-                <BoardEmail />
-                <BoardNFT />
-                <BoardBuyChat />
-                <BoardBottomText />
+            <div id="con">
+              <div id="buttons">
+                <button class="nextBtn" onClick={() => { handlerPopup(true); }}><img src={down}/>다음글</button>
+                <a href="http://localhost:3000/productlist"><button id="me">목록</button></a>
+              </div>
+              
+              <div id="inWarp">
+              
+              
+              <div id= "BoardTop">
+                <BoardHeader data={data} />
+                <GradeLine />
+              </div>
+              <div id="BoardContent">
+                <div id="BoardImg"><img src={img2}></img></div>
+                <div id="leftBoardArea">
+                  <BoardContents data={data2} />
+                  <BoardLine />
+                  <BoardEmail />
+                  <BoardNFT />
+                  <BoardBuyChat />
+                  <BoardBottomText />
+                </div>
+              </div>
+              <div id="BoardBottom">
+                <GradeLine2 />
+                <img src={Zzal}></img>
+                <p>디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~"</p>
+
+                <div id="borderBox"></div>
+              </div>
               </div>
             </div>
-            <div id="BoardBottom">
-              <GradeLine2 />
-              <img src={Zzal}></img>
-              <p>디지털풍화 없는 고화질 짤 팝니다. 다른짤 묶어서 같이 구매하시면 네고해드려요~"</p>
+          </Flex>
 
-              <div id="borderBox"></div>
-            </div>
-            </div>
-          </div>
-        </Flex>
+          <BoardFooterList data={data3} />
 
-        <BoardFooterList data={data3} />
-
-        <Footer />
-      </Wrap>
-    </GlobalBackground>
+          <Footer />
+        </Wrap>
+      </GlobalBackground>
+    </>
   );
 }
 
@@ -83,8 +90,10 @@ const Flex = styled.div`
   #con{
     width: 890px;
     #buttons{
+      .nextBtn{cursor: pointer;}
       #me{
         padding: 0 10px;
+        cursor: pointer;
       }
       /* width: 128px;
       height: 30px; */

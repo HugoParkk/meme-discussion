@@ -1,19 +1,14 @@
 import React, { useState } from "react";
-
 import styled from "styled-components";
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from '../components/pages_Sidebar';
+import Sidebar from '../components/Sidebar';
 import Popup from "../components/Popup";
 
-import ShopNotice from "../components/ShopBoardComponents/Molecules/ShopNotice";
 import ShopTopNotice from "../components/ShopBoardComponents/Molecules/ShopTopNotice";
 import ShopBoardMainList from "../components/ShopBoardComponents/Molecules/ShopBoardMainList";
-import ShopBoardwriteBtn from "../components/ShopBoardComponents/Atoms/ShopBoardwriteBtn";
 import ShopBoardFoooterBtnGroup from "../components/ShopBoardComponents/Molecules/ShopBoardFoooterBtnGroup";
-import ShopBoardTimeSelect from "../components/ShopBoardComponents/Atoms/ShopBoardTimeSelect";
-import ShopBoardCommentSelect from "../components/ShopBoardComponents/Atoms/ShopBoardCommentSelect";
-import ShopBoardFindGroup from "../components/ShopBoardComponents/Molecules/ShopBoardFindGroup";
 
 import lovepari from "../images/fd7b8305ab14a05f23fc53a7405cd983.jpg";
 import bookfound from "../images/5f83a752c924315a6aa03aa5f3e13927.jpg";
