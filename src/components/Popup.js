@@ -102,6 +102,7 @@ const PopupMain = styled.div`
     width: 74px;
     height: 30px;
     border: 1.5px solid #999999;
+    cursor: pointer;
   }
 
 `
