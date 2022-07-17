@@ -10,7 +10,6 @@ import ShopTopNotice from "../components/ShopBoardComponents/Molecules/ShopTopNo
 import ShopBoardMainList from "../components/ShopBoardComponents/Molecules/ShopBoardMainList";
 import ShopBoardwriteBtn from "../components/ShopBoardComponents/Atoms/ShopBoardwriteBtn";
 import ShopBoardFoooterBtnGroup from "../components/ShopBoardComponents/Molecules/ShopBoardFoooterBtnGroup";
-import ShopBoardFooterNext from "../components/ShopBoardComponents/Atoms/ShopBoardFooterNext";
 import ShopBoardTimeSelect from "../components/ShopBoardComponents/Atoms/ShopBoardTimeSelect";
 import ShopBoardCommentSelect from "../components/ShopBoardComponents/Atoms/ShopBoardCommentSelect";
 import ShopBoardFindGroup from "../components/ShopBoardComponents/Molecules/ShopBoardFindGroup";
@@ -54,12 +53,8 @@ return (
             <HR2 />
 
             <div id="write"><img src={writeBtn}></img></div>
-            <ShopBoardFoooterBtnGroup data={num} />
-            <ShopBoardFooterNext />
             
-            <Back>
-            <HR3 />
-            </Back>
+            <ShopBoardFoooterBtnGroup data={num} />
           </CONTENTS>
         </div>
       </Wrap>
@@ -97,11 +92,11 @@ const CONTENTS = styled.div`
   background-color: #FFF;
   border: 4px solid #cfcfcf;
   position: relative;
-  outline: 0.156vw solid black;
+  outline: 2px solid black;
   
   #ShopTopTitle{
     width: 100%;
-    height: 80px;
+    height: 90px;
     color: #FA00D0;
     font-size: 22px;
     font-weight: 600;
@@ -116,48 +111,14 @@ const CONTENTS = styled.div`
     .plusImg{
       width:50px; 
       height: 23px;
-      margin:40px 20px 0 0;
+      margin: 50px 20px 0 0;
     }
   }
 
   #write{
-    margin: 10px 0 0 738px;
+    margin: 15px 0 0 738px;
   }
 `;
-
-const HR3 = styled.hr`
-  width: 830px;
-  margin: auto;
-`;
-
-const Back = styled.div`
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f8;
-  height: 9.5vw;
-`;
-
-const arr = [
-  { type: "title", text: "제목", name: "작성자", date: "작성일", cnt: "조회" },
-  {
-    text: "제목제목제목제목제목제목제목제목",
-    name: "스태프",
-    date: "2022.05.04",
-    cnt: "209",
-  },
-  {
-    text: "제목제목제목제목제목제목제목제목",
-    name: "스태프",
-    date: "2022.05.04",
-    cnt: "209",
-  },
-  {
-    text: "제목제목제목제목제목제목제목제목",
-    name: "스태프",
-    date: "2022.05.04",
-    cnt: "209",
-  },
-];
 
 const data = [
   {

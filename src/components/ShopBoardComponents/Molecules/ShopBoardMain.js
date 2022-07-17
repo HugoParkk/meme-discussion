@@ -45,6 +45,7 @@ const Contents = styled.div`
   width: 198px;
   display: inline-block;
   margin: 5px;
+  margin-bottom: 25px;
   a {
     text-decoration: none;
   }
