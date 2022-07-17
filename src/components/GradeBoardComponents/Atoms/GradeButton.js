@@ -18,29 +18,28 @@ function GradeButton(props) {
 }
 
 const WhiteDiv = styled.div`
-  width: 6.3333vw;
-  height: 1.9389vw;
-  line-height: 1.9389vw;
+  height: 30px;
+  width: 76px;
+  line-height: 29px;
   text-align: center;
   background-color: white;
   border: 1px solid #cfcfcf;
-  display: inline-block;
-  margin-right: 1.0417vw;
-  border-radius: 0.3472vw;
-  font-size: 1vw;
+  margin-right: 9px;
+  border-radius: 4px;
+  font-size: 12px;
 `;
 
 const PinkDiv = styled.div`
   div {
-    width: 6.3333vw;
-    height: 1.9389vw;
-    line-height: 1.9389vw;
+    width: 88px;
+    height: 30px;
+    line-height: 29px;
     text-align: center;
     background-color: #ff50e2;
     display: inline-block;
     color: white;
-    border-radius: 0.3472vw;
-    font-size: 1vw;
+    border-radius: 4px;
+    font-size: 12px;
   }
   a {
     text-decoration: none;
