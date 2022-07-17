@@ -95,6 +95,7 @@ const ShopBoardGroup = styled.div`
   margin-left: -13.888vw;
   margin-top: 4.167vw;
   position: relative;
+  
 `;
 
 const CONTENTS = styled.div`
@@ -103,6 +104,7 @@ const CONTENTS = styled.div`
   border: 0.208vw solid #cfcfcf;
   position: relative;
   outline: 0.156vw solid black;
+  
 `;
 
 const HR3 = styled.hr`
@@ -111,6 +113,7 @@ const HR3 = styled.hr`
   position: relative;
   overflow: hidden;
   top: 4.861vw;
+  
 `;
 
 const Back = styled.div`
