@@ -23,7 +23,6 @@ function Main() {
   return (
     <GlobalBackground>
 
-    
       <Wrap>
       <Header/>
       <div id="wor">
@@ -85,9 +84,7 @@ function Main() {
       
       </Wrap>
       <Footer></Footer>
-        
-      
-      
+
       </GlobalBackground>
   );
 }
@@ -285,6 +282,7 @@ const Ser = styled.div`
 const Wrap = styled.div`
   margin: auto;
   width: 1080px;
+  height: 1850px;
 
   #wor{
     margin: 40px auto;
