@@ -43,10 +43,10 @@ const Sidebar = (props) => {
                 <li>since 2002.02.02</li>
                 <li>카페소개</li>
               </li>
-              
+
             </ul>
           </div>
-          
+
         </div>
 
         <div id="CafeInfo">
@@ -115,124 +115,124 @@ const Sidebar = (props) => {
               <input></input>
               <button>검색</button>
             </div>
-            <sapn onClick={() => { handlerPopup(true); }}>
-            <div id="TotalWrite">
-              <li>전체글보기</li>
-              <li>175,342,546</li>
-            </div>
-            <div id="MenuTitle">★ 공지사항</div>
-            <div id="MenuContent" class="noitce">
-              <ul>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;공지사항</a>{" "}
-                  <img src={NewIcon} alt="NewTag"></img>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;이용정책</a>
-                </li>
-              </ul>
-            </div>
-            <div id="MenuTitle">★ 신고하기/문의하기</div>
-            <div id="MenuContent">
-              <ul>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;카페 1:1 고객센터</a>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;밈품명품 광고 문의하기</a>
-                </li>
-              </ul>
-            </div>
-            <div id="MenuTitle">밈품명품 이용팁</div>
-            <div id="MenuContent">
-              <ul>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;슬기로운 밈품명품정보</a>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;밈품명품 공식 아카이브</a>
-                </li>
-              </ul>
-            </div>
-            <div id="MenuTitle">중나 행복나눔</div>
-            <div id="MenuContent">
-              <ul>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;포카 무료나눔</a>{" "}
-                  <img src={NewIcon} alt="NewTag"></img>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;사골짤 무료나눔</a>{" "}
-                  <img src={NewIcon} alt="NewTag"></img>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;손글씨/이미지나눔</a>{" "}
-                  <img src={NewIcon} alt="NewTag"></img>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;어려운 이웃 사연</a>{" "}
-                  <img src={NewIcon} alt="NewTag"></img>
-                </li>
-              </ul>
-            </div>
-            <div id="MenuTitle">밈뮤니티</div>
-            <div id="MenuContent">
-              <ul>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;긍정거래 후기</a>{" "}
-                  <img src={NewIcon} alt="NewTag"></img>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;불량거래 후기</a>{" "}
-                  <img src={NewIcon} alt="NewTag"></img>
-                </li>
-              </ul>
-            </div>
-            <div id="MenuTitle">밈품명품 회원 이벤트</div>
-            <div id="MenuContent">
-              <ul>
-                <p>이벤트</p>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;당첨자발표/종료</a>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;이벤트 신청하기</a>
-                </li>
-              </ul>
-            </div>
-            <div id="MenuTitle">밈당포 할인특구</div>
-            <div id="MenuContent">
-              <ul>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;꿀딜특구</a>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;할인특가</a>{" "}
-                  <img src={NewIcon} alt="NewTag"></img>
-                </li>
-                <li>
-                  <img src={L_shape} alt="L"></img>
-                  <a href="#">&nbsp;&nbsp;&nbsp;짤짤이 처분</a>
-                </li>
-              </ul>
-            </div>
-            </sapn>
+            <span onClick={() => { handlerPopup(true); }}>
+              <div id="TotalWrite">
+                <li>전체글보기</li>
+                <li>175,342,546</li>
+              </div>
+              <div id="MenuTitle">★ 공지사항</div>
+              <div id="MenuContent" class="noitce">
+                <ul>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;공지사항</a>{" "}
+                    <img src={NewIcon} alt="NewTag"></img>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;이용정책</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="MenuTitle">★ 신고하기/문의하기</div>
+              <div id="MenuContent">
+                <ul>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;카페 1:1 고객센터</a>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;밈품명품 광고 문의하기</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="MenuTitle">밈품명품 이용팁</div>
+              <div id="MenuContent">
+                <ul>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;슬기로운 밈품명품정보</a>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;밈품명품 공식 아카이브</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="MenuTitle">중나 행복나눔</div>
+              <div id="MenuContent">
+                <ul>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;포카 무료나눔</a>{" "}
+                    <img src={NewIcon} alt="NewTag"></img>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;사골짤 무료나눔</a>{" "}
+                    <img src={NewIcon} alt="NewTag"></img>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;손글씨/이미지나눔</a>{" "}
+                    <img src={NewIcon} alt="NewTag"></img>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;어려운 이웃 사연</a>{" "}
+                    <img src={NewIcon} alt="NewTag"></img>
+                  </li>
+                </ul>
+              </div>
+              <div id="MenuTitle">밈뮤니티</div>
+              <div id="MenuContent">
+                <ul>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;긍정거래 후기</a>{" "}
+                    <img src={NewIcon} alt="NewTag"></img>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;불량거래 후기</a>{" "}
+                    <img src={NewIcon} alt="NewTag"></img>
+                  </li>
+                </ul>
+              </div>
+              <div id="MenuTitle">밈품명품 회원 이벤트</div>
+              <div id="MenuContent">
+                <ul>
+                  <p>이벤트</p>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;당첨자발표/종료</a>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;이벤트 신청하기</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="MenuTitle">밈당포 할인특구</div>
+              <div id="MenuContent">
+                <ul>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;꿀딜특구</a>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;할인특가</a>{" "}
+                    <img src={NewIcon} alt="NewTag"></img>
+                  </li>
+                  <li>
+                    <img src={L_shape} alt="L"></img>
+                    <a href="#">&nbsp;&nbsp;&nbsp;짤짤이 처분</a>
+                  </li>
+                </ul>
+              </div>
+            </span>
           </div>
         </div>
       </DownSideMenu>

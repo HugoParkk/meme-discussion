@@ -116,7 +116,7 @@ const Sidebar = (props) => {
               <input></input>
               <button>검색</button>
             </div>
-            <sapn onClick={() => { handlerPopup(true); }}>
+            <span onClick={() => { handlerPopup(true); }}>
               <div id="TotalWrite">
                 <li>전체글보기</li>
                 <li>175,342,546</li>
@@ -233,7 +233,7 @@ const Sidebar = (props) => {
                   </li>
                 </ul>
               </div>
-            </sapn>
+            </span>
           </div>
         </div>
       </DownSideMenu>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ExchangeRateForm from "../Atoms/ExchangeRateForm";
 import RightBarMoneyText from "../Atoms/RightBarMoneyText";
@@ -40,7 +41,10 @@ function Calender(props) {
           </Flex>
         </DA>
         <span><RightSideBarBtn text={"임시등록"} /></span>
-        <a href={`http://localhost:3000/uploadcomplete/`}><RightSideBarBtn text={"매물 게시"} type={"pink"} /></a>
+        <Link to={{
+          pathname: `/uploadcomplete/`,
+          state: { name: props.name, img: props.src }
+        }}><RightSideBarBtn text={"매물 게시"} type={"pink"} /></Link>
         <UploadBoardPublicLi />
         <Wrap>
           <SideBarSnsUploadText text={"인스타그램"} />

@@ -22,7 +22,7 @@ import Calender from "../components/UploadBoardComponents/Molecules/Calender";
 import GlobalBackground from '../components/GlobalBackground';
 
 
-function Upload() {
+function Upload(props) {
   const [name, setName] = useState("짤 이름");
   const [src, setSrc] = useState(img1);
 
@@ -44,7 +44,7 @@ function Upload() {
             <UploadSelect data={data1} />
             <UploadSelect data={data2} type="pink" />
           </Wrap>
-          <UploadInput propFunction={jjalNameFunction} />
+          <UploadInput name={props.name} propFunction={jjalNameFunction} />
           <UploadMain
             propFunction={srcFunction}
             frame={frame}
@@ -54,7 +54,7 @@ function Upload() {
             text={text}
           />
         </form>
-        <Calender name={name} src={src} />
+        <Calender setName={props.setName} name={name} src={src} />
       </Con>
       <Footer />
     </GlobalBackground>

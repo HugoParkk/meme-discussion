@@ -11,7 +11,7 @@ function UploadMain(props) {
 
   const srcFunction = (e) => {
     setSrc(e);
-    props.propFunction(src);
+    props.propFunction(e);
   };
 
   return (

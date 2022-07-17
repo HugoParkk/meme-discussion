@@ -8,7 +8,7 @@ function UploadInput(props) {
 
   return (
     <Wrap>
-      <StyledInput placeholder={props.name} onChangeCapture={nameChangeHandler} type="text" placeholder="제목을 입력해 주세요" />
+      <StyledInput onChangeCapture={nameChangeHandler} type="text" placeholder="제목을 입력해 주세요" />
     </Wrap>
   );
 }

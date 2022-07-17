@@ -10,15 +10,17 @@ function UploadImgArea(props) {
   const [color, setColor] = useState("#FF50E2");
 
   const encodeFileToBase64 = (fileBlob) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(fileBlob);
-    return new Promise((resolve) => {
-      reader.onload = () => {
-        setSrc(reader.result);
-        props.srcFunction(src);
-        resolve();
-      };
-    });
+    // const reader = new FileReader();
+    // reader.readAsDataURL(fileBlob);
+    // return new Promise((resolve) => {
+    //   reader.onload = () => {
+    //     setSrc(window.URL.createObjectURL(reader.result));
+    //     props.srcFunction(src);
+    //     resolve();
+    //   };
+    // });
+    setSrc(window.URL.createObjectURL(fileBlob));
+    props.srcFunction(fileBlob);
   };
 
   const getColor = (text) => {

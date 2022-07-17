@@ -16,10 +16,13 @@ import peopleTwo from '../images/Vector-6.svg';
 import peopleOne from '../images/Vector-3.svg';
 import humen from '../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg';
 // import Card from '../images/Card_com.png';
+import { useLocation } from 'react-router-dom'
 
 
+function Main() {
+  const location = useLocation();
+  const data = location.state;
 
-function Main(props) {
 
   return (
     <GlobalBackground>
@@ -48,8 +51,12 @@ function Main(props) {
                 {/* <img src={Card} id="ca">
               </img> */}
                 <div id="a">
-                  <div id="title_z">{props.name}</div>
-                  <img src={props.img} id="hu"></img>
+                  <div id="title_z">{data.name}</div>
+                  {data.img == "/static/media/03bcbd1f18de9cdc981199b3a4bb29ab.eb036cc355e96f8ceaab.jpg" ?
+                    <img src={data.img} id="hu"></img>
+                    :
+                    <img src={window.URL.createObjectURL(data.img)} id="hu"></img>
+                  }
                   <div id="sul">음악방송 아이브 양갈래 헤어</div>
                 </div>
               </div>
