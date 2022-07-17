@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
 
-import Fonts from 'GlobalFonts';
+import Fonts from './GlobalFonts';
 import bookmarkStar from "../images/public_compoment/star_sideMenu.svg";
 import profile from "../images/public_compoment/profile.svg";
 import crown from "../images/public_compoment/crown.png";
