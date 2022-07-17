@@ -35,7 +35,7 @@ function ProductDetail() {
           <div id="con">
             <div id="buttons">
               <button><img src={down}/>다음글</button>
-              <button id="me">목록</button>
+              <a href="http://localhost:3000/productlist"><button id="me">목록</button></a>
             </div>
             
             <div id="inWarp">
