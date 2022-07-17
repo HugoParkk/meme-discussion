@@ -9,10 +9,9 @@
   - **Project Manager** [박종연](https://github.com/pokoed/)
   - **Developer** [이재원]()
   - **Developer** [이상민]()
-  - **Developer** [이재원]()
   - **Developer** [권우민]()
   - **Developer** [오상혁]()
-  - **Developer** [유채연]()
+  - **Developer** [유주형]()
   - **Developer** [류채연]()
   - **Developer** [변윤진](https://github.com/presiti)
 
