@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/pages_Sidebar';
 
 import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
 import ShopBoardTopText from "../components/ShopBoardComponents/Atoms/ShopBoardTopText";
@@ -33,7 +33,9 @@ import GlobalBackground from '../components/GlobalBackground';
 
 function ProductList() {
   return (
+    
     <GlobalBackground>
+      <All>
       <Header />
       <Wrap>
         <Sidebar/>
@@ -60,9 +62,17 @@ function ProductList() {
         </div>
       </Wrap>
       <Footer />
+      </All>
     </GlobalBackground>
+    
   );
 }
+
+const All = styled.div`
+  margin: auto;
+  width: 1080px;
+  
+`
 
 const Wrap = styled.div`
   width: 1080px;
@@ -71,7 +81,7 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-between;
   top: 40px;
-  margin: 0 auto;
+  /* margin: auto; */
 `;
 
 const HR2 = styled.hr`
