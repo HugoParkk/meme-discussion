@@ -83,9 +83,10 @@ function ProductDetail(props) {
 }
 
 const Flex = styled.div`
-  margin-top: 28px;
+  margin-top: 38px;
   width: 900px;
   display: flex;
+
   
   #con{
     width: 890px;
