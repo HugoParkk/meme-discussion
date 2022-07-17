@@ -7,7 +7,6 @@
 
 - ### Team
   - **Project Manager** [박종연](https://github.com/pokoed/)
-  - **Developer** [정휘찬]()
   - **Developer** [이재원]()
   - **Developer** [이상민]()
   - **Developer** [이재원]()
