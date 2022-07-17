@@ -326,7 +326,8 @@ const UpSideMenuBar = styled.div`
       width: 100px;
       display: inline-block;
       position: absolute;
-      /* b{cursor: pointer;} */
+      font-size: 12px;
+      b{cursor: pointer;}
     }
 
     #profile-info {
