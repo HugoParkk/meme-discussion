@@ -62,7 +62,7 @@ const Con = styled.div`
 `;
 
 const Wrap = styled.div`
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 `;

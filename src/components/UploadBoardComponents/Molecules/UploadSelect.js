@@ -26,8 +26,8 @@ const PinkSelect = styled.select`
   cursor: pointer;
   width: 248px;
   font-size: 16px;
-  border: 5px solid #ffd4ed;
-  outline: 3px solid black;
+  border: 4px solid #ffd4ed;
+  outline: 2px solid black;
   position: relative;
   padding: 15px;
   margin-right: 205px;
@@ -37,8 +37,8 @@ const StyledSelect = styled.select`
   width: 600px;
   cursor: pointer;
   font-size: 16px;
-  border: 5px solid #ffd4ed;
-  outline: 3px solid black;
+  border: 4px solid #ffd4ed;
+  outline: 2px solid black;
   position: relative;
   padding: 10px;
 `;

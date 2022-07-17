@@ -17,8 +17,8 @@ const StyledInput = styled.input`
   display: block;
   width: 868px;
   /* position: relative; */
-  border: 5px solid #ffd4ed;
-  outline: 3px solid black;
+  border: 4px solid #ffd4ed;
+  outline: 2px solid black;
   padding: 10px;
   font-size: 1.2rem;
   ::placeholder {

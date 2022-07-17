@@ -20,7 +20,7 @@ const Wrap = styled.div`
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  background-color: pink;
+  background-color: #FFF0F9;
 `;
 const Text = styled.div`
   font-size: 0.9rem;

@@ -56,7 +56,7 @@ let Flex = styled.div`
 `;
 let DB = styled.div`
   background-color: white;
-  border: 3px solid black;
+  border: 2px solid black;
   width: 188px;
   height: 800px;
   padding: 15px;
@@ -96,6 +96,6 @@ const Wrap = styled.div`
   left: 50%;
   padding: 10px 0;
   transform: translateX(-50%);
-  background-color: pink;
+  background-color: #FFF0F9;
 `;
 export default Calender;

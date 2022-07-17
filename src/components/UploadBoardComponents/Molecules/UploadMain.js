@@ -40,8 +40,8 @@ const Main = styled.div`
   display: block;
   width: 54.3rem;
 
-  border: 5px solid rgba(0, 0, 0, 0);
-  outline: 3px solid black;
+  border: 4px solid rgba(0, 0, 0, 0);
+  outline: 2px solid black;
   padding: 10px;
   font-size: 1.2rem;
 `;
