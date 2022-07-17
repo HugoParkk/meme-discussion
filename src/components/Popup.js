@@ -70,7 +70,7 @@ const PopupMain = styled.div`
   width: 866px;
   height: 512px;
   top: 13vh;
-  left: 20vw;
+  left: 22vw;
   
   img{
     width: 19px;
