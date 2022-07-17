@@ -12,7 +12,7 @@
   - **Developer** [권우민]()
   - **Developer** [오상혁]()
   - **Developer** [유주형]()
-  - **Developer** [류채연]()
+  - **Developer** [류채연](https://github.com/c-hex)
   - **Developer** [변윤진](https://github.com/presiti)
 
 ## 개발 방법
