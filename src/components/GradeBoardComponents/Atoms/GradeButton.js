@@ -18,15 +18,9 @@ function GradeButton(props) {
 }
 
 const WhiteDiv = styled.div`
-<<<<<<< Updated upstream
-  width: 6.3333vw;
-  height: 1.9389vw;
-  line-height: 1.9389vw;
-=======
   height: 30px;
   width: 76px;
   line-height: 29px;
->>>>>>> Stashed changes
   text-align: center;
   background-color: white;
   border: 1px solid #cfcfcf;

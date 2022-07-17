@@ -17,12 +17,6 @@ const StyledDiv = styled.div`
   margin-right: 9px;
   display: flex;
   justify-content: center;
-<<<<<<< Updated upstream
-  margin-top: 1.4833vw;
-  margin: auto;
-=======
-
->>>>>>> Stashed changes
 `;
 
 export default GradeButtonGroup;
