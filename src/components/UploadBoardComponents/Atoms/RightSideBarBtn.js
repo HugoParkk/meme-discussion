@@ -35,5 +35,6 @@ const PinkBtn = styled.button`
   height: 40px;
   width: 150px;
   font-weight: bold;
+  cursor: pointer;
 `;
 export default RightSideBarBtn;

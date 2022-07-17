@@ -9,7 +9,7 @@ import SideBarSnsUploadText from "../Atoms/SideBarSnsUploadText";
 import UploadBoardPublicLi from "../Atoms/UploadBoardPublicLi";
 import UploadBoardPublicText from "../Atoms/UploadBoardPublicText";
 import RightSideBarCalendar from "./RightSideBarCalendar";
-function Molu() {
+function Calender() {
   return (
     <>
       <DB>
@@ -96,4 +96,4 @@ const Wrap = styled.div`
   transform: translateX(-50%);
   background-color: pink;
 `;
-export default Molu;
+export default Calender;

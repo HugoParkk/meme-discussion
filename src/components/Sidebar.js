@@ -467,6 +467,7 @@ const DownSideMenu = styled.div`
       background-color: #ff50e2;
       color: #fff;
       font-size: 10.5px;
+      cursor: pointer;
     }
   }
 
