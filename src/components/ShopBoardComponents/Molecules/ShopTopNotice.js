@@ -23,7 +23,7 @@ function ShopTopNotice(props) {
                 </li>
                 <li>
                   <ul class="lv2">
-                    <li class="no1"><button class="noticeBtn">공지</button></li>
+                    <li class="no1"><button class="noticeBtn" onClick={() => { handlerPopup(true); }}>공지</button></li>
                     <li class="no2" onClick={() => { handlerPopup(true); }}>제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
                     <li class="no3">스태프</li>
                     <li class="no4">2022.05.04</li>
@@ -32,7 +32,7 @@ function ShopTopNotice(props) {
                 </li>
                 <li>
                   <ul class="lv2">
-                    <li class="no1"><button class="noticeBtn">공지</button></li>
+                    <li class="no1"><button class="noticeBtn" onClick={() => { handlerPopup(true); }}>공지</button></li>
                     <li class="no2" onClick={() => { handlerPopup(true); }}>제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
                     <li class="no3">스태프</li>
                     <li class="no4">2022.05.04</li>
@@ -41,7 +41,7 @@ function ShopTopNotice(props) {
                 </li>
                 <li>
                   <ul class="lv2">
-                    <li class="no1"><button class="noticeBtn">공지</button></li>
+                    <li class="no1"><button class="noticeBtn" onClick={() => { handlerPopup(true); }}>공지</button></li>
                     <li class="no2" onClick={() => { handlerPopup(true); }}>제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
                     <li class="no3">스태프</li>
                     <li class="no4">2022.05.04</li>
@@ -77,11 +77,12 @@ const Notice = styled.div`
         border-bottom: 1px solid #FA00D0;
         .no1{
             .noticeBtn{
-            width: 45px;
-            background: #F7F9BD;
-            border-radius: 3px;
-            font-size: 12px;
-            border: 1px solid #000;
+              width: 45px;
+              background: #F7F9BD;
+              border-radius: 3px;
+              font-size: 12px;
+              border: 1px solid #000;
+              cursor: pointer;
             }
         }
         .no2{width: 546px; text-align: center; cursor: pointer;}

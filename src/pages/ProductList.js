@@ -49,7 +49,7 @@ return (
           <CONTENTS>
             <div id="ShopTopTitle">
               <span class="titleText">짤랑이 거래 ~~ 여기는 짤장터&nbsp;&nbsp;<img class="circleStar" src={circleStar}></img></span>
-              <img src={plus} class="plusImg"></img>
+              <img src={plus} class="plusImg"  onClick={() => { handlerPopup(true); }}></img>
             </div>
             <ShopTopNotice />
 
@@ -115,6 +115,7 @@ const CONTENTS = styled.div`
       width:50px; 
       height: 23px;
       margin: 50px 20px 0 0;
+      cursor: pointer;
     }
   }
 
