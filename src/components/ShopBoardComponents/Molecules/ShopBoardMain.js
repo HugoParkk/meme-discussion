@@ -42,11 +42,9 @@ function ShopBoardMain(props) {
 }
 
 const Contents = styled.div`
-  width:162px;
+  width: 198px;
   display: inline-block;
-  margin: 0.521vw;
-  margin-left: 1.389vw;
-  margin-right: 1.389vw;
+  margin: 5px;
   a {
     text-decoration: none;
   }
