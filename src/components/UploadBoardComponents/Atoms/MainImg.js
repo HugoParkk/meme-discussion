@@ -7,7 +7,7 @@ function MainImg(props) {
     height: `330px`,
     transform: `translate(-50%, -50%)`,
     position: `absolute`,
-    top: `31.3%`,
+    top: `28.8%`,
     left: `31.1%`,
     backgroundColor: `${props.color}`,
     display: `inline-block`,

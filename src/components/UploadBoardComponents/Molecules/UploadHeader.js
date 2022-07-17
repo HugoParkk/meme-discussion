@@ -30,14 +30,13 @@ const StyledWrap = styled.div`
 const StyledDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  border: 5px solid #a0a0a0;
-  outline: 3px solid black;
+  border: 4px solid #a0a0a0;
+  outline: 2px solid black;
   padding: 15px;
-  width: 67.2rem;
-  margin: 10px auto;
-  position: relative;
+  width: 1074px;
+  margin: 0px auto;
+  margin-top: 36px;
   background-color: white;
-  top: 30px;
 `;
 
 export default UploadHeader;

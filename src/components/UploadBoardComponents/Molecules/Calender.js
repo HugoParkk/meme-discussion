@@ -56,7 +56,7 @@ let Flex = styled.div`
 `;
 let DB = styled.div`
   background-color: white;
-  border: 3px solid black;
+  border: 2px solid black;
   width: 188px;
   height: 800px;
   padding: 15px;
@@ -64,7 +64,6 @@ let DB = styled.div`
   flex-direction: column;
   margin-left: -185px;
   margin-top: 37px;
-  z-index: 999;
 `;
 
 // 아 하기 싫다ㅏ 이 주석 지우는 친구는 상품이 있으니 지우고 박종연에게 전화해주세요.
@@ -96,6 +95,6 @@ const Wrap = styled.div`
   left: 50%;
   padding: 10px 0;
   transform: translateX(-50%);
-  background-color: pink;
+  background-color: #FFF0F9;
 `;
 export default Calender;
