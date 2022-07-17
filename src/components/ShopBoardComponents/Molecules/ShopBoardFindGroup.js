@@ -5,15 +5,15 @@ import ShopBoardFindPost from "../Atoms/ShopBoardFindPost";
 function ShopBoardFindGroup() {
   return (
     <>
-      <Wrapper>
+      <Warpper>
         <ShopBoardFindPost />
         <ShopBoardFindBtn />
-      </Wrapper>
+      </Warpper>
     </>
   );
 }
 
-const Wrapper = styled.div`
+const Warpper = styled.div`
   display: inline-flex;
   align-items: center;
   position: relative;

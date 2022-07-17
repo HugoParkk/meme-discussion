@@ -6,10 +6,6 @@ import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import Popup from "../components/Popup";
 
-import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
-import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
-
-
 import GlobalBackground from '../components/GlobalBackground'
 
 //----images----
