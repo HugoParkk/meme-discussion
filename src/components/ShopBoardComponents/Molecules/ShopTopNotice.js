@@ -23,8 +23,8 @@ function ShopTopNotice(props) {
                 </li>
                 <li>
                   <ul class="lv2">
-                    <li class="no1"><button>공지</button></li>
-                    <li class="no2">제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
+                    <li class="no1"><button class="noticeBtn">공지</button></li>
+                    <li class="no2" onClick={() => { handlerPopup(true); }}>제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
                     <li class="no3">스태프</li>
                     <li class="no4">2022.05.04</li>
                     <li class="no4">209</li>
@@ -32,8 +32,8 @@ function ShopTopNotice(props) {
                 </li>
                 <li>
                   <ul class="lv2">
-                    <li class="no1"><button>공지</button></li>
-                    <li class="no2">제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
+                    <li class="no1"><button class="noticeBtn">공지</button></li>
+                    <li class="no2" onClick={() => { handlerPopup(true); }}>제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
                     <li class="no3">스태프</li>
                     <li class="no4">2022.05.04</li>
                     <li class="no4">209</li>
@@ -41,8 +41,8 @@ function ShopTopNotice(props) {
                 </li>
                 <li>
                   <ul class="lv2">
-                    <li class="no1"><button>공지</button></li>
-                    <li class="no2">제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
+                    <li class="no1"><button class="noticeBtn">공지</button></li>
+                    <li class="no2" onClick={() => { handlerPopup(true); }}>제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 목제 </li>
                     <li class="no3">스태프</li>
                     <li class="no4">2022.05.04</li>
                     <li class="no4">209</li>
@@ -66,28 +66,28 @@ const Notice = styled.div`
     ul{list-style: none; margin:0; padding:0;}
     #title{background: #FA00D0; button{border: 0; background: #FA00D0;}}
     .lv1{
-        width: 820px;
-        margin: auto;
-        .lv2{
-            height: 40px;
-            display:flex;
-            background: #FEB6F2;
-            justify-content: space-around;
-            align-items: center;
-            border-bottom: 1px solid #FA00D0;
-            .no1{
-                button{
-                width: 45px;
-                background: #F7F9BD;
-                border-radius: 3px;
-                font-size: 12px;
-                border: 1px solid #000;
-                }
+      width: 820px;
+      margin: auto;
+      .lv2{
+        height: 40px;
+        display:flex;
+        background: #FEB6F2;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid #FA00D0;
+        .no1{
+            .noticeBtn{
+            width: 45px;
+            background: #F7F9BD;
+            border-radius: 3px;
+            font-size: 12px;
+            border: 1px solid #000;
             }
-            .no2{width: 546px; text-align: center;}
-            .no3{width: 35px; text-align: center;}
-            .no4{width: 50px; text-align: center;}
-    }
+        }
+        .no2{width: 546px; text-align: center; cursor: pointer;}
+        .no3{width: 35px; text-align: center;}
+        .no4{width: 50px; text-align: center;}
+      }
     }
 `
 
