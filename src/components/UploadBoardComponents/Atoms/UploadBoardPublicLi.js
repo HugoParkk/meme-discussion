@@ -34,6 +34,7 @@ const Text = styled.div`
   top: 10px;
 `;
 const Lis = styled.li`
+  cursor: pointer;
   list-style-type: "ㄴ ";
   margin-top: 0.3125vw;
   font-size: 0.6667vw;

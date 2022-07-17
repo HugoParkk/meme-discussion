@@ -22,9 +22,11 @@ const Btn = styled.button`
   box-shadow: 0.5px 0.5px 0.5px 0.5px #e2e2e2 inset;
   width: 7.8125vw;
   height: 1.5625vw;
+  cursor: pointer;
   font-weight: bold;
 `;
 const PinkBtn = styled.a`
+  cursor: pointer;
   text-decoration: none;
   width: 7.8125vw;
   text-align: center;

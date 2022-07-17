@@ -15,6 +15,7 @@ function SideBarSnsUploadText(props) {
 const Divs = styled.div`
   font-size: 0.6667vw;
   margin-top: 0.3646vw;
+  cursor: pointer;
   display: inline-block;
 `;
 const Imga = styled.img`
