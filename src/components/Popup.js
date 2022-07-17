@@ -7,61 +7,62 @@ function Popup(props) {
   return (
     <>
       <BlackBackground>
-        <PopupMain>
-          <img src={warning_hand}></img>
-            <div className='GuideMain'>
-            
-              <h2>아직 게시판 접근 불가 등급이세요!</h2>
-              <p><span>갓기 회원</span> 등급이 되시면 읽기가 가능한 게시판입니다.<br/>
-                현재 닉네임 님은 방문자 회원 등급이시며, 등업에 관련된 궁금하신 사항은 카페 매니저나 회원관리 스탭에게 문의해 주세요.
-              </p>
-            </div>
-            
-            <UserGradeGuide>
-            <ul id='top'>
-              <li>
-                <ul>
-                  <li id='first'>현재 나의 회원 등급</li>
-                  <li id='second'>갓기회원</li>
-                  <li>밈품명품 카페 가입 및 짤 1개 이상 올린 회원</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li id='first'>다음 회원 등급</li>
-                  <li id='second'>갓기회원</li>
-                  <li>밈풍명품 카페 가입 및 짤 1개 이상 올린 회원</li>
-                </ul>
-              </li>
-            </ul>
-          </UserGradeGuide>
+        <div id="popup">
+          <PopupMain>
+            <img src={warning_hand}></img>
+              <div className='GuideMain'>
+              
+                <h2>아직 게시판 접근 불가 등급이세요!</h2>
+                <p><span>갓기 회원</span> 등급이 되시면 읽기가 가능한 게시판입니다.<br/>
+                  현재 닉네임 님은 방문자 회원 등급이시며, 등업에 관련된 궁금하신 사항은 카페 매니저나 회원관리 스탭에게 문의해 주세요.
+                </p>
+              </div>
+              
+              <UserGradeGuide>
+              <ul id='top'>
+                <li>
+                  <ul>
+                    <li id='first'>현재 나의 회원 등급</li>
+                    <li id='second'>갓기회원</li>
+                    <li>밈품명품 카페 가입 및 짤 1개 이상 올린 회원</li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li id='first'>다음 회원 등급</li>
+                    <li id='second'>갓기회원</li>
+                    <li>밈풍명품 카페 가입 및 짤 1개 이상 올린 회원</li>
+                  </ul>
+                </li>
+              </ul>
+            </UserGradeGuide>
 
-          <GradeUp>
-              <ul id='lv1' className='space'>
-                <li id='first'><b>자동등업</b></li><li>매니저가 설정한 조건을 만족하면 신청 없이 등업이 됩니다.</li>
-              </ul>
-              <ul id='lv1'>
-                <li id='first'><b>등업게시판</b></li><li>매니저가 설정한 조건을 만족하면 등업게시판에 등업 신청이 가능합니다. 매니저 수락을 거쳐 등업됩니다.</li>
-              </ul>
-    
-              <ul id='EctInfo'>
-                  <li id='first'><b>내 활동정보</b></li> 
-                  <li>총 게시글 0개</li> |
-                  <li>댓글수 0개</li> |
-                  <li>방문수 45회</li> |
-                  <li>가입일 2012.12.14</li>
-              </ul>
-            <div id='bg'></div>
-          </GradeUp>
-          <button class="goBack-btn"onClick={() => {onClose(false);}}>이전으로</button>
-        </PopupMain>
+            <GradeUp>
+                <ul id='lv1' className='space'>
+                  <li id='first'><b>자동등업</b></li><li>매니저가 설정한 조건을 만족하면 신청 없이 등업이 됩니다.</li>
+                </ul>
+                <ul id='lv1'>
+                  <li id='first'><b>등업게시판</b></li><li>매니저가 설정한 조건을 만족하면 등업게시판에 등업 신청이 가능합니다. 매니저 수락을 거쳐 등업됩니다.</li>
+                </ul>
+      
+                <ul id='EctInfo'>
+                    <li id='first'><b>내 활동정보</b></li> 
+                    <li>총 게시글 0개</li> |
+                    <li>댓글수 0개</li> |
+                    <li>방문수 45회</li> |
+                    <li>가입일 2012.12.14</li>
+                </ul>
+              <div id='bg'></div>
+            </GradeUp>
+            <button class="goBack-btn"onClick={() => {onClose(false);}}>이전으로</button>
+          </PopupMain>
+        </div>
       </BlackBackground>
     </>
   )
 }
 
 const PopupMain = styled.div`
-  position: absolute;
   z-index: 999;
   /* transform: translate(-50%, -50%); */
   background: #fff;
@@ -69,8 +70,6 @@ const PopupMain = styled.div`
   border: 4px solid #cfcfcf;
   width: 866px;
   height: 512px;
-  top: 13vh;
-  left: 22vw;
   
   img{
     width: 19px;
@@ -206,7 +205,13 @@ const BlackBackground = styled.div`
   top: 0 ;
   z-index: 995;
   background: rgba(0,0,0,0.5);
- 
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  #popup{
+    display: grid;
+    place-items: center;
+  }
 `
 export default Popup
 
