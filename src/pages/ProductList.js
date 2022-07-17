@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from '../components/pages_Sidebar';
+import Popup from "../components/Popup";
 
 import ShopNotice from "../components/ShopBoardComponents/Molecules/ShopNotice";
 import ShopTopNotice from "../components/ShopBoardComponents/Molecules/ShopTopNotice";
@@ -32,9 +33,13 @@ import writeBtn from "../images/Group 343.svg"
 
 import GlobalBackground from '../components/GlobalBackground';
 
-function ProductList() {
+function ProductList(props) {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
 return (
     <>
+    {popup && <Popup onClose={handlerPopup} />}
     <GlobalBackground>
       <All>
       <Header />
@@ -52,7 +57,7 @@ return (
             
             <HR2 />
 
-            <div id="write"><img src={writeBtn}></img></div>
+            <div id="write" onClick={() => { handlerPopup(true); }}><img src={writeBtn}></img></div>
             
             <ShopBoardFoooterBtnGroup data={num} />
           </CONTENTS>

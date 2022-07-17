@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import GlobalStyle from "../GlobalStyle";
 import styled from "styled-components";
+import Popup from "../../Popup";
 
 import arrow from "../../../images/arrow.png"
 
 function ShopBoardFoooterBtnGroup(props) {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
+
   const [active, setActive] = useState(0);
   return (
     <>
+      {popup && <Popup onClose={handlerPopup} />}
       <All>
         <div id="assemble">
           <StyledDiv>
@@ -19,7 +25,7 @@ function ShopBoardFoooterBtnGroup(props) {
               );
             })}
           </StyledDiv>
-          <div id="next"><span class="stick">|</span><span class="text">다음</span><img src={arrow}></img></div>
+          <div id="next" onClick={() => { handlerPopup(true); }}><span class="stick">|</span><span class="text">다음</span><img src={arrow}></img></div>
         </div>
         <div id="line"></div>
         <Wrap>
@@ -71,6 +77,7 @@ const All = styled.div`
       align-items: center;
       .stick{color: #EBEBEA; margin: 0 20px 0 0;}
       .text{color: #000; margin: 0 5px 0 0; font-weight: 600;}
+      cursor: pointer;
     }
   }
 `
