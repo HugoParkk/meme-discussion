@@ -13,8 +13,8 @@ function ExchangeRateForm() {
 }
 const YourForm = styled.input`
   box-shadow: 1px 1px 10px #ff50e2;
-  width: 80px;
-  height: 28px;
+  width: 100px;
+  height: 18px;
   border: 1.5px solid black;
   border-radius: 5px;
   color: #ff50e2;

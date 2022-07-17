@@ -55,9 +55,10 @@ let Flex = styled.div`
   justify-content: space-between;
 `;
 let DB = styled.div`
+  background-color: white;
   border: 3px solid black;
-  width: 11.8rem;
-  height: 47rem;
+  width: 188px;
+  height: 800px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -65,12 +66,13 @@ let DB = styled.div`
   margin-top: 37px;
   z-index: 999;
 `;
+
+// 아 하기 싫다ㅏ 이 주석 지우는 친구는 상품이 있으니 지우고 박종연에게 전화해주세요.
 let Text = styled.div`
-  font-size: 13pt;
+  font-size: 14px;
   font-weight: bold;
   margin-top: 10px;
   margin-right: 10px;
-  width: 60%;
 `;
 let D = styled.div`
   border-bottom: 2px solid #dbdbdb;
@@ -78,14 +80,14 @@ let D = styled.div`
   grid-column: 1 / 3;
 `;
 let DI = styled.div`
-  width: 100%;
-  height: 300px;
+  padding: 2px;
   border-bottom: 2px solid #dbdbdb;
 `;
 let DA = styled.div`
   height: 120px;
   padding-bottom: 10px;
   border-bottom: 2px solid #dbdbdb;
+  margin-bottom: 40px;
 `;
 const Wrap = styled.div`
   margin-top: 10px;
