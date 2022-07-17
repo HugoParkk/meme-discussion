@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Popup from "../../Popup";
 
 function GradeButton(props) {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
   return (
     <>
+    {popup && <Popup onClose={handlerPopup} />}
       {props.type === "white" ? (
-        <WhiteDiv>{props.text}</WhiteDiv>
+        <WhiteDiv onClick={() => { handlerPopup(true); }}>{props.text}</WhiteDiv>
       ) : (
         <PinkDiv>
           <a href="http://localhost:3000/upload">
@@ -27,6 +32,7 @@ const WhiteDiv = styled.div`
   margin-right: 9px;
   border-radius: 4px;
   font-size: 12px;
+  cursor: pointer;
 `;
 
 const PinkDiv = styled.div`

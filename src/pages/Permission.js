@@ -8,7 +8,7 @@ import GradeButtonGroup from "../components/GradeBoardComponents/Molecules/Grade
 import GradeBoardMainTitle from "../components/GradeBoardComponents/Molecules/GradeBoardMainTitle";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/pages_Sidebar";
 import styled from "styled-components";
 import svg1 from "../images/Vector-3.svg";
 import svg2 from "../images/Vector-6.svg";
@@ -66,7 +66,7 @@ const SIDEBAR = styled.div`
 `;
 
 const CONTENTS = styled.div`
-  width: 866px;
+  width: 855px;
   height: 615.5px;
   border: 4px solid #cfcfcf;
   position: relative;
@@ -75,7 +75,7 @@ const CONTENTS = styled.div`
 
 const BackgroundColor = styled.div`
   position: absolute;
-  width: 858px;
+  width: 847px;
   height: 608px;
   background: #fff;
 `
