@@ -10,8 +10,8 @@ function RightBarMoneyText(props) {
   );
 }
 const Money = styled.div`
-  font-size: 10pt;
-  color: #dbdbdb;
+  font-size: 12px;
+  color: #999999;
   float: right;
 `;
 export default RightBarMoneyText;

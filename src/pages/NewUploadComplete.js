@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
@@ -19,75 +19,76 @@ import humen from '../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg';
 
 
 
-function Main() {
+function Main(props) {
+
   return (
     <GlobalBackground>
 
       <Wrap>
-        <Header/>
+        <Header />
         <div id="wor">
-        <Sidebar/>
-        <div id="nea">
-          <MainS>
-            <div id="Title_sum">
-              <div id="title">
-                <h3><img src={hands}/><div id="text">짤 매물을 올렸어요!</div></h3>
-                <div id="buttons">
-                  <a href="http://localhost:3000/upload"><button id="back">이전으로</button></a>
-                  <a href="http://localhost:3000/main"><button id="hom">홈으로 돌아가기</button></a>
+          <Sidebar />
+          <div id="nea">
+            <MainS>
+              <div id="Title_sum">
+                <div id="title">
+                  <h3><img src={hands} /><div id="text">짤 매물을 올렸어요!</div></h3>
+                  <div id="buttons">
+                    <a href="http://localhost:3000/upload"><button id="back">이전으로</button></a>
+                    <a href="http://localhost:3000/main"><button id="hom">홈으로 돌아가기</button></a>
+                  </div>
                 </div>
-            </div>
-            <div id="title_bottom">
-                <div><p>밈품명품에 첫 매물 등록 완료! 갓기회원으로 자동등업 되었어요!</p></div>
-                <div id="belling"><img src={bell}/><div id="tex">게시글 알림</div><img src={on}/></div>
+                <div id="title_bottom">
+                  <div><p>밈품명품에 첫 매물 등록 완료! 갓기회원으로 자동등업 되었어요!</p></div>
+                  <div id="belling"><img src={bell} /><div id="tex">게시글 알림</div><img src={on} /></div>
+                </div>
               </div>
-            </div>
-            
-            <div id="Card">
-              {/* <img src={Card} id="ca">
+
+              <div id="Card">
+                {/* <img src={Card} id="ca">
               </img> */}
-              <div id="a">
-                <div id="title_z">짤 이름</div>
-                <img src={humen} id="hu"></img>
-                <div id="sul">음악방송 아이브 양갈래 헤어</div>
+                <div id="a">
+                  <div id="title_z">{props.name}</div>
+                  <img src={props.img} id="hu"></img>
+                  <div id="sul">음악방송 아이브 양갈래 헤어</div>
+                </div>
               </div>
-            </div>
-          </MainS>
+            </MainS>
 
-          <Ser>
-          <div id="ser_in">
-            <div id="title">
-              카페의 회원 등급
-            </div>
-            <ul>
-              <li>
-                  <ul id="lv2">
-                    <li><img src={peopleOne}/><span id="god">갓기 회원</span></li><li>밈품명품 카페 가입 및 짤1개 이상 올린 회원</li>
-                  </ul>
+            <Ser>
+              <div id="ser_in">
+                <div id="title">
+                  카페의 회원 등급
+                </div>
+                <ul>
+                  <li>
+                    <ul id="lv2">
+                      <li><img src={peopleOne} /><span id="god">갓기 회원</span></li><li>밈품명품 카페 가입 및 짤1개 이상 올린 회원</li>
+                    </ul>
 
-                  <ul id="lv2">
-                  <li><img src={peopleTwo}/><span>읍내짱 회원</span></li><li>방문수 1000회+게시글 수 1000개 이상 및  NFT 지갑 연결 완료 대상</li>
+                    <ul id="lv2">
+                      <li><img src={peopleTwo} /><span>읍내짱 회원</span></li><li>방문수 1000회+게시글 수 1000개 이상 및  NFT 지갑 연결 완료 대상</li>
+                    </ul>
+                  </li>
                 </ul>
-                </li>
-              </ul>
-          </div>
-          <div id="info">
-            <ul>
-              <li id="str">내 활동정보</li> | <li>총 게시글 0개</li> | <li>댓글수 0개</li> | <li>방문수 45회</li> | <li>가입일 2012.12.14.</li>
-            </ul>
+              </div>
+              <div id="info">
+                <ul>
+                  <li id="str">내 활동정보</li> | <li>총 게시글 0개</li> | <li>댓글수 0개</li> | <li>방문수 45회</li> | <li>가입일 2012.12.14.</li>
+                </ul>
 
+              </div>
+
+
+            </Ser>
           </div>
-          
-        
-          </Ser>
+
         </div>
-        
-        </div>
-      
+
       </Wrap>
       <Footer></Footer>
 
-      </GlobalBackground>
+    </GlobalBackground>
   );
 }
 

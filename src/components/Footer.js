@@ -5,17 +5,20 @@ function Footer() {
   return (
     <div>
       <PageFooter>
-          <div>
-            <span>밈품명품</span>
-            <span id="url">https://cafe.never.com/mimpum</span>
-          </div>
+        <div>
+          <span>밈품명품</span>
+          <span id="url">https://cafe.never.com/mimpum</span>
+        </div>
       </PageFooter>
     </div>
   );
 }
 
 const PageFooter = styled.footer`
-  font-size: 0.6vw;
+  *{
+    font-size: 12px;
+  }
+  
   div {
     height: 108px;
     width: 1080px;

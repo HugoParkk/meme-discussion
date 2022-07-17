@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 function ShopNotice(props) {
-  
+
   return (
     <Wrap>
       {props.data.map((arr, i) => {

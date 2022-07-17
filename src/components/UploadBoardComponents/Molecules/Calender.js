@@ -9,18 +9,19 @@ import SideBarSnsUploadText from "../Atoms/SideBarSnsUploadText";
 import UploadBoardPublicLi from "../Atoms/UploadBoardPublicLi";
 import UploadBoardPublicText from "../Atoms/UploadBoardPublicText";
 import RightSideBarCalendar from "./RightSideBarCalendar";
-function Calender() {
+function Calender(props) {
   return (
     <>
       <DB>
         <RightSideBarTitle text={"짤 판매 설정"} type={""} />
         <UploadBoardPublicText text={"가격"} type={""} />
+        <info>ⓘ</info>
         <Flex>
           <UploadBoardPublicText text={"WKLAY"} type={""} />
           <ExchangeRateForm active />
         </Flex>
         <D>
-          <RightBarMoneyText text={"756.80"} />
+          <RightBarMoneyText text={"$758.60"} />
         </D>
         <Flex>
           <UploadBoardPublicText text={"지속기간"} type={""} />
@@ -39,7 +40,7 @@ function Calender() {
           </Flex>
         </DA>
         <span><RightSideBarBtn text={"임시등록"} /></span>
-        <a href="http://localhost:3000/uploadcomplete"><RightSideBarBtn text={"매물 게시"} type={"pink"} /></a>
+        <a href={`http://localhost:3000/uploadcomplete/`}><RightSideBarBtn text={"매물 게시"} type={"pink"} /></a>
         <UploadBoardPublicLi />
         <Wrap>
           <SideBarSnsUploadText text={"인스타그램"} />
@@ -57,45 +58,54 @@ let Flex = styled.div`
 let DB = styled.div`
   background-color: white;
   border: 2px solid black;
-  width: 188px;
-  height: 800px;
-  padding: 15px;
+  width: 196px;
+  height: 754px;
   display: flex;
+  padding: 12.2px;
   flex-direction: column;
-  margin-left: -185px;
-  margin-top: 37px;
+  margin-left: -187px;
+  margin-top: 18px;
   z-index: 3;
+  info {
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    margin: 51px 26px 0 0;
+    color: #929292;
+  }
 `;
 
 // 아 하기 싫다ㅏ 이 주석 지우는 친구는 상품이 있으니 지우고 박종연에게 전화해주세요.
 let Text = styled.div`
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-right: 10px;
 `;
 let D = styled.div`
-  border-bottom: 2px solid #dbdbdb;
+  border-bottom: 2px solid #d0d0d0;
   padding-bottom: 5px;
+  margin-top: -7px;
   grid-column: 1 / 3;
 `;
 let DI = styled.div`
   padding: 2px;
-  border-bottom: 2px solid #dbdbdb;
+  border-bottom: 2px solid #d0d0d0;
 `;
 let DA = styled.div`
   height: 120px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #dbdbdb;
+  padding-bottom: 13px;
+  border-bottom: 2px solid #d0d0d0;
   margin-bottom: 40px;
+  letter-spacing: -0.7px;
 `;
 const Wrap = styled.div`
   margin-top: 10px;
-  width: 11.8rem;
-  position: relative;
-  left: 50%;
-  padding: 10px 0;
-  transform: translateX(-50%);
+  width: 192px;
+  height: 100px;
+  padding: 10px;
   background-color: #FFF0F9;
+  margin-left: -10px;
 `;
 export default Calender;

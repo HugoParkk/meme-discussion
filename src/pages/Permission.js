@@ -24,26 +24,24 @@ function Permission() {
   return (
     <GlobalBackground>
       <All>
-      <Header />
-      <Wrap>
-        <SIDEBAR>
-          <Sidebar />
-        </SIDEBAR>
-        <CONTENTS>
-          <BackgroundColor>
-          <GradeBoardMainTitle src={svg6} />
-          <GradeDescribe />
-          <GradeLine />
-          <GradeTitle />
-          <GradeTextGroup data={arr} />
-          <GradePinkArea data={pinkArr} arr={strArr} />
-          <GradeButtonGroup data={btnArr} />
-          </BackgroundColor>
-        </CONTENTS>
-      </Wrap>
-      <FOOTER>
+        <Header />
+        <Wrap>
+          <SIDEBAR>
+            <Sidebar />
+          </SIDEBAR>
+          <CONTENTS>
+            <BackgroundColor>
+              <GradeBoardMainTitle src={svg6} />
+              <GradeDescribe />
+              <GradeLine />
+              <GradeTitle />
+              <GradeTextGroup data={arr} />
+              <GradePinkArea data={pinkArr} arr={strArr} />
+              <GradeButtonGroup data={btnArr} />
+            </BackgroundColor>
+          </CONTENTS>
+        </Wrap>
         <Footer />
-      </FOOTER>
       </All>
     </GlobalBackground>
   );
@@ -79,11 +77,6 @@ const BackgroundColor = styled.div`
   height: 608px;
   background: #fff;
 `
-
-const FOOTER = styled.div`
-  position: relative;
-  top: 120pt;
-`;
 
 const pinkArr = [
   { text: "자동등업", subText: "매니저가 설정한 조건을 만족하면 신청 없이 등업이 됩니다." },

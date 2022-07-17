@@ -17,7 +17,7 @@ function ImgAreaLeft(props) {
 const Wrap = styled.div`
   width: 25%;
   height: 100%;
-  border: 1px solid gray;
+  border: 1px solid #CBCBCB;
   border-top: none;
   border-left: none;
   display: block;

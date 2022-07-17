@@ -42,40 +42,42 @@ function Header(props) {
       </HeaderStyleTest>
 
       <HeaderBar>
-          <div id="header-search">
-            <input></input>
-            <button>검색</button>
-          </div>
+        <div id="header-search">
+          <input></input>
+          <button>검색</button>
+        </div>
 
-          <div id="header-bar-menu">
-            <ul>
-              <li>
-                <a href="http://localhost:3000/main">홈 화면</a>
-              </li>
-              <li>
-                <a href="#" onClick={() => { handlerPopup(true); }}>내가 제일 '짤' 나가</a>
-              </li>
-              <li>
-                <a href="http://localhost:3000/productlist">짤장터</a>
-              </li>
-              <li>
-                <a href="#" onClick={() => { handlerPopup(true); }}>짤 찾아 삼만리</a>
-              </li>
-              <li>
-                <a href="#" onClick={() => { handlerPopup(true); }}>공지사항</a>
-              </li>
-            </ul>
-          </div>
-        </HeaderBar>
+        <div id="header-bar-menu">
+          <ul>
+            <li>
+              <a href="http://localhost:3000/main">홈 화면</a>
+            </li>
+            <li>
+              <a href="#" onClick={() => { handlerPopup(true); }}>내가 제일 '짤' 나가</a>
+            </li>
+            <li>
+              <a href="http://localhost:3000/productlist">짤장터</a>
+            </li>
+            <li>
+              <a href="#" onClick={() => { handlerPopup(true); }}>짤 찾아 삼만리</a>
+            </li>
+            <li>
+              <a href="#" onClick={() => { handlerPopup(true); }}>공지사항</a>
+            </li>
+          </ul>
+        </div>
+      </HeaderBar>
     </>
   );
 }
 const HeaderMenuTop = styled.div`
+  * {
+    font-size: 8px;
+  }
   width: 1080px;
   margin: auto;
   display: flex;
   color: #dbdbdb;
-  font-size: 8px !important;
   line-height: 1;
   justify-content: space-between;
   ul {

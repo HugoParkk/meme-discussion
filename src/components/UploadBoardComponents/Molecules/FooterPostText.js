@@ -29,11 +29,12 @@ const Text = styled.div`
 `;
 
 const SubText = styled.div`
-  color: gray;
+  color: #999999;
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 13px;
   line-height: 13pt;
   margin-left: 10px;
+  
 `;
 
 export default FooterPostText;
