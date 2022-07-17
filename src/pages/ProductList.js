@@ -34,13 +34,9 @@ import GlobalBackground from '../components/GlobalBackground';
 function ProductList() {
   return (
     <GlobalBackground>
-      
       <Header />
-      
       <Wrap>
-        <SIDEBAR>
-          <Sidebar/>
-        </SIDEBAR>
+        <Sidebar/>
         <div>
           <CONTENTS>
             <ShopBoardTopText />
@@ -69,13 +65,13 @@ function ProductList() {
 }
 
 const Wrap = styled.div`
-  width: 970px;
+  width: 1080px;
+  height: 1650px;
   position: relative;
-  transform: translateX(-50%);
-  left: 50%;
   display: flex;
   justify-content: space-between;
-  top: 1.667vw;
+  top: 40px;
+  margin: 0 auto;
 `;
 
 const HR2 = styled.hr`
@@ -92,14 +88,8 @@ const ShopBoardGroup = styled.div`
   position: relative;
 `;
 
-const SIDEBAR = styled.div`
-  position: relative;
-  margin-right: 10px;
-  
-`;
-
 const CONTENTS = styled.div`
-  width: 750px;
+  width: 860px;
   background-color: #FFF;
   border: 0.208vw solid #cfcfcf;
   position: relative;
