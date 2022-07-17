@@ -55,10 +55,7 @@ return (
             <HR2 />
             <Back>
               <HR3 />
-              <ShopBoardGroup>
-                <ShopBoardTimeSelect />
-                <ShopBoardCommentSelect />
-              </ShopBoardGroup>
+              
               <ShopBoardFindGroup />
             </Back>
           </CONTENTS>
