@@ -6,21 +6,24 @@ function FormButton() {
   return (
     <>
       <GlobalStyle />
-      <StyledDiv>로그인</StyledDiv>
+      <a href="http://localhost:3000/main"><StyledDiv>로그인</StyledDiv></a>
     </>
   );
 }
 
 const StyledDiv = styled.div`
-  font-weight: bold;
-  font-size: 18pt;
-  background-color: #ff50e2;
-  border-radius: 10px;
-  width: 90%;
-  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #FF50E2;
+  border-radius: 3px;
+  width: 402px;;
+  height: 52px;
   margin: 0 auto;
-  line-height: 40px;
+  line-height: 47px;
   margin-bottom: 15px;
+  text-align: center;
+  border: 1.5px solid #C900A8;
+  color: #000;
 `;
 
 export default FormButton;

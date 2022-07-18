@@ -16,13 +16,13 @@ function Text(props) {
 }
 
 const StyledABig = styled.a`
-  font-size: 13pt;
+  font-size: 15px;
   text-decoration: none;
-  color: black;
+  color: white;
 `;
 const StyledASmall = styled.a`
-  font-size: 12pt;
+  font-size: 12px;
   text-decoration: none;
-  color: black;
+  color: white;
 `;
-export default Text
+export default Text;

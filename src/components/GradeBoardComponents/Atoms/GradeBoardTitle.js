@@ -3,21 +3,20 @@ import React from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
 
-function GradeBoardTitle() {
+function GradeBoardTitle(props) {
   return (
     <>
       <GlobalStyle />
-      <StyledText>앗! 잠깐만요</StyledText>
+      <StyledText>{props.text}</StyledText>
     </>
   );
 }
 const StyledText = styled.div`
   font-weight: bold;
   display: inline-block;
-  font-size: 22pt;
-  text-align: left;
-  width: 56%;
-  margin: 0 auto;
+  font-size: 22px;
+  margin-left: 8px;
+
 `;
 
 export default GradeBoardTitle;

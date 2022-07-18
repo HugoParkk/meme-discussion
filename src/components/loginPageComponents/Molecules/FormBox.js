@@ -19,11 +19,13 @@ function FormBox() {
 }
 
 const StyledDiv = styled.div`
-  width: 415px;
+  height: 300px;
+  width: 451px;
   margin: 0 auto;
   padding: 5px;
   background-color: #f9f9f9;
-  border: 3px solid #cfcfcf;
+  border: 1px solid #000;
+  outline: 3px solid #DEDEDE;
 `;
 
 export default FormBox;
