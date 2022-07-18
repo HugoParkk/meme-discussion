@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function ImgAreaRight(props) {
   return (
-    <Wrap>
+    <Wrap route={props.url}>
       <Img src={props.src} />
       <D color={props.color} />
     </Wrap>
@@ -17,8 +17,11 @@ const Wrap = styled.div`
   border-bottom: 1px solid gray;
   border-right: 1px solid gray;
   display: block;
+  background: url(${(props) => props.route});
+  background-size: cover;
   box-shadow: 7px 7px 7px -7px inset black;
 `;
+
 const D = styled.div`
   width: 17.1875vw;
   height: 17.1875vw;

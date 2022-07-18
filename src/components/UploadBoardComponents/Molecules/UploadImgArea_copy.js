@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ColorBall from "../Atoms/ColorBall";
+import ImageBall from "../Atoms/ImageBall";
 import ImgAreaLeftTitle from "../Atoms/ImgAreaLeftTitle";
 import ImgAreaRight from "./ImgAreaRight";
 
 function UploadImgArea(props) {
   const [color, setColor] = useState("#FF50E2");
-
+  const [url, setUrl] = useState(props.back[0]);
   const getColor = (text) => {
     setColor(text);
   };
-
+  const getUrl = (text) => {
+    setUrl(text);
+  };
   return (
     <Wrap>
-      <ImgAreaRight src={props.src} color={color} />
+      <ImgAreaRight src={props.src} color={color} url={url} />
       <Wrap2>
         <ImgAreaLeftTitle text="테두리 설정" />
         <Color>
@@ -30,7 +33,7 @@ function UploadImgArea(props) {
           {props.back.map((arr, i) => {
             return (
               <Wrap3 key={i}>
-                <ColorBall color={props.color} back={arr} />
+                <ImageBall back={arr} getUrl={getUrl} />
               </Wrap3>
             );
           })}

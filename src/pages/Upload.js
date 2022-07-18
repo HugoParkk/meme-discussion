@@ -2,7 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-
+import image1 from "../images/change_backgroundimage/change1.png";
+import image2 from "../images/change_backgroundimage/change2.png";
+import image3 from "../images/change_backgroundimage/change3.png";
+import image4 from "../images/change_backgroundimage/change4.png";
+import image5 from "../images/change_backgroundimage/change5.png";
 import UploadHeader from "../components/UploadBoardComponents/Molecules/UploadHeader";
 import UploadInput from "../components/UploadBoardComponents/Molecules/UploadInput";
 import UploadMain from "../components/UploadBoardComponents/Molecules/UploadMain";
@@ -13,8 +17,7 @@ import img3 from "../images/3b286c0d74f710d5a290d7ccb4028ca9.jpg";
 import img4 from "../images/7b6411f877dd15ce9d97b91b258ac106.jpg";
 import img5 from "../images/3cfb2a7a354ceffff7a71f4c7c625023.jpg";
 import Molu from "../components/UploadBoardComponents/Molecules/Molu";
-import GlobalBackground from '../components/GlobalBackground';
-
+import GlobalBackground from "../components/GlobalBackground";
 const data1 = ["게시판을 선택하세요", "게시판1", "게시판2", "게시판2"];
 const data2 = ["말머리 선택", "말머리1", "말머리2", "말머리3"];
 
@@ -37,7 +40,7 @@ const frame = [
   "#E4CDE2",
   "#50FFD5",
 ];
-const back = ["black", "black", "black", "black", "black"];
+const back = [image1, image2, image3, image4, image5];
 const img = [img2, img3, img4, img5];
 const text = [
   "짤 설명 사진.jpg",
@@ -48,28 +51,30 @@ const text = [
 
 function Upload() {
   return (
-    <GlobalBackground>
-      <Header />
-      <UploadHeader />
-      <Con>
-        <F>
-          <Wrap>
-            <UploadSelect data={data1} />
-            <UploadSelect data={data2} type="pink" />
-          </Wrap>
-          <UploadInput />
-          <UploadMain
-            frame={frame}
-            back={back}
-            src={img1}
-            data={img}
-            text={text}
-          />
-        </F>
-        <Molu />
-      </Con>
-      <Footer type="upload" />
-    </GlobalBackground>
+    <>
+      <GlobalBackground>
+        <Header />
+        <UploadHeader />
+        <Con>
+          <F>
+            <Wrap>
+              <UploadSelect data={data1} />
+              <UploadSelect data={data2} type="pink" />
+            </Wrap>
+            <UploadInput />
+            <UploadMain
+              frame={frame}
+              back={back}
+              src={img1}
+              data={img}
+              text={text}
+            />
+          </F>
+          <Molu />
+        </Con>
+        <Footer type="upload" />
+      </GlobalBackground>
+    </>
   );
 }
 const Con = styled.div`
@@ -78,17 +83,9 @@ const Con = styled.div`
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
-  Molu{
-    a{
-      text-decoration: none;
-      color: #fff;
-    }
-  }
 `;
 
 const Wrap = styled.div`
-  background-color: white;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
