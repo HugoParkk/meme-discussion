@@ -97,9 +97,8 @@ const frame = [
   "#50FFD5",
 ];
 const back = [bg_icon1, bg_icon2, bg_icon3, bg_icon4, "black"];
-const img = [img2, img3, img4, img5, img6];
+const img = [img2, img3, img4, img5];
 const text = [
-  "짤 설명 사진.jpg",
   "짤 설명 사진.jpg",
   "짤 설명 사진.jpg",
   "짤 설명 사진.jpg",
