@@ -1,3 +1,4 @@
+// main 페이지 입니다.
 import React, { useState } from "react";
 import styled from "styled-components";
 

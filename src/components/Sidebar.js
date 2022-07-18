@@ -1,4 +1,4 @@
-/*Sidebar 홈화면,  */
+/*Main, NewUploadComplete에 들어간 Sidebar*/
 
 import React, { useState } from "react";
 import styled from "styled-components";

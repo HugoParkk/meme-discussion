@@ -1,6 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import styled from "styled-components";
 import Popup from "../components/Popup";
+import Header from "../components/Header";
+import Sidebar from "../components/pages_Sidebar";
+import Footer from "../components/Footer";
 
 //----images----
 import img1 from "../images/Ellipse 3.png";
@@ -18,10 +22,6 @@ import BoardEmail from "../components/DetailBoardComponents/Atoms/BoardEmail";
 import BoardBottomImage from "../components/DetailBoardComponents/Atoms/BoardBottomImage";
 import BoardBottomLastText from "../components/DetailBoardComponents/Atoms/BoardBottomLastText";
 import BoardFooterList from "../components/DetailBoardComponents/Molecules/BoardFooterList";
-import Header from "../components/Header";
-import styled from "styled-components";
-import Sidebar from "../components/pages_Sidebar";
-import Footer from "../components/Footer";
 import GlobalBackground from '../components/GlobalBackground';
 import down from '../images/plu.png';
 

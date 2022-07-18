@@ -1,3 +1,4 @@
+// 전 페이지에 공통으로 들어간 footer 입니다.
 import React from "react";
 import styled from "styled-components";
 

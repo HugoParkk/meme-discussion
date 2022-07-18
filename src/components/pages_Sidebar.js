@@ -1,3 +1,5 @@
+
+/*Permission, ProductDetail, ProductList에 들어간 Sidebar */
 import React, { useState } from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
