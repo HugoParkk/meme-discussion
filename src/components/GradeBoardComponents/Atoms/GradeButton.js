@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import Popup from "../../Popup";
 
 function GradeButton(props) {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
   return (
     <>
+    {popup && <Popup onClose={handlerPopup} />}
       {props.type === "white" ? (
-        <WhiteDiv>{props.text}</WhiteDiv>
+        <WhiteDiv>
+          <a href="http://localhost:3000/productlist">
+            {props.text}
+          </a>
+        </WhiteDiv>
       ) : (
         <PinkDiv>
           <a href="http://localhost:3000/upload">
@@ -18,35 +27,33 @@ function GradeButton(props) {
 }
 
 const WhiteDiv = styled.div`
-<<<<<<< HEAD
-  width: 6.3333vw;
-  height: 1.9389vw;
-  line-height: 1.9389vw;
-=======
-  padding: 0 1.2rem;
-  height: 38px;
-  line-height: 38px;
->>>>>>> c2af21ef6e0f0f9bec4244511e5c3caf386dbd4e
+  height: 30px;
+  width: 76px;
+  line-height: 29px;
   text-align: center;
   background-color: white;
   border: 1px solid #cfcfcf;
-  display: inline-block;
-  margin-right: 1.0417vw;
-  border-radius: 0.3472vw;
-  font-size: 1vw;
+  margin-right: 9px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  a{
+    text-decoration: none;
+    color: #000;
+  }
 `;
 
 const PinkDiv = styled.div`
   div {
-    width: 6.3333vw;
-    height: 1.9389vw;
-    line-height: 1.9389vw;
+    width: 88px;
+    height: 30px;
+    line-height: 29px;
     text-align: center;
     background-color: #ff50e2;
     display: inline-block;
     color: white;
-    border-radius: 0.3472vw;
-    font-size: 1vw;
+    border-radius: 4px;
+    font-size: 12px;
   }
   a {
     text-decoration: none;

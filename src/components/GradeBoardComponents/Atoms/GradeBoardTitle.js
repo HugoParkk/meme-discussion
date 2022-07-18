@@ -14,12 +14,9 @@ function GradeBoardTitle(props) {
 const StyledText = styled.div`
   font-weight: bold;
   display: inline-block;
-  font-size: 1.7361vw;
-  text-align: left;
-  width: 50%;
-  margin: 0 auto;
-  position: absolute;
-  left: 8%;
+  font-size: 22px;
+  margin-left: 8px;
+
 `;
 
 export default GradeBoardTitle;

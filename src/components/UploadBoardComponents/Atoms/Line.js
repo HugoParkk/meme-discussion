@@ -8,12 +8,9 @@ function Line() {
 const StyledDiv = styled.div`
   width: 99%;
   height: 1px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ff50e2;
-  margin-top: 50px;
-  margin-bottom: 15px;
+  background-color: #FFCAF6;
+  margin-top: 80px;
+  margin-bottom: 16px;
 `;
 
 export default Line;

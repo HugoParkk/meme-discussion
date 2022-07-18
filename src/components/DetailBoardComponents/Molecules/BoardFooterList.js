@@ -13,10 +13,10 @@ function BoardFooterList(props) {
 }
 
 const StyledDiv = styled.div`
-  width: 800px;
+  width: 840px;
   margin: 0 auto;
   position: relative;
-  left: 150px;
+  left: 90px;
   margin-top: 150px;
   margin-bottom: 60px;
   border: 5px solid magenta;

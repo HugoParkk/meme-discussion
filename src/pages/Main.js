@@ -6,10 +6,6 @@ import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import Popup from "../components/Popup";
 
-import SideBarSnsUploadText from "../components/UploadBoardComponents/Atoms/SideBarSnsUploadText";
-import SideBarUpload from "../components/UploadBoardComponents/Molecules/SideBarUpload";
-
-
 import GlobalBackground from '../components/GlobalBackground'
 
 //----images----
@@ -127,7 +123,7 @@ function Main(props) {
 
             <MainMiddle onClick={() => { handlerPopup(true); }}>
               <div id="best_JJal">
-                <div id="text">BEST ZZAL : 내가 제일 '짤'나가{" "}
+                <div id="text"><b>BEST ZZAL : 내가 제일 '짤'나가{" "}</b>
                 <div id="best_more">
                   더보기 
                   <img src={plus_box}></img>
@@ -245,7 +241,7 @@ function Main(props) {
               <a href="http://localhost:3000/productlist">
                 <div class="leftContent">
                   <div class="mainTitle">
-                    <p class="title">짤랑이 거래 ~~ 여기는 짤장터</p>
+                    <p class="title"><b>짤랑이 거래 ~~ 여기는 짤장터</b></p>
                     <p class="view-more">
                       <b>더보기</b>
                       <img src={Plus} />
@@ -448,6 +444,7 @@ const MainTop = styled.div`
       left: 0;
       border: 6px solid #cfcfcf;
       outline: 2px solid #000;
+      cursor: pointer;
     }
   }
 
@@ -483,16 +480,19 @@ const MainTop = styled.div`
           margin: 0;
           padding: 8px 15px;
         }
-        .noticeText {
-          font-size: 18px;
-          font-weight: 600;
-        }
-        .noticePlus {
-          font-size: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 55px;
+        li{
+          cursor: pointer;
+          .noticeText {
+            font-size: 18px;
+            font-weight: 600;
+          }
+          .noticePlus {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 55px;
+          }
         }
       }
 
@@ -501,6 +501,8 @@ const MainTop = styled.div`
           font-size: 13px;
           padding: 15px 0;
           border-bottom: 1px solid #ff50e2;
+          button{cursor: pointer;}
+          a{cursor: pointer;}
           .YellowText {
             color: #faff00;
           }
@@ -581,6 +583,7 @@ const MainMiddle = styled.div`
       margin-left: 10px;
       display: flex;
       justify-content: space-between;
+      cursor: pointer;
     }
     #best_more {
         width: 55px;
@@ -590,6 +593,7 @@ const MainMiddle = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
       }
     .card {
       margin: auto -16px;
@@ -599,11 +603,13 @@ const MainMiddle = styled.div`
         margin-left: 100px;
         margin-top: 53px;
         color: #fff;
+        cursor: pointer;
       }
       img {
         width: 248px;
         height: 362px;
       }
+      #lorem{cursor: pointer;}
       #car_img {
         margin: 89px 44px;
         width: 155px;
@@ -612,6 +618,7 @@ const MainMiddle = styled.div`
         background-color: #d9d9d9;
         border: 3px solid #838383;
         outline: 2px solid #000000;
+        cursor: pointer;
         img {
           width: 141px;
           height: 141px;
@@ -668,6 +675,7 @@ const MainMiddle = styled.div`
     li {
       list-style: none;
       color: yellow;
+      cursor: pointer;
     }
     .lv1 > ul > li {
       width: 115px;
@@ -795,7 +803,10 @@ const MainBottom = styled.div`
     outline: 2px solid #000;
     margin-left: 20px;
 
-    .mainTitle {margin: -8.7px 13px -18px 13px;}
+    .mainTitle {
+      margin: -8.7px 13px -18px 13px;
+      p{cursor: pointer;}
+    }
     .post {
       img {
         width: 90px;
@@ -806,6 +817,7 @@ const MainBottom = styled.div`
         width: 386.86px;
         height: 90px;
       }
+      .textContent, .imgContent{cursor: pointer;}
       display: flex;
       text-align: left;
 

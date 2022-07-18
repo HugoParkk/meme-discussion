@@ -5,23 +5,41 @@ import Img from "../Atoms/Img";
 function ImgList(props) {
   return (
     <Wrap>
-      {props.data.map((arr, i) => {
-        return <Img src={arr} key={i} />;
-      })}
+      <List>
+        {props.data.map((arr, i) => {
+          return <div><Img src={arr} key={i} /></div>;
+        })}
+      </List>
     </Wrap>
   );
 }
 
 const Wrap = styled.div`
-  display: flex;
-  flex-direction: row;
   width: 80%;
-  position: relative;
   height: 205px;
   background-color: #f4f4f4;
   margin-top: 15px;
   border: 2px solid #bbb;
-  overflow-x: scroll;
+  white-space: nowrap;
 `;
+
+const List = styled.div`
+  overflow-x: scroll;
+  width: 100%;
+/*height: 15vw;*/
+  height: 100%;
+
+  div {
+    cursor: pointer;
+    width: 20%;
+    display: inline;
+  }
+`;
+
+const Li = styled.li`
+  display:inline-block; 
+  margin-right:10px;
+`;
+
 
 export default ImgList;

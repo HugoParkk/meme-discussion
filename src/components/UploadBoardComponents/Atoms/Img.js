@@ -6,8 +6,8 @@ function Img(props) {
 }
 
 const Image = styled.img`
-  width: 160px;
-  height: 160px;
+  width: 170px;
+  height: 170px;
   position: relative;
   top: 48%;
   transform: translateY(-50%);

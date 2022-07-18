@@ -15,10 +15,11 @@ function HeaderImg(props) {
 
 const StyledImg = styled.img`
   display: inline-block;
-  width: 27px;
-  height: 27px;
-  margin-left: 2rem;
-  margin-right: .5rem;
+  width: 20px;
+  height: 19px;
+  margin-left: 20px;
+  margin-right: 8px;
+  margin-top: 4px;
 `;
 
 const StyledImgB = styled.img`

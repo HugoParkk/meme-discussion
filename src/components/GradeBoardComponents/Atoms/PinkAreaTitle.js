@@ -8,15 +8,12 @@ function PinkAreaTitle(props) {
 const StyledDiv = styled.div`
   color: black;
   display: inline-block;
-  clear: both;
-  padding: 0.1389vw;
-  padding-left: 0.4167vw;
-  padding-right: 0.2167vw;
-  border-radius: 0.4861vw;
-  font-size: 0.8417vw;
-  width: 6.9444vw;
+  padding-left: 1px;
+  padding-right: 1px;
+  font-size: 13px;
+  width: 75px;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
 `;
 
 export default PinkAreaTitle;

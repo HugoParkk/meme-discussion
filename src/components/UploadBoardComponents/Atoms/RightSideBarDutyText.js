@@ -11,15 +11,15 @@ function RightSideBarDutyText(props) {
   );
 }
 const Text = styled.div`
-  font-size: 1.1rem;
-  color: #dbdbdb;
+  font-size: 12px;
+  color: #999999 ;
   margin-top: 10px;
   display: inline;
 `;
 const Text2 = styled.div`
-  font-size: 1.1rem;
+  font-size: 12px;
   margin-top: 10px;
-  color: #dbdbdb;
+  color: #999999;
   display: inline;
   text-align: right;
 `;

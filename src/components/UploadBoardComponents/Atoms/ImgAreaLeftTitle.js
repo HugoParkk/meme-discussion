@@ -10,13 +10,14 @@ function ImgAreaLeftTitle(props) {
 }
 
 const Text = styled.div`
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  padding-left: 5px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  position: relative;
+
+  height: 42px;
+  line-height: 42px;
+  padding-left: 11px;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+
+  
 `;
 
 export default ImgAreaLeftTitle;

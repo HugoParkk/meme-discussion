@@ -13,10 +13,10 @@ function GradeButtonGroup(props) {
 }
 
 const StyledDiv = styled.div`
-  width: 70%;
+  margin-top: 27.42px;
+  margin-right: 9px;
   display: flex;
   justify-content: center;
-  margin-top: 1.4833vw;
 `;
 
 export default GradeButtonGroup;

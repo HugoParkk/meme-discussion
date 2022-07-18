@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 function ShopNotice(props) {
-  
+
   return (
     <Wrap>
       {props.data.map((arr, i) => {
@@ -34,10 +34,10 @@ function ShopNotice(props) {
 
 const Wrap = styled.div`
   margin: 0 auto;
-  width: 700px;
+  width: 800px;
   border: 0.26vw solid magenta;
   outline: 0.156vw solid black;
-  margin-left: 12spx;
+  /* margin-left: 12px; */
   margin-bottom: 1.2vw;
   overflow: hidden;
 `;

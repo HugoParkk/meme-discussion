@@ -13,10 +13,10 @@ function Header(props) {
   const { } = props;
 
   const [popup, handlerPopup] = useState(false);
-  
+
   return (
     <>
-    {popup && <Popup onClose={handlerPopup} />}
+      {popup && <Popup onClose={handlerPopup} />}
       <HeaderMenuTop>
         <div id="logo">
           <img src={ChennelA} alt="채널A로고" class="chanelA"></img>&nbsp;|
@@ -29,7 +29,7 @@ function Header(props) {
           ></img>
         </div>
 
-        <div id="header-top">
+        <div id="headerTop">
           <ul>
             <li>홈</li> |<li>이웃</li>|<li>가입카페 ▼</li>|<li>새글</li>|
             <li>내소식</li>|<li>채팅</li>|<li>쥔짱님 ▼</li>
@@ -41,76 +41,74 @@ function Header(props) {
         <h1></h1>
       </HeaderStyleTest>
 
-      {props.type === "noBlack" ? (
-        <></>
-      ) : (
-        <HeaderBar>
-          <div id="header-search">
-            <input></input>
-            <button>검색</button>
-          </div>
+      <HeaderBar>
+        <div id="header-search">
+          <input></input>
+          <button>검색</button>
+        </div>
 
-          <div id="header-bar-menu">
-            <ul>
-              <li>
-                <a href="http://localhost:3000/main">홈 화면</a>
-              </li>
-              <li>
-                <a href="#" onClick={() => { handlerPopup(true); }}>내가 제일 '짤' 나가</a>
-              </li>
-              <li>
-                <a href="http://localhost:3000/productlist">짤장터</a>
-              </li>
-              <li>
-                <a href="#" onClick={() => { handlerPopup(true); }}>짤 찾아 삼만리</a>
-              </li>
-              <li>
-                <a href="#" onClick={() => { handlerPopup(true); }}>공지사항</a>
-              </li>
-            </ul>
-          </div>
-        </HeaderBar>
-      )}
+        <div id="header-bar-menu">
+          <ul>
+            <li>
+              <a href="http://localhost:3000/main">홈 화면</a>
+            </li>
+            <li>
+              <a href="#" onClick={() => { handlerPopup(true); }}>내가 제일 '짤' 나가</a>
+            </li>
+            <li>
+              <a href="http://localhost:3000/productlist">짤장터</a>
+            </li>
+            <li>
+              <a href="#" onClick={() => { handlerPopup(true); }}>짤 찾아 삼만리</a>
+            </li>
+            <li>
+              <a href="#" onClick={() => { handlerPopup(true); }}>공지사항</a>
+            </li>
+          </ul>
+        </div>
+      </HeaderBar>
     </>
   );
 }
 const HeaderMenuTop = styled.div`
+  * {
+    font-size: 8px;
+  }
   width: 1080px;
   margin: auto;
-  justify-content: space-between;
   display: flex;
   color: #dbdbdb;
-  font-size: 0.6vw;
   line-height: 1;
-
+  justify-content: space-between;
   ul {
     display: flex;
     margin: auto;
+    margin-top: 15px;
     list-style: none;
-    width: 38vw;
-    padding: 1vw 0 0;
+    width: 300px;
+    float: right;
   }
   li {
-    margin: auto 0.4vw;
+    margin: auto;
     color: black;
   }
   img {
-    height: 1.2vw;
+    height: 20px;
   }
   #logo {
-    margin: 0.4vw 0;
-    font-size: 1.4vw;
+    margin: 6px 0;
+    font-size: 20px;
     display: flex;
     align-items: center;
     .chanelA {
-      padding: 0.2vw 0 0 0;
+      padding: 3px 0 0 0;
     }
     .Digitech {
-      padding: 0.2vw 0 0 0;
+      padding: 3px 0 0 0;
     }
   }
-  #header-top {
-    width: 19vw;
+  #headerTop{
+    font-size: 8px;
   }
 `;
 const HeaderStyleTest = styled.header`
@@ -119,7 +117,7 @@ const HeaderStyleTest = styled.header`
   height: 126px;
   color: white;
   float: center;
-  top: -2vh;
+  top: -20px;
   margin: 0 auto;
   /* margin-bottom: px; */
   position: relative;
@@ -149,21 +147,21 @@ const HeaderBar = styled.div`
     border: 0;
     top: 0px;
     position: relative;
-    width: 3.5vw;
+    width: 50px;
     background-color: #ff50e2;
     color: #fff;
-    font-size: 0.6vw;
+    font-size: 7px;
   }
   input {
     height: 22px;
     border-radius: 0%;
     border: 0;
-    width: 16vw;
+    width: 200px;
     margin-right: 1.5px;
     box-shadow: 0.2px 0.2px 4px 0px #ff50e2 inset;
   }
   ul {
-    width: 45vw;
+    width: 450px;
     display: flex;
     color: white;
     list-style: none;
@@ -172,8 +170,8 @@ const HeaderBar = styled.div`
     margin-top: 4px;
   }
   li {
-    padding: 0.7vw;
-    font-size: 0.7vw;
+    padding: 10px;
+    font-size: 12px;
   }
 `;
 export default Header;

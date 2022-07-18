@@ -7,7 +7,7 @@ function ColorBall(props) {
     width: `23px`,
     height: `23px`,
     borderRadius: `50%`,
-    backgroundColor: `${color}`,
+    background: `${color}`,
     display: `inline-block`,
     margin: `0`,
     marginTop: `5px`,

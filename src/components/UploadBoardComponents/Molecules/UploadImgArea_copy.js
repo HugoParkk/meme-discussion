@@ -3,17 +3,38 @@ import styled from "styled-components";
 import ColorBall from "../Atoms/ColorBall";
 import ImgAreaLeftTitle from "../Atoms/ImgAreaLeftTitle";
 import ImgAreaRight from "./ImgAreaRight";
+import file_icon from '../../../images/file_plusIcon.png';
 
 function UploadImgArea(props) {
+  const [src, setSrc] = useState(props.src);
   const [color, setColor] = useState("#FF50E2");
+
+  const encodeFileToBase64 = (fileBlob) => {
+    // const reader = new FileReader();
+    // reader.readAsDataURL(fileBlob);
+    // return new Promise((resolve) => {
+    //   reader.onload = () => {
+    //     setSrc(window.URL.createObjectURL(reader.result));
+    //     props.srcFunction(src);
+    //     resolve();
+    //   };
+    // });
+    setSrc(window.URL.createObjectURL(fileBlob));
+    props.srcFunction(fileBlob);
+  };
 
   const getColor = (text) => {
     setColor(text);
   };
 
+  const clickImgInput = () => {
+    let imgInput = document.getElementById("img_input");
+    imgInput.click();
+  };
+
   return (
     <Wrap>
-      <ImgAreaRight src={props.src} color={color} />
+      <ImgAreaRight src={src} color={color} />
       <Wrap2>
         <ImgAreaLeftTitle text="테두리 설정" />
         <Color>
@@ -36,10 +57,22 @@ function UploadImgArea(props) {
           })}
         </Color>
       </Wrap2>
-      <ImgButton>파일찾기</ImgButton>
+      <ImgButton onClick={() => { clickImgInput() }}>
+        <ImgInput id="img_input" type={"file"} onChange={(e) => {
+          encodeFileToBase64(e.target.files[0]);
+        }} />
+        <img src={file_icon} id="found_file" />
+        <div id="text">파일찾기</div>
+      </ImgButton>
     </Wrap>
   );
 }
+
+const ImgInput = styled.input`
+  width: 0;
+  height: 0;
+  visibility: hidden;
+`
 
 const Wrap3 = styled.div`
   display: inline-block;
@@ -53,13 +86,16 @@ const Color = styled.div`
 `;
 
 const Wrap2 = styled.div`
-  width: 25%;
+  /* margin-left: -50px; */
+  width: 26.1%;
   height: 100%;
-  border: 1px solid gray;
+  border: 1px solid #CBCBCB;
   border-top: none;
   border-left: none;
   display: block;
   position: relative;
+  
+
 `;
 
 const Wrap = styled.div`
@@ -71,19 +107,29 @@ const Wrap = styled.div`
 `;
 
 const ImgButton = styled.div`
-  width: 11.9rem;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
+  width: 186px;
+  height: 37px;
+  justify-content: center;
+  line-height: 3;
   background-color: pink;
   position: absolute;
-  left: 59.4%;
-  top: 47%;
-  border-radius: 10px;
+  left: 60.2%;
+  top: 46.2%;
+  border-radius: 6px;
   background-color: #ff50e2;
   color: white;
-  font-weight: bold;
+  display: flex;
+  /* font-weight: bold; */
+  font-size: 12px;
   cursor: pointer;
+  #found_file{
+    margin-top: 12px;
+    width: 13px;
+    height: 15px;
+  }
+  #text{
+    margin-left: 5px;
+  }
 `;
 
 export default UploadImgArea;

@@ -1,20 +1,14 @@
 import React, { useState } from "react";
-
 import styled from "styled-components";
-import Header from "../components/pages_Header";
+
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from '../components/pages_Sidebar';
+import Popup from "../components/Popup";
 
-import ShopBoardTopPlusBtn from "../components/ShopBoardComponents/Atoms/ShopBoardTopPlusBtn";
-import ShopBoardTopText from "../components/ShopBoardComponents/Atoms/ShopBoardTopText";
-import ShopNotice from "../components/ShopBoardComponents/Molecules/ShopNotice";
+import ShopTopNotice from "../components/ShopBoardComponents/Molecules/ShopTopNotice";
 import ShopBoardMainList from "../components/ShopBoardComponents/Molecules/ShopBoardMainList";
-import ShopBoardwriteBtn from "../components/ShopBoardComponents/Atoms/ShopBoardwriteBtn";
 import ShopBoardFoooterBtnGroup from "../components/ShopBoardComponents/Molecules/ShopBoardFoooterBtnGroup";
-import ShopBoardFooterNext from "../components/ShopBoardComponents/Atoms/ShopBoardFooterNext";
-import ShopBoardTimeSelect from "../components/ShopBoardComponents/Atoms/ShopBoardTimeSelect";
-import ShopBoardCommentSelect from "../components/ShopBoardComponents/Atoms/ShopBoardCommentSelect";
-import ShopBoardFindGroup from "../components/ShopBoardComponents/Molecules/ShopBoardFindGroup";
 
 import lovepari from "../images/fd7b8305ab14a05f23fc53a7405cd983.jpg";
 import bookfound from "../images/5f83a752c924315a6aa03aa5f3e13927.jpg";
@@ -28,121 +22,103 @@ import bill from "../images/2d1441ab4efa9bfbab3f40e68cf59ff1.jpg";
 import gagul from "../images/2c0f85cda379cc9ab1c2912c527e0d95.jpg";
 import img3 from "../images/02b796f3090ec136409f2189d7a9fcc9.jpg";
 import geguri from "../images/1ae00b0948a6376c01bcf396d617fdfb.jpg";
+import circleStar from "../images/Group 316.svg";
+import plus from "../images/Group 38.svg"
+import writeBtn from "../images/Group 343.svg"
 
 import GlobalBackground from '../components/GlobalBackground';
 
-function ProductList() {
+function ProductList(props) {
+  const { } = props;
 
+  const [popup, handlerPopup] = useState(false);
   return (
-    <GlobalBackground>
-      
-      <Header />
-      
-      <Wrap>
-        <SIDEBAR>
-          <Sidebar/>
-        </SIDEBAR>
-        <div>
-          <CONTENTS>
-            <ShopBoardTopText />
-            <ShopBoardTopPlusBtn />
-            <ShopNotice data={arr} />
-            <ShopBoardMainList data={data} />
+    <>
+      {popup && <Popup onClose={handlerPopup} />}
+      <GlobalBackground>
+        <All>
+          <Header />
+          <Wrap>
+            <Sidebar />
+            <div>
+              <CONTENTS>
+                <div id="ShopTopTitle">
+                  <span class="titleText">짤랑이 거래 ~~ 여기는 짤장터&nbsp;&nbsp;<img class="circleStar" src={circleStar}></img></span>
+                  <img src={plus} class="plusImg"></img>
+                </div>
+                <ShopTopNotice />
 
-            <ShopBoardwriteBtn />
-            <ShopBoardFoooterBtnGroup data={num} />
-            <ShopBoardFooterNext />
-            <HR2 />
-            <Back>
-              <HR3 />
-              <ShopBoardGroup>
-                <ShopBoardTimeSelect />
-                <ShopBoardCommentSelect />
-              </ShopBoardGroup>
-              <ShopBoardFindGroup />
-            </Back>
-          </CONTENTS>
-        </div>
-      </Wrap>
-      <Footer />
-    </GlobalBackground>
+                <ShopBoardMainList data={data} />
+
+                <HR2 />
+
+                <div id="write" onClick={() => { handlerPopup(true); }}><img src={writeBtn}></img></div>
+
+                <ShopBoardFoooterBtnGroup data={num} />
+              </CONTENTS>
+            </div>
+          </Wrap>
+          <Footer />
+        </All>
+      </GlobalBackground>
+    </>
   );
 }
 
+const All = styled.div`
+  margin: auto;
+  width: 1080px;
+`
+
 const Wrap = styled.div`
-  width: 970px;
+  width: 1080px;
+  height: 1650px;
   position: relative;
-  transform: translateX(-50%);
-  left: 50%;
   display: flex;
   justify-content: space-between;
-  top: 1.667vw;
+  top: 40px;
 `;
 
-const HR2 = styled.hr`
-  width: 95%;
-  margin-left: 1.042vw;
-  position: relative;
-  overflow: hidden;
-  top: -5.04vh;
-`;
-
-const ShopBoardGroup = styled.div`
-  margin-left: -13.888vw;
-  margin-top: 4.167vw;
-  position: relative;
-`;
-
-const SIDEBAR = styled.div`
-  position: relative;
-  margin-right: 10px;
-  
+const HR2 = styled.div`
+  width: 830px;
+  margin: auto;
+  border-bottom:1px solid #EBEBEA;
 `;
 
 const CONTENTS = styled.div`
-  width: 750px;
+  width: 855px;
   background-color: #FFF;
-  border: 0.208vw solid #cfcfcf;
+  border: 4px solid #cfcfcf;
   position: relative;
-  outline: 0.156vw solid black;
-`;
+  outline: 2px solid black;
+  
+  #ShopTopTitle{
+    width: 100%;
+    height: 90px;
+    color: #FA00D0;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    .titleText{
+      margin: 10px 0 0 15px;
+      .circleStar{
+        cursor: pointer;
+      }
+    }
+    .plusImg{
+      width:50px; 
+      height: 23px;
+      margin: 50px 20px 0 0;
+      cursor: pointer;
+    }
+  }
 
-const HR3 = styled.hr`
-  width: 95%;
-  margin-left: 1.042vw;
-  position: relative;
-  overflow: hidden;
-  top: 4.861vw;
+  #write{
+    margin: 15px 0 0 738px;
+    cursor: pointer;
+  }
 `;
-
-const Back = styled.div`
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f8;
-  height: 9.5vw;
-`;
-
-const arr = [
-  { type: "title", text: "제목", name: "작성자", date: "작성일", cnt: "조회" },
-  {
-    text: "제목제목제목제목제목제목제목제목",
-    name: "스태프",
-    date: "2022.05.04",
-    cnt: "209",
-  },
-  {
-    text: "제목제목제목제목제목제목제목제목",
-    name: "스태프",
-    date: "2022.05.04",
-    cnt: "209",
-  },
-  {
-    text: "제목제목제목제목제목제목제목제목",
-    name: "스태프",
-    date: "2022.05.04",
-    cnt: "209",
-  },
-];
 
 const data = [
   {

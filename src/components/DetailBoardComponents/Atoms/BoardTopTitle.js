@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import GlobalStyle from "../GlobalStyle";
+import Popup from "../../Popup";
 function BoardTopTitle(props) {
+  const { } = props;
+
+  const [popup, handlerPopup] = useState(false);
   return (
     <>
+    {popup && <Popup onClose={handlerPopup} />}
       <GlobalStyle />
       {props.type === "pink" ? (
-        <Text>{props.text}</Text>
+        <Text onClick={() => { handlerPopup(true); }}>{props.text}</Text>
       ) : (
-        <TextBlack>{props.text}</TextBlack>
+        <TextBlack onClick={() => { handlerPopup(true); }}>{props.text}</TextBlack>
       )}
     </>
   );
@@ -23,6 +28,7 @@ const Text = styled.div`
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 7px;
+  cursor: pointer;
   /* 방송캡쳐 */
 `;
 
@@ -36,6 +42,7 @@ const TextBlack = styled.div`
   position: relative;
   left: 230pt;
   top: -105pt;
+  cursor: pointer;
 `;
 
 export default BoardTopTitle;
