@@ -1,3 +1,5 @@
+/*Sidebar 홈화면,  */
+
 import React, { useState } from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
