@@ -5,10 +5,8 @@ import styled from 'styled-components';
 import Popup from '../../Popup';
 
 // images
+import SellJjal from "../../../images/main_page/JJal_sellMain.png";
 import Plus from "../../../images/main_page/plus.png";
-
-// molcules
-import SellJJal from "../Molcules/Top/Sellimg";
 
 function MainTop(props) {
   const { } = props;
@@ -17,7 +15,9 @@ function MainTop(props) {
   return (
     <Wrap>
       {popup && <Popup onClose={handlerPopup} />}
-      <SellJJal onClick={() => { handlerPopup(true); }}/>
+      <div id="sell_JJal" onClick={() => { handlerPopup(true); }}>
+        <img src={SellJjal} />
+      </div>
       <div id="noticeUpdate" onClick={() => { handlerPopup(true); }}>
         <div id="noticeTitle">
           <ul>
@@ -85,6 +85,17 @@ const Wrap = styled.div`
   width: 100%;
   height: 435px;
   position: relative;
+
+  #sell_JJal {
+    img{
+      height: 430px;
+      position: absolute;
+      left: 0;
+      border: 6px solid #cfcfcf;
+      outline: 2px solid #000;
+      cursor: pointer;
+    }
+  }
 
   #noticeUpdate {
     width: 330px;
