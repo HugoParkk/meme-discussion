@@ -116,8 +116,6 @@ const HeaderStyleTest = styled.header`
   width: 1080px;
   background: url(${headerSrc}) no-repeat;
   height: 126px;
-  color: white;
-  float: center;
   top: -20px;
   margin: 0 auto;
   /* margin-bottom: px; */
