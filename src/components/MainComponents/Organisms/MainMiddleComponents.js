@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import twinkle from "../../images/main_page/twinkle_bg_c.png";
-import Card from "../../images/main_page/Card_e.png";
-import plus_box from "../../images/main_page/plus_box.png";
 
-import phone from "../../images/main_page/card_phone.jpg";
-import dosa from "../../images/main_page/card_dosa.jpg";
-import heart from "../../images/main_page/jinyoung_heart.png";
-import mimgi from "../../images/main_page/mimgi.png";
+import twinkle from "../../../images/main_page/twinkle_bg_c.png";
+import Card from "../../../images/main_page/Card_e.png";
+import plus_box from "../../../images/main_page/plus_box.png";
+import phone from "../../../images/main_page/card_phone.jpg";
+import dosa from "../../../images/main_page/card_dosa.jpg";
+import heart from "../../../images/main_page/jinyoung_heart.png";
+import mimgi from "../../../images/main_page/mimgi.png";
 
 
 function MainMiddle() {

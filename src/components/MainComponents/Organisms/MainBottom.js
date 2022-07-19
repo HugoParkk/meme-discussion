@@ -1,20 +1,19 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import Popup from "../../components/Popup";
-import Plus from "../../images/main_page/plus.png";
-import Gost from "../../images/main_page/back_gost.jpg";
-import Peace from "../../images/main_page/peace.jpg";
-import Cat from "../../images/main_page/jinYoung_cat.jpg";
-import Eyes from "../../images/main_page/dark_tzuyu.jpg";
-import Gun from "../../images/main_page/fps_in_game.jpg";
-import Book from "../../images/main_page/find_book.jpg";
+import Popup from "../../Popup";
 
-import rcBK from "../../images/main_page/rightContentBK.png";
-
-import first from "../../images/main_page/dream_first.jpg";
-import second from "../../images/main_page/dream_second.jpg";
-import third from "../../images/main_page/dream_third.jpg";
-import fourth from "../../images/main_page/dream_fourth.jpg";
+import Plus from "../../../images/main_page/plus.png";
+import Gost from "../../../images/main_page/back_gost.jpg";
+import Peace from "../../../images/main_page/peace.jpg";
+import Cat from "../../../images/main_page/jinYoung_cat.jpg";
+import Eyes from "../../../images/main_page/dark_tzuyu.jpg";
+import Gun from "../../../images/main_page/fps_in_game.jpg";
+import Book from "../../../images/main_page/find_book.jpg";
+import rcBK from "../../../images/main_page/rightContentBK.png";
+import first from "../../../images/main_page/dream_first.jpg";
+import second from "../../../images/main_page/dream_second.jpg";
+import third from "../../../images/main_page/dream_third.jpg";
+import fourth from "../../../images/main_page/dream_fourth.jpg";
 
 
 function MainBottom(props) {

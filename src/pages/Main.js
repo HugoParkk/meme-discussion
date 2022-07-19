@@ -6,20 +6,11 @@ import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import Popup from "../components/Popup";
-import MainTop from '../components/MainComponents/MainTopComponents';
-import MainBottom from '../components/MainComponents/MainBottom';
-import MainMiddle from '../components/MainComponents/MainMiddleComponents';
+import MainTop from '../components/MainComponents/Organisms/MainTopComponents';
+import MainBottom from '../components/MainComponents/Organisms/MainBottom';
+import MainMiddle from '../components/MainComponents/Organisms/MainMiddleComponents';
 
 import GlobalBackground from '../components/GlobalBackground'
-
-//----images----
-
-
-
-
-
-import JJalSell from "../images/main_page/JJal_sellMain.png";
-
 
 
 
