@@ -7,6 +7,7 @@ import bg_icon1 from "../images/change_backgroud/bg_icon1.png";
 import bg_icon2 from "../images/change_backgroud/bg_icon2.png";
 import bg_icon3 from "../images/change_backgroud/bg_icon3.png";
 import bg_icon4 from "../images/change_backgroud/bg_icon4.png";
+import bg_icon5 from "../images/change_backgroud/bg_icon5.png";
 import UploadHeader from "../components/UploadBoardComponents/Molecules/UploadHeader";
 import UploadInput from "../components/UploadBoardComponents/Molecules/UploadInput";
 import UploadMain from "../components/UploadBoardComponents/Molecules/UploadMain";
@@ -93,7 +94,7 @@ const frame = [
   "#E4CDE2",
   "#50FFD5",
 ];
-const back = [bg_icon1, bg_icon2, bg_icon3, bg_icon4, "black"];
+const back = [bg_icon1, bg_icon2, bg_icon3, bg_icon4, bg_icon5];
 const img = [img2, img3, img4, img5];
 const text = [
   "짤 설명 사진.jpg",
