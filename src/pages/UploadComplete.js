@@ -30,7 +30,7 @@ function Main() {
       <Wrap>
         <Header />
         <div id="wor">
-          <Sidebar />
+          <Sidebar data={0}/>
           <div id="nea">
             <MainS>
               <div id="Title_sum">

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Popup from "../components/Popup";
 import Header from "../components/Header";
-import Sidebar from "../components/pages_Sidebar";
+import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 
 //----images----
@@ -36,7 +36,7 @@ function ProductDetail(props) {
         <Wrap>
           <Header />
           <Flex>
-            <Sidebar id="public-sidebar" />
+            <Sidebar data={1}/>
             
             <div id="con">
               <div id="buttons">

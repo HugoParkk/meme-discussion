@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from '../components/pages_Sidebar';
+import Sidebar from '../components/Sidebar';
 import Popup from "../components/Popup";
 
 import ShopTopNotice from "../components/ShopBoardComponents/Molecules/ShopTopNotice";
@@ -39,7 +39,7 @@ function ProductList(props) {
         <All>
           <Header />
           <Wrap>
-            <Sidebar />
+            <Sidebar data={1}/>
             <div>
               <CONTENTS>
                 <div id="ShopTopTitle">

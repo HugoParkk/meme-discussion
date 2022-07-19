@@ -10,7 +10,7 @@ import GradeBoardMainTitle from "../components/GradeBoardComponents/Molecules/Gr
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from "../components/pages_Sidebar";
+import Sidebar from "../components/Sidebar";
 import styled from "styled-components";
 
 import svg1 from "../images/Vector-3.svg";
@@ -30,7 +30,7 @@ function Permission() {
         <Header />
         <Wrap>
           <SIDEBAR>
-            <Sidebar />
+            <Sidebar data={1}/>
           </SIDEBAR>
           <CONTENTS>
             <BackgroundColor>
