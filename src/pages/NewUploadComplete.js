@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
@@ -9,6 +9,7 @@ import GlobalBackground from '../components/GlobalBackground';
 
 // 이미지--------------
 import bg from '../images/bg_card.jpg';
+import cardBG from '../images/cardBackground.jpg'
 import hands from '../images/public_compoment/warning_hand.svg';
 import bell from '../images/Vector-2.svg';
 import on from '../images/Group 204.svg';
@@ -17,12 +18,32 @@ import peopleOne from '../images/Vector-3.svg';
 import humen from '../images/03bcbd1f18de9cdc981199b3a4bb29ab.jpg';
 // import Card from '../images/Card_com.png';
 import { useLocation } from 'react-router-dom'
+import html2canvas from "html2canvas";
 
 
 function Main() {
   const location = useLocation();
   const data = location.state;
 
+  const printRef = useRef();
+  const handleDownloadImage = async () => {
+    const element = printRef.current;
+    const canvas = await html2canvas(element);
+
+    const data = canvas.toDataURL('image/png');
+    const link = document.createElement('a');
+
+    if (typeof link.download === 'string') {
+      link.href = data;
+      link.download = 'jjal.png';
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      window.open(data);
+    }
+  }
 
   return (
     <GlobalBackground>
@@ -46,11 +67,8 @@ function Main() {
                   <div id="belling"><img src={bell} /><div id="tex">게시글 알림</div><img src={on} /></div>
                 </div>
               </div>
-
               <div id="Card">
-                {/* <img src={Card} id="ca">
-              </img> */}
-                <div id="a">
+                <div id="a" ref={printRef}>
                   <div id="title_z">{data.name}</div>
                   {data.img == "/static/media/03bcbd1f18de9cdc981199b3a4bb29ab.eb036cc355e96f8ceaab.jpg" ?
                     <img src={data.img} id="hu"></img>
@@ -60,6 +78,7 @@ function Main() {
                   <div id="sul">음악방송 아이브 양갈래 헤어</div>
                 </div>
               </div>
+              <DownloadBtn onClick={handleDownloadImage}>다운로드</DownloadBtn>
             </MainS>
 
             <Ser>
@@ -99,11 +118,23 @@ function Main() {
   );
 }
 
+const DownloadBtn = styled.button`
+width: 109px;
+height: 30px;
 
+text-align: center;
+border: #ccc solid 1px;
+margin-left: 370px;
+border-radius: 5px;
+font-size: 12px;
+cursor: pointer;
+background-color: #FF50E2;
+color: #fff;
+`
 
 const MainS = styled.div`
   width: 845px;
-  height: 535px;
+  height: 544px;
   background: url(${bg});
   margin-left: 20px;
   border: 3px solid #ccc;
@@ -114,8 +145,8 @@ const MainS = styled.div`
     font-size: 22px;
   }
   img{
-    
-    margin-right: 6px;
+    margin-top: 20px;
+    /* margin-right: 11px;s */
   }
   #text{
     line-height: -1;
@@ -186,7 +217,7 @@ const MainS = styled.div`
   #Card{
     text-align: center;
     width: 226px;
-    height: 340px;
+    height: 336px;
     
     #ca{
       width: 227px;
@@ -196,7 +227,10 @@ const MainS = styled.div`
       left: 50%;
     }
     #title_z{
-      margin: 40px auto;
+      width: 214px;
+      margin: 34px 0;
+      margin-top: 24px;
+      margin-bottom: 44px;
     }
     
     #hu{
@@ -207,13 +241,19 @@ const MainS = styled.div`
     }
 
     #a{
+      width: 214px;
+      height: 320px;
+      background: url(${cardBG}) no-repeat;
+      background-size: 214px;
       position: absolute;
-      margin-left:348px;
-      margin-top: 5px;
+      margin-left:318px;
+      margin-top: 6px;
       
     }
     #sul{
-      margin: 20px 0 0 -10px;
+      width: 214px;
+      margin-top: 24px;
+
       font-size: 11px;
     }
     

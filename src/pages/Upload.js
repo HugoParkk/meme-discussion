@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import Header from "../components/Header"
+import Header from "../components/Header";
 
-
-import bg_icon1 from '../images/bg_icon1.png';
-import bg_icon2 from '../images/bg_icon2.png';
-import bg_icon3 from '../images/bg_icon3.png';
-import bg_icon4 from '../images/bg_icon4.png';
+import bg_icon1 from "../images/change_backgroud/bg_icon1.png";
+import bg_icon2 from "../images/change_backgroud/bg_icon2.png";
+import bg_icon3 from "../images/change_backgroud/bg_icon3.png";
+import bg_icon4 from "../images/change_backgroud/bg_icon4.png";
+import bg_icon5 from "../images/change_backgroud/bg_icon5.png";
 import UploadHeader from "../components/UploadBoardComponents/Molecules/UploadHeader";
 import UploadInput from "../components/UploadBoardComponents/Molecules/UploadInput";
 import UploadMain from "../components/UploadBoardComponents/Molecules/UploadMain";
@@ -19,8 +19,7 @@ import img4 from "../images/7b6411f877dd15ce9d97b91b258ac106.jpg";
 import img5 from "../images/3cfb2a7a354ceffff7a71f4c7c625023.jpg";
 import img6 from "../images/jlee.png";
 import Calender from "../components/UploadBoardComponents/Molecules/Calender";
-import GlobalBackground from '../components/GlobalBackground';
-
+import GlobalBackground from "../components/GlobalBackground";
 
 function Upload(props) {
   const [name, setName] = useState("짤 이름");
@@ -65,7 +64,6 @@ const Con = styled.div`
   width: 1080px;
   height: 1220px;
   margin: 0 auto;
-  
 `;
 
 const Wrap = styled.div`
@@ -96,7 +94,7 @@ const frame = [
   "#E4CDE2",
   "#50FFD5",
 ];
-const back = [bg_icon1, bg_icon2, bg_icon3, bg_icon4, "black"];
+const back = [bg_icon1, bg_icon2, bg_icon3, bg_icon4, bg_icon5];
 const img = [img2, img3, img4, img5];
 const text = [
   "짤 설명 사진.jpg",

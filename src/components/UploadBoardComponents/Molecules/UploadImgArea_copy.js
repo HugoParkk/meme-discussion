@@ -3,12 +3,13 @@ import styled from "styled-components";
 import ColorBall from "../Atoms/ColorBall";
 import ImgAreaLeftTitle from "../Atoms/ImgAreaLeftTitle";
 import ImgAreaRight from "./ImgAreaRight";
-import file_icon from '../../../images/file_plusIcon.png';
+import file_icon from "../../../images/file_plusIcon.png";
+import ImageBall from "../Atoms/ImageBall";
 
 function UploadImgArea(props) {
   const [src, setSrc] = useState(props.src);
   const [color, setColor] = useState("#FF50E2");
-
+  const [url, setUrl] = useState(props.back[0]);
   const encodeFileToBase64 = (fileBlob) => {
     // const reader = new FileReader();
     // reader.readAsDataURL(fileBlob);
@@ -26,7 +27,9 @@ function UploadImgArea(props) {
   const getColor = (text) => {
     setColor(text);
   };
-
+  const getUrl = (text) => {
+    setUrl(text);
+  };
   const clickImgInput = () => {
     let imgInput = document.getElementById("img_input");
     imgInput.click();
@@ -34,7 +37,7 @@ function UploadImgArea(props) {
 
   return (
     <Wrap>
-      <ImgAreaRight src={src} color={color} />
+      <ImgAreaRight src={src} color={color} url={url} />
       <Wrap2>
         <ImgAreaLeftTitle text="테두리 설정" />
         <Color>
@@ -51,16 +54,24 @@ function UploadImgArea(props) {
           {props.back.map((arr, i) => {
             return (
               <Wrap3 key={i}>
-                <ColorBall color={props.color} back={arr} />
+                <ImageBall color={props.color} back={arr} getUrl={getUrl} />
               </Wrap3>
             );
           })}
         </Color>
       </Wrap2>
-      <ImgButton onClick={() => { clickImgInput() }}>
-        <ImgInput id="img_input" type={"file"} onChange={(e) => {
-          encodeFileToBase64(e.target.files[0]);
-        }} />
+      <ImgButton
+        onClick={() => {
+          clickImgInput();
+        }}
+      >
+        <ImgInput
+          id="img_input"
+          type={"file"}
+          onChange={(e) => {
+            encodeFileToBase64(e.target.files[0]);
+          }}
+        />
         <img src={file_icon} id="found_file" />
         <div id="text">파일찾기</div>
       </ImgButton>
@@ -72,7 +83,7 @@ const ImgInput = styled.input`
   width: 0;
   height: 0;
   visibility: hidden;
-`
+`;
 
 const Wrap3 = styled.div`
   display: inline-block;
@@ -89,13 +100,11 @@ const Wrap2 = styled.div`
   /* margin-left: -50px; */
   width: 26.1%;
   height: 100%;
-  border: 1px solid #CBCBCB;
+  border: 1px solid #cbcbcb;
   border-top: none;
   border-left: none;
   display: block;
   position: relative;
-  
-
 `;
 
 const Wrap = styled.div`
@@ -122,12 +131,12 @@ const ImgButton = styled.div`
   /* font-weight: bold; */
   font-size: 12px;
   cursor: pointer;
-  #found_file{
+  #found_file {
     margin-top: 12px;
     width: 13px;
     height: 15px;
   }
-  #text{
+  #text {
     margin-left: 5px;
   }
 `;
