@@ -62,3 +62,5 @@ Agile 개발 방법론의 Scrum방식으로 짧은 주기를 가진 sprint를 �
     - [[React] Styled Components 사용법](https://www.daleseo.com/react-styled-components/)
   - ### React 반응형 준비
     - [[React] React-Responsive / 반응형 웹 만들기](https://velog.io/@pyo-sh/React-Responsive)
+    
+## 카드 이미지 다운로드 구현 완료
