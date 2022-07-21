@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 function UploadInput(props) {
   const nameChangeHandler = (e) => {
-    props.propFunction(e.currentTarget.value);
+    props.nameFunction(e.currentTarget.value);
   }
 
   return (
