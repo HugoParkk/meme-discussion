@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import ExchangeRateForm from "../Atoms/ExchangeRateForm";
+import PinkForm from "../Atoms/PinkForm";
 import RightBarMoneyText from "../Atoms/RightBarMoneyText";
 import RightSideBarBtn from "../Atoms/RightSideBarBtn";
 import RightSideBarDutyText from "../Atoms/RightSideBarDutyText";
@@ -15,11 +15,13 @@ function Calender(props) {
     <>
       <DB>
         <RightSideBarTitle text={"짤 판매 설정"} type={""} />
-        <UploadBoardPublicText text={"가격"} type={""} />
-        <info>ⓘ</info>
+        <CostInfo>
+          <UploadBoardPublicText text={"가격"} type={""} />
+          <info>ⓘ</info>
+        </CostInfo>
         <Flex>
           <UploadBoardPublicText text={"WKLAY"} type={""} />
-          <ExchangeRateForm active />
+          <PinkForm active placeholder="130" pink="true" />
         </Flex>
         <D>
           <RightBarMoneyText text={"$758.60"} />
@@ -43,7 +45,7 @@ function Calender(props) {
         <span><RightSideBarBtn text={"임시등록"} /></span>
         <Link to={{
           pathname: `/uploadcomplete/`,
-          state: { name: props.name, img: props.src }
+          state: { name: props.name, img: props.src, detail: props.detail }
         }}><RightSideBarBtn text={"매물 게시"} type={"pink"} /></Link>
         <UploadBoardPublicLi />
         <Wrap>
@@ -55,11 +57,17 @@ function Calender(props) {
     </>
   );
 }
-let Flex = styled.div`
+
+const CostInfo = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+const Flex = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-let DB = styled.div`
+const DB = styled.div`
   background-color: white;
   border: 2px solid black;
   width: 196px;
@@ -73,31 +81,28 @@ let DB = styled.div`
   info {
     font-size: 13px;
     font-weight: bold;
-    position: absolute;
-    right: 0;
-    margin: 51px 26px 0 0;
+    margin-top: 10px;
     color: #929292;
   }
 `;
 
-// 아 하기 싫다ㅏ 이 주석 지우는 친구는 상품이 있으니 지우고 박종연에게 전화해주세요.
-let Text = styled.div`
+const Text = styled.div`
   font-size: 13px;
   font-weight: bold;
   margin-top: 9px;
   margin-right: 10px;
 `;
-let D = styled.div`
+const D = styled.div`
   border-bottom: 2px solid #d0d0d0;
   padding-bottom: 5px;
   margin-top: -7px;
   grid-column: 1 / 3;
 `;
-let DI = styled.div`
+const DI = styled.div`
   padding: 2px;
   border-bottom: 2px solid #d0d0d0;
 `;
-let DA = styled.div`
+const DA = styled.div`
   height: 120px;
   padding-bottom: 13px;
   border-bottom: 2px solid #d0d0d0;
