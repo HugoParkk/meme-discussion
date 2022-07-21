@@ -11,8 +11,8 @@ function ImgAreaLeftTitle(props) {
 
 const Text = styled.div`
 
-  height: 42px;
-  line-height: 42px;
+  height: 32px;
+  line-height: 32px;
   padding-left: 11px;
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
