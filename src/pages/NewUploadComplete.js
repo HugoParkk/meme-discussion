@@ -75,7 +75,7 @@ function Main() {
                     :
                     <img src={window.URL.createObjectURL(data.img)} id="hu"></img>
                   }
-                  <div id="sul">음악방송 아이브 양갈래 헤어</div>
+                  <div id="sul">{data.detail}</div>
                 </div>
               </div>
               <DownloadBtn onClick={handleDownloadImage}>다운로드</DownloadBtn>

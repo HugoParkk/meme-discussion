@@ -5,21 +5,14 @@ import ImgAreaLeftTitle from "../Atoms/ImgAreaLeftTitle";
 import ImgAreaRight from "./ImgAreaRight";
 import file_icon from "../../../images/file_plusIcon.png";
 import ImageBall from "../Atoms/ImageBall";
+import PinkForm from "../Atoms/PinkForm";
 
 function UploadImgArea(props) {
   const [src, setSrc] = useState(props.src);
   const [color, setColor] = useState("#FF50E2");
   const [url, setUrl] = useState(props.back[0]);
+
   const encodeFileToBase64 = (fileBlob) => {
-    // const reader = new FileReader();
-    // reader.readAsDataURL(fileBlob);
-    // return new Promise((resolve) => {
-    //   reader.onload = () => {
-    //     setSrc(window.URL.createObjectURL(reader.result));
-    //     props.srcFunction(src);
-    //     resolve();
-    //   };
-    // });
     setSrc(window.URL.createObjectURL(fileBlob));
     props.srcFunction(fileBlob);
   };
@@ -49,8 +42,8 @@ function UploadImgArea(props) {
             );
           })}
         </Color>
-        <ImgAreaLeftTitle text="배경 설정" type="bottom" />
-        <Color>
+        <ImgAreaLeftTitle text="배경 설정" />
+        <BgColor>
           {props.back.map((arr, i) => {
             return (
               <Wrap3 key={i}>
@@ -58,7 +51,20 @@ function UploadImgArea(props) {
               </Wrap3>
             );
           })}
-        </Color>
+        </BgColor>
+        <ImgAreaLeftTitle text="짤 이름 설정" />
+        <DetailText>
+          <PinkForm
+            changeFunction={props.nameFunction}
+            placeholder="짤의 이름을 입력하세요." />
+        </DetailText>
+
+        <ImgAreaLeftTitle text="짤 내용 설정" />
+        <DetailText>
+          <PinkForm
+            changeFunction={props.detailFunction}
+            placeholder="짤의 설명을 입력하세요." />
+        </DetailText>
       </Wrap2>
       <ImgButton
         onClick={() => {
@@ -91,10 +97,21 @@ const Wrap3 = styled.div`
 
 const Color = styled.div`
   width: 100%;
-  height: 110px;
-  display: block;
-  position: relative;
+  height: 94px;
 `;
+
+const BgColor = styled.div`
+  width: 100%;
+  height: 34px;
+`
+
+const DetailText = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+`
 
 const Wrap2 = styled.div`
   /* margin-left: -50px; */
