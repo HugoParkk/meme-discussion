@@ -19,7 +19,15 @@ function UploadMain(props) {
       <Main>
         <GlobalStyle />
         <FooterPostText text="짤 업로드" />
-        <UploadImgArea srcFunction={srcFunction} frame={props.frame} back={props.back} src={props.src} />
+        <UploadImgArea
+          name={props.name}
+          nameFunction={props.nameFunction}
+          detail={props.detail}
+          detailFunction={props.detailFunction}
+          src={props.src}
+          srcFunction={srcFunction}
+          frame={props.frame}
+          back={props.back} />
         <Line />
         <FooterPostText
           text="짤 설명 사진"
