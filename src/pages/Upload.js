@@ -24,14 +24,12 @@ import GlobalBackground from "../components/GlobalBackground";
 function Upload(props) {
   const [name, setName] = useState("짤 이름");
   const [src, setSrc] = useState(img1);
+  const [detail, setDetail] = useState("음악 방송 아이브 양갈래 레이");
 
-  const srcFunction = (e) => {
-    setSrc(e);
-  };
+  // const srcFunction = (e) => {
+  //   setSrc(e);
+  // };
 
-  const jjalNameFunction = (text) => {
-    setName(text);
-  };
 
   return (
     <GlobalBackground>
@@ -43,9 +41,13 @@ function Upload(props) {
             <UploadSelect data={data1} />
             <UploadSelect data={data2} type="pink" />
           </Wrap>
-          <UploadInput name={props.name} propFunction={jjalNameFunction} />
+          <UploadInput name={name} nameFunction={setName} />
           <UploadMain
-            propFunction={srcFunction}
+            name={name}
+            nameFunction={setName}
+            detail={detail}
+            detailFunction={setDetail}
+            propFunction={setSrc}
             frame={frame}
             back={back}
             src={img1}
@@ -53,7 +55,7 @@ function Upload(props) {
             text={text}
           />
         </form>
-        <Calender setName={props.setName} name={name} src={src} />
+        <Calender name={name} detail={detail} src={src} />
       </Con>
       <Footer />
     </GlobalBackground>
